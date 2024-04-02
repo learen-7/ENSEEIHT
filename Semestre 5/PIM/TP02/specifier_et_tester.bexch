@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__specifier_et_tester.o
+[PROJECT FILES]
+/home/lht1404/Documents/1A/PIM/TP02/tp2.gpr
+20230926064037 537acbc6a38c428bf8a0be36d056f26d
+[BOUND OBJECT FILES]
+/home/lht1404/Documents/1A/PIM/TP02/specifier_et_tester.o
+[GENERATED SOURCE FILES]
+b__specifier_et_tester.ads
+b__specifier_et_tester.adb
+b__specifier_et_tester.ali
+[RESULTING OPTIONS]
+-L/home/lht1404/Documents/1A/PIM/TP02/
+-L/home/lht1404/Documents/1A/PIM/TP02/
+-L/mnt/n7fs/ens/tp_cregut/GNAT/2021/lib/gcc/x86_64-pc-linux-gnu/10.3.1/adalib/
+-static
+-static-libgcc
+/mnt/n7fs/ens/tp_cregut/GNAT/2021/lib/gcc/x86_64-pc-linux-gnu/10.3.1/adalib/libgnat.a
+-ldl
