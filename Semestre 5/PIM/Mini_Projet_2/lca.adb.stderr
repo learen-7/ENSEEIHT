@@ -1,0 +1,8 @@
+lca.adb:4:14: error: missing body for "Afficher" declared at lca.ads:54
+lca.adb:37:17: error: missing argument for parameter "Sda" in call to "TAILLE" declared at lca.ads:26
+lca.adb:39:25: error: missing argument for parameter "Sda" in call to "TAILLE" declared at lca.ads:26
+lca.adb:39:35: error: missing argument for parameter "Sda" in call to "TAILLE" declared at lca.ads:26
+lca.adb:42:24: error: missing argument for parameter "Sda" in call to "TAILLE" declared at lca.ads:26
+lca.adb:79:28: error: invalid operand types for operator "="
+lca.adb:79:28: error: left operand has type "T_LCA" defined at lca.ads:66
+lca.adb:79:28: error: right operand has private type "T_Cle" defined at lca.ads:5

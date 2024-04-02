@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>/home/nmn8258/Annee_1/PIM/tp/pr2/pr02.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/nmn8258/Annee_1/PIM/tp/pr2/pr02.gpr</vfs_project>
+      <vfs_file>/home/nmn8258/Annee_1/PIM/tp/pr2/lca.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>/home/nmn8258/Annee_1/PIM/tp/pr2/pr02.gpr</vfs_project>
+      <vfs_file>/home/nmn8258/Annee_1/PIM/tp/pr2/lca.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

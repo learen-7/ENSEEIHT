@@ -1,0 +1,17 @@
+project pr3 is
+
+   for Main use ("lecture_calcul_matrice_pleine.adb", "enregistrement.adb", "main.adb", "analyse_ligne_commande.adb);
+
+   package Builder is
+      for Default_Switches ("ada") use ("-s");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnatwa", "-gnata", "-g");
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("ada") use ("-E");
+   end Binder;
+
+end pr3;

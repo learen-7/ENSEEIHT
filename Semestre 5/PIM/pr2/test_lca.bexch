@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__test_lca.o
+[PROJECT FILES]
+C:\Users\nolan\Documents\N7\PIM\tp\pr2\pr02.gpr
+20231121101450 ad16c07428af3af926181df1fbb48b1e
+[BOUND OBJECT FILES]
+C:\Users\nolan\Documents\N7\PIM\tp\pr2\sda_exceptions.o
+C:\Users\nolan\Documents\N7\PIM\tp\pr2\lca.o
+C:\Users\nolan\Documents\N7\PIM\tp\pr2\test_lca.o
+[GENERATED SOURCE FILES]
+b__test_lca.ads
+b__test_lca.adb
+b__test_lca.ali
+[RESULTING OPTIONS]
+-LC:\Users\nolan\Documents\N7\PIM\tp\pr2\
+-LC:\Users\nolan\Documents\N7\PIM\tp\pr2\
+-LC:/users/nolan/documents/n7/ada/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/users/nolan/documents/n7/ada/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

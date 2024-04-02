@@ -1,0 +1,11 @@
+lca_sujet.adb:16:09: error: no candidate interpretations match the actuals:
+lca_sujet.adb:16:09: error: missing argument for parameter "Item" in call to "put" declared at a-tiflio.ads:100, instance at a-flteio.ads:20
+lca_sujet.adb:16:09: error: missing argument for parameter "Item" in call to "put" declared at a-tiflio.ads:69, instance at a-flteio.ads:20
+lca_sujet.adb:16:09: error: missing argument for parameter "Item" in call to "put" declared at a-textio.ads:457
+lca_sujet.adb:16:09: error: missing argument for parameter "Item" in call to "put" declared at a-textio.ads:384
+lca_sujet.adb:16:09: error: possible missing instantiation of Text_IO.Integer_IO
+lca_sujet.adb:16:13: error: expected type "Standard.Float"
+lca_sujet.adb:16:13: error: found type "Standard.Integer"
+lca_sujet.adb:16:13: error:   ==> in call to "Put" at a-tiflio.ads:82, instance at a-flteio.ads:20
+lca_sujet.adb:16:13: error:   ==> in call to "Put" at a-textio.ads:463
+lca_sujet.adb:16:13: error:   ==> in call to "Put" at a-textio.ads:390

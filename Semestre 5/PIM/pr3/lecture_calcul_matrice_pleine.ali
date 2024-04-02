@@ -1,0 +1,165 @@
+V "GNAT Lib v2021"
+A -gnatwa
+P SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_DEFAULT_INITIALIZATION
+
+U lecture_calcul_matrice_pleine%b  lecture_calcul_matrice_pleine.adb  52cb6759 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U lecture_calcul_matrice_pleine%s  lecture_calcul_matrice_pleine.ads  59c2fcc8 BN EE NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20210520051130 76789da1 ada%s
+D a-charac.ads		20210520051127 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051127 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051127 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051127 bf4f806b ada.finalization%s
+D a-flteio.ads		20210520051127 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20210520051127 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051127 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051128 119b8fb3 ada.streams%s
+D a-string.ads		20210520051128 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051128 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051128 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051128 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051128 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051129 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051129 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210520051129 fcca4daa ada.text_io.float_io%s
+D a-tiinio.ads		20210520051129 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051129 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051131 edec285f interfaces%s
+D i-cstrea.ads		20210520051131 e53d8b8e interfaces.c_streams%s
+D lecture_calcul_matrice_pleine.ads  20240115162004 f4047b82 lecture_calcul_matrice_pleine%s
+D lecture_calcul_matrice_pleine.adb  20240116172803 1cc85595 lecture_calcul_matrice_pleine%b
+D system.ads		20210520051134 a2da961d system%s
+D s-atocou.ads		20210520051131 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20210520051131 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051131 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051131 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051131 4ff27390 system.finalization_root%s
+D s-parame.ads		20210520051133 4752c4cb system.parameters%s
+D s-putima.ads		20210520051133 4e095881 system.put_images%s
+D s-secsta.ads		20210520051133 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051133 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051133 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051133 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051133 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051133 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051133 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051133 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051133 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051134 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051134 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [lecture_calcul_matrice_pleine standard 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 22|1r6 1r33 2r6 2r23 33r48 40r58 23|1r6 1r34 2r6 2r33 3r6 3r33
+. 4r6 4r33 10r24 155r48 176r58
+X 6 a-flteio.ads
+20K13*Float_Text_IO[17|46] 23|2w10 2r37
+X 7 a-inteio.ads
+18K13*Integer_Text_IO[18|46] 23|3w10 3r37
+X 10 a-string.ads
+16K13*Strings 35e16 22|1r10 1r37 23|4r10 4r37
+X 13 a-strunb.ads
+83K21*Unbounded 765e26 22|1w18 1r45 23|4w18 4r45
+88R9*Unbounded_String<5|43R9> 744e15 22|13r36 28r41 37r46 23|9r36 150r41
+. 156r20 173r46 177r19
+117V13*To_String{string} 23|14s38 160s40 181s45
+136U14*Append 23|159s7 180s7
+X 16 a-textio.ads
+58K13*Text_IO 725e16 22|2w10 2r27 33r52 40r62 23|1w10 1r38 10r28 155r52 176r62
+65P9*File_Type 22|33r60 40r70 23|10r36 155r60 176r70
+67n23*In_File{67E9} 23|14r29
+67n32*Out_File{67E9} 23|160r30 181r35
+97U14*Create 23|160s7 181s7
+112U14*Open 23|14s7
+127U14*Close 23|33s7 169s7 187s7
+310V13*End_Of_File{boolean} 23|24s17
+457U14*Put 23|161s7 162s7
+496U14*Put_Line 23|163s7 166s10 184s10
+X 18 a-tiinio.ads
+51U14*Get 23|15s7[7|18] 25s10[7|18] 26s10[7|18]
+X 22 lecture_calcul_matrice_pleine.ads
+5i7 NbPage{integer} 43r32 44r32 44r43 23|18r19 19r21 44r19 49r22 55r22 57r39
+. 77r19 79r22 81r62 97r19 98r31 106r22 109r25 116r22 131r26 134r32
+7k9*lecture_calcul_matrice_pleine 5z7 43E9 46l5 46e34 23|6b14 191l5 191t34
+9A9*T_Vecteur(float) 22r69 25r35 25r59 25r88 29r39 38r49 43c9 23|91r72 92r12
+. 94r16 126r35 126r59 126r88 151r39 174r49
+10A9*T_Matrice(float) 14r31 17r35 17r53 19r32 19r69 22r33 44c9 23|9r66 39r35
+. 39r53 40r11 73r32 73r69 74r11 91r33
+13U14*Lire 13>20 14<20 23|9b14 36l8 36t12
+13r20 NomFichier{13|88R9} 23|9b20 14r48
+14a20 Page{10A9} 23|9b55 20m13 29m10
+17V13*Calculer_S{10A9} 17>25 23|39b13 70l8 70t18
+17a25 Page{10A9} 23|39b25 50r38 59r19
+19V13*Calculer_G{10A9} 19>25 19>44 23|73b13 88l8 88t18
+19a25 S{10A9} 23|73b25 81r30
+19f44 alpha{float} 23|73b44 81r24 81r47
+22V13*Calculer_Pi{9A9} 22>26 22>45 23|91b13 123l8 123t19
+22a26 G{10A9} 23|91b26 110r33
+22i45 NbIte{integer} 23|91b45 102r26
+25U14*Classer 25=23 25<47 25<71 23|126b14 147l8 147t15
+25a23 Pi{9A9} 23|126b23 135r16 136r23 141m10
+25a47 Poids{9A9} 23|126b47 142m10
+25a71 Classement{9A9} 23|126b71 144m10
+28U14*Ecrire_Poids 28>28 29>28 30>28 31>28 32>28 33<28 23|150b14 170l8 170t20
+28r28 Prefixe{13|88R9} 23|150b28 158r21
+29a28 Poids{9A9} 23|151b28 166r48
+30f28 alpha{float} 23|152b28 162r40
+31i28 NbIte{integer} 23|153b28 163r47
+32i28 NbPage{integer} 23|154b28 161r42 165r26
+33p28 Fichier_Poids{16|65P9} 23|155b28 160m15 161r12 162r12 163r17 166r20
+. 169m14
+37U14*Ecrire_Classement 37>33 38>33 39>33 40<33 23|173b14 188l8 188t25
+37r33 Prefixe{13|88R9} 23|173b33 179r20
+38a33 Classement{9A9} 23|174b33 184r62
+39i33 NbPage{integer} 23|175b33 183r26
+40p33 Fichier_Classement{16|65P9} 23|176b33 181m15 184r20 187m14
+X 23 lecture_calcul_matrice_pleine.adb
+10p7 Fichier_Graphe{16|65P9} 14m13 14r13 15r12 24r30 25r15 26r15 33m14 33r14
+11i7 Curseur{integer} 15m28 25m31 29r15
+12i7 CurseurRef{integer} 26m31 29r28
+18i11 i{integer} 20r19
+19i13 j{integer} 20r22
+40a7 S{22|10A9} 57m16 60m19 62m19 69r14
+41f7 Ponderant{float} 45m10 50m13 50r26 56r16 60r36
+44i11 i{integer} 50r44 57r18 59r24 60r21 62r21
+49i14 j{integer} 50r47
+55i14 j{integer} 57r21 59r27 60r24 62r24
+74a7 G{22|10A9} 81m13 87r14
+77i11 i{integer} 81r15 81r32
+79i14 j{integer} 81r18 81r35
+92a7 Pi{22|9A9} 98m10 104r20 110r41 117m13 122r14
+93f7 Terme{float} 107m13 110m16 110r25 113r26
+94a7 PiTemp{22|9A9} 104m10 113m13 117r22
+97i11 i{integer} 98r13
+102i11 Compteur{integer}
+106i14 j{integer} 110r38 113r20
+109i17 i{integer} 110r35 110r44
+116i14 i{integer} 117r16 117r29
+127f7 Max{float} 132m10 135r34 136m16 142r29
+128i7 IndiceMax{integer} 137m16 141r13 144r40
+131i11 Compteur{integer} 142r16 144r21
+134i14 CompteurMax{integer} 135r19 136r26 137r29
+156r7 PrefixePrw{13|88R9} 158m7 159m15 159r15 160r51
+165i11 Compteur{integer} 166r54
+177r7 PrefixePr{13|88R9} 179m7 180m15 180r15 181r56
+183i11 Compteur{integer} 184r73
+
