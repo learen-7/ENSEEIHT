@@ -1,0 +1,197 @@
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0            0   3.1225e+10
+
+{Output argument "norm_gradf_beta" (and possibly others) not assigned a value in the execution with
+"GN_ref" function.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/exem1_diff_finies.m', 111)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/exem1_diff_finies.m',111,0)">line 111</a>)
+	   [beta, norm_gradf_beta, f_beta, res, norms, k, exitflag] = GN_ref(@res1, @(beta) diff_finies_avant(@res1,beta,ndigits), beta0, option);
+} 
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+{Unrecognized function or variable 'centrees'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_diff_finies_cosinus', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m', 86)" style="font-weight:bold">main_diff_finies_cosinus</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m',86,0)">line 86</a>)
+switch centrees
+} 
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+{Unrecognized function or variable 'methode_centrees_finite_diff'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_diff_finies_cosinus', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m', 86)" style="font-weight:bold">main_diff_finies_cosinus</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m',86,0)">line 86</a>)
+switch methode_centrees_finite_diff
+} 
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+{Unrecognized function or variable 'methode_finite_diff'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_diff_finies_cosinus', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m', 110)" style="font-weight:bold">main_diff_finies_cosinus</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/main_diff_finies_cosinus.m',110,0)">line 110</a>)
+affichage_erreur(ordrestrue, err_x0, h_star_true_fun, 'x0',   methode_finite_diff, LW);
+} 
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+main_diff_finies_cosinus
+------------------------------------------
+Test de l'algorithme de différences finies  sur la fonction cosinus
+exem1_diff_finies
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+{Unrecognized function or variable 'h'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('diff_finies_avant', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/diff_finies_avant.m', 21)" style="font-weight:bold">diff_finies_avant</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/diff_finies_avant.m',21,0)">line 21</a>)
+Jac = (fun(x+h)-fun(x))/h;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/exem1_diff_finies.m', 92)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/lht1404/Documents/1A/Optimisation/TP/TP3-diff-finies/exem1_diff_finies.m',92,0)">line 92</a>)
+	    Jres = diff_finies_avant(@res1,beta0, ndigits);
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.5165e+08   3.1225e+10
+
+   1.0000e+00   3.2464e+07   2.0206e+09   2.4816e+02   4.0000e+00
+
+   2.0000e+00   4.3161e+06   1.3600e+08   1.2448e+02   4.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   2.5184e+02   1.2735e+02
+   1.0000e+02  -1.4816e+02  -2.7265e+02
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4991e+08   3.1225e+10
+
+   1.0000e+00   5.5686e+05   3.1007e+10   2.4913e+05   4.0000e+00
+
+   2.0000e+00   1.9167e-07   3.6725e-15   2.4903e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4902e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4991e+08   3.1225e+10
+
+   1.0000e+00   5.5686e+05   3.1007e+10   2.4913e+05   4.0000e+00
+
+   2.0000e+00   1.9167e-07   3.6725e-15   2.4903e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4902e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   2.9032e-07   8.4287e-15   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   2.9032e-07   8.4287e-15   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   2.9032e-07   8.4287e-15   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
