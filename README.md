@@ -1,6 +1,7 @@
 # ENSEEIHT
 
-Code des différents TP durant l'N7
+Code des différents TP et projet durant l'N7.
+Plus, malheureusement, CAM
 
 # Codes pour git
 
