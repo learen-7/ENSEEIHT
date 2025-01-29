@@ -1,0 +1,16 @@
+<map id="point.h" name="point.h">
+<area shape="rect" id="node1" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="300,5,367,32"/>
+<area shape="rect" id="node2" href="$graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="294,80,373,107"/>
+<area shape="rect" id="node12" href="$viewport_8h.html" title="Module de gestion des viewport." alt="" coords="151,80,241,107"/>
+<area shape="rect" id="node14" href="$point_8c.html" title="Implantation du module point." alt="" coords="397,80,464,107"/>
+<area shape="rect" id="node3" href="$graphrep_8h.html" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="121,155,213,181"/>
+<area shape="rect" id="node6" href="$app_8h.html" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="237,155,296,181"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Programme principal." alt="" coords="309,229,376,256"/>
+<area shape="rect" id="node8" href="$dijkstra__event_8h.html" title="Module complémentaire pour interfacer la fonction dijkstra avec le reste de l&#39;application." alt="" coords="371,155,498,181"/>
+<area shape="rect" id="node9" href="$graphe_8c.html" title="Implantation du module graphe." alt="" coords="522,155,601,181"/>
+<area shape="rect" id="node10" href="$graphe__parse_8h.html" title="Module graphe_parse qui permet de praser un fichier texte décrivant un graphe." alt="" coords="625,155,748,181"/>
+<area shape="rect" id="node4" href="$app_8c.html" title="Implantation du module app." alt="" coords="227,229,285,256"/>
+<area shape="rect" id="node5" href="$graphrep_8c.html" title="Implantation du module graphrep." alt="" coords="112,229,203,256"/>
+<area shape="rect" id="node11" href="$graphe__parse_8c.html" title="Implantation du module graphe_parse." alt="" coords="626,229,747,256"/>
+<area shape="rect" id="node13" href="$viewport_8c.html" title="Implantation du module viewport." alt="" coords="5,155,96,181"/>
+</map>

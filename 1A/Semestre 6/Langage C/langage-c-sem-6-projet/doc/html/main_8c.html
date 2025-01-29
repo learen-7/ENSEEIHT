@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Programme principal.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphe_8h_source.html">graphe.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphe__parse_8h_source.html">graphe_parse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app_8h_source.html">app.h</a>&quot;</code><br />
+<code>#include &quot;dijkstra.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de main.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#main_8c" alt=""/></div>
+<map name="main_8c" id="main_8c">
+<area shape="rect" title="Programme principal." alt="" coords="453,5,519,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,76,256"/>
+<area shape="rect" title=" " alt="" coords="101,229,167,256"/>
+<area shape="rect" title=" " alt="" coords="523,80,641,107"/>
+<area shape="rect" title=" " alt="" coords="534,229,630,256"/>
+<area shape="rect" title=" " alt="" coords="665,80,729,107"/>
+<area shape="rect" title=" " alt="" coords="753,80,824,107"/>
+<area shape="rect" href="util_8h.html" title="Quelques macros utilitaires (pas vraiment un module)" alt="" coords="848,80,903,107"/>
+<area shape="rect" href="graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="161,155,240,181"/>
+<area shape="rect" href="graphe__parse_8h.html" title="Module graphe_parse qui permet de praser un fichier texte décrivant un graphe." alt="" coords="242,80,365,107"/>
+<area shape="rect" href="app_8h.html" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="390,80,449,107"/>
+<area shape="rect" title=" " alt="" coords="927,80,1010,107"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="191,229,258,256"/>
+<area shape="rect" title=" " alt="" coords="294,304,377,331"/>
+<area shape="rect" href="viewport_8h.html" title="Module de gestion des viewport." alt="" coords="265,155,355,181"/>
+<area shape="rect" href="window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="379,155,462,181"/>
+<area shape="rect" title=" " alt="" coords="486,155,595,181"/>
+<area shape="rect" title=" " alt="" coords="282,229,410,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdijkstra__conf__t.html">dijkstra_conf_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Programme principal. </p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Le programme principal. Configure l'application, affiche la fenêtre et gère les événements (clavier, souris...). </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>nombre d'arguments de la ligne de commande </td></tr>
+    <tr><td class="paramname">argv</td><td>arguments de la ligne de commande </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

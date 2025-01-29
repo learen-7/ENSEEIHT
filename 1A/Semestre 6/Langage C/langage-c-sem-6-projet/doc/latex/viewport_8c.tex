@@ -1,0 +1,392 @@
+\hypertarget{viewport_8c}{}\doxysection{Référence du fichier viewport.\+c}
+\label{viewport_8c}\index{viewport.c@{viewport.c}}
+
+
+Implantation du module viewport.  
+
+
+{\ttfamily \#include \char`\"{}viewport.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de viewport.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{viewport_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{viewport_8c_a6e7d76ee8db88c5db933d10e91524c94}{mkrect}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$result, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} bottomleft, double w, double h)
+\item 
+void \mbox{\hyperlink{viewport_8c_abc7dd40574a1358e8831d092cb83296b}{mkrect\+\_\+corners}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$result, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} bottomleft, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} topright)
+\item 
+void \mbox{\hyperlink{viewport_8c_ab25553aadb0ca421f803a721e9cd6896}{mkrect\+\_\+center}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$result, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} center, double w, double h)
+\item 
+void \mbox{\hyperlink{viewport_8c_a97146c29bf5a96a9a9b20fbc3821184b}{get\+\_\+size}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} rect, double $\ast$width, double $\ast$height)
+\item 
+\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{viewport_8c_ad538817469cf7fab230bfd57f5fc56ee}{get\+\_\+center}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} rect)
+\item 
+void \mbox{\hyperlink{viewport_8c_a056365b1efbb04350dbabf692c218f4b}{scale\+\_\+move\+\_\+center}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$rect, double scale, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} center)
+\item 
+void \mbox{\hyperlink{viewport_8c_af0effe29ef76d60a5da9956112f4f4d7}{translate\+\_\+rect}} (\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$rect, double dx, double dy)
+\item 
+void \mbox{\hyperlink{viewport_8c_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$result, S\+D\+L\+\_\+\+Rect display, \mbox{\hyperlink{structrect__t}{rect\+\_\+t}} real)
+\item 
+void \mbox{\hyperlink{viewport_8c_a9864fca47017c4e5cea0cf90676cdc63}{viewport\+\_\+unit\+\_\+aspect}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$result, S\+D\+L\+\_\+\+Rect display, \mbox{\hyperlink{structrect__t}{rect\+\_\+t}} real)
+\item 
+void \mbox{\hyperlink{viewport_8c_a15d029a73109f626dc0fc70fb74d3ea5}{viewport\+\_\+unit\+\_\+fit}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$result, S\+D\+L\+\_\+\+Rect display, \mbox{\hyperlink{structrect__t}{rect\+\_\+t}} real)
+\item 
+void \mbox{\hyperlink{viewport_8c_ad44aa13ab01a0164ff92f378b0510d6f}{copy\+\_\+viewport}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$result, \mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} source)
+\item 
+void \mbox{\hyperlink{viewport_8c_a4350de0fc88cde225994fde481cf1b35}{from\+\_\+display\+\_\+point}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$real, S\+D\+L\+\_\+\+Point display)
+\item 
+void \mbox{\hyperlink{viewport_8c_a29c96eda9e371906a5c4c776f699c30f}{from\+\_\+real\+\_\+point}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, S\+D\+L\+\_\+\+Point $\ast$display, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} real)
+\item 
+void \mbox{\hyperlink{viewport_8c_ae9837d08224e32e5b867cd7a4128b46c}{from\+\_\+display\+\_\+vec}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$real, S\+D\+L\+\_\+\+Point display)
+\item 
+void \mbox{\hyperlink{viewport_8c_a53ed8b1246c62debf16b797a1b6542ab}{from\+\_\+real\+\_\+vec}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, S\+D\+L\+\_\+\+Point $\ast$display, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} real)
+\item 
+void \mbox{\hyperlink{viewport_8c_aa16d69330d6f6091cc62c773ce10c6aa}{from\+\_\+display\+\_\+rect}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, \mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$real, S\+D\+L\+\_\+\+Rect display)
+\item 
+void \mbox{\hyperlink{viewport_8c_a8268c992dc3ba419032a210b4189236c}{from\+\_\+real\+\_\+rect}} (\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}}, S\+D\+L\+\_\+\+Rect $\ast$display, \mbox{\hyperlink{structrect__t}{rect\+\_\+t}} real)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du module viewport. 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{viewport_8c_ad44aa13ab01a0164ff92f378b0510d6f}\label{viewport_8c_ad44aa13ab01a0164ff92f378b0510d6f}} 
+\index{viewport.c@{viewport.c}!copy\_viewport@{copy\_viewport}}
+\index{copy\_viewport@{copy\_viewport}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{copy\_viewport()}{copy\_viewport()}}
+{\footnotesize\ttfamily void copy\+\_\+viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$}]{result,  }\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{source }\end{DoxyParamCaption})}
+
+Copie un viewport dans une autre variable.
+
+Pré-\/conditions\+: result != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} viewport résultant \\
+\hline
+{\em source} & viewport à copier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a4350de0fc88cde225994fde481cf1b35}\label{viewport_8c_a4350de0fc88cde225994fde481cf1b35}} 
+\index{viewport.c@{viewport.c}!from\_display\_point@{from\_display\_point}}
+\index{from\_display\_point@{from\_display\_point}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_display\_point()}{from\_display\_point()}}
+{\footnotesize\ttfamily void from\+\_\+display\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$}]{real,  }\item[{S\+D\+L\+\_\+\+Point}]{display }\end{DoxyParamCaption})}
+
+Transforme une coordonnée fenêtre en coordonnée réelle en utilisant le viewport donné. Permet, par exemple, de transformer la position de la souris en coordonnées dans le repère.
+
+Pré-\/conditions\+: real != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em real} & \mbox{[}sortie\mbox{]} point réel résultant \\
+\hline
+{\em display} & point sur la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_aa16d69330d6f6091cc62c773ce10c6aa}\label{viewport_8c_aa16d69330d6f6091cc62c773ce10c6aa}} 
+\index{viewport.c@{viewport.c}!from\_display\_rect@{from\_display\_rect}}
+\index{from\_display\_rect@{from\_display\_rect}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_display\_rect()}{from\_display\_rect()}}
+{\footnotesize\ttfamily void from\+\_\+display\+\_\+rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{real,  }\item[{S\+D\+L\+\_\+\+Rect}]{display }\end{DoxyParamCaption})}
+
+Transforme un rectangle de la fenêtre en rectangle du plan cartésien réel. Permet, par exemple, de convertire une zone de la fenêtre en zone du repère pour faire le rendu.
+
+Pré-\/conditions\+: real != N\+U\+LL, display bien formé (dimensions positives)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em real} & \mbox{[}sortie\mbox{]} rectangle réel résultant \\
+\hline
+{\em display} & rectangle de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_ae9837d08224e32e5b867cd7a4128b46c}\label{viewport_8c_ae9837d08224e32e5b867cd7a4128b46c}} 
+\index{viewport.c@{viewport.c}!from\_display\_vec@{from\_display\_vec}}
+\index{from\_display\_vec@{from\_display\_vec}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_display\_vec()}{from\_display\_vec()}}
+{\footnotesize\ttfamily void from\+\_\+display\+\_\+vec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$}]{real,  }\item[{S\+D\+L\+\_\+\+Point}]{display }\end{DoxyParamCaption})}
+
+Transforme un vecteur de la fenêtre (sous forme d\textquotesingle{}un point) en vecteur réel du plan cartésien en utilisant le viewport. Permet, par exemple, de transformer un déplacement en pixels en déplacement dans le repère pour en faire la translation.
+
+Pré-\/conditions\+: real != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em real} & \mbox{[}sortie\mbox{]} vecteur résultant \\
+\hline
+{\em display} & vecteur dans la fenêtre, sous forme de point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a29c96eda9e371906a5c4c776f699c30f}\label{viewport_8c_a29c96eda9e371906a5c4c776f699c30f}} 
+\index{viewport.c@{viewport.c}!from\_real\_point@{from\_real\_point}}
+\index{from\_real\_point@{from\_real\_point}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_real\_point()}{from\_real\_point()}}
+{\footnotesize\ttfamily void from\+\_\+real\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{S\+D\+L\+\_\+\+Point $\ast$}]{display,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Transforme une coordonnée réelle du repère cartésien en coordonnée de la fenêtre en utilisant le viewport donné.
+
+Pré-\/conditions\+: display != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em display} & \mbox{[}sortie\mbox{]} point sur la fenêtre calculé \\
+\hline
+{\em real} & point du repère \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a8268c992dc3ba419032a210b4189236c}\label{viewport_8c_a8268c992dc3ba419032a210b4189236c}} 
+\index{viewport.c@{viewport.c}!from\_real\_rect@{from\_real\_rect}}
+\index{from\_real\_rect@{from\_real\_rect}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_real\_rect()}{from\_real\_rect()}}
+{\footnotesize\ttfamily void from\+\_\+real\+\_\+rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{display,  }\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Transforme un rectangle du plan cartrésien réel en rectangle de la fenêtre.
+
+Pré-\/conditions\+: display != N\+U\+LL, real bien formé (points correctement placés)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em display} & \mbox{[}sortie\mbox{]} rectangle de la fenêtre \\
+\hline
+{\em real} & rectangle réel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a53ed8b1246c62debf16b797a1b6542ab}\label{viewport_8c_a53ed8b1246c62debf16b797a1b6542ab}} 
+\index{viewport.c@{viewport.c}!from\_real\_vec@{from\_real\_vec}}
+\index{from\_real\_vec@{from\_real\_vec}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{from\_real\_vec()}{from\_real\_vec()}}
+{\footnotesize\ttfamily void from\+\_\+real\+\_\+vec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport,  }\item[{S\+D\+L\+\_\+\+Point $\ast$}]{display,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Transforme un vecteur réel du repère cartésien en vecteur de la fenêtre (sous forme de point).
+
+Pré-\/conditions\+: display != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em viewport} & viewport pour la transformation \\
+\hline
+{\em display} & \mbox{[}sortie\mbox{]} vecteur résultant \\
+\hline
+{\em real} & vecteur dans la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_ad538817469cf7fab230bfd57f5fc56ee}\label{viewport_8c_ad538817469cf7fab230bfd57f5fc56ee}} 
+\index{viewport.c@{viewport.c}!get\_center@{get\_center}}
+\index{get\_center@{get\_center}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{get\_center()}{get\_center()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} get\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{rect }\end{DoxyParamCaption})}
+
+Récupère le point au centre du rectangle donné. 
+\begin{DoxyParams}{Paramètres}
+{\em rect} & rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+centre de rect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{viewport_8c_a97146c29bf5a96a9a9b20fbc3821184b}\label{viewport_8c_a97146c29bf5a96a9a9b20fbc3821184b}} 
+\index{viewport.c@{viewport.c}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily void get\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{rect,  }\item[{double $\ast$}]{width,  }\item[{double $\ast$}]{height }\end{DoxyParamCaption})}
+
+Récupère les dimensions (largeur, hauteur) du rectangle. Les arguments autorisent N\+U\+LL auquel cas la dimension n\textquotesingle{}est pas récupérée.
+
+Post-\/conditions\+: si width != N\+U\+LL alors $\ast$width est positif De même avec height
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rect} & rectangle dont on veut les dimensions \\
+\hline
+{\em width} & \mbox{[}sortie\mbox{]} largeur du rectangle \\
+\hline
+{\em height} & \mbox{[}sortie\mbox{]} hauteur du rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a6e7d76ee8db88c5db933d10e91524c94}\label{viewport_8c_a6e7d76ee8db88c5db933d10e91524c94}} 
+\index{viewport.c@{viewport.c}!mkrect@{mkrect}}
+\index{mkrect@{mkrect}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{mkrect()}{mkrect()}}
+{\footnotesize\ttfamily void mkrect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{result,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{bottomleft,  }\item[{double}]{w,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+Initialise un rectangle à l\textquotesingle{}aide de son coin inférieur gauche et de ses dimensions. Le rectangle se développe de gauche à droite et de bas en haut.
+
+Pré-\/conditions\+: w et h positifs, result != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} rectangle initialisé \\
+\hline
+{\em bottomleft} & coordonnées du coin inférieur gauche \\
+\hline
+{\em w} & largeur du rectangle \\
+\hline
+{\em h} & hauteur du rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_ab25553aadb0ca421f803a721e9cd6896}\label{viewport_8c_ab25553aadb0ca421f803a721e9cd6896}} 
+\index{viewport.c@{viewport.c}!mkrect\_center@{mkrect\_center}}
+\index{mkrect\_center@{mkrect\_center}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{mkrect\_center()}{mkrect\_center()}}
+{\footnotesize\ttfamily void mkrect\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{result,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{center,  }\item[{double}]{w,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+Initialise un rectangle à partir de son centre et de ses dimensions.
+
+Pré-\/conditions\+: w et h positifs, result != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} rectangle initialisé \\
+\hline
+{\em center} & coordonnées du centre du rectangle \\
+\hline
+{\em w} & largeur du rectangle \\
+\hline
+{\em h} & hauteur du rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_abc7dd40574a1358e8831d092cb83296b}\label{viewport_8c_abc7dd40574a1358e8831d092cb83296b}} 
+\index{viewport.c@{viewport.c}!mkrect\_corners@{mkrect\_corners}}
+\index{mkrect\_corners@{mkrect\_corners}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{mkrect\_corners()}{mkrect\_corners()}}
+{\footnotesize\ttfamily void mkrect\+\_\+corners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{result,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{bottomleft,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{topright }\end{DoxyParamCaption})}
+
+Initialise un rectangle à l\textquotesingle{}aide de ses deux coins (inférieur gauche et supérieur droit).
+
+Pré-\/conditions\+: bottomleft.\+x $<$ topright.\+x, bottomleft.\+y $<$ topright.\+y
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} rectangle initialisé \\
+\hline
+{\em bottomleft} & coordonnées du coin inférieur gauche \\
+\hline
+{\em topright} & coordonées du coin supérieur droit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a056365b1efbb04350dbabf692c218f4b}\label{viewport_8c_a056365b1efbb04350dbabf692c218f4b}} 
+\index{viewport.c@{viewport.c}!scale\_move\_center@{scale\_move\_center}}
+\index{scale\_move\_center@{scale\_move\_center}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{scale\_move\_center()}{scale\_move\_center()}}
+{\footnotesize\ttfamily void scale\+\_\+move\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{rect,  }\item[{double}]{scale,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{center }\end{DoxyParamCaption})}
+
+Déplace et met à l\textquotesingle{}échelle (homothétiquement) un rectangle, de façon à ce que son centre soit celui spécifié.
+
+Pré-\/conditions\+: rect != N\+U\+LL Post-\/conditions\+: largeur et hauteur du rectangle multipliés par $\vert$scale$\vert$
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rect} & \mbox{[}entrée,sortie\mbox{]} rectangle à modifier et résultat de la modification \\
+\hline
+{\em scale} & facteur d\textquotesingle{}échelle \\
+\hline
+{\em center} & nouveau centre du rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_af0effe29ef76d60a5da9956112f4f4d7}\label{viewport_8c_af0effe29ef76d60a5da9956112f4f4d7}} 
+\index{viewport.c@{viewport.c}!translate\_rect@{translate\_rect}}
+\index{translate\_rect@{translate\_rect}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{translate\_rect()}{translate\_rect()}}
+{\footnotesize\ttfamily void translate\+\_\+rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}} $\ast$}]{rect,  }\item[{double}]{dx,  }\item[{double}]{dy }\end{DoxyParamCaption})}
+
+Déplace le rectangle selon le vecteur donné.
+
+Pré-\/conditions\+: rect != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rect} & \mbox{[}entrée,sortie\mbox{]} rectangle à modifier et résultat de la modification \\
+\hline
+{\em dx} & déplacement d\textquotesingle{}abscisse \\
+\hline
+{\em dy} & déplacement d\textquotesingle{}ordonnée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_ad34efe41b719c540dd2ce2e6e5f25f1e}\label{viewport_8c_ad34efe41b719c540dd2ce2e6e5f25f1e}} 
+\index{viewport.c@{viewport.c}!viewport@{viewport}}
+\index{viewport@{viewport}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{viewport()}{viewport()}}
+{\footnotesize\ttfamily void viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$}]{result,  }\item[{S\+D\+L\+\_\+\+Rect}]{display,  }\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Calcul un viewport à partir d\textquotesingle{}un rectangle d\textquotesingle{}affichage (des coordonnées sur la ~\newline
+ fenêtre) et d\textquotesingle{}un rectangle représentant le repère.
+
+Attention, le repère de la fenêtre en S\+DL est orienté de gauche à droite et de haut en bas, alors que le plan cartésien est orienté en sens direct, c\textquotesingle{}est-\/à-\/dire de gauche à droite et de bas en haut. Le viewport résultant crée donc une inversion de l\textquotesingle{}axe Y !
+
+Pré-\/conditions\+: result != N\+U\+LL, display bien construit (largeur et hauteur positives)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} viewport résultant \\
+\hline
+{\em display} & rectangle qui représente la fenêtre \\
+\hline
+{\em real} & rectangle du plan cartésien réel qui représente le repère \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a9864fca47017c4e5cea0cf90676cdc63}\label{viewport_8c_a9864fca47017c4e5cea0cf90676cdc63}} 
+\index{viewport.c@{viewport.c}!viewport\_unit\_aspect@{viewport\_unit\_aspect}}
+\index{viewport\_unit\_aspect@{viewport\_unit\_aspect}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{viewport\_unit\_aspect()}{viewport\_unit\_aspect()}}
+{\footnotesize\ttfamily void viewport\+\_\+unit\+\_\+aspect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$}]{result,  }\item[{S\+D\+L\+\_\+\+Rect}]{display,  }\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Calcul un viewport à partir d\textquotesingle{}un rectangle d\textquotesingle{}affichage (des coordonnées de la fenêtre) et d\textquotesingle{}un rectangle représentant le repère, en s\textquotesingle{}éforcant de maintenir le ratio de la fenêtre dans le repère.
+
+La largeur du repère est privilégiée.
+
+Pré-\/conditions\+: result != N\+U\+LL, display et real bien construits (largeur et hauteur positives) Post-\/conditions\+: display.\+w / display.\+h == width(real) / height(real) et width(real) correspond à display.\+w par le viewport
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} viewport résultant \\
+\hline
+{\em display} & rectangle qui représente la fenêtre \\
+\hline
+{\em real} & rectangle qui représente le repère \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{viewport_8c_a15d029a73109f626dc0fc70fb74d3ea5}\label{viewport_8c_a15d029a73109f626dc0fc70fb74d3ea5}} 
+\index{viewport.c@{viewport.c}!viewport\_unit\_fit@{viewport\_unit\_fit}}
+\index{viewport\_unit\_fit@{viewport\_unit\_fit}!viewport.c@{viewport.c}}
+\doxysubsubsection{\texorpdfstring{viewport\_unit\_fit()}{viewport\_unit\_fit()}}
+{\footnotesize\ttfamily void viewport\+\_\+unit\+\_\+fit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$}]{result,  }\item[{S\+D\+L\+\_\+\+Rect}]{display,  }\item[{\mbox{\hyperlink{structrect__t}{rect\+\_\+t}}}]{real }\end{DoxyParamCaption})}
+
+Calcul un viewport à partir d\textquotesingle{}un rectangle d\textquotesingle{}affichage et d\textquotesingle{}un rectangle représentant le repère, en s\textquotesingle{}éforçant de maintenir le ratio du repère dans la fenêtre et tel que tout le repère apparaisse dedans.
+
+Pré-\/conditions\+: result != N\+U\+LL, display et real bien construits (largeur et hauteur positives) Post-\/conditions\+: image de width(real) $<$ display.\+w, image de height(real) $<$ display.\+h, image de width(real)/height(real) == width(real)/height(real)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em result} & \mbox{[}sortie\mbox{]} viewport résultant \\
+\hline
+{\em display} & rectangle qui représente la fenêtre \\
+\hline
+{\em real} & rectangle qui représente le repère \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier graphe.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier graphe.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implantation du module graphe.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="graphe_8h_source.html">graphe.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de graphe.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="graphe_8c__incl.png" border="0" usemap="#graphe_8c" alt=""/></div>
+<map name="graphe_8c" id="graphe_8c">
+<area shape="rect" title="Implantation du module graphe." alt="" coords="256,5,335,32"/>
+<area shape="rect" href="graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="105,80,184,107"/>
+<area shape="rect" title=" " alt="" coords="173,229,255,256"/>
+<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
+<area shape="rect" title=" " alt="" coords="191,155,258,181"/>
+<area shape="rect" title=" " alt="" coords="333,80,404,107"/>
+<area shape="rect" title=" " alt="" coords="429,80,493,107"/>
+<area shape="rect" title=" " alt="" coords="517,80,585,107"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="101,155,167,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphe__noeud.html">graphe_noeud</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphe__t.html">graphe_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a23f35638c82e0f8641bdef865cb7585c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a23f35638c82e0f8641bdef865cb7585c">creer_graphe</a> (size_t <a class="el" href="graphe_8h.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a>)</td></tr>
+<tr class="separator:a23f35638c82e0f8641bdef865cb7585c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81a308fbabcbcd0f377006f7824cb30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#ab81a308fbabcbcd0f377006f7824cb30">creer_noeud</a> (struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="structpoint__t.html">point_t</a> position, void *donnees)</td></tr>
+<tr class="separator:ab81a308fbabcbcd0f377006f7824cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6448aac37fa134bfdfc55212269dde53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a6448aac37fa134bfdfc55212269dde53">ajouter_arrete</a> (struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> destination)</td></tr>
+<tr class="separator:a6448aac37fa134bfdfc55212269dde53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126f85d1fd1326cd5f1e6bc6e1651554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a126f85d1fd1326cd5f1e6bc6e1651554">liberer_graphe</a> (struct <a class="el" href="structgraphe__t.html">graphe_t</a> **graphe, void(*liberer_donnees)(void *))</td></tr>
+<tr class="separator:a126f85d1fd1326cd5f1e6bc6e1651554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549f75603c97f9bab9de1ae6983ea2d8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe)</td></tr>
+<tr class="separator:a549f75603c97f9bab9de1ae6983ea2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a0ad54febb5385765d5efe134c99b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a05a0ad54febb5385765d5efe134c99b3">noeuds</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> *noeuds)</td></tr>
+<tr class="separator:a05a0ad54febb5385765d5efe134c99b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350f51139b6655d37cf87af742c561a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a350f51139b6655d37cf87af742c561a0">est_voisin</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> destination)</td></tr>
+<tr class="separator:a350f51139b6655d37cf87af742c561a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d5b2df427c06e557f9cb1b9e7f8cf9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a24d5b2df427c06e557f9cb1b9e7f8cf9">nombre_voisins</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud)</td></tr>
+<tr class="separator:a24d5b2df427c06e557f9cb1b9e7f8cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3b6fadf17aa9e42c1c95ded793d639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a5c3b6fadf17aa9e42c1c95ded793d639">noeuds_voisins</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> *voisins)</td></tr>
+<tr class="separator:a5c3b6fadf17aa9e42c1c95ded793d639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc76eb39ab17dd63d0ce2c7d35f8e93"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a2cc76eb39ab17dd63d0ce2c7d35f8e93">noeud_donnees</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud)</td></tr>
+<tr class="separator:a2cc76eb39ab17dd63d0ce2c7d35f8e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d16e0d00719f60e378d7f516c2bc94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a93d16e0d00719f60e378d7f516c2bc94">noeud_position</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud)</td></tr>
+<tr class="separator:a93d16e0d00719f60e378d7f516c2bc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21db4d673e659088e2c14c03e7197b42"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a21db4d673e659088e2c14c03e7197b42">noeud_distance</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeuda, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeudb)</td></tr>
+<tr class="separator:a21db4d673e659088e2c14c03e7197b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7b885c2f9524087f70857ce6e29e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a1c7b885c2f9524087f70857ce6e29e59">trouver_noeud</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">noeud_predicat</a> predicat, void *userdata)</td></tr>
+<tr class="separator:a1c7b885c2f9524087f70857ce6e29e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6c5891c04b9f419cdc0e33a92848f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a1c6c5891c04b9f419cdc0e33a92848f1">pour_chaque_noeud</a> (struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">noeud_iterateur</a> iterateur, void *userdata)</td></tr>
+<tr class="separator:a1c6c5891c04b9f419cdc0e33a92848f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc9d19dd1e729bad0826f68e3098f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#a6cc9d19dd1e729bad0826f68e3098f86">pour_chaque_arrete</a> (struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, <a class="el" href="graphe_8h.html#a2c124137f71df6337c489470840de8db">arrete_iterateur</a> iterateur, void *userdata)</td></tr>
+<tr class="separator:a6cc9d19dd1e729bad0826f68e3098f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab979e023f208927e122d42e3d746dd54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphe_8c.html#ab979e023f208927e122d42e3d746dd54">exporter_dot</a> (const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graphe, FILE *sortie, void(*afficher_donnees)(FILE *, void *))</td></tr>
+<tr class="separator:ab979e023f208927e122d42e3d746dd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Implantation du module graphe. </p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a6448aac37fa134bfdfc55212269dde53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6448aac37fa134bfdfc55212269dde53">&#9670;&nbsp;</a></span>ajouter_arrete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ajouter_arrete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ajouter une arrête dans le graphe entre les noeuds donnés. La fonction renvoie vrai si l'ajout a été réalisé et faux sinon (typiquement, les noeuds n'existent pas ou il n'y a plus de place pour les arrêtes).</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel ajouter l'arrête </td></tr>
+    <tr><td class="paramname">source</td><td>source de l'arc </td></tr>
+    <tr><td class="paramname">destination</td><td>de l'arc </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si l'arc a été ajouté, faux sinon </dd></dl>
+
+</div>
+</div>
+<a id="a23f35638c82e0f8641bdef865cb7585c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f35638c82e0f8641bdef865cb7585c">&#9670;&nbsp;</a></span>creer_graphe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structgraphe__t.html">graphe_t</a>* creer_graphe </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nombre_noeuds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée un graphe avec le nombre (maximal) de noeuds donné. Le graphe est alloué sur le tas.</p>
+<p>Cas d'erreur : <code>nombre_noeuds</code> &lt; 65536 (si == 0, comportement indéfini) =&gt; un message d'erreur est affiché et la fonction renvoie NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre_noeuds</td><td>nombre maximum de noeuds dans le graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>graphe créé </dd></dl>
+
+</div>
+</div>
+<a id="ab81a308fbabcbcd0f377006f7824cb30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81a308fbabcbcd0f377006f7824cb30">&#9670;&nbsp;</a></span>creer_noeud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> creer_noeud </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>donnees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Créer un noeud dans le graphe, avec la position et les données utilisateur données. La fonction renvoie l'identifiant du noeud créé en cas de succès ou <a class="el" href="graphe_8h.html#a642e16f35aa1e585c25e405ede76e115">NO_ID</a> si la création n'est pas possible (car plus de place typiquement),</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel créer le noeud </td></tr>
+    <tr><td class="paramname">position</td><td>position cartésienne du noeud </td></tr>
+    <tr><td class="paramname">donnees</td><td>données utilisateur à stocker sur le noeud </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>identifiant du noeud créé, ou <a class="el" href="graphe_8h.html#a642e16f35aa1e585c25e405ede76e115">NO_ID</a> si pas de noeud créé </dd></dl>
+
+</div>
+</div>
+<a id="a350f51139b6655d37cf87af742c561a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350f51139b6655d37cf87af742c561a0">&#9670;&nbsp;</a></span>est_voisin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool est_voisin </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeuda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeudb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie vrai ssi les noeuds donnés sont <em>voisins</em> dans le graphe. B est un voisin de A ssi il existe un arc (orienté) dont l'origine est A et la destination est B.</p>
+<p>Si les noeuds sont invalides, renvoie nécessairement faux.</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel faire le test </td></tr>
+    <tr><td class="paramname">noeuda</td><td>noeud source </td></tr>
+    <tr><td class="paramname">noeudb</td><td>noeud destination (dont on veut savoir s'il est voisin de la source) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai ssi noeudb voisin de noeuda </dd></dl>
+
+</div>
+</div>
+<a id="ab979e023f208927e122d42e3d746dd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab979e023f208927e122d42e3d746dd54">&#9670;&nbsp;</a></span>exporter_dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exporter_dot </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>sortie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(FILE *, void *)&#160;</td>
+          <td class="paramname"><em>afficher_donnees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Exporte un graphe au format DOT de Graphviz sur le fichier donné. Les données utilisateur exportées vers le fichier à l'aide de la fonction <code>afficher_donnees</code> fournie par l'utilisateur. Si cette dernière est nulle, les données ne sont pas exportées.</p>
+<p>Pré-conditions : graphe non NULL, sortie non NULL et fichier ouvert</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe à exporter </td></tr>
+    <tr><td class="paramname">sortie</td><td>fichier vers lequel exporter les données </td></tr>
+    <tr><td class="paramname">afficher_donnees</td><td>fonction qui exporte les données utilisateur vers la sortie ; elles apparaissent sous la forme de tooltip dans le graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a126f85d1fd1326cd5f1e6bc6e1651554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126f85d1fd1326cd5f1e6bc6e1651554">&#9670;&nbsp;</a></span>liberer_graphe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void liberer_graphe </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> **&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>liberer_donnees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Libérer le graphe alloué en mémoire par <a class="el" href="graphe_8h.html#a23f35638c82e0f8641bdef865cb7585c">creer_graphe</a>. La fonction admet une fonction de libération customisée pour libérer les données utilisateur (si elles ont été allouées sur le tas, typiquement). Cette fonction peut être NULL, auquel cas les données utilisateurs sont laissées telle quelles.</p>
+<p>Pré-conditions : graphe != NULL Post-conditions : *graphe == NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>pointeur sur le graphe à libérer </td></tr>
+    <tr><td class="paramname">liberer_donnees</td><td>fonction à appeler sur les données utilisateur stockées sur les noeuds ; cette fonction prend en paramètre les données à libérer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21db4d673e659088e2c14c03e7197b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21db4d673e659088e2c14c03e7197b42">&#9670;&nbsp;</a></span>noeud_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float noeud_distance </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeuda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeudb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcule la distance directe entre deux noeuds, c'est-à-dire la distance entre leurs positions <em>s'ils sont voisins</em>. La fonction retourne <code>INFINITY</code> si les noeuds ne sont pas voisins, et <code>NAN</code> si au moins l'un des deux noeuds est invalide.</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel chercher les noeuds </td></tr>
+    <tr><td class="paramname">noeuda</td><td>noeud source </td></tr>
+    <tr><td class="paramname">noeudb</td><td>noeud destination </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>distance entre les positions respectives de noeudb et noeuda si noeudb est voisin de noeuda, <code>INFINITY</code> s'ils ne sont pas voisins, <code>NAN</code> si noeuda ou noeudb est invalide </dd></dl>
+
+</div>
+</div>
+<a id="a2cc76eb39ab17dd63d0ce2c7d35f8e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc76eb39ab17dd63d0ce2c7d35f8e93">&#9670;&nbsp;</a></span>noeud_donnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* noeud_donnees </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeud</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère les données utilisateurs associée au noeud, transmises au moment de l'appel à <a class="el" href="graphe_8h.html#ab81a308fbabcbcd0f377006f7824cb30">creer_noeud</a>. S'il n'y a pas de donnée pour le noeud ou si le noeud est invalide, retourne NULL.</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe où chercher le noeud </td></tr>
+    <tr><td class="paramname">noeud</td><td>noeud dont on veut les données </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>données utilisateurs ou NULL s'il n'y en a pas </dd></dl>
+
+</div>
+</div>
+<a id="a93d16e0d00719f60e378d7f516c2bc94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d16e0d00719f60e378d7f516c2bc94">&#9670;&nbsp;</a></span>noeud_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint__t.html">point_t</a> noeud_position </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeud</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère la position cartésienne du noeud donné. Si le noeud est invalide, le point retourné est non-spécifié.</p>
+<p>Pré-conditions : graphe non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel chercher le noeud </td></tr>
+    <tr><td class="paramname">noeud</td><td>noeud dont on veut la position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>position cartsienne du noeu </dd></dl>
+
+</div>
+</div>
+<a id="a05a0ad54febb5385765d5efe134c99b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a0ad54febb5385765d5efe134c99b3">&#9670;&nbsp;</a></span>noeuds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void noeuds </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> *&#160;</td>
+          <td class="paramname"><em>noeuds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère les noeuds du graphe (sous la forme d'identifiants). Les noeuds sont stockés dans le tableau passé en paramètre, qui doit être de taille suffisante (au moins égale au résultat de <a class="el" href="graphe_8h.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a>). L'allocation et les désallocation du tableau est laissée à la charge de l'utilisateur.</p>
+<p>Pré-conditions : graphe non NULL, noeuds non NULL, noeuds de taille suffisante</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dont on veut les noeuds </td></tr>
+    <tr><td class="paramname">noeuds</td><td>[out] tableau pour recevoir les noeuds du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c3b6fadf17aa9e42c1c95ded793d639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3b6fadf17aa9e42c1c95ded793d639">&#9670;&nbsp;</a></span>noeuds_voisins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void noeuds_voisins </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeud</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> *&#160;</td>
+          <td class="paramname"><em>voisins</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère les noeuds voisins du noeud donné. Les noeuds sont stockés dans le tableau passé en paramètre, qui doit être de taille suffisante (au moins égale à <a class="el" href="graphe_8h.html#a24d5b2df427c06e557f9cb1b9e7f8cf9">nombre_voisins</a>).</p>
+<p>Pré-conditions : graphe non NULL, voisins non NULL, de taille suffisante Post-conditions : pour tout i, 0 &lt;= i &lt; nombre_voisins(graphe, noeud), est_voisin(graphe, noeud, voisins[i])</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel chercher le noeud </td></tr>
+    <tr><td class="paramname">noeud</td><td>noeud dont on veut les voisins </td></tr>
+    <tr><td class="paramname">voisins</td><td>[out] noeuds voisins du noeud </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a549f75603c97f9bab9de1ae6983ea2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549f75603c97f9bab9de1ae6983ea2d8">&#9670;&nbsp;</a></span>nombre_noeuds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t nombre_noeuds </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retourne le nombre de noeuds dans le graphe. Pré-conditions : graphe non NULL </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>nombre de noeuds dans graphe </dd></dl>
+
+</div>
+</div>
+<a id="a24d5b2df427c06e557f9cb1b9e7f8cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d5b2df427c06e557f9cb1b9e7f8cf9">&#9670;&nbsp;</a></span>nombre_voisins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t nombre_voisins </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>noeud</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renvoie le nombre de voisins du noeud. Pré-conditons : graphe non NULL </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel on cherche les voisins </td></tr>
+    <tr><td class="paramname">noeud</td><td>noeud dont on veut le nombre de voisins </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>nombre de voisins du noeud </dd></dl>
+
+</div>
+</div>
+<a id="a6cc9d19dd1e729bad0826f68e3098f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc9d19dd1e729bad0826f68e3098f86">&#9670;&nbsp;</a></span>pour_chaque_arrete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pour_chaque_arrete </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a2c124137f71df6337c489470840de8db">arrete_iterateur</a>&#160;</td>
+          <td class="paramname"><em>iterateur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parcours les arrêtes du graphe (une fois) et applique la fonction donnée à chacune d'entre elles.</p>
+<p>Pré-conditions : graphe non NULL, iterateur non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe à parcourir </td></tr>
+    <tr><td class="paramname">iterateur</td><td>fonction à appliquer sur chaque arrête </td></tr>
+    <tr><td class="paramname">userdata</td><td>données utilisateur à passer à l'itérateur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c6c5891c04b9f419cdc0e33a92848f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6c5891c04b9f419cdc0e33a92848f1">&#9670;&nbsp;</a></span>pour_chaque_noeud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pour_chaque_noeud </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">noeud_iterateur</a>&#160;</td>
+          <td class="paramname"><em>iterateur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parcours les noeuds du graphe (une fois) et applique la fonction donnée à chacun d'entre eux.</p>
+<p>Pré-conditions : graphe non NULL, iterateur non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe à parcourir </td></tr>
+    <tr><td class="paramname">iterateur</td><td>fonction à appliquer sur chaque noeud </td></tr>
+    <tr><td class="paramname">userdata</td><td>données utilisateur à passer à l'itérateur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c7b885c2f9524087f70857ce6e29e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7b885c2f9524087f70857ce6e29e59">&#9670;&nbsp;</a></span>trouver_noeud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> trouver_noeud </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graphe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">noeud_predicat</a>&#160;</td>
+          <td class="paramname"><em>predicat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Trouver un noeud qui respecte le prédicat passé en paramètre. Cette fonction renvoie l'identifiant du noeud trouvé, ou <a class="el" href="graphe_8h.html#a642e16f35aa1e585c25e405ede76e115">NO_ID</a> si aucun noeud n'a été trouvé.</p>
+<p>Pré-conditions : graphe non NULL, predicat non NULL Post-conditions : si resultat != NO_ID, alors resultat est un noeud de graphe et predicat(resultat) (modulo effets de bord)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphe</td><td>graphe dans lequel chercher </td></tr>
+    <tr><td class="paramname">predicat</td><td>critère de recherche </td></tr>
+    <tr><td class="paramname">userdata</td><td>donnée utilisateur à transmettre à predicat </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>identifiant du noeud trouvé (ou <a class="el" href="graphe_8h.html#a642e16f35aa1e585c25e405ede76e115">NO_ID</a> si pas trouvé) </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

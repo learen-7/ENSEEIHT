@@ -1,0 +1,584 @@
+\hypertarget{window_8c}{}\doxysection{Référence du fichier window.\+c}
+\label{window_8c}\index{window.c@{window.c}}
+
+
+Implantation du module window.  
+
+
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L2\+\_\+gfx\+Primitives.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Graphe des dépendances par inclusion de window.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{window_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{window_8c_a12bec9ff1252fd127d4b449b4adbe49f}{I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+O\+N\+T\+R\+E\+G\+\_\+\+S\+I\+ZE}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$ \mbox{\hyperlink{window_8c_a12953a46b01bfce6fb08a9329125a716}{create\+\_\+window}} (int w, int h, const char $\ast$name, \mbox{\hyperlink{window_8h_a4f4c801416083dd1d4093d13d36c0c8a}{repaint\+\_\+fn}} repaint, void $\ast$userdata)
+\item 
+void \mbox{\hyperlink{window_8c_a32fd48461403959ac9196b5b938ffc80}{start\+\_\+window}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window)
+\item 
+void \mbox{\hyperlink{window_8c_aa95c2629a9becaf6ce4a13ab1d14cdd8}{stop\+\_\+window}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$$\ast$window\+\_\+ptr)
+\item 
+void \mbox{\hyperlink{window_8c_a41803d94c5183d2e78227f69270c029e}{refresh\+\_\+window}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window)
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{window_8c_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, uint32\+\_\+t format, int access, int w, int h)
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{window_8c_acb4197b452bcd21ad8da366218c5b4b9}{create\+\_\+texture\+\_\+from\+\_\+surface}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Surface $\ast$surface)
+\item 
+void \mbox{\hyperlink{window_8c_ae7c51d2fd2cd043b6f40f61c441ba7c4}{destroy\+\_\+texture}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Texture $\ast$texture)
+\item 
+void \mbox{\hyperlink{window_8c_a27a6a8ca025aef1eacec5dcdebaaadcf}{set\+\_\+background\+\_\+color}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Color color)
+\item 
+\mbox{\hyperlink{window_8h_a88e6b4ad1d21ca375fad6a1e88356960}{font\+\_\+id\+\_\+t}} \mbox{\hyperlink{window_8c_aa3f4abdd9f6066b85594193cc41e02a3}{load\+\_\+font}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, const char $\ast$fontname, int ptsize)
+\item 
+void \mbox{\hyperlink{window_8c_ae5997295d26af3573d6fb418ca9cebb8}{render\+\_\+copy}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Texture $\ast$texture, const S\+D\+L\+\_\+\+Rect $\ast$srcrect, const S\+D\+L\+\_\+\+Rect $\ast$dstrect)
+\item 
+void \mbox{\hyperlink{window_8c_a9c5fef8bfc843be4f1dbe907e2c4e45e}{render\+\_\+surface}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Surface $\ast$surface, const S\+D\+L\+\_\+\+Rect $\ast$srcrect, const S\+D\+L\+\_\+\+Rect $\ast$dstrect)
+\item 
+void \mbox{\hyperlink{window_8c_a1b8aeabf3a849477a3b796708320b4f8}{render\+\_\+set\+\_\+color}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_a4a46ea32f10cf9e53a45087aa1d5b90b}{render\+\_\+line}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, int x1, int y1, int x2, int y2, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_ada26e3b04de7a6c7931253f7ccf79aa1}{render\+\_\+line\+\_\+thick}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, int x1, int y1, int x2, int y2, int thickness, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_a7f07f41e23a6b175c8ff697b1049abd6}{render\+\_\+arrow}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, int x1, int y1, int x2, int y2, float size, float alpha, int thickness, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_aa0aaa36138597b9334d2fa790fa10c09}{render\+\_\+arrow\+\_\+curved}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, int x1, int y1, int x2, int y2, float size, float alpha, float curving, int diststart, int distend, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_a8461291cfeedc07458aad365e80bf3b5}{render\+\_\+rect}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, const S\+D\+L\+\_\+\+Rect $\ast$rect, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_ad2e747eb9fa519740f3b60c0c39c6d39}{render\+\_\+circle}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, int x, int y, int r, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{window_8c_aceeaaff95ab00e44b0909f790662c34d}{render\+\_\+text}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, const char $\ast$text, \mbox{\hyperlink{window_8h_a88e6b4ad1d21ca375fad6a1e88356960}{font\+\_\+id\+\_\+t}} fontid, int x, int y, int alignment, S\+D\+L\+\_\+\+Color color, S\+D\+L\+\_\+\+Color background)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du module window. 
+
+Attention ça parle de concurrence et de synchro c\textquotesingle{}est vachement pas simple.
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{window_8c_a12bec9ff1252fd127d4b449b4adbe49f}\label{window_8c_a12bec9ff1252fd127d4b449b4adbe49f}} 
+\index{window.c@{window.c}!INITIAL\_FONTREG\_SIZE@{INITIAL\_FONTREG\_SIZE}}
+\index{INITIAL\_FONTREG\_SIZE@{INITIAL\_FONTREG\_SIZE}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{INITIAL\_FONTREG\_SIZE}{INITIAL\_FONTREG\_SIZE}}
+{\footnotesize\ttfamily \#define I\+N\+I\+T\+I\+A\+L\+\_\+\+F\+O\+N\+T\+R\+E\+G\+\_\+\+S\+I\+ZE~4}
+
+Taille initial du registre des polices 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{window_8c_aeb284a3e673e34666b6c8bf869c7e344}\label{window_8c_aeb284a3e673e34666b6c8bf869c7e344}} 
+\index{window.c@{window.c}!create\_texture@{create\_texture}}
+\index{create\_texture@{create\_texture}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{create\_texture()}{create\_texture()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ create\+\_\+texture (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{uint32\+\_\+t}]{format,  }\item[{int}]{access,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Crée une texture à partir des éléments de la fenêtre, avec la configuration donnée.
+
+Cette fonction est un wrappeur de la fonction S\+DL {\ttfamily S\+D\+L\+\_\+\+Create\+Texture} qui empêche l\textquotesingle{}utilisateur de créer des textures n\textquotesingle{}importe comment.
+
+En particulier, il est {\bfseries{impératif}} que cette fonction soit appelée {\bfseries{uniquement au sein du callback {\ttfamily repaint}}}, sous peine de générer des erreurs de concurrence.
+
+Il est possible de compiler ce module avec l\textquotesingle{}option {\ttfamily S\+T\+R\+I\+C\+T\+\_\+\+T\+H\+R\+E\+A\+D\+I\+NG} afin de forcer la vérification que le thread actuel accepte la création de texture. Cela crée un peu d\textquotesingle{}overhead, il est donc conseillé de retirer cette option lorsqu\textquotesingle{}on compile l\textquotesingle{}application autrement qu\textquotesingle{}en mode debug.
+
+{\itshape Cette fonction n\textquotesingle{}est {\bfseries{pas}} thread safe, car comme elle part du principe qu\textquotesingle{}elle est appelée dans une fonction {\ttfamily repaint}, elle ne lock pas le paramètre {\ttfamily window} (qui doit déjà être locké par la fonction qui appelle la fonction {\ttfamily repaint}).}
+
+Une fois créée et utilisée, une texture doit être libérée pour éviter l\textquotesingle{}explosion en mémoire (avec \mbox{\hyperlink{window_8h_ae7c51d2fd2cd043b6f40f61c441ba7c4}{destroy\+\_\+texture}}).
+
+Pré-\/conditions\+: window non N\+U\+LL, window lancé, autres arguments compatibles avec {\ttfamily S\+D\+L\+\_\+\+Create\+Texture}, thread == render thread de window
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre qui crée la texture (lockée) \\
+\hline
+{\em format} & format de color de la texture (cf {\ttfamily S\+D\+L\+\_\+\+Create\+Texture}) \\
+\hline
+{\em access} & modalité d\textquotesingle{}accès à la texture (cf {\ttfamily S\+D\+L\+\_\+\+Create\+Texture}) \\
+\hline
+{\em w} & largeur de la texture en pixels \\
+\hline
+{\em h} & hauteur de la texture en pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+texture nouvellement créée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8c_acb4197b452bcd21ad8da366218c5b4b9}\label{window_8c_acb4197b452bcd21ad8da366218c5b4b9}} 
+\index{window.c@{window.c}!create\_texture\_from\_surface@{create\_texture\_from\_surface}}
+\index{create\_texture\_from\_surface@{create\_texture\_from\_surface}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{create\_texture\_from\_surface()}{create\_texture\_from\_surface()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ create\+\_\+texture\+\_\+from\+\_\+surface (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{surface }\end{DoxyParamCaption})}
+
+Crée une texture à partir d\textquotesingle{}une surface dans la fenêtre donnée.
+
+Cette fonction est un wrappeur de la fonction S\+DL {\ttfamily S\+D\+L\+\_\+\+Create\+Texture\+From\+Surface} qui force l\textquotesingle{}utilisateur à respecter les contraintes de multi-\/threading.
+
+Pour plus de détails sur ce genre de fonction voir \mbox{\hyperlink{window_8h_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} qui marche très similairement.
+
+On rappelle que la fonction n\textquotesingle{}est {\bfseries{pas}} thread safe, et qu\textquotesingle{}une texture crée doit être détruite avec \mbox{\hyperlink{window_8h_ae7c51d2fd2cd043b6f40f61c441ba7c4}{destroy\+\_\+texture}} pour éviter l\textquotesingle{}explosion en mémoire.
+
+Note \+: contrairement aux textures, les surfaces S\+DL ne sont pas sousmises aux contraintes du multi-\/threading du backend de S\+DL. Pour simplifier, les textures bénéficient d\textquotesingle{}accélération matérielles (utilisation du G\+PU) ce qui impose qu\textquotesingle{}elles ne soient gérées que par un unique thread. Les surfaces, elles, sont gérées en R\+AM par le C\+PU, et peuvent donc être partagées entre threads sans aucun problème.
+
+Pré-\/conditions\+: window non N\+U\+LL, window, lancé, surface non N\+U\+LL, thread == render thread de window
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre qui crée la texture (lockée) \\
+\hline
+{\em surface} & surface à partir de laquelle créer la texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+texture nouvellement crée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8c_a12953a46b01bfce6fb08a9329125a716}\label{window_8c_a12953a46b01bfce6fb08a9329125a716}} 
+\index{window.c@{window.c}!create\_window@{create\_window}}
+\index{create\_window@{create\_window}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{create\_window()}{create\_window()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}$\ast$ create\+\_\+window (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{window_8h_a4f4c801416083dd1d4093d13d36c0c8a}{repaint\+\_\+fn}}}]{repaint,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+Crée une fenêtre (sans la lancer) avec les dimensions et le titre donnés, le callback pour afficher quelque chose dedans et des données utilisateur qui seront passées au callback.
+
+L\textquotesingle{}argument {\ttfamily repaint} est bien une fonction, qui prend en entrée la fenêtre qui l\textquotesingle{}appelle et les données passées en paramètre ici (ce qui permet une forme de \char`\"{}mémoire\char`\"{} partagée entre la fenêtre et le reste de l\textquotesingle{}application). Cette fonction, si possible assez courte, se contente d\textquotesingle{}afficher les composants, en créant au passage les textures nécessaires à l\textquotesingle{}aide de \mbox{\hyperlink{window_8h_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} et \mbox{\hyperlink{window_8h_acb4197b452bcd21ad8da366218c5b4b9}{create\+\_\+texture\+\_\+from\+\_\+surface}}.
+
+{\itshape Ce module garantit qu\textquotesingle{}au moment où la fonction {\ttfamily repaint} est appelée, la fenêtre passée en paramètre est non N\+U\+LL et lancée, et en accès exclusif, et que les données passées en second en paramètre correspondent à l\textquotesingle{}argument {\ttfamily userdata} donné ici.}
+
+La fonction se charge de la gestion de la mémoire pour les \char`\"{}objets\char`\"{} \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}, l\textquotesingle{}utilisateur n\textquotesingle{}a pas à faire ni malloc ni free.
+
+Pré-\/conditions\+: w $>$ 0, h $>$ 0 À noter que name, repaint et userdata peuvent être N\+U\+LL sans problème
+
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & largeur de la fenêtre (en pixels) \\
+\hline
+{\em h} & hauteur de la fenêtre (en pixels) \\
+\hline
+{\em name} & titre de la fenêtre \\
+\hline
+{\em repaint} & fonction appelée au moment du rafraîchissement \\
+\hline
+{\em userdata} & pointeur sur des données à fournir à la fonction de rafraîchissement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+fenêtre nouvellement crée, allouée en mémoire 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8c_ae7c51d2fd2cd043b6f40f61c441ba7c4}\label{window_8c_ae7c51d2fd2cd043b6f40f61c441ba7c4}} 
+\index{window.c@{window.c}!destroy\_texture@{destroy\_texture}}
+\index{destroy\_texture@{destroy\_texture}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_texture()}{destroy\_texture()}}
+{\footnotesize\ttfamily void destroy\+\_\+texture (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture }\end{DoxyParamCaption})}
+
+Détruit une texture précédemment crée.
+
+Cette fonction est un wrappeur de la fonction S\+DL {\ttfamily S\+D\+L\+\_\+\+Destroy\+Texture} qui force l\textquotesingle{}utilisateur à respecter les contraintes de multi-\/threading (cf \mbox{\hyperlink{window_8h_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} pour plus de détails).
+
+À noter qu\textquotesingle{}en théorie on peut se contenter d\textquotesingle{}appeler {\ttfamily S\+D\+L\+\_\+\+Destroy\+Texture} (dans la fonction {\ttfamily repaint}) et cela devrait marcher. Cette fonction check que le thread soit le bon (si {\ttfamily S\+T\+R\+I\+C\+T\+\_\+\+T\+H\+R\+E\+A\+D\+I\+NG} est activé).
+
+Pré-\/conditions\+: window non N\+U\+LL, window lancé, thread == render thread de la window texture non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre qui a créé la texture (lockée) \\
+\hline
+{\em texture} & texture à détruire, précédemment crée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_aa3f4abdd9f6066b85594193cc41e02a3}\label{window_8c_aa3f4abdd9f6066b85594193cc41e02a3}} 
+\index{window.c@{window.c}!load\_font@{load\_font}}
+\index{load\_font@{load\_font}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{load\_font()}{load\_font()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{window_8h_a88e6b4ad1d21ca375fad6a1e88356960}{font\+\_\+id\+\_\+t}} load\+\_\+font (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{const char $\ast$}]{fontname,  }\item[{int}]{ptsize }\end{DoxyParamCaption})}
+
+Charge une police de caractères dans la base interne de polices de caractère, avec le nom donné et la taille donné (deux polices deux tailles différentes doivent chacun être chargées séparément).
+
+En cas d\textquotesingle{}échec (si la police n\textquotesingle{}est pas accessible par exemple), renvoie -\/1. Sinon, la police renvoie un identifiant (un font\+\_\+id\+\_\+t) à utiliser pour les autres fonctions du module qui manipulent du texte.
+
+Pré-\/conditions \+: window non N\+U\+LL, fontname non N\+U\+LL, ptsize $>$ 0
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle chargée une police \\
+\hline
+{\em fontname} & nom ou chemin de la police de caractère \\
+\hline
+{\em ptsize} & taille de caractère en pt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}identifiant local de la police chargée, ou -\/1 si échec 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8c_a41803d94c5183d2e78227f69270c029e}\label{window_8c_a41803d94c5183d2e78227f69270c029e}} 
+\index{window.c@{window.c}!refresh\_window@{refresh\_window}}
+\index{refresh\_window@{refresh\_window}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{refresh\_window()}{refresh\_window()}}
+{\footnotesize\ttfamily void refresh\+\_\+window (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window }\end{DoxyParamCaption})}
+
+Demande à la fenêtre de se rafraîchir.
+
+Formellement, cela réveille la boucle principale du thread de rendu attaché à la fenêtre (incrémentation du sémaphore) ce qui cause un appel à la fonction {\ttfamily repaint} et donc l\textquotesingle{}affichage des composants graphiques.
+
+Cette fonction est non-\/bloquante \+: elle retourne immédiatement, et n\textquotesingle{}a fait que réveiller le thread en charge du rafraîchissement. Cela signifie que cette fonction ne retourne pas forcément quand la fenêtre a fini de se rafraîchir, mais généralement bien avant.
+
+Pré-\/conditions\+: window non N\+U\+LL, window lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre à rafraîchir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a7f07f41e23a6b175c8ff697b1049abd6}\label{window_8c_a7f07f41e23a6b175c8ff697b1049abd6}} 
+\index{window.c@{window.c}!render\_arrow@{render\_arrow}}
+\index{render\_arrow@{render\_arrow}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_arrow()}{render\_arrow()}}
+{\footnotesize\ttfamily void render\+\_\+arrow (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{float}]{size,  }\item[{float}]{alpha,  }\item[{int}]{thickness,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend une ligne dans la fenêtre (non-\/aliasée) entre les points donnés et de couleur donnée, avec l\textquotesingle{}épaisseur donnée, et dont la cible se termine avec une tête de flèche (un V).
+
+Pré-\/conditions \+:
+\begin{DoxyItemize}
+\item window non N\+U\+LL, window lancée, thread == render thread de la window
+\item size $>$ 0.\+0
+\item 0 $<$ alpha $<$ PI / 2
+\item thickness $>$ 0 Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle dessiner la ligne \\
+\hline
+{\em x1} & abscisse du point d\textquotesingle{}origine \\
+\hline
+{\em y1} & ordonnée du point d\textquotesingle{}origine \\
+\hline
+{\em x2} & abscisse du point de cible \\
+\hline
+{\em y2} & ordonnée du point de cible \\
+\hline
+{\em size} & taille de la tête de flèche \\
+\hline
+{\em alpha} & angle de la tête de flèche (angle entre la ligne et le battant d\textquotesingle{}un côté de la flèche) \\
+\hline
+{\em thickness} & épaisseur du trait \\
+\hline
+{\em color} & couleur de la ligne \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_aa0aaa36138597b9334d2fa790fa10c09}\label{window_8c_aa0aaa36138597b9334d2fa790fa10c09}} 
+\index{window.c@{window.c}!render\_arrow\_curved@{render\_arrow\_curved}}
+\index{render\_arrow\_curved@{render\_arrow\_curved}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_arrow\_curved()}{render\_arrow\_curved()}}
+{\footnotesize\ttfamily void render\+\_\+arrow\+\_\+curved (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{float}]{size,  }\item[{float}]{alpha,  }\item[{float}]{curving,  }\item[{int}]{diststart,  }\item[{int}]{distend,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend une ligne courbe dans la fenêtre (non-\/aliasée) entre les points donnés et de couleur donnée, et dont la cible se termine avec une tête de flèche (un V). La courbure est obtenue avec des points de contrôle, calculés à partir du paramètre \char`\"{}curving\char`\"{}.
+
+La flèche est \char`\"{}rabottée\char`\"{} de la distance donnée au début et à la fin.
+
+Pré-\/conditions \+:
+\begin{DoxyItemize}
+\item window non N\+U\+LL, window lancée, thread == render thread de la window
+\item size $>$ 0.\+0
+\item 0 $<$ alpha $<$ PI / 2
+\item diststart, distend $>$= 0 Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).
+\end{DoxyItemize}
+
+\char`\"{}curving\char`\"{} représente la distance entre l\textquotesingle{}axe (x1,y1)-\/(x2,y2) et les points de contrôle. Elle peut être positive, auquel cas la ligne est courbée vers l\textquotesingle{}extérieur, ou négative auquel cas elle est courbée vers l\textquotesingle{}intérieur. Plus formellement, \char`\"{}l\textquotesingle{}extérieur\char`\"{} est dans le sens du vecteur normal à l\textquotesingle{}axe (donc le vecteur orthogonal direct au vecteur (x2 -\/ x1, y2 -\/ y1)).
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle dessiner la ligne \\
+\hline
+{\em x1} & abscisse du point d\textquotesingle{}origine \\
+\hline
+{\em y1} & ordonnée du point d\textquotesingle{}origine \\
+\hline
+{\em x2} & abscisse du point de cible \\
+\hline
+{\em y2} & ordonnée du point de cible \\
+\hline
+{\em size} & taille de la tête de flèche \\
+\hline
+{\em alpha} & angle de la tête de flèche (angle entre la ligne et le battant d\textquotesingle{}un côté de la flèche) \\
+\hline
+{\em curving} & intensité de la courbure \\
+\hline
+{\em diststart} & rognage du côté de l\textquotesingle{}origine du trait \\
+\hline
+{\em distend} & rognage du côté de la fin du trait \\
+\hline
+{\em color} & couleur de la ligne \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_ad2e747eb9fa519740f3b60c0c39c6d39}\label{window_8c_ad2e747eb9fa519740f3b60c0c39c6d39}} 
+\index{window.c@{window.c}!render\_circle@{render\_circle}}
+\index{render\_circle@{render\_circle}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_circle()}{render\_circle()}}
+{\footnotesize\ttfamily void render\+\_\+circle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{r,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend un cercle (vide) sur la fenêtre
+
+Pré-\/conditions \+: window non N\+U\+LL, window lancée, thread = render thread de la fenêtre r $>$ 0
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle rendre le cercle \\
+\hline
+{\em x} & abscisse du centre \\
+\hline
+{\em y} & ordonnée du centre \\
+\hline
+{\em r} & rayon du cercle \\
+\hline
+{\em color} & couleur du cercle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_ae5997295d26af3573d6fb418ca9cebb8}\label{window_8c_ae5997295d26af3573d6fb418ca9cebb8}} 
+\index{window.c@{window.c}!render\_copy@{render\_copy}}
+\index{render\_copy@{render\_copy}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_copy()}{render\_copy()}}
+{\footnotesize\ttfamily void render\+\_\+copy (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{texture,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{srcrect,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{dstrect }\end{DoxyParamCaption})}
+
+Appose une copie de la texture en paramètre sur la texture de la fenêtre.
+
+Cette fonction est un wrappeur de la fonction S\+DL {\ttfamily S\+D\+L\+\_\+\+Render\+Copy} qui assure que l\textquotesingle{}utilisateur n\textquotesingle{}essaye pas d\textquotesingle{}utiliser une texture en dehors du thread de rendu (voir \mbox{\hyperlink{window_8h_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} pour plus de détails, les motivations pour cette fonction étant identiques).
+
+Pré-\/conditions\+: window non N\+U\+LL, window lancé, thread == render thread de la window, texture non N\+U\+LL, dstrect non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle opérer le rendu et au sein de laquelle la texture a été créée \\
+\hline
+{\em texture} & texture à rendre \\
+\hline
+{\em srcrect} & zone de la texture à rendre, ou N\+U\+LL si on veut rendre la texture dans son intégralité \\
+\hline
+{\em dstrect} & zone de la fenêtre où rendre la texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a4a46ea32f10cf9e53a45087aa1d5b90b}\label{window_8c_a4a46ea32f10cf9e53a45087aa1d5b90b}} 
+\index{window.c@{window.c}!render\_line@{render\_line}}
+\index{render\_line@{render\_line}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_line()}{render\_line()}}
+{\footnotesize\ttfamily void render\+\_\+line (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend une ligne dans la fenêtre (non-\/aliasée) entre les points donnés et de couleur donnée.
+
+Pré-\/conditions \+: window non N\+U\+LL, window lancée, thread == render thread de la window Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle dessiner la ligne \\
+\hline
+{\em x1} & abscisse du point d\textquotesingle{}origine \\
+\hline
+{\em y1} & ordonnée du point d\textquotesingle{}origine \\
+\hline
+{\em x2} & abscisse du point de cible \\
+\hline
+{\em y2} & ordonnée du point de cible \\
+\hline
+{\em color} & couleur de la ligne \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_ada26e3b04de7a6c7931253f7ccf79aa1}\label{window_8c_ada26e3b04de7a6c7931253f7ccf79aa1}} 
+\index{window.c@{window.c}!render\_line\_thick@{render\_line\_thick}}
+\index{render\_line\_thick@{render\_line\_thick}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_line\_thick()}{render\_line\_thick()}}
+{\footnotesize\ttfamily void render\+\_\+line\+\_\+thick (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{thickness,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend une ligne dans la fenêtre (non-\/aliasée) entre les points donnés et de couleur donnée, avec l\textquotesingle{}épaisseur donnée.
+
+Pré-\/conditions \+:
+\begin{DoxyItemize}
+\item window non N\+U\+LL, window lancée, thread == render thread de la window
+\item thickness $>$ 0
+\end{DoxyItemize}
+
+Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle dessiner la ligne \\
+\hline
+{\em x1} & abscisse du point d\textquotesingle{}origine \\
+\hline
+{\em y1} & ordonnée du point d\textquotesingle{}origine \\
+\hline
+{\em x2} & abscisse du point de cible \\
+\hline
+{\em y2} & ordonnée du point de cible \\
+\hline
+{\em thickness} & épaisseur du trait \\
+\hline
+{\em color} & couleur de la ligne \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a8461291cfeedc07458aad365e80bf3b5}\label{window_8c_a8461291cfeedc07458aad365e80bf3b5}} 
+\index{window.c@{window.c}!render\_rect@{render\_rect}}
+\index{render\_rect@{render\_rect}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_rect()}{render\_rect()}}
+{\footnotesize\ttfamily void render\+\_\+rect (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{rect,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Rend un rectangle (plein) sur la fenêtre.
+
+Pré-\/conditions \+: window non N\+U\+LL, window lancée, thread = render thread de la fenêtre rect != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre sur laquelle faire le rendu \\
+\hline
+{\em rect} & mensurations du rectangle à rendre \\
+\hline
+{\em color} & couleur du rectangle (pour la bordure et le contenu) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a1b8aeabf3a849477a3b796708320b4f8}\label{window_8c_a1b8aeabf3a849477a3b796708320b4f8}} 
+\index{window.c@{window.c}!render\_set\_color@{render\_set\_color}}
+\index{render\_set\_color@{render\_set\_color}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_set\_color()}{render\_set\_color()}}
+{\footnotesize\ttfamily void render\+\_\+set\+\_\+color (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Modifie la couleur de rendu, utilisée pour afficher des formes. L\textquotesingle{}utilisateur ne devrait probablement pas appeler cette fonction directement, comme les couleurs sont gérées par chaque fonction.
+
+Pré-\/conditions \+: window non N\+U\+LL, window lancée, thread == render thread
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dont on veut modifier la couleur d\textquotesingle{}avant-\/plan \\
+\hline
+{\em color} & couleur couleur de l\textquotesingle{}avant-\/plan \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a9c5fef8bfc843be4f1dbe907e2c4e45e}\label{window_8c_a9c5fef8bfc843be4f1dbe907e2c4e45e}} 
+\index{window.c@{window.c}!render\_surface@{render\_surface}}
+\index{render\_surface@{render\_surface}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_surface()}{render\_surface()}}
+{\footnotesize\ttfamily void render\+\_\+surface (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{surface,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{srcrect,  }\item[{const S\+D\+L\+\_\+\+Rect $\ast$}]{dstrect }\end{DoxyParamCaption})}
+
+Rend la surface sur la fenêtre donnée.
+
+Cette fonction est un wrappeur utile qui se charge de
+\begin{DoxyItemize}
+\item créer une texture à partire de la surface
+\item rendre la texture crée
+\item détruire la texture Ce qui correspond au cas d\textquotesingle{}utilisation le plus commun des fonctions précédentes.
+\end{DoxyItemize}
+
+Cette fonction ne peut être appelée que dans le thread de rendu attaché à la fenêtre (cf \mbox{\hyperlink{window_8h_aeb284a3e673e34666b6c8bf869c7e344}{create\+\_\+texture}} pour plus de détails).
+
+Pré-\/conditions\+: window non-\/\+N\+U\+LL, window lancée, thread == render thread de la window, surface non N\+U\+LL, destrect non N\+U\+LL (Note\+: en réalité, la fonction est robuste sur ces derniers points ; si la fenêtre, la surface ou le renderer de la fenêtre sont N\+U\+LL, la fonction retourne immédiatement sans rien faire)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle faire le rendu \\
+\hline
+{\em surface} & surface à rendre \\
+\hline
+{\em srcrect} & zone de la surface à rendre, ou N\+U\+LL si on veut rendre toute la surface \\
+\hline
+{\em dstrect} & zone de la fenêtre où rendre la surface \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_aceeaaff95ab00e44b0909f790662c34d}\label{window_8c_aceeaaff95ab00e44b0909f790662c34d}} 
+\index{window.c@{window.c}!render\_text@{render\_text}}
+\index{render\_text@{render\_text}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{render\_text()}{render\_text()}}
+{\footnotesize\ttfamily void render\+\_\+text (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{const char $\ast$}]{text,  }\item[{\mbox{\hyperlink{window_8h_a88e6b4ad1d21ca375fad6a1e88356960}{font\+\_\+id\+\_\+t}}}]{fontid,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{alignment,  }\item[{S\+D\+L\+\_\+\+Color}]{color,  }\item[{S\+D\+L\+\_\+\+Color}]{background }\end{DoxyParamCaption})}
+
+Rend du texte sur la fenêtre, avec la police chargée spécifiée, à la position spécifiée et l\textquotesingle{}alignement donné, et avec la couleur d\textquotesingle{}avant et d\textquotesingle{}arrière plan données.
+
+Pré-\/conditions \+: window non N\+U\+LL, window lancée, thread = render thread de la fenêtre La valeur d\textquotesingle{}alignement doit être un OU d\textquotesingle{}une valeur V\+A\+L\+I\+GN et d\textquotesingle{}une valeur H\+A\+L\+I\+GN.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre sur laquelle opérer le rendu \\
+\hline
+{\em text} & texte à rendre \\
+\hline
+{\em fontid} & identifiant de police interne à la fenêtre (obtenu avec \mbox{\hyperlink{window_8h_aa3f4abdd9f6066b85594193cc41e02a3}{load\+\_\+font}}) \\
+\hline
+{\em x} & abscisse du point d\textquotesingle{}ancrage du texte \\
+\hline
+{\em y} & ordonnée du point d\textquotesingle{}ancrage du texte \\
+\hline
+{\em alignment} & alignement du texte par rapport au point d\textquotesingle{}ancrage \\
+\hline
+{\em color} & couleur du texte \\
+\hline
+{\em background} & couleur d\textquotesingle{}arrière-\/plan du texte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a27a6a8ca025aef1eacec5dcdebaaadcf}\label{window_8c_a27a6a8ca025aef1eacec5dcdebaaadcf}} 
+\index{window.c@{window.c}!set\_background\_color@{set\_background\_color}}
+\index{set\_background\_color@{set\_background\_color}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{set\_background\_color()}{set\_background\_color()}}
+{\footnotesize\ttfamily void set\+\_\+background\+\_\+color (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Modifie la couleur d\textquotesingle{}arrière-\/plan de la fenêtre, qui est appliquée comme base à chaque repaint (par défaut cette couleur est le noir, a priori).
+
+Pré-\/conditions \+: window non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dont on veut changer la couleur \\
+\hline
+{\em color} & nouvelle couleur de la fenêtre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_a32fd48461403959ac9196b5b938ffc80}\label{window_8c_a32fd48461403959ac9196b5b938ffc80}} 
+\index{window.c@{window.c}!start\_window@{start\_window}}
+\index{start\_window@{start\_window}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{start\_window()}{start\_window()}}
+{\footnotesize\ttfamily void start\+\_\+window (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window }\end{DoxyParamCaption})}
+
+Lance le thread de rafraîchissement. Ce thread se charge de configurer et afficher la fenêtre puis de mettre à jour son contenu régulièrement.
+
+Plus précisément, la fonction de rendu contient une boucle infinie interruptible, qui se charge de 1) attendre qu\textquotesingle{}on la réveille (à l\textquotesingle{}aide d\textquotesingle{}un sémaphore), 2) met en place le rendu et 3) appelle le callback ({\ttfamily repaint} dans \mbox{\hyperlink{window_8h_a12953a46b01bfce6fb08a9329125a716}{create\+\_\+window}}).
+
+Une fois la boucle interrompue (avec \mbox{\hyperlink{window_8h_aa95c2629a9becaf6ce4a13ab1d14cdd8}{stop\+\_\+window}}), le reste de la fonction se charge du nettoyage et termine \char`\"{}gracieusement\char`\"{}.
+
+La fonction {\ttfamily start\+\_\+window} est bloquante \+: pour des raisons d\textquotesingle{}accès mémoire sûrs, elle attend que le thread aie bien terminé son initialisation. Le risque de retourner tout de suite est qu\textquotesingle{}une fonction essaye d\textquotesingle{}accéder à des données pas encore initialisées par la thread.
+
+Pré-\/conditions\+: window non N\+U\+LL, window non déjà lancé
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre à lancer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{window_8c_aa95c2629a9becaf6ce4a13ab1d14cdd8}\label{window_8c_aa95c2629a9becaf6ce4a13ab1d14cdd8}} 
+\index{window.c@{window.c}!stop\_window@{stop\_window}}
+\index{stop\_window@{stop\_window}!window.c@{window.c}}
+\doxysubsubsection{\texorpdfstring{stop\_window()}{stop\_window()}}
+{\footnotesize\ttfamily void stop\+\_\+window (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$$\ast$}]{window\+\_\+ptr }\end{DoxyParamCaption})}
+
+Arrête la fenêtre \+: ferme le composant graphique et interrompt le thread associé.
+
+La fonction est bloquante car elle attend la fin du thread. Elle se charge aussi (partiellement indirectement) de nettoyer la mémoire associée à la fenêtre. 

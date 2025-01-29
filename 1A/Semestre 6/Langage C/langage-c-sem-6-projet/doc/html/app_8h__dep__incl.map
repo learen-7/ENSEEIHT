@@ -1,0 +1,5 @@
+<map id="app.h" name="app.h">
+<area shape="rect" id="node1" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="47,5,106,32"/>
+<area shape="rect" id="node2" href="$app_8c.html" title="Implantation du module app." alt="" coords="5,80,63,107"/>
+<area shape="rect" id="node3" href="$main_8c.html" title="Programme principal." alt="" coords="87,80,154,107"/>
+</map>

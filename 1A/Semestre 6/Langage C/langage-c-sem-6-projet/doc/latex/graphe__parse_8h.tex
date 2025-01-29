@@ -1,0 +1,98 @@
+\hypertarget{graphe__parse_8h}{}\doxysection{Référence du fichier graphe\+\_\+parse.\+h}
+\label{graphe__parse_8h}\index{graphe\_parse.h@{graphe\_parse.h}}
+
+
+Module {\ttfamily graphe\+\_\+parse} qui permet de praser un fichier texte décrivant un graphe.  
+
+
+{\ttfamily \#include \char`\"{}graphe.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de graphe\+\_\+parse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{graphe__parse_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{graphe__parse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$ \mbox{\hyperlink{graphe__parse_8h_ac133b68d8740c04200c46674e3080dad}{parser\+\_\+graphe}} (const char $\ast$filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Module {\ttfamily graphe\+\_\+parse} qui permet de praser un fichier texte décrivant un graphe. 
+
+Le langage reconnu par le parseur est le suivant (en forme E\+B\+NF) \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{graphe = section \mbox{\hyperlink{graphe_8c_a05a0ad54febb5385765d5efe134c99b3}{noeuds}}, \{ \textcolor{stringliteral}{"\(\backslash\)n"} \}, section liens}
+\DoxyCodeLine{section \mbox{\hyperlink{graphe_8c_a05a0ad54febb5385765d5efe134c99b3}{noeuds}} = \textcolor{stringliteral}{'Noeuds:'}, \textcolor{stringliteral}{"\(\backslash\)n"}, \{ noeud \}}
+\DoxyCodeLine{section liens  = \textcolor{stringliteral}{'Liens:'}, \textcolor{stringliteral}{"\(\backslash\)n"}, \{ lien \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{noeud = \textcolor{stringliteral}{"-\/"}, identifiant, \textcolor{stringliteral}{":"}, \textcolor{stringliteral}{"("}, nombre, \textcolor{stringliteral}{","}, nombre, \textcolor{stringliteral}{")"}, \textcolor{stringliteral}{"\(\backslash\)n"}}
+\DoxyCodeLine{lien  = \textcolor{stringliteral}{"-\/"}, identifiant, \textcolor{stringliteral}{"-\/>"}, identifiant, \textcolor{stringliteral}{"\(\backslash\)n"}}
+\end{DoxyCode}
+
+
+Avec {\ttfamily identifiant} toute chaîne sans \textquotesingle{}\+:\textquotesingle{} et sans \textquotesingle{}-\/$>$\textquotesingle{}, et {\ttfamily nombre} un nombre flottant valide (incluant en notation scientifique).
+
+Le parseur ignore les espaces simples (\char`\"{} \char`\"{}) en dehors des identifiants mais les retours à la ligne sont importants.
+
+Une description de noeud se compose donc d\textquotesingle{}une liste de noeuds, chacun étant un nom associé à un couple (sa position).
+
+Une description de lien est de la forme {\ttfamily -\/ A -\/$>$ B} ou {\ttfamily -\/ A -\/-\/ B} avec A et B des noeuds préalablement définis. Dans le cas {\ttfamily -\/$>$} un arc de A vers B est créé ; dans le cas {\ttfamily -\/-\/} l\textquotesingle{}arc A vers B et B vers A sont tous deux créés (pour faciliter l\textquotesingle{}écriture).
+
+Un graphe se compose de la section des noeuds puis de la section des liens (dans cet ordre). Les lignes vides sont ignorées.
+
+Voici un example \+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Noeuds:}
+\DoxyCodeLine{-\/ k1: (1.0,2.0)}
+\DoxyCodeLine{-\/ k2: (1.0,3.0)}
+\DoxyCodeLine{-\/ k3: (2.0,5.0)}
+\DoxyCodeLine{}
+\DoxyCodeLine{Liens:}
+\DoxyCodeLine{-\/ k1 -\/> k2}
+\DoxyCodeLine{-\/ k1 -\/> k3}
+\DoxyCodeLine{-\/ k2 -\/-\/ k3}
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{graphe__parse_8h_ac133b68d8740c04200c46674e3080dad}\label{graphe__parse_8h_ac133b68d8740c04200c46674e3080dad}} 
+\index{graphe\_parse.h@{graphe\_parse.h}!parser\_graphe@{parser\_graphe}}
+\index{parser\_graphe@{parser\_graphe}!graphe\_parse.h@{graphe\_parse.h}}
+\doxysubsubsection{\texorpdfstring{parser\_graphe()}{parser\_graphe()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}}$\ast$ parser\+\_\+graphe (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Fonction qui parse le fichier dont le nom est passé en paramètre. La fonction se charge toute seule d\textquotesingle{}ouvrir et de fermer le fichier, puis crée un graphe et le peuple avec les informations qui en sont issues (voir introduction du module pour une description de la syntaxe).
+
+En cas d\textquotesingle{}erreur, la fonction affiche une erreur sur {\ttfamily stderr} et renvoie N\+U\+LL.
+
+Le graphe alloué a pour information sur les noeuds (dans le \char`\"{}noeud données\char`\"{}) le nom du noeud tel que fourni dans le fichier.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em filename} & fichier à parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+graphe résultant du parsing, ou N\+U\+LL si problème 
+\end{DoxyReturn}

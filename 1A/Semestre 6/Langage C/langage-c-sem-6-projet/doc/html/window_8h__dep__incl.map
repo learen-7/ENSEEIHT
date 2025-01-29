@@ -1,0 +1,9 @@
+<map id="window.h" name="window.h">
+<area shape="rect" id="node1" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="141,5,224,32"/>
+<area shape="rect" id="node2" href="$app_8c.html" title="Implantation du module app." alt="" coords="121,155,178,181"/>
+<area shape="rect" id="node3" href="$graphrep_8h.html" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="19,80,111,107"/>
+<area shape="rect" id="node5" href="$app_8h.html" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="187,80,245,107"/>
+<area shape="rect" id="node7" href="$window_8c.html" title="Implantation du module window." alt="" coords="269,80,352,107"/>
+<area shape="rect" id="node4" href="$graphrep_8c.html" title="Implantation du module graphrep." alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Programme principal." alt="" coords="203,155,269,181"/>
+</map>

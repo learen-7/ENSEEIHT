@@ -1,0 +1,50 @@
+\hypertarget{structgraphe__t}{}\doxysection{Référence de la structure graphe\+\_\+t}
+\label{structgraphe__t}\index{graphe\_t@{graphe\_t}}
+
+
+Graphe de collaboration de graphe\+\_\+t\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{structgraphe__t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structgraphe__t_a980a21b5ed5a9f08c817657cf8c4e30b}{nombre\+\_\+noeuds\+\_\+max}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structgraphe__t_a3a22c21dc4dea23b0a6d85e841a4d3d5}{nombre\+\_\+noeuds}}
+\item 
+struct \mbox{\hyperlink{structgraphe__noeud}{graphe\+\_\+noeud}} $\ast$$\ast$ \mbox{\hyperlink{structgraphe__t_a2322f625b5c261427d714bd3b50ea5bd}{noeuds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du type abstrait \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structgraphe__t_a2322f625b5c261427d714bd3b50ea5bd}\label{structgraphe__t_a2322f625b5c261427d714bd3b50ea5bd}} 
+\index{graphe\_t@{graphe\_t}!noeuds@{noeuds}}
+\index{noeuds@{noeuds}!graphe\_t@{graphe\_t}}
+\doxysubsubsection{\texorpdfstring{noeuds}{noeuds}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphe__noeud}{graphe\+\_\+noeud}}$\ast$$\ast$ graphe\+\_\+t\+::noeuds}
+
+Tableau des pointeurs sur les noeuds du graphe (les noeuds sont alloués sur le tas) \mbox{\Hypertarget{structgraphe__t_a3a22c21dc4dea23b0a6d85e841a4d3d5}\label{structgraphe__t_a3a22c21dc4dea23b0a6d85e841a4d3d5}} 
+\index{graphe\_t@{graphe\_t}!nombre\_noeuds@{nombre\_noeuds}}
+\index{nombre\_noeuds@{nombre\_noeuds}!graphe\_t@{graphe\_t}}
+\doxysubsubsection{\texorpdfstring{nombre\_noeuds}{nombre\_noeuds}}
+{\footnotesize\ttfamily size\+\_\+t graphe\+\_\+t\+::nombre\+\_\+noeuds}
+
+Nombre de noeuds dans le graphe ({$\le$} \mbox{\hyperlink{structgraphe__t_a980a21b5ed5a9f08c817657cf8c4e30b}{nombre\+\_\+noeuds\+\_\+max}}) \mbox{\Hypertarget{structgraphe__t_a980a21b5ed5a9f08c817657cf8c4e30b}\label{structgraphe__t_a980a21b5ed5a9f08c817657cf8c4e30b}} 
+\index{graphe\_t@{graphe\_t}!nombre\_noeuds\_max@{nombre\_noeuds\_max}}
+\index{nombre\_noeuds\_max@{nombre\_noeuds\_max}!graphe\_t@{graphe\_t}}
+\doxysubsubsection{\texorpdfstring{nombre\_noeuds\_max}{nombre\_noeuds\_max}}
+{\footnotesize\ttfamily size\+\_\+t graphe\+\_\+t\+::nombre\+\_\+noeuds\+\_\+max}
+
+Capacité max du graphe, donnée à la cration du graphe. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphe_8c}{graphe.\+c}}\end{DoxyCompactItemize}

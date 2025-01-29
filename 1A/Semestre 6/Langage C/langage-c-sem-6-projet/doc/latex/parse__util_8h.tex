@@ -1,0 +1,148 @@
+\hypertarget{parse__util_8h}{}\doxysection{Référence du fichier parse\+\_\+util.\+h}
+\label{parse__util_8h}\index{parse\_util.h@{parse\_util.h}}
+
+
+Module {\ttfamily parse\+\_\+util} avec quelques fonctions utilitaires pour parser des machins.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de parse\+\_\+util.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{parse__util_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{parse__util_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{parse__util_8h_aeb495fdbe34a4196699a5d9f9081a5aa}{est\+\_\+espace}} (char c)
+\item 
+void \mbox{\hyperlink{parse__util_8h_a17fbb7f057a0280b148680a1a102f824}{manger\+\_\+espaces}} (const char $\ast$str, size\+\_\+t $\ast$i)
+\item 
+int \mbox{\hyperlink{parse__util_8h_a4d2399512b2b5deb5a9cb4d7b1132920}{commence}} (const char $\ast$entree,...)
+\item 
+bool \mbox{\hyperlink{parse__util_8h_afe96da172f5f66986440a27ddcfd3a7f}{parser\+\_\+jusqua}} (const char $\ast$str, size\+\_\+t $\ast$i, char c)
+\item 
+bool \mbox{\hyperlink{parse__util_8h_afcf281446c623b9331281e128bcd5f3c}{parser\+\_\+jusqua2}} (const char $\ast$str, size\+\_\+t $\ast$i, char c1, char c2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Module {\ttfamily parse\+\_\+util} avec quelques fonctions utilitaires pour parser des machins. 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{parse__util_8h_a4d2399512b2b5deb5a9cb4d7b1132920}\label{parse__util_8h_a4d2399512b2b5deb5a9cb4d7b1132920}} 
+\index{parse\_util.h@{parse\_util.h}!commence@{commence}}
+\index{commence@{commence}!parse\_util.h@{parse\_util.h}}
+\doxysubsubsection{\texorpdfstring{commence()}{commence()}}
+{\footnotesize\ttfamily int commence (\begin{DoxyParamCaption}\item[{const char $\ast$}]{entree,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Teste si la chaîne donnée commence par les tokens donnés (sous forme d\textquotesingle{}une liste de chaînes de caractère terminée par un N\+U\+LL).
+
+La fonction ignore naturellement les espaces (caractères validant {\ttfamily est\+\_\+espace}) et retourne l\textquotesingle{}indice après lequel le dernier token a été trouvé, ou -\/1 si la ligne ne commence pas par {\itshape tous} les tokens donnés.
+
+Si un token se termine par {\ttfamily \textbackslash{}$>$} on considère qu\textquotesingle{}il est {\itshape borné}, c\textquotesingle{}est à dire que le token s\textquotesingle{}arrête lorsqu\textquotesingle{}on rencontre un délimiteur. Par exemple \+: {\ttfamily commencer(\char`\"{}abc\+:\char`\"{}, \char`\"{}abc\char`\"{}, N\+U\+LL)} renvoie -\/1, mais {\ttfamily commencer(\char`\"{}abc\+:\char`\"{}, \char`\"{}abc\textbackslash{}\textbackslash{}$>$\char`\"{}, N\+U\+LL)} renvoie 3
+
+
+\begin{DoxyParams}{Paramètres}
+{\em entree} & chaîne à vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+indice de la fin du dernier token ou -\/1 si la chaîne ne commence pas par les token donnés 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse__util_8h_aeb495fdbe34a4196699a5d9f9081a5aa}\label{parse__util_8h_aeb495fdbe34a4196699a5d9f9081a5aa}} 
+\index{parse\_util.h@{parse\_util.h}!est\_espace@{est\_espace}}
+\index{est\_espace@{est\_espace}!parse\_util.h@{parse\_util.h}}
+\doxysubsubsection{\texorpdfstring{est\_espace()}{est\_espace()}}
+{\footnotesize\ttfamily bool est\+\_\+espace (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Renvoie vrai si c est un caractère de type espace. Les caractères de type espace sont l\textquotesingle{}espace blanc (`' \textquotesingle{}{\ttfamily ), la tabulation (}\textquotesingle{}\textbackslash{}t\textquotesingle{}{\ttfamily ) et les caractères de retour à la ligne (}\textquotesingle{}\textbackslash{}n\textquotesingle{}{\ttfamily ,}\textquotesingle{}\textbackslash{}r\textquotesingle{}\`{}). 
+\begin{DoxyParams}{Paramètres}
+{\em c} & caractère à tester \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai ssi c est un espace 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse__util_8h_a17fbb7f057a0280b148680a1a102f824}\label{parse__util_8h_a17fbb7f057a0280b148680a1a102f824}} 
+\index{parse\_util.h@{parse\_util.h}!manger\_espaces@{manger\_espaces}}
+\index{manger\_espaces@{manger\_espaces}!parse\_util.h@{parse\_util.h}}
+\doxysubsubsection{\texorpdfstring{manger\_espaces()}{manger\_espaces()}}
+{\footnotesize\ttfamily void manger\+\_\+espaces (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t $\ast$}]{i }\end{DoxyParamCaption})}
+
+Faire progresser l\textquotesingle{}indice passé en paramètre jusqu\textquotesingle{}à ce qu\textquotesingle{}il corresponde à un caractère non-\/espace dans la chaîne donnée.
+
+Pré-\/conditions \+: str non N\+U\+LL, i non N\+U\+LL Post-\/conditions \+: {\ttfamily $\ast$i $>$ \textbackslash{}\textbackslash{}old($\ast$i)}, {\ttfamily str\mbox{[}$\ast$i\mbox{]} == 0} ou {\ttfamily str\mbox{[}$\ast$i\mbox{]}} non espace
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & chaîne à processer \\
+\hline
+{\em i} & pointeur sur l\textquotesingle{}indice à faire varier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parse__util_8h_afe96da172f5f66986440a27ddcfd3a7f}\label{parse__util_8h_afe96da172f5f66986440a27ddcfd3a7f}} 
+\index{parse\_util.h@{parse\_util.h}!parser\_jusqua@{parser\_jusqua}}
+\index{parser\_jusqua@{parser\_jusqua}!parse\_util.h@{parse\_util.h}}
+\doxysubsubsection{\texorpdfstring{parser\_jusqua()}{parser\_jusqua()}}
+{\footnotesize\ttfamily bool parser\+\_\+jusqua (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t $\ast$}]{i,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+Parse la chaîne en incrémentant l\textquotesingle{}indice passé en paramètre jusqu\textquotesingle{}à ce que le caractère à l\textquotesingle{}indice {\ttfamily $\ast$i} soit c. Le fonction retourne vrai ssi le caractère c a été rencontré, et alors {\ttfamily str\mbox{[}$\ast$i\mbox{]} == c}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & chaîne à parcourir \\
+\hline
+{\em i} & indice à incrémenter \\
+\hline
+{\em c} & caractère jusqu\textquotesingle{}au quel incrémenter l\textquotesingle{}indice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai ssi c est présent dans la chaîne 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse__util_8h_afcf281446c623b9331281e128bcd5f3c}\label{parse__util_8h_afcf281446c623b9331281e128bcd5f3c}} 
+\index{parse\_util.h@{parse\_util.h}!parser\_jusqua2@{parser\_jusqua2}}
+\index{parser\_jusqua2@{parser\_jusqua2}!parse\_util.h@{parse\_util.h}}
+\doxysubsubsection{\texorpdfstring{parser\_jusqua2()}{parser\_jusqua2()}}
+{\footnotesize\ttfamily bool parser\+\_\+jusqua2 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{size\+\_\+t $\ast$}]{i,  }\item[{char}]{c1,  }\item[{char}]{c2 }\end{DoxyParamCaption})}
+
+Parse la chaîne en incrémentant l\textquotesingle{}indice passé en paramètre jusqu\textquotesingle{}à ce que les deux caractères consécutifs soient c1 puis c2. Retourne vrai ssi les caractères sont présents dans la chaîne.
+
+Dit autrement \+: si le résultat est vrai, alors {\ttfamily str\mbox{[}$\ast$i\mbox{]} == c1} et {\ttfamily str\mbox{[}$\ast$i + 1\mbox{]} == c2}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & chaîne à parcourir \\
+\hline
+{\em i} & indice à incrémenter \\
+\hline
+{\em c1} & première caractère \\
+\hline
+{\em c2} & deuxième caractère \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai ssi c1c2 présent dans chaîne 
+\end{DoxyReturn}

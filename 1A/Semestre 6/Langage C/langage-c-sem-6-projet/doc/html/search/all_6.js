@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['font_5fid_5ft_44',['font_id_t',['../window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960',1,'window.h']]],
+  ['fontreg_5fsize_45',['fontreg_size',['../structwindow__t.html#acb289a91753b5530dad94d2bea59f35c',1,'window_t']]],
+  ['from_5fdisplay_5fpoint_46',['from_display_point',['../viewport_8c.html#a4350de0fc88cde225994fde481cf1b35',1,'from_display_point(viewport_t viewport, point_t *real, SDL_Point display):&#160;viewport.c'],['../viewport_8h.html#a4350de0fc88cde225994fde481cf1b35',1,'from_display_point(viewport_t viewport, point_t *real, SDL_Point display):&#160;viewport.c']]],
+  ['from_5fdisplay_5frect_47',['from_display_rect',['../viewport_8c.html#aa16d69330d6f6091cc62c773ce10c6aa',1,'from_display_rect(viewport_t viewport, rect_t *real, SDL_Rect display):&#160;viewport.c'],['../viewport_8h.html#aa16d69330d6f6091cc62c773ce10c6aa',1,'from_display_rect(viewport_t viewport, rect_t *real, SDL_Rect display):&#160;viewport.c']]],
+  ['from_5fdisplay_5fvec_48',['from_display_vec',['../viewport_8c.html#ae9837d08224e32e5b867cd7a4128b46c',1,'from_display_vec(viewport_t viewport, point_t *real, SDL_Point display):&#160;viewport.c'],['../viewport_8h.html#ae9837d08224e32e5b867cd7a4128b46c',1,'from_display_vec(viewport_t viewport, point_t *real, SDL_Point display):&#160;viewport.c']]],
+  ['from_5freal_5fpoint_49',['from_real_point',['../viewport_8c.html#a29c96eda9e371906a5c4c776f699c30f',1,'from_real_point(viewport_t viewport, SDL_Point *display, point_t real):&#160;viewport.c'],['../viewport_8h.html#a29c96eda9e371906a5c4c776f699c30f',1,'from_real_point(viewport_t viewport, SDL_Point *display, point_t real):&#160;viewport.c']]],
+  ['from_5freal_5frect_50',['from_real_rect',['../viewport_8c.html#a8268c992dc3ba419032a210b4189236c',1,'from_real_rect(viewport_t viewport, SDL_Rect *display, rect_t real):&#160;viewport.c'],['../viewport_8h.html#a8268c992dc3ba419032a210b4189236c',1,'from_real_rect(viewport_t viewport, SDL_Rect *display, rect_t real):&#160;viewport.c']]],
+  ['from_5freal_5fvec_51',['from_real_vec',['../viewport_8c.html#a53ed8b1246c62debf16b797a1b6542ab',1,'from_real_vec(viewport_t viewport, SDL_Point *display, point_t real):&#160;viewport.c'],['../viewport_8h.html#a53ed8b1246c62debf16b797a1b6542ab',1,'from_real_vec(viewport_t viewport, SDL_Point *display, point_t real):&#160;viewport.c']]]
+];

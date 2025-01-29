@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier viewport.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier viewport.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implantation du module viewport.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="viewport_8h_source.html">viewport.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de viewport.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="viewport_8c__incl.png" border="0" usemap="#viewport_8c" alt=""/></div>
+<map name="viewport_8c" id="viewport_8c">
+<area shape="rect" title="Implantation du module viewport." alt="" coords="84,5,175,32"/>
+<area shape="rect" href="viewport_8h.html" title="Module de gestion des viewport." alt="" coords="84,80,175,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,133,181"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="157,155,224,181"/>
+<area shape="rect" title=" " alt="" coords="149,229,232,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a6e7d76ee8db88c5db933d10e91524c94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a6e7d76ee8db88c5db933d10e91524c94">mkrect</a> (<a class="el" href="structrect__t.html">rect_t</a> *result, <a class="el" href="structpoint__t.html">point_t</a> bottomleft, double w, double h)</td></tr>
+<tr class="separator:a6e7d76ee8db88c5db933d10e91524c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7dd40574a1358e8831d092cb83296b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#abc7dd40574a1358e8831d092cb83296b">mkrect_corners</a> (<a class="el" href="structrect__t.html">rect_t</a> *result, <a class="el" href="structpoint__t.html">point_t</a> bottomleft, <a class="el" href="structpoint__t.html">point_t</a> topright)</td></tr>
+<tr class="separator:abc7dd40574a1358e8831d092cb83296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25553aadb0ca421f803a721e9cd6896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#ab25553aadb0ca421f803a721e9cd6896">mkrect_center</a> (<a class="el" href="structrect__t.html">rect_t</a> *result, <a class="el" href="structpoint__t.html">point_t</a> center, double w, double h)</td></tr>
+<tr class="separator:ab25553aadb0ca421f803a721e9cd6896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97146c29bf5a96a9a9b20fbc3821184b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a97146c29bf5a96a9a9b20fbc3821184b">get_size</a> (<a class="el" href="structrect__t.html">rect_t</a> rect, double *width, double *height)</td></tr>
+<tr class="separator:a97146c29bf5a96a9a9b20fbc3821184b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad538817469cf7fab230bfd57f5fc56ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#ad538817469cf7fab230bfd57f5fc56ee">get_center</a> (<a class="el" href="structrect__t.html">rect_t</a> rect)</td></tr>
+<tr class="separator:ad538817469cf7fab230bfd57f5fc56ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056365b1efbb04350dbabf692c218f4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a056365b1efbb04350dbabf692c218f4b">scale_move_center</a> (<a class="el" href="structrect__t.html">rect_t</a> *rect, double scale, <a class="el" href="structpoint__t.html">point_t</a> center)</td></tr>
+<tr class="separator:a056365b1efbb04350dbabf692c218f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0effe29ef76d60a5da9956112f4f4d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#af0effe29ef76d60a5da9956112f4f4d7">translate_rect</a> (<a class="el" href="structrect__t.html">rect_t</a> *rect, double dx, double dy)</td></tr>
+<tr class="separator:af0effe29ef76d60a5da9956112f4f4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34efe41b719c540dd2ce2e6e5f25f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a> (<a class="el" href="structviewport__t.html">viewport_t</a> *result, SDL_Rect display, <a class="el" href="structrect__t.html">rect_t</a> real)</td></tr>
+<tr class="separator:ad34efe41b719c540dd2ce2e6e5f25f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9864fca47017c4e5cea0cf90676cdc63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a9864fca47017c4e5cea0cf90676cdc63">viewport_unit_aspect</a> (<a class="el" href="structviewport__t.html">viewport_t</a> *result, SDL_Rect display, <a class="el" href="structrect__t.html">rect_t</a> real)</td></tr>
+<tr class="separator:a9864fca47017c4e5cea0cf90676cdc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d029a73109f626dc0fc70fb74d3ea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a15d029a73109f626dc0fc70fb74d3ea5">viewport_unit_fit</a> (<a class="el" href="structviewport__t.html">viewport_t</a> *result, SDL_Rect display, <a class="el" href="structrect__t.html">rect_t</a> real)</td></tr>
+<tr class="separator:a15d029a73109f626dc0fc70fb74d3ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44aa13ab01a0164ff92f378b0510d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#ad44aa13ab01a0164ff92f378b0510d6f">copy_viewport</a> (<a class="el" href="structviewport__t.html">viewport_t</a> *result, <a class="el" href="structviewport__t.html">viewport_t</a> source)</td></tr>
+<tr class="separator:ad44aa13ab01a0164ff92f378b0510d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4350de0fc88cde225994fde481cf1b35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a4350de0fc88cde225994fde481cf1b35">from_display_point</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="el" href="structpoint__t.html">point_t</a> *real, SDL_Point display)</td></tr>
+<tr class="separator:a4350de0fc88cde225994fde481cf1b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c96eda9e371906a5c4c776f699c30f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a29c96eda9e371906a5c4c776f699c30f">from_real_point</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Point *display, <a class="el" href="structpoint__t.html">point_t</a> real)</td></tr>
+<tr class="separator:a29c96eda9e371906a5c4c776f699c30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9837d08224e32e5b867cd7a4128b46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#ae9837d08224e32e5b867cd7a4128b46c">from_display_vec</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="el" href="structpoint__t.html">point_t</a> *real, SDL_Point display)</td></tr>
+<tr class="separator:ae9837d08224e32e5b867cd7a4128b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ed8b1246c62debf16b797a1b6542ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a53ed8b1246c62debf16b797a1b6542ab">from_real_vec</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Point *display, <a class="el" href="structpoint__t.html">point_t</a> real)</td></tr>
+<tr class="separator:a53ed8b1246c62debf16b797a1b6542ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16d69330d6f6091cc62c773ce10c6aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#aa16d69330d6f6091cc62c773ce10c6aa">from_display_rect</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="el" href="structrect__t.html">rect_t</a> *real, SDL_Rect display)</td></tr>
+<tr class="separator:aa16d69330d6f6091cc62c773ce10c6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8268c992dc3ba419032a210b4189236c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8c.html#a8268c992dc3ba419032a210b4189236c">from_real_rect</a> (<a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Rect *display, <a class="el" href="structrect__t.html">rect_t</a> real)</td></tr>
+<tr class="separator:a8268c992dc3ba419032a210b4189236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Implantation du module viewport. </p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ad44aa13ab01a0164ff92f378b0510d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44aa13ab01a0164ff92f378b0510d6f">&#9670;&nbsp;</a></span>copy_viewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copy_viewport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copie un viewport dans une autre variable.</p>
+<p>Pré-conditions: result != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] viewport résultant </td></tr>
+    <tr><td class="paramname">source</td><td>viewport à copier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4350de0fc88cde225994fde481cf1b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4350de0fc88cde225994fde481cf1b35">&#9670;&nbsp;</a></span>from_display_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_display_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a> *&#160;</td>
+          <td class="paramname"><em>real</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Point&#160;</td>
+          <td class="paramname"><em>display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme une coordonnée fenêtre en coordonnée réelle en utilisant le viewport donné. Permet, par exemple, de transformer la position de la souris en coordonnées dans le repère.</p>
+<p>Pré-conditions: real != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">real</td><td>[sortie] point réel résultant </td></tr>
+    <tr><td class="paramname">display</td><td>point sur la fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa16d69330d6f6091cc62c773ce10c6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16d69330d6f6091cc62c773ce10c6aa">&#9670;&nbsp;</a></span>from_display_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_display_rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>real</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme un rectangle de la fenêtre en rectangle du plan cartésien réel. Permet, par exemple, de convertire une zone de la fenêtre en zone du repère pour faire le rendu.</p>
+<p>Pré-conditions: real != NULL, display bien formé (dimensions positives)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">real</td><td>[sortie] rectangle réel résultant </td></tr>
+    <tr><td class="paramname">display</td><td>rectangle de la fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae9837d08224e32e5b867cd7a4128b46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9837d08224e32e5b867cd7a4128b46c">&#9670;&nbsp;</a></span>from_display_vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_display_vec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a> *&#160;</td>
+          <td class="paramname"><em>real</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Point&#160;</td>
+          <td class="paramname"><em>display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme un vecteur de la fenêtre (sous forme d'un point) en vecteur réel du plan cartésien en utilisant le viewport. Permet, par exemple, de transformer un déplacement en pixels en déplacement dans le repère pour en faire la translation.</p>
+<p>Pré-conditions: real != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">real</td><td>[sortie] vecteur résultant </td></tr>
+    <tr><td class="paramname">display</td><td>vecteur dans la fenêtre, sous forme de point </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29c96eda9e371906a5c4c776f699c30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c96eda9e371906a5c4c776f699c30f">&#9670;&nbsp;</a></span>from_real_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_real_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Point *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme une coordonnée réelle du repère cartésien en coordonnée de la fenêtre en utilisant le viewport donné.</p>
+<p>Pré-conditions: display != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">display</td><td>[sortie] point sur la fenêtre calculé </td></tr>
+    <tr><td class="paramname">real</td><td>point du repère </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8268c992dc3ba419032a210b4189236c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8268c992dc3ba419032a210b4189236c">&#9670;&nbsp;</a></span>from_real_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_real_rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme un rectangle du plan cartrésien réel en rectangle de la fenêtre.</p>
+<p>Pré-conditions: display != NULL, real bien formé (points correctement placés)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">display</td><td>[sortie] rectangle de la fenêtre </td></tr>
+    <tr><td class="paramname">real</td><td>rectangle réel </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53ed8b1246c62debf16b797a1b6542ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ed8b1246c62debf16b797a1b6542ab">&#9670;&nbsp;</a></span>from_real_vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void from_real_vec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Point *&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transforme un vecteur réel du repère cartésien en vecteur de la fenêtre (sous forme de point).</p>
+<p>Pré-conditions: display != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>viewport pour la transformation </td></tr>
+    <tr><td class="paramname">display</td><td>[sortie] vecteur résultant </td></tr>
+    <tr><td class="paramname">real</td><td>vecteur dans la fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad538817469cf7fab230bfd57f5fc56ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad538817469cf7fab230bfd57f5fc56ee">&#9670;&nbsp;</a></span>get_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint__t.html">point_t</a> get_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère le point au centre du rectangle donné. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>centre de rect </dd></dl>
+
+</div>
+</div>
+<a id="a97146c29bf5a96a9a9b20fbc3821184b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97146c29bf5a96a9a9b20fbc3821184b">&#9670;&nbsp;</a></span>get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère les dimensions (largeur, hauteur) du rectangle. Les arguments autorisent NULL auquel cas la dimension n'est pas récupérée.</p>
+<p>Post-conditions: si width != NULL alors *width est positif De même avec height</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>rectangle dont on veut les dimensions </td></tr>
+    <tr><td class="paramname">width</td><td>[sortie] largeur du rectangle </td></tr>
+    <tr><td class="paramname">height</td><td>[sortie] hauteur du rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e7d76ee8db88c5db933d10e91524c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7d76ee8db88c5db933d10e91524c94">&#9670;&nbsp;</a></span>mkrect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mkrect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>bottomleft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise un rectangle à l'aide de son coin inférieur gauche et de ses dimensions. Le rectangle se développe de gauche à droite et de bas en haut.</p>
+<p>Pré-conditions: w et h positifs, result != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] rectangle initialisé </td></tr>
+    <tr><td class="paramname">bottomleft</td><td>coordonnées du coin inférieur gauche </td></tr>
+    <tr><td class="paramname">w</td><td>largeur du rectangle </td></tr>
+    <tr><td class="paramname">h</td><td>hauteur du rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab25553aadb0ca421f803a721e9cd6896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25553aadb0ca421f803a721e9cd6896">&#9670;&nbsp;</a></span>mkrect_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mkrect_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise un rectangle à partir de son centre et de ses dimensions.</p>
+<p>Pré-conditions: w et h positifs, result != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] rectangle initialisé </td></tr>
+    <tr><td class="paramname">center</td><td>coordonnées du centre du rectangle </td></tr>
+    <tr><td class="paramname">w</td><td>largeur du rectangle </td></tr>
+    <tr><td class="paramname">h</td><td>hauteur du rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc7dd40574a1358e8831d092cb83296b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7dd40574a1358e8831d092cb83296b">&#9670;&nbsp;</a></span>mkrect_corners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mkrect_corners </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>bottomleft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>topright</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise un rectangle à l'aide de ses deux coins (inférieur gauche et supérieur droit).</p>
+<p>Pré-conditions: bottomleft.x &lt; topright.x, bottomleft.y &lt; topright.y</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] rectangle initialisé </td></tr>
+    <tr><td class="paramname">bottomleft</td><td>coordonnées du coin inférieur gauche </td></tr>
+    <tr><td class="paramname">topright</td><td>coordonées du coin supérieur droit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a056365b1efbb04350dbabf692c218f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056365b1efbb04350dbabf692c218f4b">&#9670;&nbsp;</a></span>scale_move_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scale_move_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>center</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Déplace et met à l'échelle (homothétiquement) un rectangle, de façon à ce que son centre soit celui spécifié.</p>
+<p>Pré-conditions: rect != NULL Post-conditions: largeur et hauteur du rectangle multipliés par |scale|</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>[entrée,sortie] rectangle à modifier et résultat de la modification </td></tr>
+    <tr><td class="paramname">scale</td><td>facteur d'échelle </td></tr>
+    <tr><td class="paramname">center</td><td>nouveau centre du rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0effe29ef76d60a5da9956112f4f4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0effe29ef76d60a5da9956112f4f4d7">&#9670;&nbsp;</a></span>translate_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void translate_rect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a> *&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Déplace le rectangle selon le vecteur donné.</p>
+<p>Pré-conditions: rect != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>[entrée,sortie] rectangle à modifier et résultat de la modification </td></tr>
+    <tr><td class="paramname">dx</td><td>déplacement d'abscisse </td></tr>
+    <tr><td class="paramname">dy</td><td>déplacement d'ordonnée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad34efe41b719c540dd2ce2e6e5f25f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34efe41b719c540dd2ce2e6e5f25f1e">&#9670;&nbsp;</a></span>viewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void viewport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcul un viewport à partir d'un rectangle d'affichage (des coordonnées sur la <br  />
+ fenêtre) et d'un rectangle représentant le repère.</p>
+<p>Attention, le repère de la fenêtre en SDL est orienté de gauche à droite et de haut en bas, alors que le plan cartésien est orienté en sens direct, c'est-à-dire de gauche à droite et de bas en haut. Le viewport résultant crée donc une inversion de l'axe Y !</p>
+<p>Pré-conditions: result != NULL, display bien construit (largeur et hauteur positives)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] viewport résultant </td></tr>
+    <tr><td class="paramname">display</td><td>rectangle qui représente la fenêtre </td></tr>
+    <tr><td class="paramname">real</td><td>rectangle du plan cartésien réel qui représente le repère </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9864fca47017c4e5cea0cf90676cdc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9864fca47017c4e5cea0cf90676cdc63">&#9670;&nbsp;</a></span>viewport_unit_aspect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void viewport_unit_aspect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcul un viewport à partir d'un rectangle d'affichage (des coordonnées de la fenêtre) et d'un rectangle représentant le repère, en s'éforcant de maintenir le ratio de la fenêtre dans le repère.</p>
+<p>La largeur du repère est privilégiée.</p>
+<p>Pré-conditions: result != NULL, display et real bien construits (largeur et hauteur positives) Post-conditions: display.w / display.h == width(real) / height(real) et width(real) correspond à display.w par le viewport</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] viewport résultant </td></tr>
+    <tr><td class="paramname">display</td><td>rectangle qui représente la fenêtre </td></tr>
+    <tr><td class="paramname">real</td><td>rectangle qui représente le repère </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15d029a73109f626dc0fc70fb74d3ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d029a73109f626dc0fc70fb74d3ea5">&#9670;&nbsp;</a></span>viewport_unit_fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void viewport_unit_fit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>display</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrect__t.html">rect_t</a>&#160;</td>
+          <td class="paramname"><em>real</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcul un viewport à partir d'un rectangle d'affichage et d'un rectangle représentant le repère, en s'éforçant de maintenir le ratio du repère dans la fenêtre et tel que tout le repère apparaisse dedans.</p>
+<p>Pré-conditions: result != NULL, display et real bien construits (largeur et hauteur positives) Post-conditions: image de width(real) &lt; display.w, image de height(real) &lt; display.h, image de width(real)/height(real) == width(real)/height(real)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>[sortie] viewport résultant </td></tr>
+    <tr><td class="paramname">display</td><td>rectangle qui représente la fenêtre </td></tr>
+    <tr><td class="paramname">real</td><td>rectangle qui représente le repère </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

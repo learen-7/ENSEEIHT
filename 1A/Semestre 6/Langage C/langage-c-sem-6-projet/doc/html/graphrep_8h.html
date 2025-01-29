@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier graphrep.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier graphrep.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une <a class="el" href="structwindow__t.html">window_t</a>.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="graphe_8h_source.html">graphe.h</a>&quot;</code><br />
+<code>#include &quot;liste_noeud.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="viewport_8h_source.html">viewport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="window_8h_source.html">window.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de graphrep.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="graphrep_8h__incl.png" border="0" usemap="#graphrep_8h" alt=""/></div>
+<map name="graphrep_8h" id="graphrep_8h">
+<area shape="rect" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="338,5,430,32"/>
+<area shape="rect" title=" " alt="" coords="435,155,531,181"/>
+<area shape="rect" href="graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="105,80,183,107"/>
+<area shape="rect" title=" " alt="" coords="329,80,439,107"/>
+<area shape="rect" href="viewport_8h.html" title="Module de gestion des viewport." alt="" coords="215,80,305,107"/>
+<area shape="rect" href="window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="513,80,596,107"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="192,155,259,181"/>
+<area shape="rect" title=" " alt="" coords="97,155,167,181"/>
+<area shape="rect" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" title=" " alt="" coords="355,229,437,256"/>
+<area shape="rect" title=" " alt="" coords="283,155,411,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="graphrep_8h__dep__incl.png" border="0" usemap="#graphrep_8hdep" alt=""/></div>
+<map name="graphrep_8hdep" id="graphrep_8hdep">
+<area shape="rect" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="37,5,129,32"/>
+<area shape="rect" href="app_8c.html" title="Implantation du module app." alt="" coords="5,80,63,107"/>
+<area shape="rect" href="graphrep_8c.html" title="Implantation du module graphrep." alt="" coords="87,80,178,107"/>
+</map>
+</div>
+</div>
+<p><a href="graphrep_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7ff1bdaea529894a3efdb480b1f2c8ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a7ff1bdaea529894a3efdb480b1f2c8ee">NODE_SIZE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a7ff1bdaea529894a3efdb480b1f2c8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fc596899e1302d6c5b5a6064d6bbac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#aa1fc596899e1302d6c5b5a6064d6bbac">NODE_SKIP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa1fc596899e1302d6c5b5a6064d6bbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1ec81d4826411cba58a2e8e2bd333e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a7e1ec81d4826411cba58a2e8e2bd333e">EDGE_WIDTH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7e1ec81d4826411cba58a2e8e2bd333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32faca800f36dcd06570622d58546a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#ab32faca800f36dcd06570622d58546a3">TOOLTIP_THRESH</a>&#160;&#160;&#160;30.0</td></tr>
+<tr class="separator:ab32faca800f36dcd06570622d58546a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a27fbde85715f2f12266899d082cc3fd8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a27fbde85715f2f12266899d082cc3fd8">create_graphrep</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graph, SDL_Rect area, <a class="el" href="structviewport__t.html">viewport_t</a> <a class="el" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>)</td></tr>
+<tr class="separator:a27fbde85715f2f12266899d082cc3fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56cbd6aa7e47ed7990c3cbe291fe5a8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#ae56cbd6aa7e47ed7990c3cbe291fe5a8">create_graphrep_with_vp</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graph, SDL_Rect area)</td></tr>
+<tr class="separator:ae56cbd6aa7e47ed7990c3cbe291fe5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860fafb9588335afcc96e32a1b549f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a860fafb9588335afcc96e32a1b549f19">dispose_graphrep</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> **graphrep)</td></tr>
+<tr class="separator:a860fafb9588335afcc96e32a1b549f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8d298d30336c25831a985e5f5d97cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a4f8d298d30336c25831a985e5f5d97cd">get_viewport</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *graphrep, <a class="el" href="structviewport__t.html">viewport_t</a> *result)</td></tr>
+<tr class="separator:a4f8d298d30336c25831a985e5f5d97cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2d13c9ddc1fc7c623ce13dfbf016f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a6e2d13c9ddc1fc7c623ce13dfbf016f6">move_mouse</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *graphrep, SDL_Point pos)</td></tr>
+<tr class="separator:a6e2d13c9ddc1fc7c623ce13dfbf016f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2744c4fe87e9dba3ab79987e866e5121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a2744c4fe87e9dba3ab79987e866e5121">highlight_path</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *graphrep, liste_noeud_t *path)</td></tr>
+<tr class="separator:a2744c4fe87e9dba3ab79987e866e5121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5471cbdd21ab6cdf128102b4a6f08faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a5471cbdd21ab6cdf128102b4a6f08faf">highlight_node</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *graphrep, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> node, SDL_Color color)</td></tr>
+<tr class="separator:a5471cbdd21ab6cdf128102b4a6f08faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287ba0163afb3b05d0432cf1cfe52b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a287ba0163afb3b05d0432cf1cfe52b65">highlight_edge</a> (struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *graphrep, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> dest)</td></tr>
+<tr class="separator:a287ba0163afb3b05d0432cf1cfe52b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90df8d02bbfa1ba1a69241eccbfdbe45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graphrep_8h.html#a90df8d02bbfa1ba1a69241eccbfdbe45">graphrep_repaint</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, void *userdata)</td></tr>
+<tr class="separator:a90df8d02bbfa1ba1a69241eccbfdbe45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une <a class="el" href="structwindow__t.html">window_t</a>. </p>
+<p>Les noeuds sont représentés avec des cercles et les arcs par des flèches incurvées.</p>
+<p>Le composnat permet de mettre en valeur un chemin, et réagit lorsqu'on survole les noeuds.</p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a7e1ec81d4826411cba58a2e8e2bd333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1ec81d4826411cba58a2e8e2bd333e">&#9670;&nbsp;</a></span>EDGE_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EDGE_WIDTH&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètre de représentation : largeur du trait pour les arcs (non fonctionnel) </p>
+
+</div>
+</div>
+<a id="a7ff1bdaea529894a3efdb480b1f2c8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff1bdaea529894a3efdb480b1f2c8ee">&#9670;&nbsp;</a></span>NODE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NODE_SIZE&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètre de représentation : taille des noeuds </p>
+
+</div>
+</div>
+<a id="aa1fc596899e1302d6c5b5a6064d6bbac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fc596899e1302d6c5b5a6064d6bbac">&#9670;&nbsp;</a></span>NODE_SKIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NODE_SKIP&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Paramètre de représentation : espace entre le noeud et les arcs </p>
+
+</div>
+</div>
+<a id="ab32faca800f36dcd06570622d58546a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32faca800f36dcd06570622d58546a3">&#9670;&nbsp;</a></span>TOOLTIP_THRESH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOOLTIP_THRESH&#160;&#160;&#160;30.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distance au centre du noeud à partir de laquelle la tooltip est affichée </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a27fbde85715f2f12266899d082cc3fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27fbde85715f2f12266899d082cc3fd8">&#9670;&nbsp;</a></span>create_graphrep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a>* create_graphrep </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a>&#160;</td>
+          <td class="paramname"><em>viewport</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée un composant de représentation de graphe pour la fenêtre donnée et avec le graphe donné. Le composant représente le graphe sur la zone réelle donnée (area) et avec le viewport donné, qui convertit les coordonnées des noeuds en coordonnées d'écran. Cela permet de représenter n'importe quel système de coordonnée du graphe.</p>
+<p>Pré-conditions : window non NULL, graph non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle mettre le composant </td></tr>
+    <tr><td class="paramname">graph</td><td>graphe à représenter </td></tr>
+    <tr><td class="paramname">area</td><td>zone de l'écran où le composant est représenté </td></tr>
+    <tr><td class="paramname">viewport</td><td>transformation entre écran et système de coordonnées du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>composant de représentation, alloué sur le tas </dd></dl>
+
+</div>
+</div>
+<a id="ae56cbd6aa7e47ed7990c3cbe291fe5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56cbd6aa7e47ed7990c3cbe291fe5a8">&#9670;&nbsp;</a></span>create_graphrep_with_vp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a>* create_graphrep_with_vp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>area</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée un composant de représentation de graphe pour la fenêtre donnée et avec le graphe donné, pour la zone d'écran donné. Le viewport est calculé automatiquement à partir de l'aire occupée par le graphe et de la zone donnée.</p>
+<p>Pré-conditions : window non NULL, graph non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle représenter le composant </td></tr>
+    <tr><td class="paramname">graph</td><td>graphe à représenter </td></tr>
+    <tr><td class="paramname">area</td><td>zone de l'écran dans laquelle représenter le graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>composant de représentation, alloué sur le tas </dd></dl>
+
+</div>
+</div>
+<a id="a860fafb9588335afcc96e32a1b549f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860fafb9588335afcc96e32a1b549f19">&#9670;&nbsp;</a></span>dispose_graphrep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispose_graphrep </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> **&#160;</td>
+          <td class="paramname"><em>graphrep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Détruit le composant de représentation de graphe (libère toute la mémoire allouée). Ceci ne libère pas le graphe.</p>
+<p>Pré-conditions : graphrep non NULL, graphrep pas déjà détruit Post-conditions : *graphrep == NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>[in/out] composant à libérer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f8d298d30336c25831a985e5f5d97cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8d298d30336c25831a985e5f5d97cd">&#9670;&nbsp;</a></span>get_viewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_viewport </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td>
+          <td class="paramname"><em>graphrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structviewport__t.html">viewport_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Récupère le viewport associé au composant.</p>
+<p>Pré-conditions : graphrep non NULL, viewport non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>composant dont on veut le viewport </td></tr>
+    <tr><td class="paramname">result</td><td>[out] viewport résultat </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a90df8d02bbfa1ba1a69241eccbfdbe45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90df8d02bbfa1ba1a69241eccbfdbe45">&#9670;&nbsp;</a></span>graphrep_repaint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphrep_repaint </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recalcul le rendu du graphe. Cette fonction est appelée par la fenêtre lors du repaint, et doit donc être appelée dans le thread de rendu.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre sur laquelle est rendu le graphe </td></tr>
+    <tr><td class="paramname">userdata</td><td>données utilisateur transmise par le thread, un graphrep en théorie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a287ba0163afb3b05d0432cf1cfe52b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287ba0163afb3b05d0432cf1cfe52b65">&#9670;&nbsp;</a></span>highlight_edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_edge </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td>
+          <td class="paramname"><em>graphrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Met en évidence l'arrête donnée (si elle existe). Il ne peut y avoir qu'une seule arrête mise en évidence. Si l'arrête n'existe pas, aucune arrête n'est mise en évidence, ce qui permet de retirer la mise en évidence au besoin.</p>
+<p>À noter que si une arrête est mise en évidence et appartient au chemin actuellement mis en évidence, elle n'apparaît pas (priorité au chemin).</p>
+<p>Pré-conditions : graphrep != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>composant à mettre à jour </td></tr>
+    <tr><td class="paramname">source</td><td>source de l'arrête </td></tr>
+    <tr><td class="paramname">dest</td><td>destination de l'arrête </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5471cbdd21ab6cdf128102b4a6f08faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5471cbdd21ab6cdf128102b4a6f08faf">&#9670;&nbsp;</a></span>highlight_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_node </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td>
+          <td class="paramname"><em>graphrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change la couleur (d'arrière plan) du noeud donné avec la couleur donnée.</p>
+<p>Pré-conditions : graphrep != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>composant à mettre à jour </td></tr>
+    <tr><td class="paramname">node</td><td>noeud dont on veut changer la couleur </td></tr>
+    <tr><td class="paramname">color</td><td>couleur du noeud </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2744c4fe87e9dba3ab79987e866e5121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2744c4fe87e9dba3ab79987e866e5121">&#9670;&nbsp;</a></span>highlight_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_path </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td>
+          <td class="paramname"><em>graphrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">liste_noeud_t *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Met en évidence un chemin dans le graphe, sous la forme de liste de noeud.</p>
+<p>Cette fonction affiche dans une couleur différente les noeuds du chemin, et les arrêtes (ces dernières étant les couples (précédent(noeud), noeud) stockés dans le chemin).</p>
+<p>Si path est NULL, la mise en évidence est annulée.</p>
+<p>Pré-conditions : graphrep != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>composant à mettre à jour </td></tr>
+    <tr><td class="paramname">path</td><td>chemin à mettre en évidence (ou NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e2d13c9ddc1fc7c623ce13dfbf016f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2d13c9ddc1fc7c623ce13dfbf016f6">&#9670;&nbsp;</a></span>move_mouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void move_mouse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgraphrep__t.html">graphrep_t</a> *&#160;</td>
+          <td class="paramname"><em>graphrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Point&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bouge la souris sur le composant (pour mettre à jour l'affichage de tooltip typiquement).</p>
+<p>Pré-conditions : graphrep non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphrep</td><td>composant à mettre à jour </td></tr>
+    <tr><td class="paramname">pos</td><td>position de la souris, usuellement obtenu via un event SDL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

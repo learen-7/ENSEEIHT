@@ -1,0 +1,66 @@
+\hypertarget{structdijkstra__event__t}{}\doxysection{Référence de la structure dijkstra\+\_\+event\+\_\+t}
+\label{structdijkstra__event__t}\index{dijkstra\_event\_t@{dijkstra\_event\_t}}
+
+
+{\ttfamily \#include $<$dijkstra\+\_\+event.\+h$>$}
+
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{structdijkstra__event__t_ac1d563f909f4e194f17c389064527352}{on\+\_\+visiting}} )(\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)
+\item 
+void($\ast$ \mbox{\hyperlink{structdijkstra__event__t_a41e3eae530c25dac1e9f633f6e823948}{on\+\_\+visited}} )(\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)
+\item 
+void($\ast$ \mbox{\hyperlink{structdijkstra__event__t_a6b4790228fafb064ec9eedf74ff76624}{on\+\_\+exploring}} )(\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)
+\item 
+void($\ast$ \mbox{\hyperlink{structdijkstra__event__t_ad70082a8fbf434be3a36cfad56c23726}{on\+\_\+marking}} )(\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)
+\item 
+void($\ast$ \mbox{\hyperlink{structdijkstra__event__t_aa669e1cea6df7a830aa7590fbe3f1131}{on\+\_\+path\+\_\+build}} )(liste\+\_\+noeud\+\_\+t $\ast$, void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Un enregistrement qui contient des fonctions que la fonction dijkstra doit appeler à certaines étapes du calcul.
+
+L\textquotesingle{}utilisateur fourni typiquement certaines ou plusieurs fonctions et dijkstra se charge de les appeler au bon moment, et en passant les user data données initialement (argument de type {\ttfamily void$\ast$} de chaque fonction).
+
+On doit pouvoir laisser un champ à N\+U\+LL si on n\textquotesingle{}utilise pas la fonction.
+
+Cette façon de procéder ressemble beaucoup à un patron de conception type {\itshape listener} (ou {\itshape observer}), sauf qu\textquotesingle{}on est pas en objet ! Néanmoins le principe est le même et est inspiré de la programmation réactive/événementielle \+: l\textquotesingle{}appel d\textquotesingle{}une de ces fonction correspond en quelques sortes à l\textquotesingle{}émission d\textquotesingle{}un événement, et le code exécuté au comportement attendu à la réception de l\textquotesingle{}événement. 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structdijkstra__event__t_a6b4790228fafb064ec9eedf74ff76624}\label{structdijkstra__event__t_a6b4790228fafb064ec9eedf74ff76624}} 
+\index{dijkstra\_event\_t@{dijkstra\_event\_t}!on\_exploring@{on\_exploring}}
+\index{on\_exploring@{on\_exploring}!dijkstra\_event\_t@{dijkstra\_event\_t}}
+\doxysubsubsection{\texorpdfstring{on\_exploring}{on\_exploring}}
+{\footnotesize\ttfamily void($\ast$ dijkstra\+\_\+event\+\_\+t\+::on\+\_\+exploring) (\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)}
+
+Fonction appelée lorsque l\textquotesingle{}algorithme explore un voisin (boucle intérieure, celle qui parcourt les voisins). Les arguments sont, dans l\textquotesingle{}ordre \+: le noeud courant, le noeud voisin et les user data \mbox{\Hypertarget{structdijkstra__event__t_ad70082a8fbf434be3a36cfad56c23726}\label{structdijkstra__event__t_ad70082a8fbf434be3a36cfad56c23726}} 
+\index{dijkstra\_event\_t@{dijkstra\_event\_t}!on\_marking@{on\_marking}}
+\index{on\_marking@{on\_marking}!dijkstra\_event\_t@{dijkstra\_event\_t}}
+\doxysubsubsection{\texorpdfstring{on\_marking}{on\_marking}}
+{\footnotesize\ttfamily void($\ast$ dijkstra\+\_\+event\+\_\+t\+::on\+\_\+marking) (\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)}
+
+Fonction appelée lorsque l\textquotesingle{}algorithme marque le noeud comme \char`\"{}à visiter\char`\"{} (boucle intérieure, celle qui parcourt les voisins). Les arguments sont \+: le noeud ajouté à A\+Visiter et les user data. \mbox{\Hypertarget{structdijkstra__event__t_aa669e1cea6df7a830aa7590fbe3f1131}\label{structdijkstra__event__t_aa669e1cea6df7a830aa7590fbe3f1131}} 
+\index{dijkstra\_event\_t@{dijkstra\_event\_t}!on\_path\_build@{on\_path\_build}}
+\index{on\_path\_build@{on\_path\_build}!dijkstra\_event\_t@{dijkstra\_event\_t}}
+\doxysubsubsection{\texorpdfstring{on\_path\_build}{on\_path\_build}}
+{\footnotesize\ttfamily void($\ast$ dijkstra\+\_\+event\+\_\+t\+::on\+\_\+path\+\_\+build) (liste\+\_\+noeud\+\_\+t $\ast$, void $\ast$)}
+
+Fonction appelée à chaque fois que le chemin change lors de la construction du chemin (lorsqu\textquotesingle{}on ajoute un noeud a priori). Les arguments sont \+: le chemin en cours de construction et les user data. \mbox{\Hypertarget{structdijkstra__event__t_a41e3eae530c25dac1e9f633f6e823948}\label{structdijkstra__event__t_a41e3eae530c25dac1e9f633f6e823948}} 
+\index{dijkstra\_event\_t@{dijkstra\_event\_t}!on\_visited@{on\_visited}}
+\index{on\_visited@{on\_visited}!dijkstra\_event\_t@{dijkstra\_event\_t}}
+\doxysubsubsection{\texorpdfstring{on\_visited}{on\_visited}}
+{\footnotesize\ttfamily void($\ast$ dijkstra\+\_\+event\+\_\+t\+::on\+\_\+visited) (\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)}
+
+Fonction appelée lorsque l\textquotesingle{}algorithme a terminé de visiter le noeud (fin de la boucle principale). Les arguments sont \+: le noeud visité et les user data. \mbox{\Hypertarget{structdijkstra__event__t_ac1d563f909f4e194f17c389064527352}\label{structdijkstra__event__t_ac1d563f909f4e194f17c389064527352}} 
+\index{dijkstra\_event\_t@{dijkstra\_event\_t}!on\_visiting@{on\_visiting}}
+\index{on\_visiting@{on\_visiting}!dijkstra\_event\_t@{dijkstra\_event\_t}}
+\doxysubsubsection{\texorpdfstring{on\_visiting}{on\_visiting}}
+{\footnotesize\ttfamily void($\ast$ dijkstra\+\_\+event\+\_\+t\+::on\+\_\+visiting) (\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}, void $\ast$)}
+
+Fonction appelée lorsque l\textquotesingle{}algorithme visite un noeud (début de la boucle principale). Les arguments sont \+: le noeud visité et les user data. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dijkstra__event_8h}{dijkstra\+\_\+event.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\hypertarget{structwindow__t}{}\doxysection{Référence de la structure window\+\_\+t}
+\label{structwindow__t}\index{window\_t@{window\_t}}
+
+
+Graphe de collaboration de window\+\_\+t\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{structwindow__t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structwindow__t_a3412c5de742000f543a918bcc923b9ce}{w}}
+\item 
+int \mbox{\hyperlink{structwindow__t_aca9315f1a7d8ce00adf0a09a47d7f850}{h}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structwindow__t_abbfda1b331e321ffc40c2404cb1885b7}{name}}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{structwindow__t_a29435f6d7667ff1ee309674d98962040}{window}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{structwindow__t_a79ad8be3dbb4a46cbf4554b64f64d70c}{renderer}}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{structwindow__t_adf4c7fc2a53c36bc538abe58c70eceff}{target}}
+\item 
+S\+D\+L\+\_\+\+Color \mbox{\hyperlink{structwindow__t_accc265d2948ef2573c102613d6234c81}{background}}
+\item 
+T\+T\+F\+\_\+\+Font $\ast$$\ast$ \mbox{\hyperlink{structwindow__t_adbc3790135997b96db674d635bbd475f}{loaded\+\_\+fonts}}
+\item 
+int \mbox{\hyperlink{structwindow__t_acb289a91753b5530dad94d2bea59f35c}{fontreg\+\_\+size}}
+\item 
+\mbox{\hyperlink{window_8h_a4f4c801416083dd1d4093d13d36c0c8a}{repaint\+\_\+fn}} \mbox{\hyperlink{structwindow__t_a8173061bf92f1b6dd7b3602f3a5b1152}{repaint}}
+\item 
+void $\ast$ \mbox{\hyperlink{structwindow__t_a6590b2ae68807e6498d474e045db22d3}{userdata}}
+\item 
+S\+D\+L\+\_\+\+Thread $\ast$ \mbox{\hyperlink{structwindow__t_ad624004441a727dadef75574b084fbc0}{render\+\_\+thread}}
+\item 
+S\+D\+L\+\_\+mutex $\ast$ \mbox{\hyperlink{structwindow__t_a7e1190514128d81577f6251bfdd822a4}{mutex}}
+\item 
+S\+D\+L\+\_\+sem $\ast$ \mbox{\hyperlink{structwindow__t_abfc6586198d636520acf65f7b4ea7675}{ready}}
+\item 
+S\+D\+L\+\_\+sem $\ast$ \mbox{\hyperlink{structwindow__t_af5135367ba11f2233e4e8f3e90058853}{wake\+\_\+up}}
+\item 
+bool \mbox{\hyperlink{structwindow__t_a3023ee7297e27993ad0ba158eff4ed18}{stop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implémenation du type pour la fenêtre. Contient principalement une {\ttfamily S\+D\+L\+\_\+\+Window} et son {\ttfamily S\+D\+L\+\_\+\+Renderer}, une texture cible représentant le contenu de la fenêtre, la fonction {\ttfamily repaint} donnée par l\textquotesingle{}utilisateur et diverses choses pour la concurrence. 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structwindow__t_accc265d2948ef2573c102613d6234c81}\label{structwindow__t_accc265d2948ef2573c102613d6234c81}} 
+\index{window\_t@{window\_t}!background@{background}}
+\index{background@{background}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Color window\+\_\+t\+::background}
+
+Couleur de fond \mbox{\Hypertarget{structwindow__t_acb289a91753b5530dad94d2bea59f35c}\label{structwindow__t_acb289a91753b5530dad94d2bea59f35c}} 
+\index{window\_t@{window\_t}!fontreg\_size@{fontreg\_size}}
+\index{fontreg\_size@{fontreg\_size}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{fontreg\_size}{fontreg\_size}}
+{\footnotesize\ttfamily int window\+\_\+t\+::fontreg\+\_\+size}
+
+Taille du registre des polices chargées \mbox{\Hypertarget{structwindow__t_aca9315f1a7d8ce00adf0a09a47d7f850}\label{structwindow__t_aca9315f1a7d8ce00adf0a09a47d7f850}} 
+\index{window\_t@{window\_t}!h@{h}}
+\index{h@{h}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int window\+\_\+t\+::h}
+
+Hautuer de la fenêtre \mbox{\Hypertarget{structwindow__t_adbc3790135997b96db674d635bbd475f}\label{structwindow__t_adbc3790135997b96db674d635bbd475f}} 
+\index{window\_t@{window\_t}!loaded\_fonts@{loaded\_fonts}}
+\index{loaded\_fonts@{loaded\_fonts}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{loaded\_fonts}{loaded\_fonts}}
+{\footnotesize\ttfamily T\+T\+F\+\_\+\+Font$\ast$$\ast$ window\+\_\+t\+::loaded\+\_\+fonts}
+
+Ensemble des polices chargées \mbox{\Hypertarget{structwindow__t_a7e1190514128d81577f6251bfdd822a4}\label{structwindow__t_a7e1190514128d81577f6251bfdd822a4}} 
+\index{window\_t@{window\_t}!mutex@{mutex}}
+\index{mutex@{mutex}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+mutex$\ast$ window\+\_\+t\+::mutex}
+
+Verrour sur cet enregistrement (partagé entre le thread principal et le render thread \mbox{\Hypertarget{structwindow__t_abbfda1b331e321ffc40c2404cb1885b7}\label{structwindow__t_abbfda1b331e321ffc40c2404cb1885b7}} 
+\index{window\_t@{window\_t}!name@{name}}
+\index{name@{name}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char$\ast$ window\+\_\+t\+::name}
+
+Titre de la fenêtre. \mbox{\Hypertarget{structwindow__t_abfc6586198d636520acf65f7b4ea7675}\label{structwindow__t_abfc6586198d636520acf65f7b4ea7675}} 
+\index{window\_t@{window\_t}!ready@{ready}}
+\index{ready@{ready}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{ready}{ready}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+sem$\ast$ window\+\_\+t\+::ready}
+
+Sémaphore qui indique la fenêtre est \char`\"{}prête\char`\"{}, autrement dit qu\textquotesingle{}elle a terminé l\textquotesingle{}initialisation et la tâche de rafraîchissement (signalisé par la fenêtre). \mbox{\Hypertarget{structwindow__t_ad624004441a727dadef75574b084fbc0}\label{structwindow__t_ad624004441a727dadef75574b084fbc0}} 
+\index{window\_t@{window\_t}!render\_thread@{render\_thread}}
+\index{render\_thread@{render\_thread}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{render\_thread}{render\_thread}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Thread$\ast$ window\+\_\+t\+::render\+\_\+thread}
+
+Le render thread. \mbox{\Hypertarget{structwindow__t_a79ad8be3dbb4a46cbf4554b64f64d70c}\label{structwindow__t_a79ad8be3dbb4a46cbf4554b64f64d70c}} 
+\index{window\_t@{window\_t}!renderer@{renderer}}
+\index{renderer@{renderer}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ window\+\_\+t\+::renderer}
+
+Renderer associé à la fenêtre. \mbox{\Hypertarget{structwindow__t_a8173061bf92f1b6dd7b3602f3a5b1152}\label{structwindow__t_a8173061bf92f1b6dd7b3602f3a5b1152}} 
+\index{window\_t@{window\_t}!repaint@{repaint}}
+\index{repaint@{repaint}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{repaint}{repaint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{window_8h_a4f4c801416083dd1d4093d13d36c0c8a}{repaint\+\_\+fn}} window\+\_\+t\+::repaint}
+
+Callback pour rendre les éléments dans la fenêtre, appelé par le render thread. \mbox{\Hypertarget{structwindow__t_a3023ee7297e27993ad0ba158eff4ed18}\label{structwindow__t_a3023ee7297e27993ad0ba158eff4ed18}} 
+\index{window\_t@{window\_t}!stop@{stop}}
+\index{stop@{stop}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily bool window\+\_\+t\+::stop}
+
+Commande pour stopper la fenêtre (si stop == true au prochian réveil le render-\/thread se termine). \mbox{\Hypertarget{structwindow__t_adf4c7fc2a53c36bc538abe58c70eceff}\label{structwindow__t_adf4c7fc2a53c36bc538abe58c70eceff}} 
+\index{window\_t@{window\_t}!target@{target}}
+\index{target@{target}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ window\+\_\+t\+::target}
+
+Texture cible du contenu de la fenêtre, sur laquelle le rendu est effectué. \mbox{\Hypertarget{structwindow__t_a6590b2ae68807e6498d474e045db22d3}\label{structwindow__t_a6590b2ae68807e6498d474e045db22d3}} 
+\index{window\_t@{window\_t}!userdata@{userdata}}
+\index{userdata@{userdata}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{userdata}{userdata}}
+{\footnotesize\ttfamily void$\ast$ window\+\_\+t\+::userdata}
+
+Données utilisateur passées au moment de créer la fenêtre et transmises au callback. \mbox{\Hypertarget{structwindow__t_a3412c5de742000f543a918bcc923b9ce}\label{structwindow__t_a3412c5de742000f543a918bcc923b9ce}} 
+\index{window\_t@{window\_t}!w@{w}}
+\index{w@{w}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int window\+\_\+t\+::w}
+
+Largeur de la fenêtre. \mbox{\Hypertarget{structwindow__t_af5135367ba11f2233e4e8f3e90058853}\label{structwindow__t_af5135367ba11f2233e4e8f3e90058853}} 
+\index{window\_t@{window\_t}!wake\_up@{wake\_up}}
+\index{wake\_up@{wake\_up}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{wake\_up}{wake\_up}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+sem$\ast$ window\+\_\+t\+::wake\+\_\+up}
+
+Sémaphore pour \char`\"{}réveiller\char`\"{} la fenêtre et initier le rafraîhcissement (en attente par le render thread). \mbox{\Hypertarget{structwindow__t_a29435f6d7667ff1ee309674d98962040}\label{structwindow__t_a29435f6d7667ff1ee309674d98962040}} 
+\index{window\_t@{window\_t}!window@{window}}
+\index{window@{window}!window\_t@{window\_t}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ window\+\_\+t\+::window}
+
+Objet S\+DL représentant la fenêtre. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{window_8c}{window.\+c}}\end{DoxyCompactItemize}

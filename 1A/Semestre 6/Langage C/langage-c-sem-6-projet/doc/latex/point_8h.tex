@@ -1,0 +1,136 @@
+\hypertarget{point_8h}{}\doxysection{Référence du fichier point.\+h}
+\label{point_8h}\index{point.h@{point.h}}
+
+
+Module point qui définit les points cartésiens. On utilise \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} plutôt que S\+D\+L\+\_\+\+Point pour les points \char`\"{}réels\char`\"{} (par opposition aux points dans les écrans).  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de point.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{point_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{point_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpoint__t}{point\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{point_8h_a2b0221dd36afc02e501c4b15acb309be}{point\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{point_8h_a9eeb0c55118bb55f3d28c47a66f8382f}{creer\+\_\+point}} (double x, double y)
+\item 
+void \mbox{\hyperlink{point_8h_a1391b51a9335c0c82031cc5e02299200}{copier\+\_\+point}} (\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$cible, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} source)
+\item 
+double \mbox{\hyperlink{point_8h_a377418536ab9a0485f218dfc8317f161}{distance}} (\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} a, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} b)
+\item 
+bool \mbox{\hyperlink{point_8h_a8f2ac9db6d928e0ebf6f896e50fec5ec}{egal}} (\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} a, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} b, double precision)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Module point qui définit les points cartésiens. On utilise \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} plutôt que S\+D\+L\+\_\+\+Point pour les points \char`\"{}réels\char`\"{} (par opposition aux points dans les écrans). 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{point_8h_a2b0221dd36afc02e501c4b15acb309be}\label{point_8h_a2b0221dd36afc02e501c4b15acb309be}} 
+\index{point.h@{point.h}!point\_t@{point\_t}}
+\index{point\_t@{point\_t}!point.h@{point.h}}
+\doxysubsubsection{\texorpdfstring{point\_t}{point\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}
+
+Typedef pour l\textquotesingle{}enregistrement {\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}}} 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{point_8h_a1391b51a9335c0c82031cc5e02299200}\label{point_8h_a1391b51a9335c0c82031cc5e02299200}} 
+\index{point.h@{point.h}!copier\_point@{copier\_point}}
+\index{copier\_point@{copier\_point}!point.h@{point.h}}
+\doxysubsubsection{\texorpdfstring{copier\_point()}{copier\_point()}}
+{\footnotesize\ttfamily void copier\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} $\ast$}]{cible,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{source }\end{DoxyParamCaption})}
+
+Copier un point.
+
+Post-\/conditions \+: si cible != N\+U\+LL, cible-\/$>$x == source.\+x, cible-\/$>$y == source.\+y
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cible} & \mbox{[}out\mbox{]} point récepteur de la copie \\
+\hline
+{\em source} & point à copier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{point_8h_a9eeb0c55118bb55f3d28c47a66f8382f}\label{point_8h_a9eeb0c55118bb55f3d28c47a66f8382f}} 
+\index{point.h@{point.h}!creer\_point@{creer\_point}}
+\index{creer\_point@{creer\_point}!point.h@{point.h}}
+\doxysubsubsection{\texorpdfstring{creer\_point()}{creer\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} creer\+\_\+point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Crée un point (sur la pile) avec les coordonnée données. 
+\begin{DoxyParams}{Paramètres}
+{\em x} & abscisse du point \\
+\hline
+{\em y} & ordonnée du point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+point créé (sur la pile) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{point_8h_a377418536ab9a0485f218dfc8317f161}\label{point_8h_a377418536ab9a0485f218dfc8317f161}} 
+\index{point.h@{point.h}!distance@{distance}}
+\index{distance@{distance}!point.h@{point.h}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily double distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+Distance (euclidienne) entre deux points.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & premier point \\
+\hline
+{\em b} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+distance entre a et b (racine carrée de la norme-\/2) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{point_8h_a8f2ac9db6d928e0ebf6f896e50fec5ec}\label{point_8h_a8f2ac9db6d928e0ebf6f896e50fec5ec}} 
+\index{point.h@{point.h}!egal@{egal}}
+\index{egal@{egal}!point.h@{point.h}}
+\doxysubsubsection{\texorpdfstring{egal()}{egal()}}
+{\footnotesize\ttfamily bool egal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{b,  }\item[{double}]{precision }\end{DoxyParamCaption})}
+
+Teste si deux points sont égaux (à précision près). Ce test se base sur la distance.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & premier point \\
+\hline
+{\em b} & second point \\
+\hline
+{\em precision} & seuil en-\/dessous duquel les points sont considérés comme égaux \\
+\hline
+\end{DoxyParams}

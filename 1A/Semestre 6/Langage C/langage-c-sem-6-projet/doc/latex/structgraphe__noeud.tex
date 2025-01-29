@@ -1,0 +1,66 @@
+\hypertarget{structgraphe__noeud}{}\doxysection{Référence de la structure graphe\+\_\+noeud}
+\label{structgraphe__noeud}\index{graphe\_noeud@{graphe\_noeud}}
+
+
+Graphe de collaboration de graphe\+\_\+noeud\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{structgraphe__noeud__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{structgraphe__noeud_a537d6b9a98ceeceaf2693615038dad2a}{id}}
+\item 
+\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{structgraphe__noeud_a61495528af677717973a15481c2d0ece}{position}}
+\item 
+void $\ast$ \mbox{\hyperlink{structgraphe__noeud_a448661fe65a1bc0cdf34644e19f505bb}{donnees}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structgraphe__noeud_a0e20f4f1ac20e623cdb0d679f1ee5ccd}{nombre\+\_\+voisins}}
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} $\ast$ \mbox{\hyperlink{structgraphe__noeud_a487538dd271298cab284b6e799383833}{voisins}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Noeud d\textquotesingle{}un graphe. 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structgraphe__noeud_a448661fe65a1bc0cdf34644e19f505bb}\label{structgraphe__noeud_a448661fe65a1bc0cdf34644e19f505bb}} 
+\index{graphe\_noeud@{graphe\_noeud}!donnees@{donnees}}
+\index{donnees@{donnees}!graphe\_noeud@{graphe\_noeud}}
+\doxysubsubsection{\texorpdfstring{donnees}{donnees}}
+{\footnotesize\ttfamily void$\ast$ graphe\+\_\+noeud\+::donnees}
+
+Donnée utilisateur du noeud \mbox{\Hypertarget{structgraphe__noeud_a537d6b9a98ceeceaf2693615038dad2a}\label{structgraphe__noeud_a537d6b9a98ceeceaf2693615038dad2a}} 
+\index{graphe\_noeud@{graphe\_noeud}!id@{id}}
+\index{id@{id}!graphe\_noeud@{graphe\_noeud}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} graphe\+\_\+noeud\+::id}
+
+Identifiant du noeud (calculé à l\textquotesingle{}appel de \mbox{\hyperlink{graphe_8h_ab81a308fbabcbcd0f377006f7824cb30}{creer\+\_\+noeud}}) \mbox{\Hypertarget{structgraphe__noeud_a0e20f4f1ac20e623cdb0d679f1ee5ccd}\label{structgraphe__noeud_a0e20f4f1ac20e623cdb0d679f1ee5ccd}} 
+\index{graphe\_noeud@{graphe\_noeud}!nombre\_voisins@{nombre\_voisins}}
+\index{nombre\_voisins@{nombre\_voisins}!graphe\_noeud@{graphe\_noeud}}
+\doxysubsubsection{\texorpdfstring{nombre\_voisins}{nombre\_voisins}}
+{\footnotesize\ttfamily size\+\_\+t graphe\+\_\+noeud\+::nombre\+\_\+voisins}
+
+Nombre de voisins (directs) du noeud \mbox{\Hypertarget{structgraphe__noeud_a61495528af677717973a15481c2d0ece}\label{structgraphe__noeud_a61495528af677717973a15481c2d0ece}} 
+\index{graphe\_noeud@{graphe\_noeud}!position@{position}}
+\index{position@{position}!graphe\_noeud@{graphe\_noeud}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} graphe\+\_\+noeud\+::position}
+
+Position cartésienne du noeud \mbox{\Hypertarget{structgraphe__noeud_a487538dd271298cab284b6e799383833}\label{structgraphe__noeud_a487538dd271298cab284b6e799383833}} 
+\index{graphe\_noeud@{graphe\_noeud}!voisins@{voisins}}
+\index{voisins@{voisins}!graphe\_noeud@{graphe\_noeud}}
+\doxysubsubsection{\texorpdfstring{voisins}{voisins}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}$\ast$ graphe\+\_\+noeud\+::voisins}
+
+Tableau des voisins du noeud. La taille réelle du tableau est égale au nombre de noeuds dans le graphe ; normalement on a pas besoin de plus (!), mais si le graphe n\textquotesingle{}est pas fortement connexe, ça fait pas mal d\textquotesingle{}espace gaspillé... En échange, c\textquotesingle{}est rapide et pratique. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphe_8c}{graphe.\+c}}\end{DoxyCompactItemize}

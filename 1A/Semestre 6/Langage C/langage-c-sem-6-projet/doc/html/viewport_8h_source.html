@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de viewport.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">viewport.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="viewport_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of Dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2023 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef VIEWPORT_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define VIEWPORT_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_rect.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">point.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structviewport__t.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structviewport__t.html">viewport_t</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structviewport__t.html#a191f3a38e76b262cfb871ddb604f80b6">   44</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structviewport__t.html#a191f3a38e76b262cfb871ddb604f80b6">scale_x</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structviewport__t.html#a7e8582112082b4a1d6d6f982cc2d5046">   46</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structviewport__t.html#a7e8582112082b4a1d6d6f982cc2d5046">off_x</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structviewport__t.html#ae39f1935d21f96f546925e8c143126e6">   48</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structviewport__t.html#ae39f1935d21f96f546925e8c143126e6">scale_y</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structviewport__t.html#ae4b819816f16e8954ba3471ee6c7bbb0">   50</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structviewport__t.html#ae4b819816f16e8954ba3471ee6c7bbb0">off_y</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="viewport_8h.html#a610a5439758620daa01568e1cba4a473">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="structviewport__t.html">viewport_t</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structrect__t.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structrect__t.html">rect_t</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structrect__t.html#aa891f48559c0f177df204dffe23ed11d">   65</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrect__t.html#aa891f48559c0f177df204dffe23ed11d">bottom</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structrect__t.html#a45eb0e6af0437ee7b4fa2666fc70734c">   67</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrect__t.html#a45eb0e6af0437ee7b4fa2666fc70734c">left</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structrect__t.html#a003698d045d305a89da40b94df70befe">   69</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrect__t.html#a003698d045d305a89da40b94df70befe">right</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structrect__t.html#a38d100180432e32e9629970e8a36d771">   71</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structrect__t.html#a38d100180432e32e9629970e8a36d771">top</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="viewport_8h.html#a2ad393b06dd4b65dbc7ddf8fd9344fe3">   75</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structrect__t.html">rect_t</a> <a class="code" href="structrect__t.html">rect_t</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a6e7d76ee8db88c5db933d10e91524c94">mkrect</a>(<a class="code" href="structrect__t.html">rect_t</a>* result, <a class="code" href="structpoint__t.html">point_t</a> bottomleft, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#abc7dd40574a1358e8831d092cb83296b">mkrect_corners</a>(<a class="code" href="structrect__t.html">rect_t</a>* result, <a class="code" href="structpoint__t.html">point_t</a> bottomleft, <a class="code" href="structpoint__t.html">point_t</a> topright);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#ab25553aadb0ca421f803a721e9cd6896">mkrect_center</a>(<a class="code" href="structrect__t.html">rect_t</a>* result, <a class="code" href="structpoint__t.html">point_t</a> center, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a97146c29bf5a96a9a9b20fbc3821184b">get_size</a>(<a class="code" href="structrect__t.html">rect_t</a> rect, <span class="keywordtype">double</span>* width, <span class="keywordtype">double</span>* height);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="viewport_8h.html#ad538817469cf7fab230bfd57f5fc56ee">get_center</a>(<a class="code" href="structrect__t.html">rect_t</a> rect);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a056365b1efbb04350dbabf692c218f4b">scale_move_center</a>(<a class="code" href="structrect__t.html">rect_t</a>* rect, <span class="keywordtype">double</span> scale, <a class="code" href="structpoint__t.html">point_t</a> center);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#af0effe29ef76d60a5da9956112f4f4d7">translate_rect</a>(<a class="code" href="structrect__t.html">rect_t</a>* rect, <span class="keywordtype">double</span> dx, <span class="keywordtype">double</span> dy);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>(<a class="code" href="structviewport__t.html">viewport_t</a>* result, SDL_Rect display, <a class="code" href="structrect__t.html">rect_t</a> real);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a9864fca47017c4e5cea0cf90676cdc63">viewport_unit_aspect</a>(<a class="code" href="structviewport__t.html">viewport_t</a>* result, SDL_Rect display, <a class="code" href="structrect__t.html">rect_t</a> real);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a15d029a73109f626dc0fc70fb74d3ea5">viewport_unit_fit</a>(<a class="code" href="structviewport__t.html">viewport_t</a>* result, SDL_Rect display, <a class="code" href="structrect__t.html">rect_t</a> real);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#ad44aa13ab01a0164ff92f378b0510d6f">copy_viewport</a>(<a class="code" href="structviewport__t.html">viewport_t</a>* result, <a class="code" href="structviewport__t.html">viewport_t</a> source);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a4350de0fc88cde225994fde481cf1b35">from_display_point</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="code" href="structpoint__t.html">point_t</a>* real, SDL_Point display);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a29c96eda9e371906a5c4c776f699c30f">from_real_point</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Point* display, <a class="code" href="structpoint__t.html">point_t</a> real);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#ae9837d08224e32e5b867cd7a4128b46c">from_display_vec</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="code" href="structpoint__t.html">point_t</a>* real, SDL_Point display);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a53ed8b1246c62debf16b797a1b6542ab">from_real_vec</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Point* display, <a class="code" href="structpoint__t.html">point_t</a> real);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#aa16d69330d6f6091cc62c773ce10c6aa">from_display_rect</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, <a class="code" href="structrect__t.html">rect_t</a>* real, SDL_Rect display);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewport_8h.html#a8268c992dc3ba419032a210b4189236c">from_real_rect</a>(<a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>, SDL_Rect* display, <a class="code" href="structrect__t.html">rect_t</a> real);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif // VIEWPORT_H</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructviewport__t_html_ae39f1935d21f96f546925e8c143126e6"><div class="ttname"><a href="structviewport__t.html#ae39f1935d21f96f546925e8c143126e6">viewport_t::scale_y</a></div><div class="ttdeci">double scale_y</div><div class="ttdef"><b>Definition:</b> viewport.h:48</div></div>
+<div class="ttc" id="aviewport_8h_html_abc7dd40574a1358e8831d092cb83296b"><div class="ttname"><a href="viewport_8h.html#abc7dd40574a1358e8831d092cb83296b">mkrect_corners</a></div><div class="ttdeci">void mkrect_corners(rect_t *result, point_t bottomleft, point_t topright)</div><div class="ttdef"><b>Definition:</b> viewport.c:33</div></div>
+<div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div><div class="ttdoc">Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin...</div></div>
+<div class="ttc" id="astructrect__t_html"><div class="ttname"><a href="structrect__t.html">rect_t</a></div><div class="ttdef"><b>Definition:</b> viewport.h:63</div></div>
+<div class="ttc" id="aviewport_8h_html_a056365b1efbb04350dbabf692c218f4b"><div class="ttname"><a href="viewport_8h.html#a056365b1efbb04350dbabf692c218f4b">scale_move_center</a></div><div class="ttdeci">void scale_move_center(rect_t *rect, double scale, point_t center)</div><div class="ttdef"><b>Definition:</b> viewport.c:64</div></div>
+<div class="ttc" id="aviewport_8h_html_ad44aa13ab01a0164ff92f378b0510d6f"><div class="ttname"><a href="viewport_8h.html#ad44aa13ab01a0164ff92f378b0510d6f">copy_viewport</a></div><div class="ttdeci">void copy_viewport(viewport_t *result, viewport_t source)</div><div class="ttdef"><b>Definition:</b> viewport.c:119</div></div>
+<div class="ttc" id="astructviewport__t_html"><div class="ttname"><a href="structviewport__t.html">viewport_t</a></div><div class="ttdef"><b>Definition:</b> viewport.h:42</div></div>
+<div class="ttc" id="aviewport_8h_html_a97146c29bf5a96a9a9b20fbc3821184b"><div class="ttname"><a href="viewport_8h.html#a97146c29bf5a96a9a9b20fbc3821184b">get_size</a></div><div class="ttdeci">void get_size(rect_t rect, double *width, double *height)</div><div class="ttdef"><b>Definition:</b> viewport.c:47</div></div>
+<div class="ttc" id="astructpoint__t_html"><div class="ttname"><a href="structpoint__t.html">point_t</a></div><div class="ttdef"><b>Definition:</b> point.h:33</div></div>
+<div class="ttc" id="aviewport_8h_html_a29c96eda9e371906a5c4c776f699c30f"><div class="ttname"><a href="viewport_8h.html#a29c96eda9e371906a5c4c776f699c30f">from_real_point</a></div><div class="ttdeci">void from_real_point(viewport_t viewport, SDL_Point *display, point_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:131</div></div>
+<div class="ttc" id="astructrect__t_html_aa891f48559c0f177df204dffe23ed11d"><div class="ttname"><a href="structrect__t.html#aa891f48559c0f177df204dffe23ed11d">rect_t::bottom</a></div><div class="ttdeci">double bottom</div><div class="ttdef"><b>Definition:</b> viewport.h:65</div></div>
+<div class="ttc" id="aviewport_8h_html_ae9837d08224e32e5b867cd7a4128b46c"><div class="ttname"><a href="viewport_8h.html#ae9837d08224e32e5b867cd7a4128b46c">from_display_vec</a></div><div class="ttdeci">void from_display_vec(viewport_t viewport, point_t *real, SDL_Point display)</div><div class="ttdef"><b>Definition:</b> viewport.c:136</div></div>
+<div class="ttc" id="astructviewport__t_html_a7e8582112082b4a1d6d6f982cc2d5046"><div class="ttname"><a href="structviewport__t.html#a7e8582112082b4a1d6d6f982cc2d5046">viewport_t::off_x</a></div><div class="ttdeci">double off_x</div><div class="ttdef"><b>Definition:</b> viewport.h:46</div></div>
+<div class="ttc" id="astructviewport__t_html_a191f3a38e76b262cfb871ddb604f80b6"><div class="ttname"><a href="structviewport__t.html#a191f3a38e76b262cfb871ddb604f80b6">viewport_t::scale_x</a></div><div class="ttdeci">double scale_x</div><div class="ttdef"><b>Definition:</b> viewport.h:44</div></div>
+<div class="ttc" id="astructviewport__t_html_ae4b819816f16e8954ba3471ee6c7bbb0"><div class="ttname"><a href="structviewport__t.html#ae4b819816f16e8954ba3471ee6c7bbb0">viewport_t::off_y</a></div><div class="ttdeci">double off_y</div><div class="ttdef"><b>Definition:</b> viewport.h:50</div></div>
+<div class="ttc" id="aviewport_8h_html_a9864fca47017c4e5cea0cf90676cdc63"><div class="ttname"><a href="viewport_8h.html#a9864fca47017c4e5cea0cf90676cdc63">viewport_unit_aspect</a></div><div class="ttdeci">void viewport_unit_aspect(viewport_t *result, SDL_Rect display, rect_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:88</div></div>
+<div class="ttc" id="aviewport_8h_html_a53ed8b1246c62debf16b797a1b6542ab"><div class="ttname"><a href="viewport_8h.html#a53ed8b1246c62debf16b797a1b6542ab">from_real_vec</a></div><div class="ttdeci">void from_real_vec(viewport_t viewport, SDL_Point *display, point_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:141</div></div>
+<div class="ttc" id="astructrect__t_html_a45eb0e6af0437ee7b4fa2666fc70734c"><div class="ttname"><a href="structrect__t.html#a45eb0e6af0437ee7b4fa2666fc70734c">rect_t::left</a></div><div class="ttdeci">double left</div><div class="ttdef"><b>Definition:</b> viewport.h:67</div></div>
+<div class="ttc" id="aviewport_8h_html_ab25553aadb0ca421f803a721e9cd6896"><div class="ttname"><a href="viewport_8h.html#ab25553aadb0ca421f803a721e9cd6896">mkrect_center</a></div><div class="ttdeci">void mkrect_center(rect_t *result, point_t center, double w, double h)</div><div class="ttdef"><b>Definition:</b> viewport.c:40</div></div>
+<div class="ttc" id="aviewport_8h_html_aa16d69330d6f6091cc62c773ce10c6aa"><div class="ttname"><a href="viewport_8h.html#aa16d69330d6f6091cc62c773ce10c6aa">from_display_rect</a></div><div class="ttdeci">void from_display_rect(viewport_t viewport, rect_t *real, SDL_Rect display)</div><div class="ttdef"><b>Definition:</b> viewport.c:146</div></div>
+<div class="ttc" id="aviewport_8h_html_ad34efe41b719c540dd2ce2e6e5f25f1e"><div class="ttname"><a href="viewport_8h.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a></div><div class="ttdeci">void viewport(viewport_t *result, SDL_Rect display, rect_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:77</div></div>
+<div class="ttc" id="astructrect__t_html_a38d100180432e32e9629970e8a36d771"><div class="ttname"><a href="structrect__t.html#a38d100180432e32e9629970e8a36d771">rect_t::top</a></div><div class="ttdeci">double top</div><div class="ttdef"><b>Definition:</b> viewport.h:71</div></div>
+<div class="ttc" id="aviewport_8h_html_af0effe29ef76d60a5da9956112f4f4d7"><div class="ttname"><a href="viewport_8h.html#af0effe29ef76d60a5da9956112f4f4d7">translate_rect</a></div><div class="ttdeci">void translate_rect(rect_t *rect, double dx, double dy)</div><div class="ttdef"><b>Definition:</b> viewport.c:70</div></div>
+<div class="ttc" id="aviewport_8h_html_a8268c992dc3ba419032a210b4189236c"><div class="ttname"><a href="viewport_8h.html#a8268c992dc3ba419032a210b4189236c">from_real_rect</a></div><div class="ttdeci">void from_real_rect(viewport_t viewport, SDL_Rect *display, rect_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:160</div></div>
+<div class="ttc" id="aviewport_8h_html_a15d029a73109f626dc0fc70fb74d3ea5"><div class="ttname"><a href="viewport_8h.html#a15d029a73109f626dc0fc70fb74d3ea5">viewport_unit_fit</a></div><div class="ttdeci">void viewport_unit_fit(viewport_t *result, SDL_Rect display, rect_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:96</div></div>
+<div class="ttc" id="astructrect__t_html_a003698d045d305a89da40b94df70befe"><div class="ttname"><a href="structrect__t.html#a003698d045d305a89da40b94df70befe">rect_t::right</a></div><div class="ttdeci">double right</div><div class="ttdef"><b>Definition:</b> viewport.h:69</div></div>
+<div class="ttc" id="aviewport_8h_html_ad538817469cf7fab230bfd57f5fc56ee"><div class="ttname"><a href="viewport_8h.html#ad538817469cf7fab230bfd57f5fc56ee">get_center</a></div><div class="ttdeci">point_t get_center(rect_t rect)</div><div class="ttdef"><b>Definition:</b> viewport.c:56</div></div>
+<div class="ttc" id="aviewport_8h_html_a6e7d76ee8db88c5db933d10e91524c94"><div class="ttname"><a href="viewport_8h.html#a6e7d76ee8db88c5db933d10e91524c94">mkrect</a></div><div class="ttdeci">void mkrect(rect_t *result, point_t bottomleft, double w, double h)</div><div class="ttdef"><b>Definition:</b> viewport.c:26</div></div>
+<div class="ttc" id="aviewport_8h_html_a4350de0fc88cde225994fde481cf1b35"><div class="ttname"><a href="viewport_8h.html#a4350de0fc88cde225994fde481cf1b35">from_display_point</a></div><div class="ttdeci">void from_display_point(viewport_t viewport, point_t *real, SDL_Point display)</div><div class="ttdef"><b>Definition:</b> viewport.c:126</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

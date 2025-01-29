@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de window.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">window.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="window_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef WINDOW_H</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define WINDOW_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span><a class="code" href="structwindow__t.html">window_t</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">   54</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">repaint_fn</a>)(<span class="keyword">struct </span><a class="code" href="structwindow__t.html">window_t</a>*,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">struct </span><a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="window_8h.html#a12953a46b01bfce6fb08a9329125a716">create_window</a>(<span class="keywordtype">int</span> <a class="code" href="structwindow__t.html#a3412c5de742000f543a918bcc923b9ce">w</a>, <span class="keywordtype">int</span> <a class="code" href="structwindow__t.html#aca9315f1a7d8ce00adf0a09a47d7f850">h</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="structwindow__t.html#abbfda1b331e321ffc40c2404cb1885b7">name</a>, <a class="code" href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">repaint_fn</a> <a class="code" href="structwindow__t.html#a8173061bf92f1b6dd7b3602f3a5b1152">repaint</a>, <span class="keywordtype">void</span>* <a class="code" href="structwindow__t.html#a6590b2ae68807e6498d474e045db22d3">userdata</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a32fd48461403959ac9196b5b938ffc80">start_window</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#aa95c2629a9becaf6ce4a13ab1d14cdd8">stop_window</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>** window_ptr);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a41803d94c5183d2e78227f69270c029e">refresh_window</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;SDL_Texture* <a class="code" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, uint32_t format, <span class="keywordtype">int</span> access, <span class="keywordtype">int</span> <a class="code" href="structwindow__t.html#a3412c5de742000f543a918bcc923b9ce">w</a>, <span class="keywordtype">int</span> <a class="code" href="structwindow__t.html#aca9315f1a7d8ce00adf0a09a47d7f850">h</a>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;SDL_Texture* <a class="code" href="window_8h.html#acb4197b452bcd21ad8da366218c5b4b9">create_texture_from_surface</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Surface* surface);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#ae7c51d2fd2cd043b6f40f61c441ba7c4">destroy_texture</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Texture* texture);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a27a6a8ca025aef1eacec5dcdebaaadcf">set_background_color</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Color color);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<a class="code" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a> <a class="code" href="window_8h.html#aa3f4abdd9f6066b85594193cc41e02a3">load_font</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* fontname, <span class="keywordtype">int</span> ptsize);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#ae5997295d26af3573d6fb418ca9cebb8">render_copy</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Texture* texture, <span class="keyword">const</span> SDL_Rect* srcrect, <span class="keyword">const</span> SDL_Rect* dstrect);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a9c5fef8bfc843be4f1dbe907e2c4e45e">render_surface</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Surface* surface, <span class="keyword">const</span> SDL_Rect* srcrect, <span class="keyword">const</span> SDL_Rect* dstrect);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a1b8aeabf3a849477a3b796708320b4f8">render_set_color</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, SDL_Color color);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a4a46ea32f10cf9e53a45087aa1d5b90b">render_line</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, SDL_Color color);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#ada26e3b04de7a6c7931253f7ccf79aa1">render_line_thick</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">int</span> thickness, SDL_Color color);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a7f07f41e23a6b175c8ff697b1049abd6">render_arrow</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">float</span> size, <span class="keywordtype">float</span> alpha, <span class="keywordtype">int</span> thickness, SDL_Color color);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#aa0aaa36138597b9334d2fa790fa10c09">render_arrow_curved</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">float</span> size, <span class="keywordtype">float</span> alpha, <span class="keywordtype">float</span> curving, <span class="keywordtype">int</span> diststart, <span class="keywordtype">int</span> distend, SDL_Color color);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#a8461291cfeedc07458aad365e80bf3b5">render_rect</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keyword">const</span> SDL_Rect* rect, SDL_Color color);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#ad2e747eb9fa519740f3b60c0c39c6d39">render_circle</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> r, SDL_Color color);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="window_8h.html#a3bd250675d421529db346990029b566a">  419</a></span>&#160;<span class="preprocessor">#define VALIGN_MIDDLE   0x00</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="window_8h.html#ae671a25c7cffd5e1de282cc5d2665914">  421</a></span>&#160;<span class="preprocessor">#define VALIGN_TOP      0x01</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="window_8h.html#a6f2f026f7ed0eca9aaca92e73518a0a1">  423</a></span>&#160;<span class="preprocessor">#define VALIGN_BOTTOM   0x02</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="window_8h.html#a09f42d3ce029228bb35c6ca5d3046012">  425</a></span>&#160;<span class="preprocessor">#define HALIGN_CENTER   0x00</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="window_8h.html#a646aaf1e73dcfdb23371decde0804b0b">  427</a></span>&#160;<span class="preprocessor">#define HALIGN_LEFT     0x10</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="window_8h.html#ae29055b90944c6644d1f176527005a05">  429</a></span>&#160;<span class="preprocessor">#define HALIGN_RIGHT    0x20</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keywordtype">void</span> <a class="code" href="window_8h.html#aceeaaff95ab00e44b0909f790662c34d">render_text</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* <a class="code" href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* text, <a class="code" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a> fontid, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> alignment, SDL_Color color, SDL_Color <a class="code" href="structwindow__t.html#accc265d2948ef2573c102613d6234c81">background</a>);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">#endif // WINDOW_H</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructwindow__t_html_abbfda1b331e321ffc40c2404cb1885b7"><div class="ttname"><a href="structwindow__t.html#abbfda1b331e321ffc40c2404cb1885b7">window_t::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> window.c:46</div></div>
+<div class="ttc" id="astructwindow__t_html_a6590b2ae68807e6498d474e045db22d3"><div class="ttname"><a href="structwindow__t.html#a6590b2ae68807e6498d474e045db22d3">window_t::userdata</a></div><div class="ttdeci">void * userdata</div><div class="ttdef"><b>Definition:</b> window.c:65</div></div>
+<div class="ttc" id="awindow_8h_html_a41803d94c5183d2e78227f69270c029e"><div class="ttname"><a href="window_8h.html#a41803d94c5183d2e78227f69270c029e">refresh_window</a></div><div class="ttdeci">void refresh_window(struct window_t *window)</div><div class="ttdef"><b>Definition:</b> window.c:240</div></div>
+<div class="ttc" id="awindow_8h_html_a88e6b4ad1d21ca375fad6a1e88356960"><div class="ttname"><a href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a></div><div class="ttdeci">int font_id_t</div><div class="ttdef"><b>Definition:</b> window.h:59</div></div>
+<div class="ttc" id="awindow_8h_html_ad2e747eb9fa519740f3b60c0c39c6d39"><div class="ttname"><a href="window_8h.html#ad2e747eb9fa519740f3b60c0c39c6d39">render_circle</a></div><div class="ttdeci">void render_circle(struct window_t *window, int x, int y, int r, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:422</div></div>
+<div class="ttc" id="awindow_8h_html_aceeaaff95ab00e44b0909f790662c34d"><div class="ttname"><a href="window_8h.html#aceeaaff95ab00e44b0909f790662c34d">render_text</a></div><div class="ttdeci">void render_text(struct window_t *window, const char *text, font_id_t fontid, int x, int y, int alignment, SDL_Color color, SDL_Color background)</div><div class="ttdef"><b>Definition:</b> window.c:427</div></div>
+<div class="ttc" id="awindow_8h_html_a32fd48461403959ac9196b5b938ffc80"><div class="ttname"><a href="window_8h.html#a32fd48461403959ac9196b5b938ffc80">start_window</a></div><div class="ttdeci">void start_window(struct window_t *window)</div><div class="ttdef"><b>Definition:</b> window.c:208</div></div>
+<div class="ttc" id="awindow_8h_html_a12953a46b01bfce6fb08a9329125a716"><div class="ttname"><a href="window_8h.html#a12953a46b01bfce6fb08a9329125a716">create_window</a></div><div class="ttdeci">struct window_t * create_window(int w, int h, const char *name, repaint_fn repaint, void *userdata)</div><div class="ttdef"><b>Definition:</b> window.c:178</div></div>
+<div class="ttc" id="astructwindow__t_html"><div class="ttname"><a href="structwindow__t.html">window_t</a></div><div class="ttdef"><b>Definition:</b> window.c:40</div></div>
+<div class="ttc" id="awindow_8h_html_aeb284a3e673e34666b6c8bf869c7e344"><div class="ttname"><a href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a></div><div class="ttdeci">SDL_Texture * create_texture(struct window_t *window, uint32_t format, int access, int w, int h)</div><div class="ttdef"><b>Definition:</b> window.c:267</div></div>
+<div class="ttc" id="awindow_8h_html_a7f07f41e23a6b175c8ff697b1049abd6"><div class="ttname"><a href="window_8h.html#a7f07f41e23a6b175c8ff697b1049abd6">render_arrow</a></div><div class="ttdeci">void render_arrow(struct window_t *window, int x1, int y1, int x2, int y2, float size, float alpha, int thickness, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:364</div></div>
+<div class="ttc" id="awindow_8h_html_ae5997295d26af3573d6fb418ca9cebb8"><div class="ttname"><a href="window_8h.html#ae5997295d26af3573d6fb418ca9cebb8">render_copy</a></div><div class="ttdeci">void render_copy(struct window_t *window, SDL_Texture *texture, const SDL_Rect *srcrect, const SDL_Rect *dstrect)</div><div class="ttdef"><b>Definition:</b> window.c:312</div></div>
+<div class="ttc" id="awindow_8h_html_aa95c2629a9becaf6ce4a13ab1d14cdd8"><div class="ttname"><a href="window_8h.html#aa95c2629a9becaf6ce4a13ab1d14cdd8">stop_window</a></div><div class="ttdeci">void stop_window(struct window_t **window_ptr)</div><div class="ttdef"><b>Definition:</b> window.c:217</div></div>
+<div class="ttc" id="awindow_8h_html_aa0aaa36138597b9334d2fa790fa10c09"><div class="ttname"><a href="window_8h.html#aa0aaa36138597b9334d2fa790fa10c09">render_arrow_curved</a></div><div class="ttdeci">void render_arrow_curved(struct window_t *window, int x1, int y1, int x2, int y2, float size, float alpha, float curving, int diststart, int distend, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:377</div></div>
+<div class="ttc" id="awindow_8h_html_a4f4c801416083dd1d4093d13d36c0c8a"><div class="ttname"><a href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">repaint_fn</a></div><div class="ttdeci">void(* repaint_fn)(struct window_t *, void *)</div><div class="ttdef"><b>Definition:</b> window.h:54</div></div>
+<div class="ttc" id="astructwindow__t_html_a3412c5de742000f543a918bcc923b9ce"><div class="ttname"><a href="structwindow__t.html#a3412c5de742000f543a918bcc923b9ce">window_t::w</a></div><div class="ttdeci">int w</div><div class="ttdef"><b>Definition:</b> window.c:42</div></div>
+<div class="ttc" id="awindow_8h_html_aa3f4abdd9f6066b85594193cc41e02a3"><div class="ttname"><a href="window_8h.html#aa3f4abdd9f6066b85594193cc41e02a3">load_font</a></div><div class="ttdeci">font_id_t load_font(struct window_t *window, const char *fontname, int ptsize)</div><div class="ttdef"><b>Definition:</b> window.c:286</div></div>
+<div class="ttc" id="astructwindow__t_html_a29435f6d7667ff1ee309674d98962040"><div class="ttname"><a href="structwindow__t.html#a29435f6d7667ff1ee309674d98962040">window_t::window</a></div><div class="ttdeci">SDL_Window * window</div><div class="ttdef"><b>Definition:</b> window.c:49</div></div>
+<div class="ttc" id="awindow_8h_html_ada26e3b04de7a6c7931253f7ccf79aa1"><div class="ttname"><a href="window_8h.html#ada26e3b04de7a6c7931253f7ccf79aa1">render_line_thick</a></div><div class="ttdeci">void render_line_thick(struct window_t *window, int x1, int y1, int x2, int y2, int thickness, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:337</div></div>
+<div class="ttc" id="awindow_8h_html_a27a6a8ca025aef1eacec5dcdebaaadcf"><div class="ttname"><a href="window_8h.html#a27a6a8ca025aef1eacec5dcdebaaadcf">set_background_color</a></div><div class="ttdeci">void set_background_color(struct window_t *window, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:282</div></div>
+<div class="ttc" id="awindow_8h_html_a9c5fef8bfc843be4f1dbe907e2c4e45e"><div class="ttname"><a href="window_8h.html#a9c5fef8bfc843be4f1dbe907e2c4e45e">render_surface</a></div><div class="ttdeci">void render_surface(struct window_t *window, SDL_Surface *surface, const SDL_Rect *srcrect, const SDL_Rect *dstrect)</div><div class="ttdef"><b>Definition:</b> window.c:317</div></div>
+<div class="ttc" id="astructwindow__t_html_accc265d2948ef2573c102613d6234c81"><div class="ttname"><a href="structwindow__t.html#accc265d2948ef2573c102613d6234c81">window_t::background</a></div><div class="ttdeci">SDL_Color background</div><div class="ttdef"><b>Definition:</b> window.c:55</div></div>
+<div class="ttc" id="awindow_8h_html_a1b8aeabf3a849477a3b796708320b4f8"><div class="ttname"><a href="window_8h.html#a1b8aeabf3a849477a3b796708320b4f8">render_set_color</a></div><div class="ttdeci">void render_set_color(struct window_t *window, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:327</div></div>
+<div class="ttc" id="astructwindow__t_html_a8173061bf92f1b6dd7b3602f3a5b1152"><div class="ttname"><a href="structwindow__t.html#a8173061bf92f1b6dd7b3602f3a5b1152">window_t::repaint</a></div><div class="ttdeci">repaint_fn repaint</div><div class="ttdef"><b>Definition:</b> window.c:63</div></div>
+<div class="ttc" id="awindow_8h_html_a8461291cfeedc07458aad365e80bf3b5"><div class="ttname"><a href="window_8h.html#a8461291cfeedc07458aad365e80bf3b5">render_rect</a></div><div class="ttdeci">void render_rect(struct window_t *window, const SDL_Rect *rect, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:416</div></div>
+<div class="ttc" id="astructwindow__t_html_aca9315f1a7d8ce00adf0a09a47d7f850"><div class="ttname"><a href="structwindow__t.html#aca9315f1a7d8ce00adf0a09a47d7f850">window_t::h</a></div><div class="ttdeci">int h</div><div class="ttdef"><b>Definition:</b> window.c:44</div></div>
+<div class="ttc" id="awindow_8h_html_acb4197b452bcd21ad8da366218c5b4b9"><div class="ttname"><a href="window_8h.html#acb4197b452bcd21ad8da366218c5b4b9">create_texture_from_surface</a></div><div class="ttdeci">SDL_Texture * create_texture_from_surface(struct window_t *window, SDL_Surface *surface)</div><div class="ttdef"><b>Definition:</b> window.c:272</div></div>
+<div class="ttc" id="awindow_8h_html_a4a46ea32f10cf9e53a45087aa1d5b90b"><div class="ttname"><a href="window_8h.html#a4a46ea32f10cf9e53a45087aa1d5b90b">render_line</a></div><div class="ttdeci">void render_line(struct window_t *window, int x1, int y1, int x2, int y2, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> window.c:332</div></div>
+<div class="ttc" id="awindow_8h_html_ae7c51d2fd2cd043b6f40f61c441ba7c4"><div class="ttname"><a href="window_8h.html#ae7c51d2fd2cd043b6f40f61c441ba7c4">destroy_texture</a></div><div class="ttdeci">void destroy_texture(struct window_t *window, SDL_Texture *texture)</div><div class="ttdef"><b>Definition:</b> window.c:277</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

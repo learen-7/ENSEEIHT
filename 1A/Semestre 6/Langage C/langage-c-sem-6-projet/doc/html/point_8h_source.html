@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de point.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">point.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="point_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef POINT_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define POINT_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structpoint__t.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpoint__t.html">point_t</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structpoint__t.html#acf7556ca44360564040f5c86257b55b1">   35</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structpoint__t.html#acf7556ca44360564040f5c86257b55b1">x</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structpoint__t.html#a8590af4986d0e4ef2b6756946f80438c">   37</a></span>&#160;           <a class="code" href="structpoint__t.html#a8590af4986d0e4ef2b6756946f80438c">y</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="point_8h.html#a2b0221dd36afc02e501c4b15acb309be">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="structpoint__t.html">point_t</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="point_8h.html#a9eeb0c55118bb55f3d28c47a66f8382f">creer_point</a>(<span class="keywordtype">double</span> <a class="code" href="structpoint__t.html#acf7556ca44360564040f5c86257b55b1">x</a>, <span class="keywordtype">double</span> <a class="code" href="structpoint__t.html#a8590af4986d0e4ef2b6756946f80438c">y</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="point_8h.html#a1391b51a9335c0c82031cc5e02299200">copier_point</a>(<a class="code" href="structpoint__t.html">point_t</a>* cible, <a class="code" href="structpoint__t.html">point_t</a> source);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">double</span> <a class="code" href="point_8h.html#a377418536ab9a0485f218dfc8317f161">distance</a>(<a class="code" href="structpoint__t.html">point_t</a> a, <a class="code" href="structpoint__t.html">point_t</a> b);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="point_8h.html#a8f2ac9db6d928e0ebf6f896e50fec5ec">egal</a>(<a class="code" href="structpoint__t.html">point_t</a> a, <a class="code" href="structpoint__t.html">point_t</a> b, <span class="keywordtype">double</span> precision);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // POINT_H</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructpoint__t_html"><div class="ttname"><a href="structpoint__t.html">point_t</a></div><div class="ttdef"><b>Definition:</b> point.h:33</div></div>
+<div class="ttc" id="astructpoint__t_html_acf7556ca44360564040f5c86257b55b1"><div class="ttname"><a href="structpoint__t.html#acf7556ca44360564040f5c86257b55b1">point_t::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> point.h:35</div></div>
+<div class="ttc" id="apoint_8h_html_a9eeb0c55118bb55f3d28c47a66f8382f"><div class="ttname"><a href="point_8h.html#a9eeb0c55118bb55f3d28c47a66f8382f">creer_point</a></div><div class="ttdeci">point_t creer_point(double x, double y)</div><div class="ttdef"><b>Definition:</b> point.c:28</div></div>
+<div class="ttc" id="astructpoint__t_html_a8590af4986d0e4ef2b6756946f80438c"><div class="ttname"><a href="structpoint__t.html#a8590af4986d0e4ef2b6756946f80438c">point_t::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> point.h:37</div></div>
+<div class="ttc" id="apoint_8h_html_a377418536ab9a0485f218dfc8317f161"><div class="ttname"><a href="point_8h.html#a377418536ab9a0485f218dfc8317f161">distance</a></div><div class="ttdeci">double distance(point_t a, point_t b)</div><div class="ttdef"><b>Definition:</b> point.c:40</div></div>
+<div class="ttc" id="apoint_8h_html_a1391b51a9335c0c82031cc5e02299200"><div class="ttname"><a href="point_8h.html#a1391b51a9335c0c82031cc5e02299200">copier_point</a></div><div class="ttdeci">void copier_point(point_t *cible, point_t source)</div><div class="ttdef"><b>Definition:</b> point.c:33</div></div>
+<div class="ttc" id="apoint_8h_html_a8f2ac9db6d928e0ebf6f896e50fec5ec"><div class="ttname"><a href="point_8h.html#a8f2ac9db6d928e0ebf6f896e50fec5ec">egal</a></div><div class="ttdeci">bool egal(point_t a, point_t b, double precision)</div><div class="ttdef"><b>Definition:</b> point.c:46</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

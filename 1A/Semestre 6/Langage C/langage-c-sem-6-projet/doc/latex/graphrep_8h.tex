@@ -1,0 +1,276 @@
+\hypertarget{graphrep_8h}{}\doxysection{Référence du fichier graphrep.\+h}
+\label{graphrep_8h}\index{graphrep.h@{graphrep.h}}
+
+
+Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}.  
+
+
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}graphe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}liste\+\_\+noeud.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}viewport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de graphrep.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphrep_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{graphrep_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{graphrep_8h_a7ff1bdaea529894a3efdb480b1f2c8ee}{N\+O\+D\+E\+\_\+\+S\+I\+ZE}}~30
+\item 
+\#define \mbox{\hyperlink{graphrep_8h_aa1fc596899e1302d6c5b5a6064d6bbac}{N\+O\+D\+E\+\_\+\+S\+K\+IP}}~0
+\item 
+\#define \mbox{\hyperlink{graphrep_8h_a7e1ec81d4826411cba58a2e8e2bd333e}{E\+D\+G\+E\+\_\+\+W\+I\+D\+TH}}~2
+\item 
+\#define \mbox{\hyperlink{graphrep_8h_ab32faca800f36dcd06570622d58546a3}{T\+O\+O\+L\+T\+I\+P\+\_\+\+T\+H\+R\+E\+SH}}~30.\+0
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$ \mbox{\hyperlink{graphrep_8h_a27fbde85715f2f12266899d082cc3fd8}{create\+\_\+graphrep}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graph, S\+D\+L\+\_\+\+Rect area, \mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{viewport_8h_ad34efe41b719c540dd2ce2e6e5f25f1e}{viewport}})
+\item 
+struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$ \mbox{\hyperlink{graphrep_8h_ae56cbd6aa7e47ed7990c3cbe291fe5a8}{create\+\_\+graphrep\+\_\+with\+\_\+vp}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graph, S\+D\+L\+\_\+\+Rect area)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a860fafb9588335afcc96e32a1b549f19}{dispose\+\_\+graphrep}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$$\ast$graphrep)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a4f8d298d30336c25831a985e5f5d97cd}{get\+\_\+viewport}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$graphrep, \mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$result)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a6e2d13c9ddc1fc7c623ce13dfbf016f6}{move\+\_\+mouse}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$graphrep, S\+D\+L\+\_\+\+Point pos)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a2744c4fe87e9dba3ab79987e866e5121}{highlight\+\_\+path}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$graphrep, liste\+\_\+noeud\+\_\+t $\ast$path)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a5471cbdd21ab6cdf128102b4a6f08faf}{highlight\+\_\+node}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$graphrep, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} node, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a287ba0163afb3b05d0432cf1cfe52b65}{highlight\+\_\+edge}} (struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$graphrep, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} source, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} dest)
+\item 
+void \mbox{\hyperlink{graphrep_8h_a90df8d02bbfa1ba1a69241eccbfdbe45}{graphrep\+\_\+repaint}} (struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$window, void $\ast$userdata)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}. 
+
+Les noeuds sont représentés avec des cercles et les arcs par des flèches incurvées.
+
+Le composnat permet de mettre en valeur un chemin, et réagit lorsqu\textquotesingle{}on survole les noeuds.
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{graphrep_8h_a7e1ec81d4826411cba58a2e8e2bd333e}\label{graphrep_8h_a7e1ec81d4826411cba58a2e8e2bd333e}} 
+\index{graphrep.h@{graphrep.h}!EDGE\_WIDTH@{EDGE\_WIDTH}}
+\index{EDGE\_WIDTH@{EDGE\_WIDTH}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{EDGE\_WIDTH}{EDGE\_WIDTH}}
+{\footnotesize\ttfamily \#define E\+D\+G\+E\+\_\+\+W\+I\+D\+TH~2}
+
+Paramètre de représentation \+: largeur du trait pour les arcs (non fonctionnel) \mbox{\Hypertarget{graphrep_8h_a7ff1bdaea529894a3efdb480b1f2c8ee}\label{graphrep_8h_a7ff1bdaea529894a3efdb480b1f2c8ee}} 
+\index{graphrep.h@{graphrep.h}!NODE\_SIZE@{NODE\_SIZE}}
+\index{NODE\_SIZE@{NODE\_SIZE}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{NODE\_SIZE}{NODE\_SIZE}}
+{\footnotesize\ttfamily \#define N\+O\+D\+E\+\_\+\+S\+I\+ZE~30}
+
+Paramètre de représentation \+: taille des noeuds \mbox{\Hypertarget{graphrep_8h_aa1fc596899e1302d6c5b5a6064d6bbac}\label{graphrep_8h_aa1fc596899e1302d6c5b5a6064d6bbac}} 
+\index{graphrep.h@{graphrep.h}!NODE\_SKIP@{NODE\_SKIP}}
+\index{NODE\_SKIP@{NODE\_SKIP}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{NODE\_SKIP}{NODE\_SKIP}}
+{\footnotesize\ttfamily \#define N\+O\+D\+E\+\_\+\+S\+K\+IP~0}
+
+Paramètre de représentation \+: espace entre le noeud et les arcs \mbox{\Hypertarget{graphrep_8h_ab32faca800f36dcd06570622d58546a3}\label{graphrep_8h_ab32faca800f36dcd06570622d58546a3}} 
+\index{graphrep.h@{graphrep.h}!TOOLTIP\_THRESH@{TOOLTIP\_THRESH}}
+\index{TOOLTIP\_THRESH@{TOOLTIP\_THRESH}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{TOOLTIP\_THRESH}{TOOLTIP\_THRESH}}
+{\footnotesize\ttfamily \#define T\+O\+O\+L\+T\+I\+P\+\_\+\+T\+H\+R\+E\+SH~30.\+0}
+
+Distance au centre du noeud à partir de laquelle la tooltip est affichée 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{graphrep_8h_a27fbde85715f2f12266899d082cc3fd8}\label{graphrep_8h_a27fbde85715f2f12266899d082cc3fd8}} 
+\index{graphrep.h@{graphrep.h}!create\_graphrep@{create\_graphrep}}
+\index{create\_graphrep@{create\_graphrep}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{create\_graphrep()}{create\_graphrep()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}}$\ast$ create\+\_\+graphrep (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graph,  }\item[{S\+D\+L\+\_\+\+Rect}]{area,  }\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}}}]{viewport }\end{DoxyParamCaption})}
+
+Crée un composant de représentation de graphe pour la fenêtre donnée et avec le graphe donné. Le composant représente le graphe sur la zone réelle donnée (area) et avec le viewport donné, qui convertit les coordonnées des noeuds en coordonnées d\textquotesingle{}écran. Cela permet de représenter n\textquotesingle{}importe quel système de coordonnée du graphe.
+
+Pré-\/conditions \+: window non N\+U\+LL, graph non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle mettre le composant \\
+\hline
+{\em graph} & graphe à représenter \\
+\hline
+{\em area} & zone de l\textquotesingle{}écran où le composant est représenté \\
+\hline
+{\em viewport} & transformation entre écran et système de coordonnées du graphe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+composant de représentation, alloué sur le tas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphrep_8h_ae56cbd6aa7e47ed7990c3cbe291fe5a8}\label{graphrep_8h_ae56cbd6aa7e47ed7990c3cbe291fe5a8}} 
+\index{graphrep.h@{graphrep.h}!create\_graphrep\_with\_vp@{create\_graphrep\_with\_vp}}
+\index{create\_graphrep\_with\_vp@{create\_graphrep\_with\_vp}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{create\_graphrep\_with\_vp()}{create\_graphrep\_with\_vp()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}}$\ast$ create\+\_\+graphrep\+\_\+with\+\_\+vp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graph,  }\item[{S\+D\+L\+\_\+\+Rect}]{area }\end{DoxyParamCaption})}
+
+Crée un composant de représentation de graphe pour la fenêtre donnée et avec le graphe donné, pour la zone d\textquotesingle{}écran donné. Le viewport est calculé automatiquement à partir de l\textquotesingle{}aire occupée par le graphe et de la zone donnée.
+
+Pré-\/conditions \+: window non N\+U\+LL, graph non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre dans laquelle représenter le composant \\
+\hline
+{\em graph} & graphe à représenter \\
+\hline
+{\em area} & zone de l\textquotesingle{}écran dans laquelle représenter le graphe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+composant de représentation, alloué sur le tas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphrep_8h_a860fafb9588335afcc96e32a1b549f19}\label{graphrep_8h_a860fafb9588335afcc96e32a1b549f19}} 
+\index{graphrep.h@{graphrep.h}!dispose\_graphrep@{dispose\_graphrep}}
+\index{dispose\_graphrep@{dispose\_graphrep}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{dispose\_graphrep()}{dispose\_graphrep()}}
+{\footnotesize\ttfamily void dispose\+\_\+graphrep (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$$\ast$}]{graphrep }\end{DoxyParamCaption})}
+
+Détruit le composant de représentation de graphe (libère toute la mémoire allouée). Ceci ne libère pas le graphe.
+
+Pré-\/conditions \+: graphrep non N\+U\+LL, graphrep pas déjà détruit Post-\/conditions \+: $\ast$graphrep == N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & \mbox{[}in/out\mbox{]} composant à libérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a4f8d298d30336c25831a985e5f5d97cd}\label{graphrep_8h_a4f8d298d30336c25831a985e5f5d97cd}} 
+\index{graphrep.h@{graphrep.h}!get\_viewport@{get\_viewport}}
+\index{get\_viewport@{get\_viewport}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{get\_viewport()}{get\_viewport()}}
+{\footnotesize\ttfamily void get\+\_\+viewport (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$}]{graphrep,  }\item[{\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+Récupère le viewport associé au composant.
+
+Pré-\/conditions \+: graphrep non N\+U\+LL, viewport non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & composant dont on veut le viewport \\
+\hline
+{\em result} & \mbox{[}out\mbox{]} viewport résultat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a90df8d02bbfa1ba1a69241eccbfdbe45}\label{graphrep_8h_a90df8d02bbfa1ba1a69241eccbfdbe45}} 
+\index{graphrep.h@{graphrep.h}!graphrep\_repaint@{graphrep\_repaint}}
+\index{graphrep\_repaint@{graphrep\_repaint}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{graphrep\_repaint()}{graphrep\_repaint()}}
+{\footnotesize\ttfamily void graphrep\+\_\+repaint (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$}]{window,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+Recalcul le rendu du graphe. Cette fonction est appelée par la fenêtre lors du repaint, et doit donc être appelée dans le thread de rendu.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & fenêtre sur laquelle est rendu le graphe \\
+\hline
+{\em userdata} & données utilisateur transmise par le thread, un graphrep en théorie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a287ba0163afb3b05d0432cf1cfe52b65}\label{graphrep_8h_a287ba0163afb3b05d0432cf1cfe52b65}} 
+\index{graphrep.h@{graphrep.h}!highlight\_edge@{highlight\_edge}}
+\index{highlight\_edge@{highlight\_edge}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{highlight\_edge()}{highlight\_edge()}}
+{\footnotesize\ttfamily void highlight\+\_\+edge (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$}]{graphrep,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{source,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{dest }\end{DoxyParamCaption})}
+
+Met en évidence l\textquotesingle{}arrête donnée (si elle existe). Il ne peut y avoir qu\textquotesingle{}une seule arrête mise en évidence. Si l\textquotesingle{}arrête n\textquotesingle{}existe pas, aucune arrête n\textquotesingle{}est mise en évidence, ce qui permet de retirer la mise en évidence au besoin.
+
+À noter que si une arrête est mise en évidence et appartient au chemin actuellement mis en évidence, elle n\textquotesingle{}apparaît pas (priorité au chemin).
+
+Pré-\/conditions \+: graphrep != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & composant à mettre à jour \\
+\hline
+{\em source} & source de l\textquotesingle{}arrête \\
+\hline
+{\em dest} & destination de l\textquotesingle{}arrête \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a5471cbdd21ab6cdf128102b4a6f08faf}\label{graphrep_8h_a5471cbdd21ab6cdf128102b4a6f08faf}} 
+\index{graphrep.h@{graphrep.h}!highlight\_node@{highlight\_node}}
+\index{highlight\_node@{highlight\_node}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{highlight\_node()}{highlight\_node()}}
+{\footnotesize\ttfamily void highlight\+\_\+node (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$}]{graphrep,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{node,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Change la couleur (d\textquotesingle{}arrière plan) du noeud donné avec la couleur donnée.
+
+Pré-\/conditions \+: graphrep != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & composant à mettre à jour \\
+\hline
+{\em node} & noeud dont on veut changer la couleur \\
+\hline
+{\em color} & couleur du noeud \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a2744c4fe87e9dba3ab79987e866e5121}\label{graphrep_8h_a2744c4fe87e9dba3ab79987e866e5121}} 
+\index{graphrep.h@{graphrep.h}!highlight\_path@{highlight\_path}}
+\index{highlight\_path@{highlight\_path}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{highlight\_path()}{highlight\_path()}}
+{\footnotesize\ttfamily void highlight\+\_\+path (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$}]{graphrep,  }\item[{liste\+\_\+noeud\+\_\+t $\ast$}]{path }\end{DoxyParamCaption})}
+
+Met en évidence un chemin dans le graphe, sous la forme de liste de noeud.
+
+Cette fonction affiche dans une couleur différente les noeuds du chemin, et les arrêtes (ces dernières étant les couples (précédent(noeud), noeud) stockés dans le chemin).
+
+Si path est N\+U\+LL, la mise en évidence est annulée.
+
+Pré-\/conditions \+: graphrep != N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & composant à mettre à jour \\
+\hline
+{\em path} & chemin à mettre en évidence (ou N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphrep_8h_a6e2d13c9ddc1fc7c623ce13dfbf016f6}\label{graphrep_8h_a6e2d13c9ddc1fc7c623ce13dfbf016f6}} 
+\index{graphrep.h@{graphrep.h}!move\_mouse@{move\_mouse}}
+\index{move\_mouse@{move\_mouse}!graphrep.h@{graphrep.h}}
+\doxysubsubsection{\texorpdfstring{move\_mouse()}{move\_mouse()}}
+{\footnotesize\ttfamily void move\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$}]{graphrep,  }\item[{S\+D\+L\+\_\+\+Point}]{pos }\end{DoxyParamCaption})}
+
+Bouge la souris sur le composant (pour mettre à jour l\textquotesingle{}affichage de tooltip typiquement).
+
+Pré-\/conditions \+: graphrep non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphrep} & composant à mettre à jour \\
+\hline
+{\em pos} & position de la souris, usuellement obtenu via un event S\+DL \\
+\hline
+\end{DoxyParams}

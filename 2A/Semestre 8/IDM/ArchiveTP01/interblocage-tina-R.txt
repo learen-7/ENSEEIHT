@@ -1,0 +1,69 @@
+Tina version 3.4.4 -- 01/05/16 -- LAAS/CNRS
+
+mode -R
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net interblocage
+
+5 places, 4 transitions
+
+net interblocage
+tr OqpA A idle -> WaitB 
+tr OqpAB B WaitB -> A B idle 
+tr OqpB B idle -> WaitA 
+tr OqpBA A WaitA -> A B idle 
+pl A (1)
+pl B (1)
+pl idle (2)
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+4 marking(s), 6 transition(s)
+
+MARKINGS:
+
+0 : A B idle*2
+1 : B WaitB idle
+2 : A WaitA idle
+3 : WaitA WaitB
+
+REACHABILITY GRAPH:
+
+0 -> OqpA/1, OqpB/2
+1 -> OqpAB/0, OqpB/3
+2 -> OqpA/3, OqpBA/0
+3 -> 
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+not live
+not reversible
+
+1 dead marking(s), 1 live marking(s)
+0 dead transition(s), 0 live transition(s)
+
+dead marking(s): 3
+
+STRONG CONNECTED COMPONENTS:
+
+0 : 3
+1 : 2 1 0
+
+SCC GRAPH:
+
+0 ->
+1 -> OqpA/0, OqpBA/1, OqpAB/1, OqpB/0, OqpA/1, OqpB/1
+
+0.000s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+
+

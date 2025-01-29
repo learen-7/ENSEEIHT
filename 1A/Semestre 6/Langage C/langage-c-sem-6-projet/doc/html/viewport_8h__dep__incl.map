@@ -1,0 +1,9 @@
+<map id="viewport.h" name="viewport.h">
+<area shape="rect" id="node1" title="Module de gestion des viewport." alt="" coords="148,5,239,32"/>
+<area shape="rect" id="node2" href="$graphrep_8h.html" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="47,80,139,107"/>
+<area shape="rect" id="node5" href="$app_8h.html" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="164,80,223,107"/>
+<area shape="rect" id="node7" href="$viewport_8c.html" title="Implantation du module viewport." alt="" coords="247,80,337,107"/>
+<area shape="rect" id="node3" href="$app_8c.html" title="Implantation du module app." alt="" coords="121,155,178,181"/>
+<area shape="rect" id="node4" href="$graphrep_8c.html" title="Implantation du module graphrep." alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Programme principal." alt="" coords="203,155,269,181"/>
+</map>

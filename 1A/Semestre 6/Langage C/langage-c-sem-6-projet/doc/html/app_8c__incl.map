@@ -1,0 +1,16 @@
+<map id="app.c" name="app.c">
+<area shape="rect" id="node1" title="Implantation du module app." alt="" coords="115,5,172,32"/>
+<area shape="rect" id="node2" href="$util_8h.html" title="Quelques macros utilitaires (pas vraiment un module)" alt="" coords="10,80,64,107"/>
+<area shape="rect" id="node3" href="$window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="22,155,105,181"/>
+<area shape="rect" id="node6" href="$graphrep_8h.html" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="140,80,232,107"/>
+<area shape="rect" id="node14" href="$app_8h.html" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="257,80,316,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="22,229,118,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="114,304,197,331"/>
+<area shape="rect" id="node7" href="$graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="295,155,374,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="398,155,508,181"/>
+<area shape="rect" id="node12" href="$viewport_8h.html" title="Module de gestion des viewport." alt="" coords="180,155,270,181"/>
+<area shape="rect" id="node8" href="$point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="294,229,361,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="386,229,456,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="481,229,548,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="142,229,270,256"/>
+</map>

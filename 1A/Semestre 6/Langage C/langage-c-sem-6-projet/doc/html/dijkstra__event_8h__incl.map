@@ -1,0 +1,8 @@
+<map id="dijkstra_event.h" name="dijkstra_event.h">
+<area shape="rect" id="node1" title="Module complémentaire pour interfacer la fonction dijkstra avec le reste de l&#39;application." alt="" coords="77,5,203,32"/>
+<area shape="rect" id="node2" href="$graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="101,80,179,107"/>
+<area shape="rect" id="node3" href="$point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="13,155,80,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="105,155,175,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="200,155,267,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,88,256"/>
+</map>

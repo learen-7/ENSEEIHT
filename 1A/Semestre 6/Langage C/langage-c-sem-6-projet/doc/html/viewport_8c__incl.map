@@ -1,0 +1,7 @@
+<map id="viewport.c" name="viewport.c">
+<area shape="rect" id="node1" title="Implantation du module viewport." alt="" coords="84,5,175,32"/>
+<area shape="rect" id="node2" href="$viewport_8h.html" title="Module de gestion des viewport." alt="" coords="84,80,175,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node4" href="$point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="157,155,224,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="149,229,232,256"/>
+</map>

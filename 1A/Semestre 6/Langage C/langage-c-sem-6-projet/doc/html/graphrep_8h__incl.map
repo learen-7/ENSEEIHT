@@ -1,0 +1,13 @@
+<map id="graphrep.h" name="graphrep.h">
+<area shape="rect" id="node1" title="Module graphrep qui définit un composant de représentation de graphe, à embarquer dans une window_t." alt="" coords="338,5,430,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="435,155,531,181"/>
+<area shape="rect" id="node3" href="$graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="105,80,183,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="329,80,439,107"/>
+<area shape="rect" id="node9" href="$viewport_8h.html" title="Module de gestion des viewport." alt="" coords="215,80,305,107"/>
+<area shape="rect" id="node11" href="$window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="513,80,596,107"/>
+<area shape="rect" id="node4" href="$point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="192,155,259,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="97,155,167,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="355,229,437,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="283,155,411,181"/>
+</map>

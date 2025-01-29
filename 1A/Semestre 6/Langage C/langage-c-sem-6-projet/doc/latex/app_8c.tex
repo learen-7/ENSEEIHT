@@ -1,0 +1,241 @@
+\hypertarget{app_8c}{}\doxysection{Référence du fichier app.\+c}
+\label{app_8c}\index{app.c@{app.c}}
+
+
+Implantation du module app.  
+
+
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphrep.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}app.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de app.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{app_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct____task__data__t}{\+\_\+\+\_\+task\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$ \mbox{\hyperlink{app_8c_a494cc793030f72c4fa6270fd78f1028f}{setup\+\_\+app}} (int width, int height, struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graph)
+\item 
+void \mbox{\hyperlink{app_8c_a3cbb0f4b48324ef7af977239bed45fc5}{launch\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app)
+\item 
+void \mbox{\hyperlink{app_8c_ac7debaf4cbbb7a8ad66c5734addc7c3c}{refresh\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app)
+\item 
+void \mbox{\hyperlink{app_8c_afe5c853fbce381e6b1992e91abdfe0b6}{move\+\_\+cross\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app, int x, int y)
+\item 
+void \mbox{\hyperlink{app_8c_a703eee60c4313df1c745cac45c938d3a}{terminate\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$$\ast$app\+\_\+ptr)
+\item 
+void \mbox{\hyperlink{app_8c_a8d87b0928cd8304064c4790357967a0b}{exec\+\_\+task\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app, \mbox{\hyperlink{app_8h_ae896da1b7523673cf55acbb3f2699fac}{task\+\_\+fun\+\_\+t}} task, \mbox{\hyperlink{app_8h_adff14e97f693a515aa1513ce63b8eb5d}{post\+\_\+task\+\_\+fun\+\_\+t}} post, void $\ast$userdata, bool detach)
+\item 
+void \mbox{\hyperlink{app_8c_afd694f686449a82eb932df9cbb90b310}{highlight\+\_\+path\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app, liste\+\_\+noeud\+\_\+t $\ast$path)
+\item 
+void \mbox{\hyperlink{app_8c_a0bde68bacad61cf132a5438bce9bf633}{highlight\+\_\+node\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} node, S\+D\+L\+\_\+\+Color color)
+\item 
+void \mbox{\hyperlink{app_8c_a851c07707e239ca96fdb8d8efea61254}{highlight\+\_\+edge\+\_\+app}} (struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$app, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} source, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} destination)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du module app. 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{app_8c_a8d87b0928cd8304064c4790357967a0b}\label{app_8c_a8d87b0928cd8304064c4790357967a0b}} 
+\index{app.c@{app.c}!exec\_task\_app@{exec\_task\_app}}
+\index{exec\_task\_app@{exec\_task\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{exec\_task\_app()}{exec\_task\_app()}}
+{\footnotesize\ttfamily void exec\+\_\+task\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app,  }\item[{\mbox{\hyperlink{app_8h_ae896da1b7523673cf55acbb3f2699fac}{task\+\_\+fun\+\_\+t}}}]{task,  }\item[{\mbox{\hyperlink{app_8h_adff14e97f693a515aa1513ce63b8eb5d}{post\+\_\+task\+\_\+fun\+\_\+t}}}]{post,  }\item[{void $\ast$}]{userdata,  }\item[{bool}]{detach }\end{DoxyParamCaption})}
+
+Exécute la tâche donnée (puis le traitement post-\/tâche, le cas échéant) dans un thread à part. Si une tâche était déjà en cours, attend qu\textquotesingle{}elle soit terminée (on ne peut lancer qu\textquotesingle{}une tâche à la fois), sinon lance le thread et retourne immédiatement.
+
+Si la fonction task renvoie un code non nul, le thread est interrompu et retourne ce code. Sinon, l\textquotesingle{}userdata est donné à la fonction post-\/tâche (si elle n\textquotesingle{}est pas N\+U\+LL).
+
+De même, si la fonciton post tâche renvoie un code non nul, le thread est interrompu et retournce ce code d\textquotesingle{}erreur. Sinon, le thread retourne 0.
+
+L\textquotesingle{}argument {\ttfamily detach} indique si le thread créé est à {\itshape détacher} ou non. Si le thread est détaché, sa teminaison n\textquotesingle{}est pas gérée par l\textquotesingle{}application. On s\textquotesingle{}attend alors à ce que le thread termine tout seul (à utiliser avec parcimonie donc).
+
+Pré-\/conditions \+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application associée à la tâche \\
+\hline
+{\em task} & fonction de la tâche \\
+\hline
+{\em post} & fonction de traitement post-\/tâche \\
+\hline
+{\em userdata} & données utilisée dans la tâche et/ou la post-\/tâche \\
+\hline
+{\em detach} & mettre à true si on veut que le thread soit détaché après la création \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_a851c07707e239ca96fdb8d8efea61254}\label{app_8c_a851c07707e239ca96fdb8d8efea61254}} 
+\index{app.c@{app.c}!highlight\_edge\_app@{highlight\_edge\_app}}
+\index{highlight\_edge\_app@{highlight\_edge\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{highlight\_edge\_app()}{highlight\_edge\_app()}}
+{\footnotesize\ttfamily void highlight\+\_\+edge\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{source,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{destination }\end{DoxyParamCaption})}
+
+Demande au composant qui affiche le graphe de mettre l\textquotesingle{}arrête donnée en valeur. Il ne peut y avoir qu\textquotesingle{}une seule arrête mise en valeur. Si source et destination ne correspondent pas à un arc du graphe, aucune arrête n\textquotesingle{}est colorée (pour retirer la mise en évidence typiquement).
+
+Pré-\/conditions \+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application contenant le graphe \\
+\hline
+{\em source} & source de l\textquotesingle{}arc \\
+\hline
+{\em destination} & destination de l\textquotesingle{}arc \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_a0bde68bacad61cf132a5438bce9bf633}\label{app_8c_a0bde68bacad61cf132a5438bce9bf633}} 
+\index{app.c@{app.c}!highlight\_node\_app@{highlight\_node\_app}}
+\index{highlight\_node\_app@{highlight\_node\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{highlight\_node\_app()}{highlight\_node\_app()}}
+{\footnotesize\ttfamily void highlight\+\_\+node\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{node,  }\item[{S\+D\+L\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+Demande au composant qui affiche le graphe de changer le style du noeud donné avec la couleur donnée (d\textquotesingle{}arrière plan).
+
+Pré-\/conditions \+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application contenant le graphe \\
+\hline
+{\em node} & identifiant du noeud dont on veut changer la couleur \\
+\hline
+{\em color} & couleur associée au noeud \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_afd694f686449a82eb932df9cbb90b310}\label{app_8c_afd694f686449a82eb932df9cbb90b310}} 
+\index{app.c@{app.c}!highlight\_path\_app@{highlight\_path\_app}}
+\index{highlight\_path\_app@{highlight\_path\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{highlight\_path\_app()}{highlight\_path\_app()}}
+{\footnotesize\ttfamily void highlight\+\_\+path\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app,  }\item[{liste\+\_\+noeud\+\_\+t $\ast$}]{path }\end{DoxyParamCaption})}
+
+Demande au composant qui affiche le graphe de mettre en évidence le chemin donné (sous forme de liste de noeud).
+
+Mettre N\+U\+LL ici retire la mise en évidence.
+
+Pré-\/conditions \+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application contenant le graphe \\
+\hline
+{\em path} & chemin à mettre en évidence, sous forme d\textquotesingle{}une liste\+\_\+noeud\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_a3cbb0f4b48324ef7af977239bed45fc5}\label{app_8c_a3cbb0f4b48324ef7af977239bed45fc5}} 
+\index{app.c@{app.c}!launch\_app@{launch\_app}}
+\index{launch\_app@{launch\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{launch\_app()}{launch\_app()}}
+{\footnotesize\ttfamily void launch\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app }\end{DoxyParamCaption})}
+
+Lance l\textquotesingle{}application, ce qui a pour conséquence d\textquotesingle{}ouvrir la fenêtre et de commencer le rendu.
+
+Cette fonction ne retourne qu\textquotesingle{}une fois que les threads principaux sont lancés (en théorie). Il ne faut surtout pas l\textquotesingle{}appeler plusieurs fois, ça causerait des problèmes.
+
+Pré-\/conditions\+: app non N\+U\+LL, app non déjà lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application (construite avec \mbox{\hyperlink{app_8h_a494cc793030f72c4fa6270fd78f1028f}{setup\+\_\+app}}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_afe5c853fbce381e6b1992e91abdfe0b6}\label{app_8c_afe5c853fbce381e6b1992e91abdfe0b6}} 
+\index{app.c@{app.c}!move\_cross\_app@{move\_cross\_app}}
+\index{move\_cross\_app@{move\_cross\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{move\_cross\_app()}{move\_cross\_app()}}
+{\footnotesize\ttfamily void move\+\_\+cross\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Bouge le curseur aux coordonnées indiquées et rafraîchit l\textquotesingle{}application. Les coordonnées sont typiquement obtenues à partir d\textquotesingle{}un event S\+DL.
+
+Pré-\/conditions\+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application à mettre à jour \\
+\hline
+{\em x} & coordonnée x (de fenêtre) \\
+\hline
+{\em y} & coordonnée y (de fenêtre) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_ac7debaf4cbbb7a8ad66c5734addc7c3c}\label{app_8c_ac7debaf4cbbb7a8ad66c5734addc7c3c}} 
+\index{app.c@{app.c}!refresh\_app@{refresh\_app}}
+\index{refresh\_app@{refresh\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{refresh\_app()}{refresh\_app()}}
+{\footnotesize\ttfamily void refresh\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$}]{app }\end{DoxyParamCaption})}
+
+\char`\"{}\+Rafraîchit\char`\"{} l\textquotesingle{}affichage, c\textquotesingle{}est-\/à-\/dire recalcul l\textquotesingle{}apparence des composants et les affiche dans la fenêtre. Cette fonction est non blocante, car elle se contente de réveiller le thread de rendu principal (\mbox{\hyperlink{window_8h_a41803d94c5183d2e78227f69270c029e}{refresh\+\_\+window}}). Le rendu est assez rapide car il n\textquotesingle{}y a pas vraiment de \char`\"{}calcul\char`\"{}, c\textquotesingle{}est cette fonction qui est utilisée pour mettre à jour la fenêtre avec les nouvelles coordonnées du curseur, la nouvelle apparence des tuiles de la mosaïque, etc.
+
+Pré-\/conditions\+: app non N\+U\+LL, app lancée
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app} & application à rafraîchir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{app_8c_a494cc793030f72c4fa6270fd78f1028f}\label{app_8c_a494cc793030f72c4fa6270fd78f1028f}} 
+\index{app.c@{app.c}!setup\_app@{setup\_app}}
+\index{setup\_app@{setup\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{setup\_app()}{setup\_app()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}}$\ast$ setup\+\_\+app (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+Construit l\textquotesingle{}application et la configure. La fonction se charge d\textquotesingle{}allouer dynamiquement tout ce qu\textquotesingle{}il faut. Par soucis de maintient des responsabilité, c\textquotesingle{}est toujours ce module qui gère la mémoire. Une fois terminé, il faut donc utiliser \mbox{\hyperlink{app_8h_a703eee60c4313df1c745cac45c938d3a}{terminate\+\_\+app}} pour arrêter l\textquotesingle{}application et libérer convenablement la mémoire.
+
+Pré-\/conditions\+:
+\begin{DoxyItemize}
+\item width et height positifs strictement
+\item graph non N\+U\+LL
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em width} & largeur de la fenêtre (en pixels) \\
+\hline
+{\em height} & hauteur de la fenêtre (en pixels) \\
+\hline
+{\em graph} & graphe à représenter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+pointeur sur l\textquotesingle{}application, allloué dans le tas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{app_8c_a703eee60c4313df1c745cac45c938d3a}\label{app_8c_a703eee60c4313df1c745cac45c938d3a}} 
+\index{app.c@{app.c}!terminate\_app@{terminate\_app}}
+\index{terminate\_app@{terminate\_app}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{terminate\_app()}{terminate\_app()}}
+{\footnotesize\ttfamily void terminate\+\_\+app (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structapp__t}{app\+\_\+t}} $\ast$$\ast$}]{app\+\_\+ptr }\end{DoxyParamCaption})}
+
+Termine l\textquotesingle{}application (donc chacun de ses threads) et libère la mémoire allouée. Cette fonction est blocante car elle attend la fin de chacun des threads (pas de détachement).
+
+Si l\textquotesingle{}application s\textquotesingle{}interbloque c\textquotesingle{}est probablement ici... Normalement j\textquotesingle{}ai corrigés la plupart des \char`\"{}gros\char`\"{} problèmes mais avec la programmation concurrente on est jamais à l\textquotesingle{}abris \+:( .
+
+Pré-\/conditions\+: app\+\_\+ptr pointe sur une app non N\+U\+LL et lancée Post-\/conditions\+: {\ttfamily $\ast$app\+\_\+ptr} = N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em app\+\_\+ptr} & pointeur sur l\textquotesingle{}application \\
+\hline
+\end{DoxyParams}

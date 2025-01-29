@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier app.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier app.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Module app qui définit et met en relation les composants de l'application.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="graphe_8h_source.html">graphe.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="viewport_8h_source.html">viewport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="window_8h_source.html">window.h</a>&quot;</code><br />
+<code>#include &quot;liste_noeud.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de app.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="app_8h__incl.png" border="0" usemap="#app_8h" alt=""/></div>
+<map name="app_8h" id="app_8h">
+<area shape="rect" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="362,5,421,32"/>
+<area shape="rect" href="graphe_8h.html" title="Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési..." alt="" coords="140,80,219,107"/>
+<area shape="rect" href="viewport_8h.html" title="Module de gestion des viewport." alt="" coords="291,80,382,107"/>
+<area shape="rect" href="window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="406,80,489,107"/>
+<area shape="rect" title=" " alt="" coords="513,80,622,107"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="191,155,258,181"/>
+<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
+<area shape="rect" title=" " alt="" coords="101,155,167,181"/>
+<area shape="rect" title=" " alt="" coords="294,229,377,256"/>
+<area shape="rect" title=" " alt="" coords="282,155,410,181"/>
+<area shape="rect" title=" " alt="" coords="485,155,581,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="app_8h__dep__incl.png" border="0" usemap="#app_8hdep" alt=""/></div>
+<map name="app_8hdep" id="app_8hdep">
+<area shape="rect" title="Module app qui définit et met en relation les composants de l&#39;application." alt="" coords="47,5,106,32"/>
+<area shape="rect" href="app_8c.html" title="Implantation du module app." alt="" coords="5,80,63,107"/>
+<area shape="rect" href="main_8c.html" title="Programme principal." alt="" coords="87,80,154,107"/>
+</map>
+</div>
+</div>
+<p><a href="app_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3eebd09a9a94c914de17855816e6ac45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a3eebd09a9a94c914de17855816e6ac45">PADDING</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a3eebd09a9a94c914de17855816e6ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ae896da1b7523673cf55acbb3f2699fac"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a>) (struct <a class="el" href="structapp__t.html">app_t</a> *, void *)</td></tr>
+<tr class="separator:ae896da1b7523673cf55acbb3f2699fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff14e97f693a515aa1513ce63b8eb5d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a>) (struct <a class="el" href="structapp__t.html">app_t</a> *, void *)</td></tr>
+<tr class="separator:adff14e97f693a515aa1513ce63b8eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a494cc793030f72c4fa6270fd78f1028f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a494cc793030f72c4fa6270fd78f1028f">setup_app</a> (int width, int height, struct <a class="el" href="structgraphe__t.html">graphe_t</a> *graph)</td></tr>
+<tr class="separator:a494cc793030f72c4fa6270fd78f1028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbb0f4b48324ef7af977239bed45fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a3cbb0f4b48324ef7af977239bed45fc5">launch_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app)</td></tr>
+<tr class="separator:a3cbb0f4b48324ef7af977239bed45fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7debaf4cbbb7a8ad66c5734addc7c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#ac7debaf4cbbb7a8ad66c5734addc7c3c">refresh_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app)</td></tr>
+<tr class="separator:ac7debaf4cbbb7a8ad66c5734addc7c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5c853fbce381e6b1992e91abdfe0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#afe5c853fbce381e6b1992e91abdfe0b6">move_cross_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app, int x, int y)</td></tr>
+<tr class="separator:afe5c853fbce381e6b1992e91abdfe0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703eee60c4313df1c745cac45c938d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a703eee60c4313df1c745cac45c938d3a">terminate_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> **app_ptr)</td></tr>
+<tr class="separator:a703eee60c4313df1c745cac45c938d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d87b0928cd8304064c4790357967a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a8d87b0928cd8304064c4790357967a0b">exec_task_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app, <a class="el" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a> task, <a class="el" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a> post, void *userdata, bool detach)</td></tr>
+<tr class="separator:a8d87b0928cd8304064c4790357967a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd694f686449a82eb932df9cbb90b310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#afd694f686449a82eb932df9cbb90b310">highlight_path_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app, liste_noeud_t *path)</td></tr>
+<tr class="separator:afd694f686449a82eb932df9cbb90b310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bde68bacad61cf132a5438bce9bf633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a0bde68bacad61cf132a5438bce9bf633">highlight_node_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> node, SDL_Color color)</td></tr>
+<tr class="separator:a0bde68bacad61cf132a5438bce9bf633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851c07707e239ca96fdb8d8efea61254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="app_8h.html#a851c07707e239ca96fdb8d8efea61254">highlight_edge_app</a> (struct <a class="el" href="structapp__t.html">app_t</a> *app, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> destination)</td></tr>
+<tr class="separator:a851c07707e239ca96fdb8d8efea61254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Module app qui définit et met en relation les composants de l'application. </p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a3eebd09a9a94c914de17855816e6ac45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eebd09a9a94c914de17855816e6ac45">&#9670;&nbsp;</a></span>PADDING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PADDING&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Défini la marge entre le composant de rendu et les bords de la fenêtre </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="adff14e97f693a515aa1513ce63b8eb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff14e97f693a515aa1513ce63b8eb5d">&#9670;&nbsp;</a></span>post_task_fun_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* post_task_fun_t) (struct <a class="el" href="structapp__t.html">app_t</a> *, void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type synonyme pour les pointeurs de fonction définissant un "post traitement". La fonction prend en paramètre l'app (pour faire du rendu, typiquement) et l'état obtenu à la suite de l'appel de la tâche, et retourne un code d'erreur ou 0 si tout s'est bien passé. </p>
+
+</div>
+</div>
+<a id="ae896da1b7523673cf55acbb3f2699fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae896da1b7523673cf55acbb3f2699fac">&#9670;&nbsp;</a></span>task_fun_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* task_fun_t) (struct <a class="el" href="structapp__t.html">app_t</a> *, void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type synonyme pour les pointeurs de fonction définissant une <em>tâche</em>. Une tâche est une fonction qui prend un état interne en paramètre et retourne un code d'erreur (ou 0 si tout s'est bien passé). </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a8d87b0928cd8304064c4790357967a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d87b0928cd8304064c4790357967a0b">&#9670;&nbsp;</a></span>exec_task_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exec_task_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a>&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a>&#160;</td>
+          <td class="paramname"><em>post</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>detach</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Exécute la tâche donnée (puis le traitement post-tâche, le cas échéant) dans un thread à part. Si une tâche était déjà en cours, attend qu'elle soit terminée (on ne peut lancer qu'une tâche à la fois), sinon lance le thread et retourne immédiatement.</p>
+<p>Si la fonction task renvoie un code non nul, le thread est interrompu et retourne ce code. Sinon, l'userdata est donné à la fonction post-tâche (si elle n'est pas NULL).</p>
+<p>De même, si la fonciton post tâche renvoie un code non nul, le thread est interrompu et retournce ce code d'erreur. Sinon, le thread retourne 0.</p>
+<p>L'argument <code>detach</code> indique si le thread créé est à <em>détacher</em> ou non. Si le thread est détaché, sa teminaison n'est pas gérée par l'application. On s'attend alors à ce que le thread termine tout seul (à utiliser avec parcimonie donc).</p>
+<p>Pré-conditions : app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application associée à la tâche </td></tr>
+    <tr><td class="paramname">task</td><td>fonction de la tâche </td></tr>
+    <tr><td class="paramname">post</td><td>fonction de traitement post-tâche </td></tr>
+    <tr><td class="paramname">userdata</td><td>données utilisée dans la tâche et/ou la post-tâche </td></tr>
+    <tr><td class="paramname">detach</td><td>mettre à true si on veut que le thread soit détaché après la création </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a851c07707e239ca96fdb8d8efea61254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851c07707e239ca96fdb8d8efea61254">&#9670;&nbsp;</a></span>highlight_edge_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_edge_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande au composant qui affiche le graphe de mettre l'arrête donnée en valeur. Il ne peut y avoir qu'une seule arrête mise en valeur. Si source et destination ne correspondent pas à un arc du graphe, aucune arrête n'est colorée (pour retirer la mise en évidence typiquement).</p>
+<p>Pré-conditions : app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application contenant le graphe </td></tr>
+    <tr><td class="paramname">source</td><td>source de l'arc </td></tr>
+    <tr><td class="paramname">destination</td><td>destination de l'arc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bde68bacad61cf132a5438bce9bf633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bde68bacad61cf132a5438bce9bf633">&#9670;&nbsp;</a></span>highlight_node_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_node_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande au composant qui affiche le graphe de changer le style du noeud donné avec la couleur donnée (d'arrière plan).</p>
+<p>Pré-conditions : app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application contenant le graphe </td></tr>
+    <tr><td class="paramname">node</td><td>identifiant du noeud dont on veut changer la couleur </td></tr>
+    <tr><td class="paramname">color</td><td>couleur associée au noeud </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd694f686449a82eb932df9cbb90b310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd694f686449a82eb932df9cbb90b310">&#9670;&nbsp;</a></span>highlight_path_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void highlight_path_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">liste_noeud_t *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande au composant qui affiche le graphe de mettre en évidence le chemin donné (sous forme de liste de noeud).</p>
+<p>Mettre NULL ici retire la mise en évidence.</p>
+<p>Pré-conditions : app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application contenant le graphe </td></tr>
+    <tr><td class="paramname">path</td><td>chemin à mettre en évidence, sous forme d'une liste_noeud_t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3cbb0f4b48324ef7af977239bed45fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbb0f4b48324ef7af977239bed45fc5">&#9670;&nbsp;</a></span>launch_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void launch_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lance l'application, ce qui a pour conséquence d'ouvrir la fenêtre et de commencer le rendu.</p>
+<p>Cette fonction ne retourne qu'une fois que les threads principaux sont lancés (en théorie). Il ne faut surtout pas l'appeler plusieurs fois, ça causerait des problèmes.</p>
+<p>Pré-conditions: app non NULL, app non déjà lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application (construite avec <a class="el" href="app_8h.html#a494cc793030f72c4fa6270fd78f1028f">setup_app</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afe5c853fbce381e6b1992e91abdfe0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5c853fbce381e6b1992e91abdfe0b6">&#9670;&nbsp;</a></span>move_cross_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void move_cross_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bouge le curseur aux coordonnées indiquées et rafraîchit l'application. Les coordonnées sont typiquement obtenues à partir d'un event SDL.</p>
+<p>Pré-conditions: app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application à mettre à jour </td></tr>
+    <tr><td class="paramname">x</td><td>coordonnée x (de fenêtre) </td></tr>
+    <tr><td class="paramname">y</td><td>coordonnée y (de fenêtre) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7debaf4cbbb7a8ad66c5734addc7c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7debaf4cbbb7a8ad66c5734addc7c3c">&#9670;&nbsp;</a></span>refresh_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void refresh_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"Rafraîchit" l'affichage, c'est-à-dire recalcul l'apparence des composants et les affiche dans la fenêtre. Cette fonction est non blocante, car elle se contente de réveiller le thread de rendu principal (<a class="el" href="window_8h.html#a41803d94c5183d2e78227f69270c029e">refresh_window</a>). Le rendu est assez rapide car il n'y a pas vraiment de "calcul", c'est cette fonction qui est utilisée pour mettre à jour la fenêtre avec les nouvelles coordonnées du curseur, la nouvelle apparence des tuiles de la mosaïque, etc.</p>
+<p>Pré-conditions: app non NULL, app lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app</td><td>application à rafraîchir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a494cc793030f72c4fa6270fd78f1028f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494cc793030f72c4fa6270fd78f1028f">&#9670;&nbsp;</a></span>setup_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structapp__t.html">app_t</a>* setup_app </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgraphe__t.html">graphe_t</a> *&#160;</td>
+          <td class="paramname"><em>graph</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construit l'application et la configure. La fonction se charge d'allouer dynamiquement tout ce qu'il faut. Par soucis de maintient des responsabilité, c'est toujours ce module qui gère la mémoire. Une fois terminé, il faut donc utiliser <a class="el" href="app_8h.html#a703eee60c4313df1c745cac45c938d3a">terminate_app</a> pour arrêter l'application et libérer convenablement la mémoire.</p>
+<p>Pré-conditions:</p><ul>
+<li>width et height positifs strictement</li>
+<li>graph non NULL</li>
+</ul>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>largeur de la fenêtre (en pixels) </td></tr>
+    <tr><td class="paramname">height</td><td>hauteur de la fenêtre (en pixels) </td></tr>
+    <tr><td class="paramname">graph</td><td>graphe à représenter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>pointeur sur l'application, allloué dans le tas </dd></dl>
+
+</div>
+</div>
+<a id="a703eee60c4313df1c745cac45c938d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703eee60c4313df1c745cac45c938d3a">&#9670;&nbsp;</a></span>terminate_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void terminate_app </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structapp__t.html">app_t</a> **&#160;</td>
+          <td class="paramname"><em>app_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Termine l'application (donc chacun de ses threads) et libère la mémoire allouée. Cette fonction est blocante car elle attend la fin de chacun des threads (pas de détachement).</p>
+<p>Si l'application s'interbloque c'est probablement ici... Normalement j'ai corrigés la plupart des "gros" problèmes mais avec la programmation concurrente on est jamais à l'abris :( .</p>
+<p>Pré-conditions: app_ptr pointe sur une app non NULL et lancée Post-conditions: <code>*app_ptr</code> = NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">app_ptr</td><td>pointeur sur l'application </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de graphrep.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">graphrep.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="graphrep_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef GRAPHREP_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define GRAPHREP_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graphe_8h.html">graphe.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;liste_noeud.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="viewport_8h.html">viewport.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8h.html">window.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="graphrep_8h.html#a7ff1bdaea529894a3efdb480b1f2c8ee">   39</a></span>&#160;<span class="preprocessor">#define NODE_SIZE       30</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="graphrep_8h.html#aa1fc596899e1302d6c5b5a6064d6bbac">   41</a></span>&#160;<span class="preprocessor">#define NODE_SKIP       0</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="graphrep_8h.html#a7e1ec81d4826411cba58a2e8e2bd333e">   43</a></span>&#160;<span class="preprocessor">#define EDGE_WIDTH      2</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="graphrep_8h.html#ab32faca800f36dcd06570622d58546a3">   45</a></span>&#160;<span class="preprocessor">#define TOOLTIP_THRESH  30.0</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * Type (abstrait) du composant de représentation de graphe.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">struct </span><a class="code" href="structgraphrep__t.html">graphrep_t</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">struct </span><a class="code" href="structgraphrep__t.html">graphrep_t</a>* <a class="code" href="graphrep_8h.html#a27fbde85715f2f12266899d082cc3fd8">create_graphrep</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* window, <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* <a class="code" href="structgraphrep__t.html#a6028fd5e871f1da66b0f90727868ddb9">graph</a>, SDL_Rect <a class="code" href="structgraphrep__t.html#a2c8e265d2239ee788a1a7b45f67e2b0a">area</a>, <a class="code" href="structviewport__t.html">viewport_t</a> <a class="code" href="viewport_8c.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">struct </span><a class="code" href="structgraphrep__t.html">graphrep_t</a>* <a class="code" href="graphrep_8h.html#ae56cbd6aa7e47ed7990c3cbe291fe5a8">create_graphrep_with_vp</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* window, <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* <a class="code" href="structgraphrep__t.html#a6028fd5e871f1da66b0f90727868ddb9">graph</a>, SDL_Rect <a class="code" href="structgraphrep__t.html#a2c8e265d2239ee788a1a7b45f67e2b0a">area</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a860fafb9588335afcc96e32a1b549f19">dispose_graphrep</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>** graphrep);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a4f8d298d30336c25831a985e5f5d97cd">get_viewport</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>* graphrep, <a class="code" href="structviewport__t.html">viewport_t</a>* result);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a6e2d13c9ddc1fc7c623ce13dfbf016f6">move_mouse</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>* graphrep, SDL_Point pos);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a2744c4fe87e9dba3ab79987e866e5121">highlight_path</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>* graphrep, liste_noeud_t* <a class="code" href="structgraphrep__t.html#a94f3f6f6f49bb8b943dffd436ed7b78e">path</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a5471cbdd21ab6cdf128102b4a6f08faf">highlight_node</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>* graphrep, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> node, SDL_Color color);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a287ba0163afb3b05d0432cf1cfe52b65">highlight_edge</a>(<span class="keyword">struct</span> <a class="code" href="structgraphrep__t.html">graphrep_t</a>* graphrep, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> dest);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphrep_8h.html#a90df8d02bbfa1ba1a69241eccbfdbe45">graphrep_repaint</a>(<span class="keyword">struct</span> <a class="code" href="structwindow__t.html">window_t</a>* window, <span class="keywordtype">void</span>* userdata);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif // GRAPHREP_H</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructgraphrep__t_html_a94f3f6f6f49bb8b943dffd436ed7b78e"><div class="ttname"><a href="structgraphrep__t.html#a94f3f6f6f49bb8b943dffd436ed7b78e">graphrep_t::path</a></div><div class="ttdeci">liste_noeud_t * path</div><div class="ttdef"><b>Definition:</b> graphrep.c:96</div></div>
+<div class="ttc" id="astructgraphrep__t_html_a2c8e265d2239ee788a1a7b45f67e2b0a"><div class="ttname"><a href="structgraphrep__t.html#a2c8e265d2239ee788a1a7b45f67e2b0a">graphrep_t::area</a></div><div class="ttdeci">SDL_Rect area</div><div class="ttdef"><b>Definition:</b> graphrep.c:92</div></div>
+<div class="ttc" id="astructgraphrep__t_html"><div class="ttname"><a href="structgraphrep__t.html">graphrep_t</a></div><div class="ttdef"><b>Definition:</b> graphrep.c:87</div></div>
+<div class="ttc" id="astructviewport__t_html"><div class="ttname"><a href="structviewport__t.html">viewport_t</a></div><div class="ttdef"><b>Definition:</b> viewport.h:42</div></div>
+<div class="ttc" id="agraphrep_8h_html_ae56cbd6aa7e47ed7990c3cbe291fe5a8"><div class="ttname"><a href="graphrep_8h.html#ae56cbd6aa7e47ed7990c3cbe291fe5a8">create_graphrep_with_vp</a></div><div class="ttdeci">struct graphrep_t * create_graphrep_with_vp(struct window_t *window, struct graphe_t *graph, SDL_Rect area)</div><div class="ttdef"><b>Definition:</b> graphrep.c:171</div></div>
+<div class="ttc" id="astructgraphrep__t_html_a6028fd5e871f1da66b0f90727868ddb9"><div class="ttname"><a href="structgraphrep__t.html#a6028fd5e871f1da66b0f90727868ddb9">graphrep_t::graph</a></div><div class="ttdeci">struct graphe_t * graph</div><div class="ttdef"><b>Definition:</b> graphrep.c:94</div></div>
+<div class="ttc" id="agraphe_8h_html_a30f2886e0ff9ce62525c08174ba7ed76"><div class="ttname"><a href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a></div><div class="ttdeci">unsigned long noeud_id_t</div><div class="ttdef"><b>Definition:</b> graphe.h:45</div></div>
+<div class="ttc" id="astructwindow__t_html"><div class="ttname"><a href="structwindow__t.html">window_t</a></div><div class="ttdef"><b>Definition:</b> window.c:40</div></div>
+<div class="ttc" id="agraphrep_8h_html_a27fbde85715f2f12266899d082cc3fd8"><div class="ttname"><a href="graphrep_8h.html#a27fbde85715f2f12266899d082cc3fd8">create_graphrep</a></div><div class="ttdeci">struct graphrep_t * create_graphrep(struct window_t *window, struct graphe_t *graph, SDL_Rect area, viewport_t viewport)</div><div class="ttdef"><b>Definition:</b> graphrep.c:116</div></div>
+<div class="ttc" id="aviewport_8c_html_ad34efe41b719c540dd2ce2e6e5f25f1e"><div class="ttname"><a href="viewport_8c.html#ad34efe41b719c540dd2ce2e6e5f25f1e">viewport</a></div><div class="ttdeci">void viewport(viewport_t *result, SDL_Rect display, rect_t real)</div><div class="ttdef"><b>Definition:</b> viewport.c:77</div></div>
+<div class="ttc" id="astructgraphe__t_html"><div class="ttname"><a href="structgraphe__t.html">graphe_t</a></div><div class="ttdef"><b>Definition:</b> graphe.c:70</div></div>
+<div class="ttc" id="agraphe_8h_html"><div class="ttname"><a href="graphe_8h.html">graphe.h</a></div><div class="ttdoc">Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési...</div></div>
+<div class="ttc" id="agraphrep_8h_html_a860fafb9588335afcc96e32a1b549f19"><div class="ttname"><a href="graphrep_8h.html#a860fafb9588335afcc96e32a1b549f19">dispose_graphrep</a></div><div class="ttdeci">void dispose_graphrep(struct graphrep_t **graphrep)</div><div class="ttdef"><b>Definition:</b> graphrep.c:184</div></div>
+<div class="ttc" id="aviewport_8h_html"><div class="ttname"><a href="viewport_8h.html">viewport.h</a></div><div class="ttdoc">Module de gestion des viewport.</div></div>
+<div class="ttc" id="agraphrep_8h_html_a6e2d13c9ddc1fc7c623ce13dfbf016f6"><div class="ttname"><a href="graphrep_8h.html#a6e2d13c9ddc1fc7c623ce13dfbf016f6">move_mouse</a></div><div class="ttdeci">void move_mouse(struct graphrep_t *graphrep, SDL_Point pos)</div><div class="ttdef"><b>Definition:</b> graphrep.c:195</div></div>
+<div class="ttc" id="awindow_8h_html"><div class="ttname"><a href="window_8h.html">window.h</a></div><div class="ttdoc">Module window qui contient la fenêtre d'affichage (principale)</div></div>
+<div class="ttc" id="agraphrep_8h_html_a287ba0163afb3b05d0432cf1cfe52b65"><div class="ttname"><a href="graphrep_8h.html#a287ba0163afb3b05d0432cf1cfe52b65">highlight_edge</a></div><div class="ttdeci">void highlight_edge(struct graphrep_t *graphrep, noeud_id_t source, noeud_id_t dest)</div><div class="ttdef"><b>Definition:</b> graphrep.c:221</div></div>
+<div class="ttc" id="agraphrep_8h_html_a4f8d298d30336c25831a985e5f5d97cd"><div class="ttname"><a href="graphrep_8h.html#a4f8d298d30336c25831a985e5f5d97cd">get_viewport</a></div><div class="ttdeci">void get_viewport(struct graphrep_t *graphrep, viewport_t *result)</div><div class="ttdef"><b>Definition:</b> graphrep.c:191</div></div>
+<div class="ttc" id="agraphrep_8h_html_a2744c4fe87e9dba3ab79987e866e5121"><div class="ttname"><a href="graphrep_8h.html#a2744c4fe87e9dba3ab79987e866e5121">highlight_path</a></div><div class="ttdeci">void highlight_path(struct graphrep_t *graphrep, liste_noeud_t *path)</div><div class="ttdef"><b>Definition:</b> graphrep.c:202</div></div>
+<div class="ttc" id="agraphrep_8h_html_a90df8d02bbfa1ba1a69241eccbfdbe45"><div class="ttname"><a href="graphrep_8h.html#a90df8d02bbfa1ba1a69241eccbfdbe45">graphrep_repaint</a></div><div class="ttdeci">void graphrep_repaint(struct window_t *window, void *userdata)</div><div class="ttdef"><b>Definition:</b> graphrep.c:352</div></div>
+<div class="ttc" id="agraphrep_8h_html_a5471cbdd21ab6cdf128102b4a6f08faf"><div class="ttname"><a href="graphrep_8h.html#a5471cbdd21ab6cdf128102b4a6f08faf">highlight_node</a></div><div class="ttdeci">void highlight_node(struct graphrep_t *graphrep, noeud_id_t node, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> graphrep.c:208</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

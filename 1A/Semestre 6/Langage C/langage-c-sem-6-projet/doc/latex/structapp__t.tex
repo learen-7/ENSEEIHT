@@ -1,0 +1,60 @@
+\hypertarget{structapp__t}{}\doxysection{Référence de la structure app\+\_\+t}
+\label{structapp__t}\index{app\_t@{app\_t}}
+
+
+Graphe de collaboration de app\+\_\+t\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structapp__t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}} $\ast$ \mbox{\hyperlink{structapp__t_a5021017956a6dfb83fa33d931bbd67ed}{window}}
+\item 
+struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}} $\ast$ \mbox{\hyperlink{structapp__t_ae08f3b3c38c7c41bb737edb86f437d95}{graphrep}}
+\item 
+\mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} \mbox{\hyperlink{structapp__t_a104b7cd14df5f05351e5392e57520979}{viewport}}
+\item 
+S\+D\+L\+\_\+\+Thread $\ast$ \mbox{\hyperlink{structapp__t_a7e39a3046f93f81f18fdfda79594d627}{thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implémentation du type abstrait \mbox{\hyperlink{structapp__t}{app\+\_\+t}}.
+
+Dans les grandes lignes, ce type ne fait que maintenir ensemble les composants et la config de l\textquotesingle{}app. 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structapp__t_ae08f3b3c38c7c41bb737edb86f437d95}\label{structapp__t_ae08f3b3c38c7c41bb737edb86f437d95}} 
+\index{app\_t@{app\_t}!graphrep@{graphrep}}
+\index{graphrep@{graphrep}!app\_t@{app\_t}}
+\doxysubsubsection{\texorpdfstring{graphrep}{graphrep}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphrep__t}{graphrep\+\_\+t}}$\ast$ app\+\_\+t\+::graphrep}
+
+Composant de représentation de graphe \mbox{\Hypertarget{structapp__t_a7e39a3046f93f81f18fdfda79594d627}\label{structapp__t_a7e39a3046f93f81f18fdfda79594d627}} 
+\index{app\_t@{app\_t}!thread@{thread}}
+\index{thread@{thread}!app\_t@{app\_t}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Thread$\ast$ app\+\_\+t\+::thread}
+
+Tâche parallèle \mbox{\Hypertarget{structapp__t_a104b7cd14df5f05351e5392e57520979}\label{structapp__t_a104b7cd14df5f05351e5392e57520979}} 
+\index{app\_t@{app\_t}!viewport@{viewport}}
+\index{viewport@{viewport}!app\_t@{app\_t}}
+\doxysubsubsection{\texorpdfstring{viewport}{viewport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structviewport__t}{viewport\+\_\+t}} app\+\_\+t\+::viewport}
+
+Viewport (actuel) de l\textquotesingle{}application \mbox{\Hypertarget{structapp__t_a5021017956a6dfb83fa33d931bbd67ed}\label{structapp__t_a5021017956a6dfb83fa33d931bbd67ed}} 
+\index{app\_t@{app\_t}!window@{window}}
+\index{window@{window}!app\_t@{app\_t}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structwindow__t}{window\+\_\+t}}$\ast$ app\+\_\+t\+::window}
+
+Fenêtre de l\textquotesingle{}application (dont thread de rendu) 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{app_8c}{app.\+c}}\end{DoxyCompactItemize}

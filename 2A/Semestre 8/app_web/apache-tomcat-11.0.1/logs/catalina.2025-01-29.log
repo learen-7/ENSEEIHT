@@ -1,0 +1,254 @@
+29-Jan-2025 10:45:00.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+29-Jan-2025 10:45:00.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+29-Jan-2025 10:45:00.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+29-Jan-2025 10:45:00.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+29-Jan-2025 10:45:00.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       5.4.0-89-generic
+29-Jan-2025 10:45:00.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+29-Jan-2025 10:45:00.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /mnt/n7fs/ens/tp_dh/jdk-17.0.5
+29-Jan-2025 10:45:00.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.5+9-LTS-191
+29-Jan-2025 10:45:00.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+29-Jan-2025 10:45:00.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1
+29-Jan-2025 10:45:00.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/conf/logging.properties
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jan-2025 10:45:00.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1
+29-Jan-2025 10:45:00.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/temp
+29-Jan-2025 10:45:00.044 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+29-Jan-2025 10:45:00.275 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+29-Jan-2025 10:45:00.301 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [474] millisecondes
+29-Jan-2025 10:45:00.342 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+29-Jan-2025 10:45:00.342 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+29-Jan-2025 10:45:00.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/docs]
+29-Jan-2025 10:45:00.593 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [238] ms
+29-Jan-2025 10:45:00.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/examples]
+29-Jan-2025 10:45:00.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [265] ms
+29-Jan-2025 10:45:00.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/ROOT]
+29-Jan-2025 10:45:00.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [20] ms
+29-Jan-2025 10:45:00.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/host-manager]
+29-Jan-2025 10:45:00.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [22] ms
+29-Jan-2025 10:45:00.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/manager]
+29-Jan-2025 10:45:00.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [19] ms
+29-Jan-2025 10:45:00.924 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+29-Jan-2025 10:45:00.942 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [640] millisecondes
+29-Jan-2025 10:53:51.165 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 10:53:53.296 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 131] ms
+29-Jan-2025 11:13:23.713 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:13:24.007 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:13:26.289 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 282] ms
+29-Jan-2025 11:27:46.621 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:27:46.941 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:27:49.284 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 342] ms
+29-Jan-2025 11:29:19.318 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:29:19.552 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:29:21.785 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 233] ms
+29-Jan-2025 11:31:01.818 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:31:22.075 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:31:24.095 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 020] ms
+29-Jan-2025 11:50:04.485 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:50:14.717 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:50:16.553 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 836] ms
+29-Jan-2025 11:51:57.054 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:51:57.287 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:51:59.512 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 225] ms
+29-Jan-2025 11:53:29.714 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:53:40.014 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:53:42.189 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 175] ms
+29-Jan-2025 11:55:02.215 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 11:55:12.473 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+29-Jan-2025 11:55:14.737 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 265] ms
+29-Jan-2025 14:14:57.908 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Rechargement de la base de données des utilisateurs [UserDatabase] à partir de la source mise à jour [file:/home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/conf/tomcat-users.xml]
+29-Jan-2025 14:14:57.909 SEVERE [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.open La base d'utilisateurs spécifiée [conf/tomcat-users.xml] n'a pas été trouvée
+29-Jan-2025 14:14:58.410 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte []
+29-Jan-2025 14:14:58.413 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [ROOT]
+	java.lang.NullPointerException: Cannot invoke "java.io.InputStream.read(byte[], int, int)" because "is" is null
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1452)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+29-Jan-2025 14:14:58.916 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/examples]
+29-Jan-2025 14:14:58.920 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [examples]
+	java.lang.IllegalStateException: java.nio.file.NoSuchFileException: /home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:99)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:250)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:272)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:64)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:211)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:220)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:952)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1451)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.nio.file.NoSuchFileException: /home/lht1404/Documents/2A/app_web/apache-tomcat-11.0.1/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar
+		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+		at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1264)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:95)
+		... 30 more
+29-Jan-2025 14:14:59.423 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/host-manager]
+29-Jan-2025 14:14:59.426 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [host-manager]
+	java.lang.NullPointerException: Cannot invoke "java.io.InputStream.read(byte[], int, int)" because "is" is null
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1452)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+29-Jan-2025 14:14:59.930 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/manager]
+29-Jan-2025 14:14:59.932 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [manager]
+	java.lang.NullPointerException: Cannot invoke "java.io.InputStream.read(byte[], int, int)" because "is" is null
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1452)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+29-Jan-2025 14:15:00.436 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/docs]
+29-Jan-2025 14:15:00.438 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [docs]
+	java.lang.NullPointerException: Cannot invoke "java.io.InputStream.read(byte[], int, int)" because "is" is null
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1452)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+29-Jan-2025 14:15:00.441 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+29-Jan-2025 14:15:00.442 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Le désenregistrement du pilote JDBC a échoué pour l'application web [hello]
+	java.lang.NullPointerException: Cannot invoke "java.io.InputStream.read(byte[], int, int)" because "is" is null
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1452)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1401)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1338)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:370)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4666)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:626)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1447)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1376)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:263)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:940)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1139)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1143)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1121)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)

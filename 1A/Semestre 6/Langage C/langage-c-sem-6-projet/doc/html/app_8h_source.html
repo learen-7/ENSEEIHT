@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de app.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">app.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="app_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef APP_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define APP_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graphe_8h.html">graphe.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="viewport_8h.html">viewport.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window_8h.html">window.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;liste_noeud.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="app_8h.html#a3eebd09a9a94c914de17855816e6ac45">   33</a></span>&#160;<span class="preprocessor">#define PADDING 30</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">struct </span><a class="code" href="structapp__t.html">app_t</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span><a class="code" href="structapp__t.html">app_t</a>* <a class="code" href="app_8h.html#a494cc793030f72c4fa6270fd78f1028f">setup_app</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graph);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#a3cbb0f4b48324ef7af977239bed45fc5">launch_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#ac7debaf4cbbb7a8ad66c5734addc7c3c">refresh_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#afe5c853fbce381e6b1992e91abdfe0b6">move_cross_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#a703eee60c4313df1c745cac45c938d3a">terminate_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>** app_ptr);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">  117</a></span>&#160;<span class="keyword">typedef</span> int(*<a class="code" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a>)(<span class="keyword">struct </span><a class="code" href="structapp__t.html">app_t</a>*,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">  124</a></span>&#160;<span class="keyword">typedef</span> int(*<a class="code" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a>)(<span class="keyword">struct </span><a class="code" href="structapp__t.html">app_t</a>*,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#a8d87b0928cd8304064c4790357967a0b">exec_task_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app, <a class="code" href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a> task, <a class="code" href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a> post, <span class="keywordtype">void</span>* userdata, <span class="keywordtype">bool</span> detach);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#afd694f686449a82eb932df9cbb90b310">highlight_path_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app, liste_noeud_t* path);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#a0bde68bacad61cf132a5438bce9bf633">highlight_node_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> node, SDL_Color color);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> <a class="code" href="app_8h.html#a851c07707e239ca96fdb8d8efea61254">highlight_edge_app</a>(<span class="keyword">struct</span> <a class="code" href="structapp__t.html">app_t</a>* app, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> destination);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif // APP_H</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructapp__t_html"><div class="ttname"><a href="structapp__t.html">app_t</a></div><div class="ttdef"><b>Definition:</b> app.c:35</div></div>
+<div class="ttc" id="aapp_8h_html_a3cbb0f4b48324ef7af977239bed45fc5"><div class="ttname"><a href="app_8h.html#a3cbb0f4b48324ef7af977239bed45fc5">launch_app</a></div><div class="ttdeci">void launch_app(struct app_t *app)</div><div class="ttdef"><b>Definition:</b> app.c:89</div></div>
+<div class="ttc" id="aapp_8h_html_afe5c853fbce381e6b1992e91abdfe0b6"><div class="ttname"><a href="app_8h.html#afe5c853fbce381e6b1992e91abdfe0b6">move_cross_app</a></div><div class="ttdeci">void move_cross_app(struct app_t *app, int x, int y)</div><div class="ttdef"><b>Definition:</b> app.c:101</div></div>
+<div class="ttc" id="aapp_8h_html_afd694f686449a82eb932df9cbb90b310"><div class="ttname"><a href="app_8h.html#afd694f686449a82eb932df9cbb90b310">highlight_path_app</a></div><div class="ttdeci">void highlight_path_app(struct app_t *app, liste_noeud_t *path)</div><div class="ttdef"><b>Definition:</b> app.c:186</div></div>
+<div class="ttc" id="agraphe_8h_html_a30f2886e0ff9ce62525c08174ba7ed76"><div class="ttname"><a href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a></div><div class="ttdeci">unsigned long noeud_id_t</div><div class="ttdef"><b>Definition:</b> graphe.h:45</div></div>
+<div class="ttc" id="aapp_8h_html_a8d87b0928cd8304064c4790357967a0b"><div class="ttname"><a href="app_8h.html#a8d87b0928cd8304064c4790357967a0b">exec_task_app</a></div><div class="ttdeci">void exec_task_app(struct app_t *app, task_fun_t task, post_task_fun_t post, void *userdata, bool detach)</div><div class="ttdef"><b>Definition:</b> app.c:165</div></div>
+<div class="ttc" id="aapp_8h_html_a851c07707e239ca96fdb8d8efea61254"><div class="ttname"><a href="app_8h.html#a851c07707e239ca96fdb8d8efea61254">highlight_edge_app</a></div><div class="ttdeci">void highlight_edge_app(struct app_t *app, noeud_id_t source, noeud_id_t destination)</div><div class="ttdef"><b>Definition:</b> app.c:196</div></div>
+<div class="ttc" id="aapp_8h_html_ac7debaf4cbbb7a8ad66c5734addc7c3c"><div class="ttname"><a href="app_8h.html#ac7debaf4cbbb7a8ad66c5734addc7c3c">refresh_app</a></div><div class="ttdeci">void refresh_app(struct app_t *app)</div><div class="ttdef"><b>Definition:</b> app.c:97</div></div>
+<div class="ttc" id="astructgraphe__t_html"><div class="ttname"><a href="structgraphe__t.html">graphe_t</a></div><div class="ttdef"><b>Definition:</b> graphe.c:70</div></div>
+<div class="ttc" id="agraphe_8h_html"><div class="ttname"><a href="graphe_8h.html">graphe.h</a></div><div class="ttdoc">Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési...</div></div>
+<div class="ttc" id="aapp_8h_html_adff14e97f693a515aa1513ce63b8eb5d"><div class="ttname"><a href="app_8h.html#adff14e97f693a515aa1513ce63b8eb5d">post_task_fun_t</a></div><div class="ttdeci">int(* post_task_fun_t)(struct app_t *, void *)</div><div class="ttdef"><b>Definition:</b> app.h:124</div></div>
+<div class="ttc" id="aviewport_8h_html"><div class="ttname"><a href="viewport_8h.html">viewport.h</a></div><div class="ttdoc">Module de gestion des viewport.</div></div>
+<div class="ttc" id="aapp_8h_html_a703eee60c4313df1c745cac45c938d3a"><div class="ttname"><a href="app_8h.html#a703eee60c4313df1c745cac45c938d3a">terminate_app</a></div><div class="ttdeci">void terminate_app(struct app_t **app_ptr)</div><div class="ttdef"><b>Definition:</b> app.c:109</div></div>
+<div class="ttc" id="awindow_8h_html"><div class="ttname"><a href="window_8h.html">window.h</a></div><div class="ttdoc">Module window qui contient la fenêtre d'affichage (principale)</div></div>
+<div class="ttc" id="aapp_8h_html_ae896da1b7523673cf55acbb3f2699fac"><div class="ttname"><a href="app_8h.html#ae896da1b7523673cf55acbb3f2699fac">task_fun_t</a></div><div class="ttdeci">int(* task_fun_t)(struct app_t *, void *)</div><div class="ttdef"><b>Definition:</b> app.h:117</div></div>
+<div class="ttc" id="aapp_8h_html_a0bde68bacad61cf132a5438bce9bf633"><div class="ttname"><a href="app_8h.html#a0bde68bacad61cf132a5438bce9bf633">highlight_node_app</a></div><div class="ttdeci">void highlight_node_app(struct app_t *app, noeud_id_t node, SDL_Color color)</div><div class="ttdef"><b>Definition:</b> app.c:191</div></div>
+<div class="ttc" id="aapp_8h_html_a494cc793030f72c4fa6270fd78f1028f"><div class="ttname"><a href="app_8h.html#a494cc793030f72c4fa6270fd78f1028f">setup_app</a></div><div class="ttdeci">struct app_t * setup_app(int width, int height, struct graphe_t *graph)</div><div class="ttdef"><b>Definition:</b> app.c:62</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

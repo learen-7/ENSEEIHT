@@ -1,0 +1,52 @@
+\hypertarget{structparser__noeud}{}\doxysection{Référence de la structure parser\+\_\+noeud}
+\label{structparser__noeud}\index{parser\_noeud@{parser\_noeud}}
+
+
+Graphe de collaboration de parser\+\_\+noeud\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{structparser__noeud__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{structparser__noeud_a1976ba91962e41aacd7012f2b98497c4}{nid}}
+\item 
+char $\ast$ \mbox{\hyperlink{structparser__noeud_a570f4a01aa4b8403580607cc2be190e6}{nom}}
+\item 
+\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{structparser__noeud_a6389f7cbf255ccc5d252dcea7bc62a45}{pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Un noeud en cours de parsing, avec un identifiant, un nom et une position. Cet enregistrement permet de faire le lien entre nom et identifiant (puisque le fichier ne manipule {\itshape que} des identifiants).
+
+Dans la suite, on appellera ça des \char`\"{}noeuds parseur\char`\"{} (par opposition aux \char`\"{}vrais\char`\"{} noeuds du graphe). 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structparser__noeud_a1976ba91962e41aacd7012f2b98497c4}\label{structparser__noeud_a1976ba91962e41aacd7012f2b98497c4}} 
+\index{parser\_noeud@{parser\_noeud}!nid@{nid}}
+\index{nid@{nid}!parser\_noeud@{parser\_noeud}}
+\doxysubsubsection{\texorpdfstring{nid}{nid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} parser\+\_\+noeud\+::nid}
+
+Identifiant du noeud \mbox{\Hypertarget{structparser__noeud_a570f4a01aa4b8403580607cc2be190e6}\label{structparser__noeud_a570f4a01aa4b8403580607cc2be190e6}} 
+\index{parser\_noeud@{parser\_noeud}!nom@{nom}}
+\index{nom@{nom}!parser\_noeud@{parser\_noeud}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily char$\ast$ parser\+\_\+noeud\+::nom}
+
+Nom du noeud \mbox{\Hypertarget{structparser__noeud_a6389f7cbf255ccc5d252dcea7bc62a45}\label{structparser__noeud_a6389f7cbf255ccc5d252dcea7bc62a45}} 
+\index{parser\_noeud@{parser\_noeud}!pos@{pos}}
+\index{pos@{pos}!parser\_noeud@{parser\_noeud}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} parser\+\_\+noeud\+::pos}
+
+Position du noeud 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{graphe__parse_8c}{graphe\+\_\+parse.\+c}}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{structdijkstra__conf__t}{}\doxysection{Référence de la structure dijkstra\+\_\+conf\+\_\+t}
+\label{structdijkstra__conf__t}\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+
+
+Graphe de collaboration de dijkstra\+\_\+conf\+\_\+t\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{structdijkstra__conf__t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$ \mbox{\hyperlink{structdijkstra__conf__t_ac2777ba0d53eeb512bcf8bdaeecfc115}{graphe}}
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{structdijkstra__conf__t_ac828e348ed9d0c913caeb870ea8a3786}{source}}
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{structdijkstra__conf__t_af81b2ec8c00a41f92791dcbb8637d148}{destination}}
+\item 
+liste\+\_\+noeud\+\_\+t $\ast$ \mbox{\hyperlink{structdijkstra__conf__t_ae0fd93fdce1e174d53e13698313cd6a6}{chemin}}
+\item 
+float \mbox{\hyperlink{structdijkstra__conf__t_ac687c39cd6ca9ec1634b9d699dbbbfc2}{resultat}}
+\item 
+double \mbox{\hyperlink{structdijkstra__conf__t_aa2337806c11cb335f5f28133328e2947}{temps}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Type qui représente la configuration de l\textquotesingle{}algo, à utiliser lorsqu\textquotesingle{}on donne la conf à la tâche 
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{structdijkstra__conf__t_ae0fd93fdce1e174d53e13698313cd6a6}\label{structdijkstra__conf__t_ae0fd93fdce1e174d53e13698313cd6a6}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!chemin@{chemin}}
+\index{chemin@{chemin}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{chemin}{chemin}}
+{\footnotesize\ttfamily liste\+\_\+noeud\+\_\+t$\ast$ dijkstra\+\_\+conf\+\_\+t\+::chemin}
+
+chemin calculé par l\textquotesingle{}algo \mbox{\Hypertarget{structdijkstra__conf__t_af81b2ec8c00a41f92791dcbb8637d148}\label{structdijkstra__conf__t_af81b2ec8c00a41f92791dcbb8637d148}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!destination@{destination}}
+\index{destination@{destination}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{destination}{destination}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} dijkstra\+\_\+conf\+\_\+t\+::destination}
+
+destination du chemin \mbox{\Hypertarget{structdijkstra__conf__t_ac2777ba0d53eeb512bcf8bdaeecfc115}\label{structdijkstra__conf__t_ac2777ba0d53eeb512bcf8bdaeecfc115}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!graphe@{graphe}}
+\index{graphe@{graphe}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{graphe}{graphe}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}}$\ast$ dijkstra\+\_\+conf\+\_\+t\+::graphe}
+
+graphe sur lequel effectuer l\textquotesingle{}algo \mbox{\Hypertarget{structdijkstra__conf__t_ac687c39cd6ca9ec1634b9d699dbbbfc2}\label{structdijkstra__conf__t_ac687c39cd6ca9ec1634b9d699dbbbfc2}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!resultat@{resultat}}
+\index{resultat@{resultat}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{resultat}{resultat}}
+{\footnotesize\ttfamily float dijkstra\+\_\+conf\+\_\+t\+::resultat}
+
+distance minimale calculée par l\textquotesingle{}algo \mbox{\Hypertarget{structdijkstra__conf__t_ac828e348ed9d0c913caeb870ea8a3786}\label{structdijkstra__conf__t_ac828e348ed9d0c913caeb870ea8a3786}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!source@{source}}
+\index{source@{source}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} dijkstra\+\_\+conf\+\_\+t\+::source}
+
+origine du chemin \mbox{\Hypertarget{structdijkstra__conf__t_aa2337806c11cb335f5f28133328e2947}\label{structdijkstra__conf__t_aa2337806c11cb335f5f28133328e2947}} 
+\index{dijkstra\_conf\_t@{dijkstra\_conf\_t}!temps@{temps}}
+\index{temps@{temps}!dijkstra\_conf\_t@{dijkstra\_conf\_t}}
+\doxysubsubsection{\texorpdfstring{temps}{temps}}
+{\footnotesize\ttfamily double dijkstra\+\_\+conf\+\_\+t\+::temps}
+
+temps de calcul 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8c}{main.\+c}}\end{DoxyCompactItemize}

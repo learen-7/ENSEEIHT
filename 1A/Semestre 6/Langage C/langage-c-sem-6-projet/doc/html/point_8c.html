@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier point.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier point.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implantation du module point.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de point.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="point_8c__incl.png" border="0" usemap="#point_8c" alt=""/></div>
+<map name="point_8c" id="point_8c">
+<area shape="rect" title="Implantation du module point." alt="" coords="107,5,173,32"/>
+<area shape="rect" href="point_8h.html" title="Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin..." alt="" coords="13,80,80,107"/>
+<area shape="rect" title=" " alt="" coords="105,80,175,107"/>
+<area shape="rect" title=" " alt="" coords="199,80,267,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,88,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9eeb0c55118bb55f3d28c47a66f8382f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="point_8c.html#a9eeb0c55118bb55f3d28c47a66f8382f">creer_point</a> (double x, double y)</td></tr>
+<tr class="separator:a9eeb0c55118bb55f3d28c47a66f8382f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1391b51a9335c0c82031cc5e02299200"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="point_8c.html#a1391b51a9335c0c82031cc5e02299200">copier_point</a> (<a class="el" href="structpoint__t.html">point_t</a> *cible, <a class="el" href="structpoint__t.html">point_t</a> source)</td></tr>
+<tr class="separator:a1391b51a9335c0c82031cc5e02299200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377418536ab9a0485f218dfc8317f161"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="point_8c.html#a377418536ab9a0485f218dfc8317f161">distance</a> (<a class="el" href="structpoint__t.html">point_t</a> a, <a class="el" href="structpoint__t.html">point_t</a> b)</td></tr>
+<tr class="separator:a377418536ab9a0485f218dfc8317f161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2ac9db6d928e0ebf6f896e50fec5ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="point_8c.html#a8f2ac9db6d928e0ebf6f896e50fec5ec">egal</a> (<a class="el" href="structpoint__t.html">point_t</a> a, <a class="el" href="structpoint__t.html">point_t</a> b, double precision)</td></tr>
+<tr class="separator:a8f2ac9db6d928e0ebf6f896e50fec5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Implantation du module point. </p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a1391b51a9335c0c82031cc5e02299200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1391b51a9335c0c82031cc5e02299200">&#9670;&nbsp;</a></span>copier_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copier_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a> *&#160;</td>
+          <td class="paramname"><em>cible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copier un point.</p>
+<p>Post-conditions : si cible != NULL, cible-&gt;x == source.x, cible-&gt;y == source.y</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cible</td><td>[out] point récepteur de la copie </td></tr>
+    <tr><td class="paramname">source</td><td>point à copier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9eeb0c55118bb55f3d28c47a66f8382f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eeb0c55118bb55f3d28c47a66f8382f">&#9670;&nbsp;</a></span>creer_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpoint__t.html">point_t</a> creer_point </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée un point (sur la pile) avec les coordonnée données. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>abscisse du point </td></tr>
+    <tr><td class="paramname">y</td><td>ordonnée du point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>point créé (sur la pile) </dd></dl>
+
+</div>
+</div>
+<a id="a377418536ab9a0485f218dfc8317f161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377418536ab9a0485f218dfc8317f161">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distance (euclidienne) entre deux points.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>premier point </td></tr>
+    <tr><td class="paramname">b</td><td>second point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>distance entre a et b (racine carrée de la norme-2) </dd></dl>
+
+</div>
+</div>
+<a id="a8f2ac9db6d928e0ebf6f896e50fec5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2ac9db6d928e0ebf6f896e50fec5ec">&#9670;&nbsp;</a></span>egal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool egal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpoint__t.html">point_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Teste si deux points sont égaux (à précision près). Ce test se base sur la distance.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>premier point </td></tr>
+    <tr><td class="paramname">b</td><td>second point </td></tr>
+    <tr><td class="paramname">precision</td><td>seuil en-dessous duquel les points sont considérés comme égaux </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

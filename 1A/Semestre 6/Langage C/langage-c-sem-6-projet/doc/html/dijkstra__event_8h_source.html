@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de dijkstra_event.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dijkstra_event.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dijkstra__event_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef DIJKSTRA_EVENT_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define DIJKSTRA_EVENT_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graphe_8h.html">graphe.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structdijkstra__event__t.html">dijkstra_event_t</a> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html#ac1d563f909f4e194f17c389064527352">   55</a></span>&#160;    void (*<a class="code" href="structdijkstra__event__t.html#ac1d563f909f4e194f17c389064527352">on_visiting</a>)(<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html#a41e3eae530c25dac1e9f633f6e823948">   59</a></span>&#160;    void (*<a class="code" href="structdijkstra__event__t.html#a41e3eae530c25dac1e9f633f6e823948">on_visited</a>)(<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html#a6b4790228fafb064ec9eedf74ff76624">   63</a></span>&#160;    void (*<a class="code" href="structdijkstra__event__t.html#a6b4790228fafb064ec9eedf74ff76624">on_exploring</a>)(<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>,<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html#ad70082a8fbf434be3a36cfad56c23726">   67</a></span>&#160;    void (*<a class="code" href="structdijkstra__event__t.html#ad70082a8fbf434be3a36cfad56c23726">on_marking</a>)(<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structdijkstra__event__t.html#aa669e1cea6df7a830aa7590fbe3f1131">   72</a></span>&#160;    void (*<a class="code" href="structdijkstra__event__t.html#aa669e1cea6df7a830aa7590fbe3f1131">on_path_build</a>)(liste_noeud_t*,<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // DIJKSTRA_EVENT_H</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructdijkstra__event__t_html_a41e3eae530c25dac1e9f633f6e823948"><div class="ttname"><a href="structdijkstra__event__t.html#a41e3eae530c25dac1e9f633f6e823948">dijkstra_event_t::on_visited</a></div><div class="ttdeci">void(* on_visited)(noeud_id_t, void *)</div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:59</div></div>
+<div class="ttc" id="astructdijkstra__event__t_html_a6b4790228fafb064ec9eedf74ff76624"><div class="ttname"><a href="structdijkstra__event__t.html#a6b4790228fafb064ec9eedf74ff76624">dijkstra_event_t::on_exploring</a></div><div class="ttdeci">void(* on_exploring)(noeud_id_t, noeud_id_t, void *)</div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:63</div></div>
+<div class="ttc" id="astructdijkstra__event__t_html_ac1d563f909f4e194f17c389064527352"><div class="ttname"><a href="structdijkstra__event__t.html#ac1d563f909f4e194f17c389064527352">dijkstra_event_t::on_visiting</a></div><div class="ttdeci">void(* on_visiting)(noeud_id_t, void *)</div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:55</div></div>
+<div class="ttc" id="agraphe_8h_html_a30f2886e0ff9ce62525c08174ba7ed76"><div class="ttname"><a href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a></div><div class="ttdeci">unsigned long noeud_id_t</div><div class="ttdef"><b>Definition:</b> graphe.h:45</div></div>
+<div class="ttc" id="astructdijkstra__event__t_html_ad70082a8fbf434be3a36cfad56c23726"><div class="ttname"><a href="structdijkstra__event__t.html#ad70082a8fbf434be3a36cfad56c23726">dijkstra_event_t::on_marking</a></div><div class="ttdeci">void(* on_marking)(noeud_id_t, void *)</div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:67</div></div>
+<div class="ttc" id="astructdijkstra__event__t_html"><div class="ttname"><a href="structdijkstra__event__t.html">dijkstra_event_t</a></div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:51</div></div>
+<div class="ttc" id="astructdijkstra__event__t_html_aa669e1cea6df7a830aa7590fbe3f1131"><div class="ttname"><a href="structdijkstra__event__t.html#aa669e1cea6df7a830aa7590fbe3f1131">dijkstra_event_t::on_path_build</a></div><div class="ttdeci">void(* on_path_build)(liste_noeud_t *, void *)</div><div class="ttdef"><b>Definition:</b> dijkstra_event.h:72</div></div>
+<div class="ttc" id="agraphe_8h_html"><div class="ttname"><a href="graphe_8h.html">graphe.h</a></div><div class="ttdoc">Module graphe, qui définit un graphe orienté, dans les noeuds duquel sont stocké une position cartési...</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

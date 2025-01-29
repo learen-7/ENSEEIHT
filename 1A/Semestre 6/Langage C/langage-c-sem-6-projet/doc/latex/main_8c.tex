@@ -1,0 +1,63 @@
+\hypertarget{main_8c}{}\doxysection{Référence du fichier main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Programme principal.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphe\+\_\+parse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}app.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dijkstra.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdijkstra__conf__t}{dijkstra\+\_\+conf\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Programme principal. 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Le programme principal. Configure l\textquotesingle{}application, affiche la fenêtre et gère les événements (clavier, souris...). 
+\begin{DoxyParams}{Paramètres}
+{\em argc} & nombre d\textquotesingle{}arguments de la ligne de commande \\
+\hline
+{\em argv} & arguments de la ligne de commande \\
+\hline
+\end{DoxyParams}

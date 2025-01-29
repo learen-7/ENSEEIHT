@@ -1,0 +1,388 @@
+\hypertarget{graphe_8c}{}\doxysection{Référence du fichier graphe.\+c}
+\label{graphe_8c}\index{graphe.c@{graphe.c}}
+
+
+Implantation du module graphe.  
+
+
+{\ttfamily \#include \char`\"{}graphe.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Graphe des dépendances par inclusion de graphe.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphe_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphe__noeud}{graphe\+\_\+noeud}}
+\item 
+struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$ \mbox{\hyperlink{graphe_8c_a23f35638c82e0f8641bdef865cb7585c}{creer\+\_\+graphe}} (size\+\_\+t \mbox{\hyperlink{graphe_8h_a549f75603c97f9bab9de1ae6983ea2d8}{nombre\+\_\+noeuds}})
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{graphe_8c_ab81a308fbabcbcd0f377006f7824cb30}{creer\+\_\+noeud}} (struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} position, void $\ast$donnees)
+\item 
+bool \mbox{\hyperlink{graphe_8c_a6448aac37fa134bfdfc55212269dde53}{ajouter\+\_\+arrete}} (struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} source, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} destination)
+\item 
+void \mbox{\hyperlink{graphe_8c_a126f85d1fd1326cd5f1e6bc6e1651554}{liberer\+\_\+graphe}} (struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$$\ast$graphe, void($\ast$liberer\+\_\+donnees)(void $\ast$))
+\item 
+size\+\_\+t \mbox{\hyperlink{graphe_8c_a549f75603c97f9bab9de1ae6983ea2d8}{nombre\+\_\+noeuds}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe)
+\item 
+void \mbox{\hyperlink{graphe_8c_a05a0ad54febb5385765d5efe134c99b3}{noeuds}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} $\ast$noeuds)
+\item 
+bool \mbox{\hyperlink{graphe_8c_a350f51139b6655d37cf87af742c561a0}{est\+\_\+voisin}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} source, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} destination)
+\item 
+size\+\_\+t \mbox{\hyperlink{graphe_8c_a24d5b2df427c06e557f9cb1b9e7f8cf9}{nombre\+\_\+voisins}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeud)
+\item 
+void \mbox{\hyperlink{graphe_8c_a5c3b6fadf17aa9e42c1c95ded793d639}{noeuds\+\_\+voisins}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeud, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} $\ast$voisins)
+\item 
+void $\ast$ \mbox{\hyperlink{graphe_8c_a2cc76eb39ab17dd63d0ce2c7d35f8e93}{noeud\+\_\+donnees}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeud)
+\item 
+\mbox{\hyperlink{structpoint__t}{point\+\_\+t}} \mbox{\hyperlink{graphe_8c_a93d16e0d00719f60e378d7f516c2bc94}{noeud\+\_\+position}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeud)
+\item 
+float \mbox{\hyperlink{graphe_8c_a21db4d673e659088e2c14c03e7197b42}{noeud\+\_\+distance}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeuda, \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} noeudb)
+\item 
+\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} \mbox{\hyperlink{graphe_8c_a1c7b885c2f9524087f70857ce6e29e59}{trouver\+\_\+noeud}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a91a89ba18f8ea5e2f555e434288e680d}{noeud\+\_\+predicat}} predicat, void $\ast$userdata)
+\item 
+void \mbox{\hyperlink{graphe_8c_a1c6c5891c04b9f419cdc0e33a92848f1}{pour\+\_\+chaque\+\_\+noeud}} (struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_aa48941da2f6ff2f9ad657a4f9d8c735d}{noeud\+\_\+iterateur}} iterateur, void $\ast$userdata)
+\item 
+void \mbox{\hyperlink{graphe_8c_a6cc9d19dd1e729bad0826f68e3098f86}{pour\+\_\+chaque\+\_\+arrete}} (struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, \mbox{\hyperlink{graphe_8h_a2c124137f71df6337c489470840de8db}{arrete\+\_\+iterateur}} iterateur, void $\ast$userdata)
+\item 
+void \mbox{\hyperlink{graphe_8c_ab979e023f208927e122d42e3d746dd54}{exporter\+\_\+dot}} (const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$graphe, F\+I\+LE $\ast$sortie, void($\ast$afficher\+\_\+donnees)(F\+I\+LE $\ast$, void $\ast$))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du module graphe. 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{graphe_8c_a6448aac37fa134bfdfc55212269dde53}\label{graphe_8c_a6448aac37fa134bfdfc55212269dde53}} 
+\index{graphe.c@{graphe.c}!ajouter\_arrete@{ajouter\_arrete}}
+\index{ajouter\_arrete@{ajouter\_arrete}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{ajouter\_arrete()}{ajouter\_arrete()}}
+{\footnotesize\ttfamily bool ajouter\+\_\+arrete (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{source,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{destination }\end{DoxyParamCaption})}
+
+Ajouter une arrête dans le graphe entre les noeuds donnés. La fonction renvoie vrai si l\textquotesingle{}ajout a été réalisé et faux sinon (typiquement, les noeuds n\textquotesingle{}existent pas ou il n\textquotesingle{}y a plus de place pour les arrêtes).
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel ajouter l\textquotesingle{}arrête \\
+\hline
+{\em source} & source de l\textquotesingle{}arc \\
+\hline
+{\em destination} & de l\textquotesingle{}arc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai si l\textquotesingle{}arc a été ajouté, faux sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a23f35638c82e0f8641bdef865cb7585c}\label{graphe_8c_a23f35638c82e0f8641bdef865cb7585c}} 
+\index{graphe.c@{graphe.c}!creer\_graphe@{creer\_graphe}}
+\index{creer\_graphe@{creer\_graphe}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{creer\_graphe()}{creer\_graphe()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}}$\ast$ creer\+\_\+graphe (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nombre\+\_\+noeuds }\end{DoxyParamCaption})}
+
+Crée un graphe avec le nombre (maximal) de noeuds donné. Le graphe est alloué sur le tas.
+
+Cas d\textquotesingle{}erreur \+: {\ttfamily nombre\+\_\+noeuds} $<$ 65536 (si == 0, comportement indéfini) =$>$ un message d\textquotesingle{}erreur est affiché et la fonction renvoie N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nombre\+\_\+noeuds} & nombre maximum de noeuds dans le graphe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+graphe créé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_ab81a308fbabcbcd0f377006f7824cb30}\label{graphe_8c_ab81a308fbabcbcd0f377006f7824cb30}} 
+\index{graphe.c@{graphe.c}!creer\_noeud@{creer\_noeud}}
+\index{creer\_noeud@{creer\_noeud}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{creer\_noeud()}{creer\_noeud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} creer\+\_\+noeud (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{structpoint__t}{point\+\_\+t}}}]{position,  }\item[{void $\ast$}]{donnees }\end{DoxyParamCaption})}
+
+Créer un noeud dans le graphe, avec la position et les données utilisateur données. La fonction renvoie l\textquotesingle{}identifiant du noeud créé en cas de succès ou \mbox{\hyperlink{graphe_8h_a642e16f35aa1e585c25e405ede76e115}{N\+O\+\_\+\+ID}} si la création n\textquotesingle{}est pas possible (car plus de place typiquement),
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel créer le noeud \\
+\hline
+{\em position} & position cartésienne du noeud \\
+\hline
+{\em donnees} & données utilisateur à stocker sur le noeud \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+identifiant du noeud créé, ou \mbox{\hyperlink{graphe_8h_a642e16f35aa1e585c25e405ede76e115}{N\+O\+\_\+\+ID}} si pas de noeud créé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a350f51139b6655d37cf87af742c561a0}\label{graphe_8c_a350f51139b6655d37cf87af742c561a0}} 
+\index{graphe.c@{graphe.c}!est\_voisin@{est\_voisin}}
+\index{est\_voisin@{est\_voisin}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{est\_voisin()}{est\_voisin()}}
+{\footnotesize\ttfamily bool est\+\_\+voisin (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeuda,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeudb }\end{DoxyParamCaption})}
+
+Renvoie vrai ssi les noeuds donnés sont {\itshape voisins} dans le graphe. B est un voisin de A ssi il existe un arc (orienté) dont l\textquotesingle{}origine est A et la destination est B.
+
+Si les noeuds sont invalides, renvoie nécessairement faux.
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel faire le test \\
+\hline
+{\em noeuda} & noeud source \\
+\hline
+{\em noeudb} & noeud destination (dont on veut savoir s\textquotesingle{}il est voisin de la source) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai ssi noeudb voisin de noeuda 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_ab979e023f208927e122d42e3d746dd54}\label{graphe_8c_ab979e023f208927e122d42e3d746dd54}} 
+\index{graphe.c@{graphe.c}!exporter\_dot@{exporter\_dot}}
+\index{exporter\_dot@{exporter\_dot}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{exporter\_dot()}{exporter\_dot()}}
+{\footnotesize\ttfamily void exporter\+\_\+dot (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{F\+I\+LE $\ast$}]{sortie,  }\item[{void($\ast$)(F\+I\+LE $\ast$, void $\ast$)}]{afficher\+\_\+donnees }\end{DoxyParamCaption})}
+
+Exporte un graphe au format D\+OT de Graphviz sur le fichier donné. Les données utilisateur exportées vers le fichier à l\textquotesingle{}aide de la fonction {\ttfamily afficher\+\_\+donnees} fournie par l\textquotesingle{}utilisateur. Si cette dernière est nulle, les données ne sont pas exportées.
+
+Pré-\/conditions \+: graphe non N\+U\+LL, sortie non N\+U\+LL et fichier ouvert
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe à exporter \\
+\hline
+{\em sortie} & fichier vers lequel exporter les données \\
+\hline
+{\em afficher\+\_\+donnees} & fonction qui exporte les données utilisateur vers la sortie ; elles apparaissent sous la forme de tooltip dans le graphe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a126f85d1fd1326cd5f1e6bc6e1651554}\label{graphe_8c_a126f85d1fd1326cd5f1e6bc6e1651554}} 
+\index{graphe.c@{graphe.c}!liberer\_graphe@{liberer\_graphe}}
+\index{liberer\_graphe@{liberer\_graphe}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{liberer\_graphe()}{liberer\_graphe()}}
+{\footnotesize\ttfamily void liberer\+\_\+graphe (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$$\ast$}]{graphe,  }\item[{void($\ast$)(void $\ast$)}]{liberer\+\_\+donnees }\end{DoxyParamCaption})}
+
+Libérer le graphe alloué en mémoire par \mbox{\hyperlink{graphe_8h_a23f35638c82e0f8641bdef865cb7585c}{creer\+\_\+graphe}}. La fonction admet une fonction de libération customisée pour libérer les données utilisateur (si elles ont été allouées sur le tas, typiquement). Cette fonction peut être N\+U\+LL, auquel cas les données utilisateurs sont laissées telle quelles.
+
+Pré-\/conditions \+: graphe != N\+U\+LL Post-\/conditions \+: $\ast$graphe == N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & pointeur sur le graphe à libérer \\
+\hline
+{\em liberer\+\_\+donnees} & fonction à appeler sur les données utilisateur stockées sur les noeuds ; cette fonction prend en paramètre les données à libérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a21db4d673e659088e2c14c03e7197b42}\label{graphe_8c_a21db4d673e659088e2c14c03e7197b42}} 
+\index{graphe.c@{graphe.c}!noeud\_distance@{noeud\_distance}}
+\index{noeud\_distance@{noeud\_distance}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{noeud\_distance()}{noeud\_distance()}}
+{\footnotesize\ttfamily float noeud\+\_\+distance (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeuda,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeudb }\end{DoxyParamCaption})}
+
+Calcule la distance directe entre deux noeuds, c\textquotesingle{}est-\/à-\/dire la distance entre leurs positions {\itshape s\textquotesingle{}ils sont voisins}. La fonction retourne {\ttfamily I\+N\+F\+I\+N\+I\+TY} si les noeuds ne sont pas voisins, et {\ttfamily N\+AN} si au moins l\textquotesingle{}un des deux noeuds est invalide.
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel chercher les noeuds \\
+\hline
+{\em noeuda} & noeud source \\
+\hline
+{\em noeudb} & noeud destination \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+distance entre les positions respectives de noeudb et noeuda si noeudb est voisin de noeuda, {\ttfamily I\+N\+F\+I\+N\+I\+TY} s\textquotesingle{}ils ne sont pas voisins, {\ttfamily N\+AN} si noeuda ou noeudb est invalide 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a2cc76eb39ab17dd63d0ce2c7d35f8e93}\label{graphe_8c_a2cc76eb39ab17dd63d0ce2c7d35f8e93}} 
+\index{graphe.c@{graphe.c}!noeud\_donnees@{noeud\_donnees}}
+\index{noeud\_donnees@{noeud\_donnees}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{noeud\_donnees()}{noeud\_donnees()}}
+{\footnotesize\ttfamily void$\ast$ noeud\+\_\+donnees (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeud }\end{DoxyParamCaption})}
+
+Récupère les données utilisateurs associée au noeud, transmises au moment de l\textquotesingle{}appel à \mbox{\hyperlink{graphe_8h_ab81a308fbabcbcd0f377006f7824cb30}{creer\+\_\+noeud}}. S\textquotesingle{}il n\textquotesingle{}y a pas de donnée pour le noeud ou si le noeud est invalide, retourne N\+U\+LL.
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe où chercher le noeud \\
+\hline
+{\em noeud} & noeud dont on veut les données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+données utilisateurs ou N\+U\+LL s\textquotesingle{}il n\textquotesingle{}y en a pas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a93d16e0d00719f60e378d7f516c2bc94}\label{graphe_8c_a93d16e0d00719f60e378d7f516c2bc94}} 
+\index{graphe.c@{graphe.c}!noeud\_position@{noeud\_position}}
+\index{noeud\_position@{noeud\_position}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{noeud\_position()}{noeud\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint__t}{point\+\_\+t}} noeud\+\_\+position (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeud }\end{DoxyParamCaption})}
+
+Récupère la position cartésienne du noeud donné. Si le noeud est invalide, le point retourné est non-\/spécifié.
+
+Pré-\/conditions \+: graphe non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel chercher le noeud \\
+\hline
+{\em noeud} & noeud dont on veut la position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+position cartsienne du noeu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a05a0ad54febb5385765d5efe134c99b3}\label{graphe_8c_a05a0ad54febb5385765d5efe134c99b3}} 
+\index{graphe.c@{graphe.c}!noeuds@{noeuds}}
+\index{noeuds@{noeuds}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{noeuds()}{noeuds()}}
+{\footnotesize\ttfamily void noeuds (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} $\ast$}]{noeuds }\end{DoxyParamCaption})}
+
+Récupère les noeuds du graphe (sous la forme d\textquotesingle{}identifiants). Les noeuds sont stockés dans le tableau passé en paramètre, qui doit être de taille suffisante (au moins égale au résultat de \mbox{\hyperlink{graphe_8h_a549f75603c97f9bab9de1ae6983ea2d8}{nombre\+\_\+noeuds}}). L\textquotesingle{}allocation et les désallocation du tableau est laissée à la charge de l\textquotesingle{}utilisateur.
+
+Pré-\/conditions \+: graphe non N\+U\+LL, noeuds non N\+U\+LL, noeuds de taille suffisante
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dont on veut les noeuds \\
+\hline
+{\em noeuds} & \mbox{[}out\mbox{]} tableau pour recevoir les noeuds du graphe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a5c3b6fadf17aa9e42c1c95ded793d639}\label{graphe_8c_a5c3b6fadf17aa9e42c1c95ded793d639}} 
+\index{graphe.c@{graphe.c}!noeuds\_voisins@{noeuds\_voisins}}
+\index{noeuds\_voisins@{noeuds\_voisins}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{noeuds\_voisins()}{noeuds\_voisins()}}
+{\footnotesize\ttfamily void noeuds\+\_\+voisins (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeud,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} $\ast$}]{voisins }\end{DoxyParamCaption})}
+
+Récupère les noeuds voisins du noeud donné. Les noeuds sont stockés dans le tableau passé en paramètre, qui doit être de taille suffisante (au moins égale à \mbox{\hyperlink{graphe_8h_a24d5b2df427c06e557f9cb1b9e7f8cf9}{nombre\+\_\+voisins}}).
+
+Pré-\/conditions \+: graphe non N\+U\+LL, voisins non N\+U\+LL, de taille suffisante Post-\/conditions \+: pour tout i, 0 $<$= i $<$ nombre\+\_\+voisins(graphe, noeud), est\+\_\+voisin(graphe, noeud, voisins\mbox{[}i\mbox{]})
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel chercher le noeud \\
+\hline
+{\em noeud} & noeud dont on veut les voisins \\
+\hline
+{\em voisins} & \mbox{[}out\mbox{]} noeuds voisins du noeud \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a549f75603c97f9bab9de1ae6983ea2d8}\label{graphe_8c_a549f75603c97f9bab9de1ae6983ea2d8}} 
+\index{graphe.c@{graphe.c}!nombre\_noeuds@{nombre\_noeuds}}
+\index{nombre\_noeuds@{nombre\_noeuds}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{nombre\_noeuds()}{nombre\_noeuds()}}
+{\footnotesize\ttfamily size\+\_\+t nombre\+\_\+noeuds (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe }\end{DoxyParamCaption})}
+
+Retourne le nombre de noeuds dans le graphe. Pré-\/conditions \+: graphe non N\+U\+LL 
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nombre de noeuds dans graphe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a24d5b2df427c06e557f9cb1b9e7f8cf9}\label{graphe_8c_a24d5b2df427c06e557f9cb1b9e7f8cf9}} 
+\index{graphe.c@{graphe.c}!nombre\_voisins@{nombre\_voisins}}
+\index{nombre\_voisins@{nombre\_voisins}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{nombre\_voisins()}{nombre\_voisins()}}
+{\footnotesize\ttfamily size\+\_\+t nombre\+\_\+voisins (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}}}]{noeud }\end{DoxyParamCaption})}
+
+Renvoie le nombre de voisins du noeud. Pré-\/conditons \+: graphe non N\+U\+LL 
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel on cherche les voisins \\
+\hline
+{\em noeud} & noeud dont on veut le nombre de voisins \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nombre de voisins du noeud 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphe_8c_a6cc9d19dd1e729bad0826f68e3098f86}\label{graphe_8c_a6cc9d19dd1e729bad0826f68e3098f86}} 
+\index{graphe.c@{graphe.c}!pour\_chaque\_arrete@{pour\_chaque\_arrete}}
+\index{pour\_chaque\_arrete@{pour\_chaque\_arrete}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{pour\_chaque\_arrete()}{pour\_chaque\_arrete()}}
+{\footnotesize\ttfamily void pour\+\_\+chaque\+\_\+arrete (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a2c124137f71df6337c489470840de8db}{arrete\+\_\+iterateur}}}]{iterateur,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+Parcours les arrêtes du graphe (une fois) et applique la fonction donnée à chacune d\textquotesingle{}entre elles.
+
+Pré-\/conditions \+: graphe non N\+U\+LL, iterateur non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe à parcourir \\
+\hline
+{\em iterateur} & fonction à appliquer sur chaque arrête \\
+\hline
+{\em userdata} & données utilisateur à passer à l\textquotesingle{}itérateur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a1c6c5891c04b9f419cdc0e33a92848f1}\label{graphe_8c_a1c6c5891c04b9f419cdc0e33a92848f1}} 
+\index{graphe.c@{graphe.c}!pour\_chaque\_noeud@{pour\_chaque\_noeud}}
+\index{pour\_chaque\_noeud@{pour\_chaque\_noeud}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{pour\_chaque\_noeud()}{pour\_chaque\_noeud()}}
+{\footnotesize\ttfamily void pour\+\_\+chaque\+\_\+noeud (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_aa48941da2f6ff2f9ad657a4f9d8c735d}{noeud\+\_\+iterateur}}}]{iterateur,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+Parcours les noeuds du graphe (une fois) et applique la fonction donnée à chacun d\textquotesingle{}entre eux.
+
+Pré-\/conditions \+: graphe non N\+U\+LL, iterateur non N\+U\+LL
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe à parcourir \\
+\hline
+{\em iterateur} & fonction à appliquer sur chaque noeud \\
+\hline
+{\em userdata} & données utilisateur à passer à l\textquotesingle{}itérateur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphe_8c_a1c7b885c2f9524087f70857ce6e29e59}\label{graphe_8c_a1c7b885c2f9524087f70857ce6e29e59}} 
+\index{graphe.c@{graphe.c}!trouver\_noeud@{trouver\_noeud}}
+\index{trouver\_noeud@{trouver\_noeud}!graphe.c@{graphe.c}}
+\doxysubsubsection{\texorpdfstring{trouver\_noeud()}{trouver\_noeud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphe_8h_a30f2886e0ff9ce62525c08174ba7ed76}{noeud\+\_\+id\+\_\+t}} trouver\+\_\+noeud (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$}]{graphe,  }\item[{\mbox{\hyperlink{graphe_8h_a91a89ba18f8ea5e2f555e434288e680d}{noeud\+\_\+predicat}}}]{predicat,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+Trouver un noeud qui respecte le prédicat passé en paramètre. Cette fonction renvoie l\textquotesingle{}identifiant du noeud trouvé, ou \mbox{\hyperlink{graphe_8h_a642e16f35aa1e585c25e405ede76e115}{N\+O\+\_\+\+ID}} si aucun noeud n\textquotesingle{}a été trouvé.
+
+Pré-\/conditions \+: graphe non N\+U\+LL, predicat non N\+U\+LL Post-\/conditions \+: si resultat != N\+O\+\_\+\+ID, alors resultat est un noeud de graphe et predicat(resultat) (modulo effets de bord)
+
+
+\begin{DoxyParams}{Paramètres}
+{\em graphe} & graphe dans lequel chercher \\
+\hline
+{\em predicat} & critère de recherche \\
+\hline
+{\em userdata} & donnée utilisateur à transmettre à predicat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+identifiant du noeud trouvé (ou \mbox{\hyperlink{graphe_8h_a642e16f35aa1e585c25e405ede76e115}{N\+O\+\_\+\+ID}} si pas trouvé) 
+\end{DoxyReturn}

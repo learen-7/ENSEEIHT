@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra:  Fichier source de graphe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">graphe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="graphe_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of dijkstra.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// dijkstra is free software: you can redistribute it and/or modify it under </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the terms of the GNU General Public License as published by the Free Software </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Foundation, either version 3 of the License, or (at your option) any later </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// version.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// dijkstra is distributed in the hope that it will be useful, but WITHOUT ANY </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// A PARTICULAR PURPOSE. See the GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License along with </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// dijkstra. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// dijkstra - Copyright (c) 2024 Guillaume Dupont</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Contact: &lt;guillaume.dupont@toulouse-inp.fr&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef GRAPHE_H</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define GRAPHE_H</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">point.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="graphe_8h.html#a642e16f35aa1e585c25e405ede76e115">   42</a></span>&#160;<span class="preprocessor">#define NO_ID   0</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">struct </span><a class="code" href="structgraphe__t.html">graphe_t</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span><a class="code" href="structgraphe__t.html">graphe_t</a>* <a class="code" href="graphe_8h.html#a23f35638c82e0f8641bdef865cb7585c">creer_graphe</a>(<span class="keywordtype">size_t</span> <a class="code" href="graphe_8h.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> <a class="code" href="graphe_8h.html#ab81a308fbabcbcd0f377006f7824cb30">creer_noeud</a>(<span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="structpoint__t.html">point_t</a> position, <span class="keywordtype">void</span>* donnees);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="graphe_8h.html#a6448aac37fa134bfdfc55212269dde53">ajouter_arrete</a>(<span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> source, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> destination);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#a126f85d1fd1326cd5f1e6bc6e1651554">liberer_graphe</a>(<span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>** graphe, <span class="keywordtype">void</span> (*liberer_donnees)(<span class="keywordtype">void</span>*));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="graphe_8h.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#a05a0ad54febb5385765d5efe134c99b3">noeuds</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>* <a class="code" href="graphe_8h.html#a05a0ad54febb5385765d5efe134c99b3">noeuds</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="graphe_8h.html#a9edd03439e48d421198a35869a79d9d7">est_voisin</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeuda, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeudb);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="graphe_8h.html#a24d5b2df427c06e557f9cb1b9e7f8cf9">nombre_voisins</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#a5c3b6fadf17aa9e42c1c95ded793d639">noeuds_voisins</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a>* voisins);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="graphe_8h.html#a2cc76eb39ab17dd63d0ce2c7d35f8e93">noeud_donnees</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="graphe_8h.html#a93d16e0d00719f60e378d7f516c2bc94">noeud_position</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeud);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">float</span> <a class="code" href="graphe_8h.html#a21db4d673e659088e2c14c03e7197b42">noeud_distance</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeuda, <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> noeudb);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="structnoeud__info__t.html">  211</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structnoeud__info__t.html">noeud_info_t</a> {</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="structnoeud__info__t.html#a7a45b36658a47f39e680284160c3723e">  213</a></span>&#160;    <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> <a class="code" href="structnoeud__info__t.html#a7a45b36658a47f39e680284160c3723e">id</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="structnoeud__info__t.html#aeb4827e159a2ce7cfb2272cd254daa1d">  215</a></span>&#160;    <a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="structnoeud__info__t.html#aeb4827e159a2ce7cfb2272cd254daa1d">position</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="structnoeud__info__t.html#ad40943b3325299073f7cebb3bc452b9a">  217</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structnoeud__info__t.html#ad40943b3325299073f7cebb3bc452b9a">noeud_data</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;};</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">  226</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">noeud_iterateur</a>)(<span class="keyword">struct </span><a class="code" href="structnoeud__info__t.html">noeud_info_t</a>,void*);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">  234</a></span>&#160;<span class="keyword">typedef</span> bool(*<a class="code" href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">noeud_predicat</a>)(<span class="keyword">struct </span><a class="code" href="structnoeud__info__t.html">noeud_info_t</a>,void*);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="structarrete__info__t.html">  240</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structarrete__info__t.html">arrete_info_t</a> {</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#a5f5c82553bb35981ebbb0647a6dde0d6">  242</a></span>&#160;    <a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> <a class="code" href="structarrete__info__t.html#a5f5c82553bb35981ebbb0647a6dde0d6">id_source</a>, </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#ab5fda3536bb2706767cd13d5a7394213">  244</a></span>&#160;               <a class="code" href="structarrete__info__t.html#ab5fda3536bb2706767cd13d5a7394213">id_destination</a>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#a9f123d7afba40167fbb1d2a97157fa50">  246</a></span>&#160;    <a class="code" href="structpoint__t.html">point_t</a> <a class="code" href="structarrete__info__t.html#a9f123d7afba40167fbb1d2a97157fa50">position_source</a>, </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#a990178099cec32c5a8ba4049b4f0466f">  248</a></span>&#160;            <a class="code" href="structarrete__info__t.html#a990178099cec32c5a8ba4049b4f0466f">position_destination</a>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#afdc336360fb97f1db5021d294fe8bada">  250</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structarrete__info__t.html#afdc336360fb97f1db5021d294fe8bada">noeud_data_source</a>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="structarrete__info__t.html#a5ff7ad5680f80c7a478d20152297fd3a">  252</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structarrete__info__t.html#a5ff7ad5680f80c7a478d20152297fd3a">noeud_data_destination</a>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;};</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="graphe_8h.html#a2c124137f71df6337c489470840de8db">  260</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="graphe_8h.html#a2c124137f71df6337c489470840de8db">arrete_iterateur</a>)(<span class="keyword">struct </span><a class="code" href="structarrete__info__t.html">arrete_info_t</a>,void*);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<a class="code" href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a> <a class="code" href="graphe_8h.html#a1c7b885c2f9524087f70857ce6e29e59">trouver_noeud</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">noeud_predicat</a> predicat, <span class="keywordtype">void</span>* userdata);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#a1c6c5891c04b9f419cdc0e33a92848f1">pour_chaque_noeud</a>(<span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">noeud_iterateur</a> iterateur, <span class="keywordtype">void</span>* userdata);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#a6cc9d19dd1e729bad0826f68e3098f86">pour_chaque_arrete</a>(<span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, <a class="code" href="graphe_8h.html#a2c124137f71df6337c489470840de8db">arrete_iterateur</a> iterateur, <span class="keywordtype">void</span>* userdata);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphe_8h.html#ab979e023f208927e122d42e3d746dd54">exporter_dot</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structgraphe__t.html">graphe_t</a>* graphe, FILE* sortie, <span class="keywordtype">void</span>(*afficher_donnees)(FILE*,<span class="keywordtype">void</span>*));</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif // GRAPHE_H</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructarrete__info__t_html_a9f123d7afba40167fbb1d2a97157fa50"><div class="ttname"><a href="structarrete__info__t.html#a9f123d7afba40167fbb1d2a97157fa50">arrete_info_t::position_source</a></div><div class="ttdeci">point_t position_source</div><div class="ttdef"><b>Definition:</b> graphe.h:246</div></div>
+<div class="ttc" id="agraphe_8h_html_a23f35638c82e0f8641bdef865cb7585c"><div class="ttname"><a href="graphe_8h.html#a23f35638c82e0f8641bdef865cb7585c">creer_graphe</a></div><div class="ttdeci">struct graphe_t * creer_graphe(size_t nombre_noeuds)</div><div class="ttdef"><b>Definition:</b> graphe.c:160</div></div>
+<div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div><div class="ttdoc">Module point qui définit les points cartésiens. On utilise point_t plutôt que SDL_Point pour les poin...</div></div>
+<div class="ttc" id="astructarrete__info__t_html"><div class="ttname"><a href="structarrete__info__t.html">arrete_info_t</a></div><div class="ttdef"><b>Definition:</b> graphe.h:240</div></div>
+<div class="ttc" id="astructpoint__t_html"><div class="ttname"><a href="structpoint__t.html">point_t</a></div><div class="ttdef"><b>Definition:</b> point.h:33</div></div>
+<div class="ttc" id="astructarrete__info__t_html_a5f5c82553bb35981ebbb0647a6dde0d6"><div class="ttname"><a href="structarrete__info__t.html#a5f5c82553bb35981ebbb0647a6dde0d6">arrete_info_t::id_source</a></div><div class="ttdeci">noeud_id_t id_source</div><div class="ttdef"><b>Definition:</b> graphe.h:242</div></div>
+<div class="ttc" id="agraphe_8h_html_a6448aac37fa134bfdfc55212269dde53"><div class="ttname"><a href="graphe_8h.html#a6448aac37fa134bfdfc55212269dde53">ajouter_arrete</a></div><div class="ttdeci">bool ajouter_arrete(struct graphe_t *graphe, noeud_id_t source, noeud_id_t destination)</div><div class="ttdef"><b>Definition:</b> graphe.c:186</div></div>
+<div class="ttc" id="astructnoeud__info__t_html"><div class="ttname"><a href="structnoeud__info__t.html">noeud_info_t</a></div><div class="ttdef"><b>Definition:</b> graphe.h:211</div></div>
+<div class="ttc" id="agraphe_8h_html_a30f2886e0ff9ce62525c08174ba7ed76"><div class="ttname"><a href="graphe_8h.html#a30f2886e0ff9ce62525c08174ba7ed76">noeud_id_t</a></div><div class="ttdeci">unsigned long noeud_id_t</div><div class="ttdef"><b>Definition:</b> graphe.h:45</div></div>
+<div class="ttc" id="agraphe_8h_html_a21db4d673e659088e2c14c03e7197b42"><div class="ttname"><a href="graphe_8h.html#a21db4d673e659088e2c14c03e7197b42">noeud_distance</a></div><div class="ttdeci">float noeud_distance(const struct graphe_t *graphe, noeud_id_t noeuda, noeud_id_t noeudb)</div><div class="ttdef"><b>Definition:</b> graphe.c:289</div></div>
+<div class="ttc" id="agraphe_8h_html_a05a0ad54febb5385765d5efe134c99b3"><div class="ttname"><a href="graphe_8h.html#a05a0ad54febb5385765d5efe134c99b3">noeuds</a></div><div class="ttdeci">void noeuds(const struct graphe_t *graphe, noeud_id_t *noeuds)</div><div class="ttdef"><b>Definition:</b> graphe.c:228</div></div>
+<div class="ttc" id="astructarrete__info__t_html_ab5fda3536bb2706767cd13d5a7394213"><div class="ttname"><a href="structarrete__info__t.html#ab5fda3536bb2706767cd13d5a7394213">arrete_info_t::id_destination</a></div><div class="ttdeci">noeud_id_t id_destination</div><div class="ttdef"><b>Definition:</b> graphe.h:244</div></div>
+<div class="ttc" id="agraphe_8h_html_a126f85d1fd1326cd5f1e6bc6e1651554"><div class="ttname"><a href="graphe_8h.html#a126f85d1fd1326cd5f1e6bc6e1651554">liberer_graphe</a></div><div class="ttdeci">void liberer_graphe(struct graphe_t **graphe, void(*liberer_donnees)(void *))</div><div class="ttdef"><b>Definition:</b> graphe.c:210</div></div>
+<div class="ttc" id="astructnoeud__info__t_html_a7a45b36658a47f39e680284160c3723e"><div class="ttname"><a href="structnoeud__info__t.html#a7a45b36658a47f39e680284160c3723e">noeud_info_t::id</a></div><div class="ttdeci">noeud_id_t id</div><div class="ttdef"><b>Definition:</b> graphe.h:213</div></div>
+<div class="ttc" id="agraphe_8h_html_a9edd03439e48d421198a35869a79d9d7"><div class="ttname"><a href="graphe_8h.html#a9edd03439e48d421198a35869a79d9d7">est_voisin</a></div><div class="ttdeci">bool est_voisin(const struct graphe_t *graphe, noeud_id_t noeuda, noeud_id_t noeudb)</div><div class="ttdef"><b>Definition:</b> graphe.c:232</div></div>
+<div class="ttc" id="agraphe_8h_html_a24d5b2df427c06e557f9cb1b9e7f8cf9"><div class="ttname"><a href="graphe_8h.html#a24d5b2df427c06e557f9cb1b9e7f8cf9">nombre_voisins</a></div><div class="ttdeci">size_t nombre_voisins(const struct graphe_t *graphe, noeud_id_t noeud)</div><div class="ttdef"><b>Definition:</b> graphe.c:249</div></div>
+<div class="ttc" id="agraphe_8h_html_aa48941da2f6ff2f9ad657a4f9d8c735d"><div class="ttname"><a href="graphe_8h.html#aa48941da2f6ff2f9ad657a4f9d8c735d">noeud_iterateur</a></div><div class="ttdeci">void(* noeud_iterateur)(struct noeud_info_t, void *)</div><div class="ttdef"><b>Definition:</b> graphe.h:226</div></div>
+<div class="ttc" id="agraphe_8h_html_a549f75603c97f9bab9de1ae6983ea2d8"><div class="ttname"><a href="graphe_8h.html#a549f75603c97f9bab9de1ae6983ea2d8">nombre_noeuds</a></div><div class="ttdeci">size_t nombre_noeuds(const struct graphe_t *graphe)</div><div class="ttdef"><b>Definition:</b> graphe.c:224</div></div>
+<div class="ttc" id="agraphe_8h_html_a1c7b885c2f9524087f70857ce6e29e59"><div class="ttname"><a href="graphe_8h.html#a1c7b885c2f9524087f70857ce6e29e59">trouver_noeud</a></div><div class="ttdeci">noeud_id_t trouver_noeud(const struct graphe_t *graphe, noeud_predicat predicat, void *userdata)</div><div class="ttdef"><b>Definition:</b> graphe.c:313</div></div>
+<div class="ttc" id="astructnoeud__info__t_html_ad40943b3325299073f7cebb3bc452b9a"><div class="ttname"><a href="structnoeud__info__t.html#ad40943b3325299073f7cebb3bc452b9a">noeud_info_t::noeud_data</a></div><div class="ttdeci">void * noeud_data</div><div class="ttdef"><b>Definition:</b> graphe.h:217</div></div>
+<div class="ttc" id="astructnoeud__info__t_html_aeb4827e159a2ce7cfb2272cd254daa1d"><div class="ttname"><a href="structnoeud__info__t.html#aeb4827e159a2ce7cfb2272cd254daa1d">noeud_info_t::position</a></div><div class="ttdeci">point_t position</div><div class="ttdef"><b>Definition:</b> graphe.h:215</div></div>
+<div class="ttc" id="astructarrete__info__t_html_afdc336360fb97f1db5021d294fe8bada"><div class="ttname"><a href="structarrete__info__t.html#afdc336360fb97f1db5021d294fe8bada">arrete_info_t::noeud_data_source</a></div><div class="ttdeci">void * noeud_data_source</div><div class="ttdef"><b>Definition:</b> graphe.h:250</div></div>
+<div class="ttc" id="agraphe_8h_html_a91a89ba18f8ea5e2f555e434288e680d"><div class="ttname"><a href="graphe_8h.html#a91a89ba18f8ea5e2f555e434288e680d">noeud_predicat</a></div><div class="ttdeci">bool(* noeud_predicat)(struct noeud_info_t, void *)</div><div class="ttdef"><b>Definition:</b> graphe.h:234</div></div>
+<div class="ttc" id="astructgraphe__t_html"><div class="ttname"><a href="structgraphe__t.html">graphe_t</a></div><div class="ttdef"><b>Definition:</b> graphe.c:70</div></div>
+<div class="ttc" id="agraphe_8h_html_ab81a308fbabcbcd0f377006f7824cb30"><div class="ttname"><a href="graphe_8h.html#ab81a308fbabcbcd0f377006f7824cb30">creer_noeud</a></div><div class="ttdeci">noeud_id_t creer_noeud(struct graphe_t *graphe, point_t position, void *donnees)</div><div class="ttdef"><b>Definition:</b> graphe.c:168</div></div>
+<div class="ttc" id="agraphe_8h_html_ab979e023f208927e122d42e3d746dd54"><div class="ttname"><a href="graphe_8h.html#ab979e023f208927e122d42e3d746dd54">exporter_dot</a></div><div class="ttdeci">void exporter_dot(const struct graphe_t *graphe, FILE *sortie, void(*afficher_donnees)(FILE *, void *))</div><div class="ttdef"><b>Definition:</b> graphe.c:359</div></div>
+<div class="ttc" id="agraphe_8h_html_a93d16e0d00719f60e378d7f516c2bc94"><div class="ttname"><a href="graphe_8h.html#a93d16e0d00719f60e378d7f516c2bc94">noeud_position</a></div><div class="ttdeci">point_t noeud_position(const struct graphe_t *graphe, noeud_id_t noeud)</div><div class="ttdef"><b>Definition:</b> graphe.c:278</div></div>
+<div class="ttc" id="agraphe_8h_html_a2cc76eb39ab17dd63d0ce2c7d35f8e93"><div class="ttname"><a href="graphe_8h.html#a2cc76eb39ab17dd63d0ce2c7d35f8e93">noeud_donnees</a></div><div class="ttdeci">void * noeud_donnees(const struct graphe_t *graphe, noeud_id_t noeud)</div><div class="ttdef"><b>Definition:</b> graphe.c:268</div></div>
+<div class="ttc" id="astructarrete__info__t_html_a5ff7ad5680f80c7a478d20152297fd3a"><div class="ttname"><a href="structarrete__info__t.html#a5ff7ad5680f80c7a478d20152297fd3a">arrete_info_t::noeud_data_destination</a></div><div class="ttdeci">void * noeud_data_destination</div><div class="ttdef"><b>Definition:</b> graphe.h:252</div></div>
+<div class="ttc" id="agraphe_8h_html_a2c124137f71df6337c489470840de8db"><div class="ttname"><a href="graphe_8h.html#a2c124137f71df6337c489470840de8db">arrete_iterateur</a></div><div class="ttdeci">void(* arrete_iterateur)(struct arrete_info_t, void *)</div><div class="ttdef"><b>Definition:</b> graphe.h:260</div></div>
+<div class="ttc" id="agraphe_8h_html_a5c3b6fadf17aa9e42c1c95ded793d639"><div class="ttname"><a href="graphe_8h.html#a5c3b6fadf17aa9e42c1c95ded793d639">noeuds_voisins</a></div><div class="ttdeci">void noeuds_voisins(const struct graphe_t *graphe, noeud_id_t noeud, noeud_id_t *voisins)</div><div class="ttdef"><b>Definition:</b> graphe.c:258</div></div>
+<div class="ttc" id="astructarrete__info__t_html_a990178099cec32c5a8ba4049b4f0466f"><div class="ttname"><a href="structarrete__info__t.html#a990178099cec32c5a8ba4049b4f0466f">arrete_info_t::position_destination</a></div><div class="ttdeci">point_t position_destination</div><div class="ttdef"><b>Definition:</b> graphe.h:248</div></div>
+<div class="ttc" id="agraphe_8h_html_a1c6c5891c04b9f419cdc0e33a92848f1"><div class="ttname"><a href="graphe_8h.html#a1c6c5891c04b9f419cdc0e33a92848f1">pour_chaque_noeud</a></div><div class="ttdeci">void pour_chaque_noeud(struct graphe_t *graphe, noeud_iterateur iterateur, void *userdata)</div><div class="ttdef"><b>Definition:</b> graphe.c:333</div></div>
+<div class="ttc" id="agraphe_8h_html_a6cc9d19dd1e729bad0826f68e3098f86"><div class="ttname"><a href="graphe_8h.html#a6cc9d19dd1e729bad0826f68e3098f86">pour_chaque_arrete</a></div><div class="ttdeci">void pour_chaque_arrete(struct graphe_t *graphe, arrete_iterateur iterateur, void *userdata)</div><div class="ttdef"><b>Definition:</b> graphe.c:343</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

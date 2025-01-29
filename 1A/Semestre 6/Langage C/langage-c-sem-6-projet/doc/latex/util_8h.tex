@@ -1,0 +1,98 @@
+\hypertarget{util_8h}{}\doxysection{Référence du fichier util.\+h}
+\label{util_8h}\index{util.h@{util.h}}
+
+
+Quelques macros utilitaires (pas vraiment un module)  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{util_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{util_8h_a0f85a5959db6ee7a6164aecfd234e702}{\+\_\+\+\_\+\+\_\+str}}(s)~\#s
+\item 
+\#define \mbox{\hyperlink{util_8h_a7587d2de00556018e66da47766f21608}{\+\_\+\+\_\+str}}(s)~\mbox{\hyperlink{util_8h_a0f85a5959db6ee7a6164aecfd234e702}{\+\_\+\+\_\+\+\_\+str}}(s)
+\item 
+\#define \mbox{\hyperlink{util_8h_a74e75242132eaabbc1c512488a135926}{M\+IN}}(x,  y)~(x $>$ y ? y \+: x)
+\item 
+\#define \mbox{\hyperlink{util_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{M\+AX}}(x,  y)~(x $>$ y ? x \+: y)
+\item 
+\#define \mbox{\hyperlink{util_8h_a79ddd9766f00321fbc7931d01159e19f}{C\+L\+A\+MP}}(x,  down,  up)~(x $>$= up ? up \+: (x $<$= down ? down \+: x))
+\item 
+\#define \mbox{\hyperlink{util_8h_ad234786434d1ebc1f4ae1bfde668fb1c}{N\+O\+RM}}(x,  y)~sqrt((x)$\ast$(x) + (y)$\ast$(y))
+\item 
+\#define \mbox{\hyperlink{util_8h_aeaf79c3736f8ea45cb7320f4bcb16008}{T\+Log}}(...)~\{\}
+\item 
+\#define \mbox{\hyperlink{util_8h_a97e7cd5a3287cfa88e7dab5e6d30b378}{M\+Log}}(...)~\{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Quelques macros utilitaires (pas vraiment un module) 
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{util_8h_a0f85a5959db6ee7a6164aecfd234e702}\label{util_8h_a0f85a5959db6ee7a6164aecfd234e702}} 
+\index{util.h@{util.h}!\_\_\_str@{\_\_\_str}}
+\index{\_\_\_str@{\_\_\_str}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{\_\_\_str}{\_\_\_str}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+\_\+str(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\#s}
+
+Stringify un token ~\newline
+ \mbox{\Hypertarget{util_8h_a7587d2de00556018e66da47766f21608}\label{util_8h_a7587d2de00556018e66da47766f21608}} 
+\index{util.h@{util.h}!\_\_str@{\_\_str}}
+\index{\_\_str@{\_\_str}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{\_\_str}{\_\_str}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+str(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\mbox{\hyperlink{util_8h_a0f85a5959db6ee7a6164aecfd234e702}{\+\_\+\+\_\+\+\_\+str}}(s)}
+
+Macro de wrapping pour que la stringification se passe bien \mbox{\Hypertarget{util_8h_a79ddd9766f00321fbc7931d01159e19f}\label{util_8h_a79ddd9766f00321fbc7931d01159e19f}} 
+\index{util.h@{util.h}!CLAMP@{CLAMP}}
+\index{CLAMP@{CLAMP}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{CLAMP}{CLAMP}}
+{\footnotesize\ttfamily \#define C\+L\+A\+MP(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{down,  }\item[{}]{up }\end{DoxyParamCaption})~(x $>$= up ? up \+: (x $<$= down ? down \+: x))}
+
+Écrétage d\textquotesingle{}une valeur entre deux valeurs (si x est en dessous de down, ramène x à down, si x est au dessus de up, ramène x à up, sinon, laisse x inchangé). \mbox{\Hypertarget{util_8h_aacc3ee1a7f283f8ef65cea31f4436a95}\label{util_8h_aacc3ee1a7f283f8ef65cea31f4436a95}} 
+\index{util.h@{util.h}!MAX@{MAX}}
+\index{MAX@{MAX}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define M\+AX(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x $>$ y ? x \+: y)}
+
+Maximum arithmétique entre deux valeurs \mbox{\Hypertarget{util_8h_a74e75242132eaabbc1c512488a135926}\label{util_8h_a74e75242132eaabbc1c512488a135926}} 
+\index{util.h@{util.h}!MIN@{MIN}}
+\index{MIN@{MIN}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(x $>$ y ? y \+: x)}
+
+Minimum arithmétique entre deux valeurs \mbox{\Hypertarget{util_8h_a97e7cd5a3287cfa88e7dab5e6d30b378}\label{util_8h_a97e7cd5a3287cfa88e7dab5e6d30b378}} 
+\index{util.h@{util.h}!MLog@{MLog}}
+\index{MLog@{MLog}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{MLog}{MLog}}
+{\footnotesize\ttfamily \#define M\+Log(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\{\}}
+
+Écrit un message de débug préfixé par \char`\"{}main\char`\"{} (ne fait rien dans cette configuration) \mbox{\Hypertarget{util_8h_ad234786434d1ebc1f4ae1bfde668fb1c}\label{util_8h_ad234786434d1ebc1f4ae1bfde668fb1c}} 
+\index{util.h@{util.h}!NORM@{NORM}}
+\index{NORM@{NORM}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{NORM}{NORM}}
+{\footnotesize\ttfamily \#define N\+O\+RM(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~sqrt((x)$\ast$(x) + (y)$\ast$(y))}
+
+Rcupère la norme 2 d\textquotesingle{}un vecteur de dimension 2 \mbox{\Hypertarget{util_8h_aeaf79c3736f8ea45cb7320f4bcb16008}\label{util_8h_aeaf79c3736f8ea45cb7320f4bcb16008}} 
+\index{util.h@{util.h}!TLog@{TLog}}
+\index{TLog@{TLog}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{TLog}{TLog}}
+{\footnotesize\ttfamily \#define T\+Log(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\{\}}
+
+Écrit un message de débug avec le numéro du thread (ne fait rien dans cette configuration) 

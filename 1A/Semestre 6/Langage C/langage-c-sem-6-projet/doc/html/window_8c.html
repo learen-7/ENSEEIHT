@@ -1,0 +1,1212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>dijkstra: Référence du fichier window.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">dijkstra
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">AlgorithmedeDijkstrapourlepluscourtchemindansungraphe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier window.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implantation du module window.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="window_8h_source.html">window.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &lt;SDL2/SDL2_gfxPrimitives.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de window.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="window_8c__incl.png" border="0" usemap="#window_8c" alt=""/></div>
+<map name="window_8c" id="window_8c">
+<area shape="rect" title="Implantation du module window." alt="" coords="312,5,395,32"/>
+<area shape="rect" href="window_8h.html" title="Module window qui contient la fenêtre d&#39;affichage (principale)" alt="" coords="68,80,151,107"/>
+<area shape="rect" href="util_8h.html" title="Quelques macros utilitaires (pas vraiment un module)" alt="" coords="175,80,230,107"/>
+<area shape="rect" title=" " alt="" coords="254,80,453,107"/>
+<area shape="rect" title=" " alt="" coords="476,80,593,107"/>
+<area shape="rect" title=" " alt="" coords="617,80,685,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,101,181"/>
+<area shape="rect" title=" " alt="" coords="125,155,208,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwindow__t.html">window_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a12bec9ff1252fd127d4b449b4adbe49f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a12bec9ff1252fd127d4b449b4adbe49f">INITIAL_FONTREG_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a12bec9ff1252fd127d4b449b4adbe49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a12953a46b01bfce6fb08a9329125a716"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a12953a46b01bfce6fb08a9329125a716">create_window</a> (int w, int h, const char *name, <a class="el" href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">repaint_fn</a> repaint, void *userdata)</td></tr>
+<tr class="separator:a12953a46b01bfce6fb08a9329125a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fd48461403959ac9196b5b938ffc80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a32fd48461403959ac9196b5b938ffc80">start_window</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window)</td></tr>
+<tr class="separator:a32fd48461403959ac9196b5b938ffc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95c2629a9becaf6ce4a13ab1d14cdd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#aa95c2629a9becaf6ce4a13ab1d14cdd8">stop_window</a> (struct <a class="el" href="structwindow__t.html">window_t</a> **window_ptr)</td></tr>
+<tr class="separator:aa95c2629a9becaf6ce4a13ab1d14cdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41803d94c5183d2e78227f69270c029e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a41803d94c5183d2e78227f69270c029e">refresh_window</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window)</td></tr>
+<tr class="separator:a41803d94c5183d2e78227f69270c029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb284a3e673e34666b6c8bf869c7e344"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, uint32_t format, int access, int w, int h)</td></tr>
+<tr class="separator:aeb284a3e673e34666b6c8bf869c7e344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4197b452bcd21ad8da366218c5b4b9"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#acb4197b452bcd21ad8da366218c5b4b9">create_texture_from_surface</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Surface *surface)</td></tr>
+<tr class="separator:acb4197b452bcd21ad8da366218c5b4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c51d2fd2cd043b6f40f61c441ba7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#ae7c51d2fd2cd043b6f40f61c441ba7c4">destroy_texture</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Texture *texture)</td></tr>
+<tr class="separator:ae7c51d2fd2cd043b6f40f61c441ba7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a6a8ca025aef1eacec5dcdebaaadcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a27a6a8ca025aef1eacec5dcdebaaadcf">set_background_color</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Color color)</td></tr>
+<tr class="separator:a27a6a8ca025aef1eacec5dcdebaaadcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f4abdd9f6066b85594193cc41e02a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#aa3f4abdd9f6066b85594193cc41e02a3">load_font</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, const char *fontname, int ptsize)</td></tr>
+<tr class="separator:aa3f4abdd9f6066b85594193cc41e02a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5997295d26af3573d6fb418ca9cebb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#ae5997295d26af3573d6fb418ca9cebb8">render_copy</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Texture *texture, const SDL_Rect *srcrect, const SDL_Rect *dstrect)</td></tr>
+<tr class="separator:ae5997295d26af3573d6fb418ca9cebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5fef8bfc843be4f1dbe907e2c4e45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a9c5fef8bfc843be4f1dbe907e2c4e45e">render_surface</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Surface *surface, const SDL_Rect *srcrect, const SDL_Rect *dstrect)</td></tr>
+<tr class="separator:a9c5fef8bfc843be4f1dbe907e2c4e45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8aeabf3a849477a3b796708320b4f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a1b8aeabf3a849477a3b796708320b4f8">render_set_color</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, SDL_Color color)</td></tr>
+<tr class="separator:a1b8aeabf3a849477a3b796708320b4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a46ea32f10cf9e53a45087aa1d5b90b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a4a46ea32f10cf9e53a45087aa1d5b90b">render_line</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, int x1, int y1, int x2, int y2, SDL_Color color)</td></tr>
+<tr class="separator:a4a46ea32f10cf9e53a45087aa1d5b90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada26e3b04de7a6c7931253f7ccf79aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#ada26e3b04de7a6c7931253f7ccf79aa1">render_line_thick</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, int x1, int y1, int x2, int y2, int thickness, SDL_Color color)</td></tr>
+<tr class="separator:ada26e3b04de7a6c7931253f7ccf79aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f07f41e23a6b175c8ff697b1049abd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a7f07f41e23a6b175c8ff697b1049abd6">render_arrow</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, int x1, int y1, int x2, int y2, float size, float alpha, int thickness, SDL_Color color)</td></tr>
+<tr class="separator:a7f07f41e23a6b175c8ff697b1049abd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0aaa36138597b9334d2fa790fa10c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#aa0aaa36138597b9334d2fa790fa10c09">render_arrow_curved</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, int x1, int y1, int x2, int y2, float size, float alpha, float curving, int diststart, int distend, SDL_Color color)</td></tr>
+<tr class="separator:aa0aaa36138597b9334d2fa790fa10c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8461291cfeedc07458aad365e80bf3b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#a8461291cfeedc07458aad365e80bf3b5">render_rect</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, const SDL_Rect *rect, SDL_Color color)</td></tr>
+<tr class="separator:a8461291cfeedc07458aad365e80bf3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e747eb9fa519740f3b60c0c39c6d39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#ad2e747eb9fa519740f3b60c0c39c6d39">render_circle</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, int x, int y, int r, SDL_Color color)</td></tr>
+<tr class="separator:ad2e747eb9fa519740f3b60c0c39c6d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceeaaff95ab00e44b0909f790662c34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="window_8c.html#aceeaaff95ab00e44b0909f790662c34d">render_text</a> (struct <a class="el" href="structwindow__t.html">window_t</a> *window, const char *text, <a class="el" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a> fontid, int x, int y, int alignment, SDL_Color color, SDL_Color background)</td></tr>
+<tr class="separator:aceeaaff95ab00e44b0909f790662c34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Implantation du module window. </p>
+<p>Attention ça parle de concurrence et de synchro c'est vachement pas simple.</p>
+<dl class="section author"><dt>Auteur</dt><dd>G. Dupont </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a12bec9ff1252fd127d4b449b4adbe49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12bec9ff1252fd127d4b449b4adbe49f">&#9670;&nbsp;</a></span>INITIAL_FONTREG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INITIAL_FONTREG_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Taille initial du registre des polices </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aeb284a3e673e34666b6c8bf869c7e344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb284a3e673e34666b6c8bf869c7e344">&#9670;&nbsp;</a></span>create_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* create_texture </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>access</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée une texture à partir des éléments de la fenêtre, avec la configuration donnée.</p>
+<p>Cette fonction est un wrappeur de la fonction SDL <code>SDL_CreateTexture</code> qui empêche l'utilisateur de créer des textures n'importe comment.</p>
+<p>En particulier, il est <b>impératif</b> que cette fonction soit appelée <b>uniquement au sein du callback <code>repaint</code></b>, sous peine de générer des erreurs de concurrence.</p>
+<p>Il est possible de compiler ce module avec l'option <code>STRICT_THREADING</code> afin de forcer la vérification que le thread actuel accepte la création de texture. Cela crée un peu d'overhead, il est donc conseillé de retirer cette option lorsqu'on compile l'application autrement qu'en mode debug.</p>
+<p><em>Cette fonction n'est <b>pas</b> thread safe, car comme elle part du principe qu'elle est appelée dans une fonction <code>repaint</code>, elle ne lock pas le paramètre <code>window</code> (qui doit déjà être locké par la fonction qui appelle la fonction <code>repaint</code>).</em></p>
+<p>Une fois créée et utilisée, une texture doit être libérée pour éviter l'explosion en mémoire (avec <a class="el" href="window_8h.html#ae7c51d2fd2cd043b6f40f61c441ba7c4">destroy_texture</a>).</p>
+<p>Pré-conditions: window non NULL, window lancé, autres arguments compatibles avec <code>SDL_CreateTexture</code>, thread == render thread de window</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre qui crée la texture (lockée) </td></tr>
+    <tr><td class="paramname">format</td><td>format de color de la texture (cf <code>SDL_CreateTexture</code>) </td></tr>
+    <tr><td class="paramname">access</td><td>modalité d'accès à la texture (cf <code>SDL_CreateTexture</code>) </td></tr>
+    <tr><td class="paramname">w</td><td>largeur de la texture en pixels </td></tr>
+    <tr><td class="paramname">h</td><td>hauteur de la texture en pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>texture nouvellement créée </dd></dl>
+
+</div>
+</div>
+<a id="acb4197b452bcd21ad8da366218c5b4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4197b452bcd21ad8da366218c5b4b9">&#9670;&nbsp;</a></span>create_texture_from_surface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* create_texture_from_surface </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>surface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée une texture à partir d'une surface dans la fenêtre donnée.</p>
+<p>Cette fonction est un wrappeur de la fonction SDL <code>SDL_CreateTextureFromSurface</code> qui force l'utilisateur à respecter les contraintes de multi-threading.</p>
+<p>Pour plus de détails sur ce genre de fonction voir <a class="el" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> qui marche très similairement.</p>
+<p>On rappelle que la fonction n'est <b>pas</b> thread safe, et qu'une texture crée doit être détruite avec <a class="el" href="window_8h.html#ae7c51d2fd2cd043b6f40f61c441ba7c4">destroy_texture</a> pour éviter l'explosion en mémoire.</p>
+<p>Note : contrairement aux textures, les surfaces SDL ne sont pas sousmises aux contraintes du multi-threading du backend de SDL. Pour simplifier, les textures bénéficient d'accélération matérielles (utilisation du GPU) ce qui impose qu'elles ne soient gérées que par un unique thread. Les surfaces, elles, sont gérées en RAM par le CPU, et peuvent donc être partagées entre threads sans aucun problème.</p>
+<p>Pré-conditions: window non NULL, window, lancé, surface non NULL, thread == render thread de window</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre qui crée la texture (lockée) </td></tr>
+    <tr><td class="paramname">surface</td><td>surface à partir de laquelle créer la texture </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>texture nouvellement crée </dd></dl>
+
+</div>
+</div>
+<a id="a12953a46b01bfce6fb08a9329125a716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12953a46b01bfce6fb08a9329125a716">&#9670;&nbsp;</a></span>create_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structwindow__t.html">window_t</a>* create_window </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="window_8h.html#a4f4c801416083dd1d4093d13d36c0c8a">repaint_fn</a>&#160;</td>
+          <td class="paramname"><em>repaint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crée une fenêtre (sans la lancer) avec les dimensions et le titre donnés, le callback pour afficher quelque chose dedans et des données utilisateur qui seront passées au callback.</p>
+<p>L'argument <code>repaint</code> est bien une fonction, qui prend en entrée la fenêtre qui l'appelle et les données passées en paramètre ici (ce qui permet une forme de "mémoire" partagée entre la fenêtre et le reste de l'application). Cette fonction, si possible assez courte, se contente d'afficher les composants, en créant au passage les textures nécessaires à l'aide de <a class="el" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> et <a class="el" href="window_8h.html#acb4197b452bcd21ad8da366218c5b4b9">create_texture_from_surface</a>.</p>
+<p><em>Ce module garantit qu'au moment où la fonction <code>repaint</code> est appelée, la fenêtre passée en paramètre est non NULL et lancée, et en accès exclusif, et que les données passées en second en paramètre correspondent à l'argument <code>userdata</code> donné ici.</em></p>
+<p>La fonction se charge de la gestion de la mémoire pour les "objets" <a class="el" href="structwindow__t.html">window_t</a>, l'utilisateur n'a pas à faire ni malloc ni free.</p>
+<p>Pré-conditions: w &gt; 0, h &gt; 0 À noter que name, repaint et userdata peuvent être NULL sans problème</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>largeur de la fenêtre (en pixels) </td></tr>
+    <tr><td class="paramname">h</td><td>hauteur de la fenêtre (en pixels) </td></tr>
+    <tr><td class="paramname">name</td><td>titre de la fenêtre </td></tr>
+    <tr><td class="paramname">repaint</td><td>fonction appelée au moment du rafraîchissement </td></tr>
+    <tr><td class="paramname">userdata</td><td>pointeur sur des données à fournir à la fonction de rafraîchissement </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>fenêtre nouvellement crée, allouée en mémoire </dd></dl>
+
+</div>
+</div>
+<a id="ae7c51d2fd2cd043b6f40f61c441ba7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c51d2fd2cd043b6f40f61c441ba7c4">&#9670;&nbsp;</a></span>destroy_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_texture </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Détruit une texture précédemment crée.</p>
+<p>Cette fonction est un wrappeur de la fonction SDL <code>SDL_DestroyTexture</code> qui force l'utilisateur à respecter les contraintes de multi-threading (cf <a class="el" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> pour plus de détails).</p>
+<p>À noter qu'en théorie on peut se contenter d'appeler <code>SDL_DestroyTexture</code> (dans la fonction <code>repaint</code>) et cela devrait marcher. Cette fonction check que le thread soit le bon (si <code>STRICT_THREADING</code> est activé).</p>
+<p>Pré-conditions: window non NULL, window lancé, thread == render thread de la window texture non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre qui a créé la texture (lockée) </td></tr>
+    <tr><td class="paramname">texture</td><td>texture à détruire, précédemment crée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3f4abdd9f6066b85594193cc41e02a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f4abdd9f6066b85594193cc41e02a3">&#9670;&nbsp;</a></span>load_font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a> load_font </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fontname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ptsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Charge une police de caractères dans la base interne de polices de caractère, avec le nom donné et la taille donné (deux polices deux tailles différentes doivent chacun être chargées séparément).</p>
+<p>En cas d'échec (si la police n'est pas accessible par exemple), renvoie -1. Sinon, la police renvoie un identifiant (un font_id_t) à utiliser pour les autres fonctions du module qui manipulent du texte.</p>
+<p>Pré-conditions : window non NULL, fontname non NULL, ptsize &gt; 0</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle chargée une police </td></tr>
+    <tr><td class="paramname">fontname</td><td>nom ou chemin de la police de caractère </td></tr>
+    <tr><td class="paramname">ptsize</td><td>taille de caractère en pt </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>l'identifiant local de la police chargée, ou -1 si échec </dd></dl>
+
+</div>
+</div>
+<a id="a41803d94c5183d2e78227f69270c029e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41803d94c5183d2e78227f69270c029e">&#9670;&nbsp;</a></span>refresh_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void refresh_window </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande à la fenêtre de se rafraîchir.</p>
+<p>Formellement, cela réveille la boucle principale du thread de rendu attaché à la fenêtre (incrémentation du sémaphore) ce qui cause un appel à la fonction <code>repaint</code> et donc l'affichage des composants graphiques.</p>
+<p>Cette fonction est non-bloquante : elle retourne immédiatement, et n'a fait que réveiller le thread en charge du rafraîchissement. Cela signifie que cette fonction ne retourne pas forcément quand la fenêtre a fini de se rafraîchir, mais généralement bien avant.</p>
+<p>Pré-conditions: window non NULL, window lancée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre à rafraîchir. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f07f41e23a6b175c8ff697b1049abd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f07f41e23a6b175c8ff697b1049abd6">&#9670;&nbsp;</a></span>render_arrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_arrow </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend une ligne dans la fenêtre (non-aliasée) entre les points donnés et de couleur donnée, avec l'épaisseur donnée, et dont la cible se termine avec une tête de flèche (un V).</p>
+<p>Pré-conditions :</p><ul>
+<li>window non NULL, window lancée, thread == render thread de la window</li>
+<li>size &gt; 0.0</li>
+<li>0 &lt; alpha &lt; PI / 2</li>
+<li>thickness &gt; 0 Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).</li>
+</ul>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle dessiner la ligne </td></tr>
+    <tr><td class="paramname">x1</td><td>abscisse du point d'origine </td></tr>
+    <tr><td class="paramname">y1</td><td>ordonnée du point d'origine </td></tr>
+    <tr><td class="paramname">x2</td><td>abscisse du point de cible </td></tr>
+    <tr><td class="paramname">y2</td><td>ordonnée du point de cible </td></tr>
+    <tr><td class="paramname">size</td><td>taille de la tête de flèche </td></tr>
+    <tr><td class="paramname">alpha</td><td>angle de la tête de flèche (angle entre la ligne et le battant d'un côté de la flèche) </td></tr>
+    <tr><td class="paramname">thickness</td><td>épaisseur du trait </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de la ligne </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0aaa36138597b9334d2fa790fa10c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0aaa36138597b9334d2fa790fa10c09">&#9670;&nbsp;</a></span>render_arrow_curved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_arrow_curved </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>curving</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>diststart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>distend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend une ligne courbe dans la fenêtre (non-aliasée) entre les points donnés et de couleur donnée, et dont la cible se termine avec une tête de flèche (un V). La courbure est obtenue avec des points de contrôle, calculés à partir du paramètre "curving".</p>
+<p>La flèche est "rabottée" de la distance donnée au début et à la fin.</p>
+<p>Pré-conditions :</p><ul>
+<li>window non NULL, window lancée, thread == render thread de la window</li>
+<li>size &gt; 0.0</li>
+<li>0 &lt; alpha &lt; PI / 2</li>
+<li>diststart, distend &gt;= 0 Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).</li>
+</ul>
+<p>"curving" représente la distance entre l'axe (x1,y1)-(x2,y2) et les points de contrôle. Elle peut être positive, auquel cas la ligne est courbée vers l'extérieur, ou négative auquel cas elle est courbée vers l'intérieur. Plus formellement, "l'extérieur" est dans le sens du vecteur normal à l'axe (donc le vecteur orthogonal direct au vecteur (x2 - x1, y2 - y1)).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle dessiner la ligne </td></tr>
+    <tr><td class="paramname">x1</td><td>abscisse du point d'origine </td></tr>
+    <tr><td class="paramname">y1</td><td>ordonnée du point d'origine </td></tr>
+    <tr><td class="paramname">x2</td><td>abscisse du point de cible </td></tr>
+    <tr><td class="paramname">y2</td><td>ordonnée du point de cible </td></tr>
+    <tr><td class="paramname">size</td><td>taille de la tête de flèche </td></tr>
+    <tr><td class="paramname">alpha</td><td>angle de la tête de flèche (angle entre la ligne et le battant d'un côté de la flèche) </td></tr>
+    <tr><td class="paramname">curving</td><td>intensité de la courbure </td></tr>
+    <tr><td class="paramname">diststart</td><td>rognage du côté de l'origine du trait </td></tr>
+    <tr><td class="paramname">distend</td><td>rognage du côté de la fin du trait </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de la ligne </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2e747eb9fa519740f3b60c0c39c6d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e747eb9fa519740f3b60c0c39c6d39">&#9670;&nbsp;</a></span>render_circle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_circle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend un cercle (vide) sur la fenêtre</p>
+<p>Pré-conditions : window non NULL, window lancée, thread = render thread de la fenêtre r &gt; 0</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle rendre le cercle </td></tr>
+    <tr><td class="paramname">x</td><td>abscisse du centre </td></tr>
+    <tr><td class="paramname">y</td><td>ordonnée du centre </td></tr>
+    <tr><td class="paramname">r</td><td>rayon du cercle </td></tr>
+    <tr><td class="paramname">color</td><td>couleur du cercle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5997295d26af3573d6fb418ca9cebb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5997295d26af3573d6fb418ca9cebb8">&#9670;&nbsp;</a></span>render_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>srcrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>dstrect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Appose une copie de la texture en paramètre sur la texture de la fenêtre.</p>
+<p>Cette fonction est un wrappeur de la fonction SDL <code>SDL_RenderCopy</code> qui assure que l'utilisateur n'essaye pas d'utiliser une texture en dehors du thread de rendu (voir <a class="el" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> pour plus de détails, les motivations pour cette fonction étant identiques).</p>
+<p>Pré-conditions: window non NULL, window lancé, thread == render thread de la window, texture non NULL, dstrect non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle opérer le rendu et au sein de laquelle la texture a été créée </td></tr>
+    <tr><td class="paramname">texture</td><td>texture à rendre </td></tr>
+    <tr><td class="paramname">srcrect</td><td>zone de la texture à rendre, ou NULL si on veut rendre la texture dans son intégralité </td></tr>
+    <tr><td class="paramname">dstrect</td><td>zone de la fenêtre où rendre la texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a46ea32f10cf9e53a45087aa1d5b90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a46ea32f10cf9e53a45087aa1d5b90b">&#9670;&nbsp;</a></span>render_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_line </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend une ligne dans la fenêtre (non-aliasée) entre les points donnés et de couleur donnée.</p>
+<p>Pré-conditions : window non NULL, window lancée, thread == render thread de la window Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle dessiner la ligne </td></tr>
+    <tr><td class="paramname">x1</td><td>abscisse du point d'origine </td></tr>
+    <tr><td class="paramname">y1</td><td>ordonnée du point d'origine </td></tr>
+    <tr><td class="paramname">x2</td><td>abscisse du point de cible </td></tr>
+    <tr><td class="paramname">y2</td><td>ordonnée du point de cible </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de la ligne </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada26e3b04de7a6c7931253f7ccf79aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada26e3b04de7a6c7931253f7ccf79aa1">&#9670;&nbsp;</a></span>render_line_thick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_line_thick </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend une ligne dans la fenêtre (non-aliasée) entre les points donnés et de couleur donnée, avec l'épaisseur donnée.</p>
+<p>Pré-conditions :</p><ul>
+<li>window non NULL, window lancée, thread == render thread de la window</li>
+<li>thickness &gt; 0</li>
+</ul>
+<p>Les coordonnées peuvent être en dehors de la fenêtre a priori (auquel cas des points invisibles sont dessinés).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle dessiner la ligne </td></tr>
+    <tr><td class="paramname">x1</td><td>abscisse du point d'origine </td></tr>
+    <tr><td class="paramname">y1</td><td>ordonnée du point d'origine </td></tr>
+    <tr><td class="paramname">x2</td><td>abscisse du point de cible </td></tr>
+    <tr><td class="paramname">y2</td><td>ordonnée du point de cible </td></tr>
+    <tr><td class="paramname">thickness</td><td>épaisseur du trait </td></tr>
+    <tr><td class="paramname">color</td><td>couleur de la ligne </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8461291cfeedc07458aad365e80bf3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8461291cfeedc07458aad365e80bf3b5">&#9670;&nbsp;</a></span>render_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_rect </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend un rectangle (plein) sur la fenêtre.</p>
+<p>Pré-conditions : window non NULL, window lancée, thread = render thread de la fenêtre rect != NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre sur laquelle faire le rendu </td></tr>
+    <tr><td class="paramname">rect</td><td>mensurations du rectangle à rendre </td></tr>
+    <tr><td class="paramname">color</td><td>couleur du rectangle (pour la bordure et le contenu) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b8aeabf3a849477a3b796708320b4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8aeabf3a849477a3b796708320b4f8">&#9670;&nbsp;</a></span>render_set_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_set_color </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modifie la couleur de rendu, utilisée pour afficher des formes. L'utilisateur ne devrait probablement pas appeler cette fonction directement, comme les couleurs sont gérées par chaque fonction.</p>
+<p>Pré-conditions : window non NULL, window lancée, thread == render thread</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dont on veut modifier la couleur d'avant-plan </td></tr>
+    <tr><td class="paramname">color</td><td>couleur couleur de l'avant-plan </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c5fef8bfc843be4f1dbe907e2c4e45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5fef8bfc843be4f1dbe907e2c4e45e">&#9670;&nbsp;</a></span>render_surface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_surface </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>srcrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SDL_Rect *&#160;</td>
+          <td class="paramname"><em>dstrect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend la surface sur la fenêtre donnée.</p>
+<p>Cette fonction est un wrappeur utile qui se charge de</p><ul>
+<li>créer une texture à partire de la surface</li>
+<li>rendre la texture crée</li>
+<li>détruire la texture Ce qui correspond au cas d'utilisation le plus commun des fonctions précédentes.</li>
+</ul>
+<p>Cette fonction ne peut être appelée que dans le thread de rendu attaché à la fenêtre (cf <a class="el" href="window_8h.html#aeb284a3e673e34666b6c8bf869c7e344">create_texture</a> pour plus de détails).</p>
+<p>Pré-conditions: window non-NULL, window lancée, thread == render thread de la window, surface non NULL, destrect non NULL (Note: en réalité, la fonction est robuste sur ces derniers points ; si la fenêtre, la surface ou le renderer de la fenêtre sont NULL, la fonction retourne immédiatement sans rien faire)</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dans laquelle faire le rendu </td></tr>
+    <tr><td class="paramname">surface</td><td>surface à rendre </td></tr>
+    <tr><td class="paramname">srcrect</td><td>zone de la surface à rendre, ou NULL si on veut rendre toute la surface </td></tr>
+    <tr><td class="paramname">dstrect</td><td>zone de la fenêtre où rendre la surface </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aceeaaff95ab00e44b0909f790662c34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceeaaff95ab00e44b0909f790662c34d">&#9670;&nbsp;</a></span>render_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_text </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="window_8h.html#a88e6b4ad1d21ca375fad6a1e88356960">font_id_t</a>&#160;</td>
+          <td class="paramname"><em>fontid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>background</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rend du texte sur la fenêtre, avec la police chargée spécifiée, à la position spécifiée et l'alignement donné, et avec la couleur d'avant et d'arrière plan données.</p>
+<p>Pré-conditions : window non NULL, window lancée, thread = render thread de la fenêtre La valeur d'alignement doit être un OU d'une valeur VALIGN et d'une valeur HALIGN.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre sur laquelle opérer le rendu </td></tr>
+    <tr><td class="paramname">text</td><td>texte à rendre </td></tr>
+    <tr><td class="paramname">fontid</td><td>identifiant de police interne à la fenêtre (obtenu avec <a class="el" href="window_8h.html#aa3f4abdd9f6066b85594193cc41e02a3">load_font</a>) </td></tr>
+    <tr><td class="paramname">x</td><td>abscisse du point d'ancrage du texte </td></tr>
+    <tr><td class="paramname">y</td><td>ordonnée du point d'ancrage du texte </td></tr>
+    <tr><td class="paramname">alignment</td><td>alignement du texte par rapport au point d'ancrage </td></tr>
+    <tr><td class="paramname">color</td><td>couleur du texte </td></tr>
+    <tr><td class="paramname">background</td><td>couleur d'arrière-plan du texte </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27a6a8ca025aef1eacec5dcdebaaadcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a6a8ca025aef1eacec5dcdebaaadcf">&#9670;&nbsp;</a></span>set_background_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_background_color </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modifie la couleur d'arrière-plan de la fenêtre, qui est appliquée comme base à chaque repaint (par défaut cette couleur est le noir, a priori).</p>
+<p>Pré-conditions : window non NULL</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre dont on veut changer la couleur </td></tr>
+    <tr><td class="paramname">color</td><td>nouvelle couleur de la fenêtre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32fd48461403959ac9196b5b938ffc80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fd48461403959ac9196b5b938ffc80">&#9670;&nbsp;</a></span>start_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start_window </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lance le thread de rafraîchissement. Ce thread se charge de configurer et afficher la fenêtre puis de mettre à jour son contenu régulièrement.</p>
+<p>Plus précisément, la fonction de rendu contient une boucle infinie interruptible, qui se charge de 1) attendre qu'on la réveille (à l'aide d'un sémaphore), 2) met en place le rendu et 3) appelle le callback (<code>repaint</code> dans <a class="el" href="window_8h.html#a12953a46b01bfce6fb08a9329125a716">create_window</a>).</p>
+<p>Une fois la boucle interrompue (avec <a class="el" href="window_8h.html#aa95c2629a9becaf6ce4a13ab1d14cdd8">stop_window</a>), le reste de la fonction se charge du nettoyage et termine "gracieusement".</p>
+<p>La fonction <code>start_window</code> est bloquante : pour des raisons d'accès mémoire sûrs, elle attend que le thread aie bien terminé son initialisation. Le risque de retourner tout de suite est qu'une fonction essaye d'accéder à des données pas encore initialisées par la thread.</p>
+<p>Pré-conditions: window non NULL, window non déjà lancé</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>fenêtre à lancer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa95c2629a9becaf6ce4a13ab1d14cdd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95c2629a9becaf6ce4a13ab1d14cdd8">&#9670;&nbsp;</a></span>stop_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stop_window </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structwindow__t.html">window_t</a> **&#160;</td>
+          <td class="paramname"><em>window_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arrête la fenêtre : ferme le composant graphique et interrompt le thread associé.</p>
+<p>La fonction est bloquante car elle attend la fin du thread. Elle se charge aussi (partiellement indirectement) de nettoyer la mémoire associée à la fenêtre. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

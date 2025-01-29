@@ -1,0 +1,93 @@
+\hypertarget{graphe__parse_8c}{}\doxysection{Référence du fichier graphe\+\_\+parse.\+c}
+\label{graphe__parse_8c}\index{graphe\_parse.c@{graphe\_parse.c}}
+
+
+Implantation du module {\ttfamily graphe\+\_\+parse}.  
+
+
+{\ttfamily \#include \char`\"{}graphe\+\_\+parse.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}parse\+\_\+util.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de graphe\+\_\+parse.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphe__parse_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structparser__noeud}{parser\+\_\+noeud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphe__parse_8c_a759d9c46e8a620ecbbd5b61259047310}\label{graphe__parse_8c_a759d9c46e8a620ecbbd5b61259047310}} 
+\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+B\+L\+O\+CK}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{graphe__parse_8c_a63e584f1c85ac89d38ac7cd03c821ec6}{parser\+\_\+mode}} \{ {\bfseries N\+O\+\_\+\+S\+E\+C\+T\+I\+ON}, 
+{\bfseries N\+O\+D\+E\+\_\+\+S\+E\+C\+T\+I\+ON}, 
+{\bfseries E\+D\+G\+E\+\_\+\+S\+E\+C\+T\+I\+ON}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}} $\ast$ \mbox{\hyperlink{graphe__parse_8c_ac133b68d8740c04200c46674e3080dad}{parser\+\_\+graphe}} (const char $\ast$filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du module {\ttfamily graphe\+\_\+parse}. 
+
+Le module utilise abondamment des variables statiques car c\textquotesingle{}est plus pratique que de passer 10 arguments de fonction en fonction...
+
+Les variables sont ré-\/initialisées au début de {\ttfamily parser\+\_\+graphe}, si bien qu\textquotesingle{}elle sont reliées à cette méthode spécifiquement (il ne s\textquotesingle{}agit pas d\textquotesingle{}un état persistant du module, à la fin de la fonction les variables ne servent plus à rien).
+
+\begin{DoxyAuthor}{Auteur}
+G. Dupont 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{graphe__parse_8c_a63e584f1c85ac89d38ac7cd03c821ec6}\label{graphe__parse_8c_a63e584f1c85ac89d38ac7cd03c821ec6}} 
+\index{graphe\_parse.c@{graphe\_parse.c}!parser\_mode@{parser\_mode}}
+\index{parser\_mode@{parser\_mode}!graphe\_parse.c@{graphe\_parse.c}}
+\doxysubsubsection{\texorpdfstring{parser\_mode}{parser\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{graphe__parse_8c_a63e584f1c85ac89d38ac7cd03c821ec6}{parser\+\_\+mode}}}
+
+Type interne qui représente le mode du parseur \+: par encore entré dans une section ({\ttfamily N\+O\+\_\+\+S\+E\+C\+T\+I\+ON}), dans la section {\ttfamily Noeuds} ({\ttfamily N\+O\+D\+E\+\_\+\+S\+E\+C\+T\+I\+ON}) ou dans la section {\ttfamily Liens} ({\ttfamily E\+D\+G\+E\+\_\+\+S\+E\+C\+T\+I\+ON}). 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{graphe__parse_8c_ac133b68d8740c04200c46674e3080dad}\label{graphe__parse_8c_ac133b68d8740c04200c46674e3080dad}} 
+\index{graphe\_parse.c@{graphe\_parse.c}!parser\_graphe@{parser\_graphe}}
+\index{parser\_graphe@{parser\_graphe}!graphe\_parse.c@{graphe\_parse.c}}
+\doxysubsubsection{\texorpdfstring{parser\_graphe()}{parser\_graphe()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgraphe__t}{graphe\+\_\+t}}$\ast$ parser\+\_\+graphe (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Fonction qui parse le fichier dont le nom est passé en paramètre. La fonction se charge toute seule d\textquotesingle{}ouvrir et de fermer le fichier, puis crée un graphe et le peuple avec les informations qui en sont issues (voir introduction du module pour une description de la syntaxe).
+
+En cas d\textquotesingle{}erreur, la fonction affiche une erreur sur {\ttfamily stderr} et renvoie N\+U\+LL.
+
+Le graphe alloué a pour information sur les noeuds (dans le \char`\"{}noeud données\char`\"{}) le nom du noeud tel que fourni dans le fichier.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em filename} & fichier à parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+graphe résultant du parsing, ou N\+U\+LL si problème 
+\end{DoxyReturn}

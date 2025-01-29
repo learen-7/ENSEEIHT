@@ -1,0 +1,10 @@
+
+
+tr G2_req2_cl1 [0,w[ lib G2_wait1 -> G2_Cl1_ack
+tr G2_req1_cl1 [0,w[ Cl1_G2_req -> G2_wait1
+tr G2_req1_cl2 [0,w[ Cl2_G2_req -> G2_wait2
+tr G2_req2_cl2 [0,w[ lib G2_wait2 -> G2_Cl2_ack
+tr lib_G2 [0,w[ Cl1_G2_release Cl2_G2_release -> lib
+
+net gest2
+
