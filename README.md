@@ -2,7 +2,7 @@
 
 Code des différents TP durant l'N7
 
-# codes pour git
+# Codes pour git
 
 ## pour push
 
