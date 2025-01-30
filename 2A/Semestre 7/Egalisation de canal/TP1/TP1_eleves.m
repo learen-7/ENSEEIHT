@@ -59,6 +59,7 @@ for ii = 1:length(Es_N0_dB)
    % 
    
     s_zf=filter(1,hc,y);%if stable causal filter is existing
+    s_zf_sans_bruit = filter(1,hc,z);
     bhat_zf = zeros(2,length(bits));
     bhat_zf(1,:)= real(s_zf(1:N)) < 0;
     bhat_zf(2,:)= imag(s_zf(1:N)) < 0;
@@ -148,6 +149,7 @@ end
 dspEmisAvecBruit=pwelch(y);
 dspEmisSansBruit=pwelch(z);
 dspRecepAvecBruit=pwelch(s_zf);
+dspRecepSansBruit=pwelch(s_zf_sans_bruit);
 
 %s_zf_sans_bruit = filter(1, hc, z);
 %dspRecepSansBruit=pwelch(s_zf_sans_bruit);
@@ -165,16 +167,26 @@ figure
 semilogy(Es_N0_dB,simBer_zfinf(1,:),'rs-','Linewidth',2);
 hold on
 semilogy(Es_N0_dB,simBer_mmseinf(1,:),'gs-','Linewidth',2);
-hold on
-semilogy(Es_N0_dB,simBer_zffir(1,:),'p-','Linewidth',2);
-hold on
-semilogy(Es_N0_dB,simBer_mmsefir(1,:),'p-','Linewidth',2);
+
 axis([0 50 10^-7 0.5])
 grid on
-legend('sim-zf-inf','sim-mmse-inf', 'sim-zf-fir', 'sim-mmse-fir');
+legend('sim-zf-inf','sim-mmse-inf');
 xlabel('E_s/N_0, dB');
 ylabel('Bit Error Rate');
-title('Bit error probability curve for QPSK in ISI with ZF equalizers')
+title('Bit error probability curve for 4QAM in ISI with ZF and MMSE equalizers IIR')
+
+figure
+semilogy(Es_N0_dB,simBer_zffir(1,:),'rs-','Linewidth',2);
+hold on
+semilogy(Es_N0_dB,simBer_mmsefir(1,:),'gs-','Linewidth',2);
+
+axis([0 50 10^-7 0.5])
+grid on
+legend('sim-zf-fir','sim-mmse-fir');
+xlabel('E_s/N_0, dB');
+ylabel('Bit Error Rate');
+title('Bit error probability curve for 4QAM in ISI with ZF and MMSE equalizers FIR')
+
 
 figure
 title('Impulse response')
@@ -189,18 +201,29 @@ xlabel('time index')
 
 figure
 subplot(2, 2, 1)
-subtitle("DSP à l'emission")
 plot(10*log(dspEmisSansBruit))
+title("DSP à l'emission sans bruit")
 
 subplot(2, 2, 2)
-subtitle("DSP à l'emission")
 plot(10*log(dspEmisAvecBruit))
+title("DSP à l'emission avec bruit")
 
+subplot(2, 2, 3)
+plot(10*log(dspRecepSansBruit))
+title("DSP à la reception sans bruit")
 
 
 subplot(2, 2, 4)
-subtitle("DSP à la reception")
 plot(10*log(dspRecepAvecBruit))
+title("DSP à la reception avec bruit")
+
+figure
+ scatter(real(s_zf_sans_bruit), imag(s_zf_sans_bruit))
+ grid on
+ title('4QAM constellation')
+ xlabel('Real')
+ ylabel('Imaginary')
+
 
 
 
