@@ -12,15 +12,19 @@ M=4; %2:BPSK, 4: QPSK
 N  = 1000000; % Number of transmitted bits or symbols
 Es_N0_dB = [0:30]; % Eb/N0 values
 %Multipath channel parameters
-hc=[1 0.8*exp(1i*pi/3) 0.3*exp(1i*pi/6) ];%0.1*exp(1i*pi/12)];%ISI channel
+%hc=[1 0.8*exp(1i*pi/3) 0.3*exp(1i*pi/6) ];%0.1*exp(1i*pi/12)];%ISI channel
 %hc=[0.04, -0.05, 0.07, -0.21, -0.5, 0.72, 0.36, 0, 0.21, 0.03, 0.07];
-%a=1.2;
-%hc=[1 -a];
+a=1.2;
+hc=[1 -a];
 Lc=length(hc);%Channel length
 ChannelDelay=0; %delay is equal to number of non causal taps
 
 %Preallocations
 nErr_zfinf=zeros(1,length(Es_N0_dB));
+nErr_zf_fir = zeros(1,length(Es_N0_dB));
+nErr_mmse_fir = zeros(1,length(Es_N0_dB));
+nErr_mmseinf = zeros(1,length(Es_N0_dB));
+nErr = zeros(1,length(Es_N0_dB));
 for ii = 1:length(Es_N0_dB)
 
    % BPSK symbol generations
@@ -42,6 +46,12 @@ for ii = 1:length(Es_N0_dB)
    
    % Adding Noise
    y = z + n; % additive white gaussian noise
+
+   bhat = zeros(2,length(bits));
+   bhat(1,:)= real(y(1:N)) < 0;
+   bhat(2,:)= imag(y(1:N)) < 0;
+   nErr(1,ii) = size(find([bits(:)- bhat(:)]),1);
+
     
    %% zero forcing equalization
    % We now study ZF equalization
@@ -74,6 +84,7 @@ for ii = 1:length(Es_N0_dB)
     bhat_zf(2,:)= imag(s_zf(Nzf:N+Nzf-1)) < 0;
     
     nErr_zfinf(1,ii) = size(find([bits(:)- bhat_zf(:)]),1);
+    %bias_zf(1, ii) = mean(bhat_zf - bits, "all");
     
     %% mmse
     deltac= zeros( 1 , 2 * Lc - 1 ) ;
@@ -83,12 +94,15 @@ for ii = 1:length(Es_N0_dB)
     [w_mmseinf] = ComputeRI(Nmmse,r,p,k);
 
     s_mmse=conv(w_mmseinf,y);
+    
 
     bhat_mmse = zeros(2,length(bits));
     bhat_mmse(1,:)= real(s_mmse(Nzf:N+Nzf-1)) < 0;
     bhat_mmse(2,:)= imag(s_mmse(Nzf:N+Nzf-1)) < 0;
     
     nErr_mmseinf(1,ii) = size(find([bits(:)- bhat_mmse(:)]),1);
+
+    %bias_mmse(1, ii) = mean(bhat_mmse - bits, "all");
     
     %% zf rif
     Nw=10;
@@ -105,7 +119,7 @@ for ii = 1:length(Es_N0_dB)
     w_zf_fir = (inv(Ry)*Gamma).';
 
     sig_e_opt = sigs2 -conj(w_zf_fir)*Gamma;
-    bias = 1-sig_e_opt/sigs2;
+    bias_zf(1, ii) = 1-sig_e_opt/sigs2;
     shat = conv(w_zf_fir,y);
     shat = shat(dopt:end);
 
@@ -130,7 +144,7 @@ for ii = 1:length(Es_N0_dB)
     w_mmse_fir = (inv(Ry)*Gamma).';
 
     sig_e_opt = sigs2 -conj(w_mmse_fir)*Gamma;
-    bias = 1-sig_e_opt/sigs2;
+    bias_mmse(1,ii) = 1-sig_e_opt/sigs2;
     shat = conv(w_mmse_fir,y);
     shat = shat(dopt:end);
 
@@ -149,10 +163,11 @@ end
 dspEmisAvecBruit=pwelch(y);
 dspEmisSansBruit=pwelch(z);
 dspRecepAvecBruit=pwelch(s_zf);
-dspRecepSansBruit=pwelch(s_zf_sans_bruit);
+%dspRecepSansBruit=pwelch(s_zf_sans_bruit);
 
 %s_zf_sans_bruit = filter(1, hc, z);
 %dspRecepSansBruit=pwelch(s_zf_sans_bruit);
+simBer = nErr/N/log2(M);
 
 simBer_zfinf = nErr_zfinf/N/log2(M); % simulated ber
 
@@ -164,28 +179,31 @@ simBer_mmsefir = nErr_mmse_fir/N/log2(M); % simulated ber
 % plot
 
 figure
+semilogy(Es_N0_dB,simBer_zffir(1,:),'m*-','Linewidth',2);
+hold on
+semilogy(Es_N0_dB,simBer_mmsefir(1,:),'y*-','Linewidth',2);
+
+hold on
 semilogy(Es_N0_dB,simBer_zfinf(1,:),'rs-','Linewidth',2);
 hold on
 semilogy(Es_N0_dB,simBer_mmseinf(1,:),'gs-','Linewidth',2);
 
-axis([0 50 10^-7 0.5])
 grid on
-legend('sim-zf-inf','sim-mmse-inf');
+legend('sim-zf-fir','sim-mmse-fir','sim-zf-inf','sim-mmse-inf');
 xlabel('E_s/N_0, dB');
 ylabel('Bit Error Rate');
-title('Bit error probability curve for 4QAM in ISI with ZF and MMSE equalizers IIR')
+title('Bit error probability curve for 4QAM in ISI with ZF and MMSE equalizers')
+
 
 figure
-semilogy(Es_N0_dB,simBer_zffir(1,:),'rs-','Linewidth',2);
+plot(Es_N0_dB,bias_zf(1,:),'rs-','Linewidth',2);
 hold on
-semilogy(Es_N0_dB,simBer_mmsefir(1,:),'gs-','Linewidth',2);
-
-axis([0 50 10^-7 0.5])
+plot(Es_N0_dB,bias_mmse(1,:),'gs-','Linewidth',2);
 grid on
 legend('sim-zf-fir','sim-mmse-fir');
 xlabel('E_s/N_0, dB');
 ylabel('Bit Error Rate');
-title('Bit error probability curve for 4QAM in ISI with ZF and MMSE equalizers FIR')
+title('Bias')
 
 
 figure
@@ -199,26 +217,18 @@ legend('mmse','zf');
 ylabel('Amplitude');
 xlabel('time index')
 
-figure
-subplot(2, 2, 1)
-plot(10*log(dspEmisSansBruit))
-title("DSP à l'emission sans bruit")
-
-subplot(2, 2, 2)
-plot(10*log(dspEmisAvecBruit))
-title("DSP à l'emission avec bruit")
-
-subplot(2, 2, 3)
-plot(10*log(dspRecepSansBruit))
-title("DSP à la reception sans bruit")
-
-
-subplot(2, 2, 4)
-plot(10*log(dspRecepAvecBruit))
-title("DSP à la reception avec bruit")
+% figure
+% subplot(1, 2, 1)
+% plot(10*log(dspRecepSansBruit))
+% title("DSP à la reception sans bruit")
+% 
+% 
+% subplot(1, 2, 2)
+% plot(10*log(dspRecepAvecBruit))
+% title("DSP à la reception avec bruit")
 
 figure
- scatter(real(s_zf_sans_bruit), imag(s_zf_sans_bruit))
+ scatter(real(s_zf), imag(s_zf))
  grid on
  title('4QAM constellation')
  xlabel('Real')
