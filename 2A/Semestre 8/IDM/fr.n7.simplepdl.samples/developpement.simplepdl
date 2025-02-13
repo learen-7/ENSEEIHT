@@ -9,5 +9,5 @@
   <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processElements.0" successor="//@processElements.2"/>
   <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.3"/>
   <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.2" successor="//@processElements.3"/>
-  <processElements xsi:type="simplepdl:Guidance" text="A Guidance"/>
+  <processElements xsi:type="simplepdl:Guidance" text="A Guidance" elements="//@processElements.0"/>
 </simplepdl:Process>
