@@ -1,0 +1,8 @@
+digraph developpement {
+
+	Conception -> RedactionDoc [arrowhead=vee label = s2s]
+	Conception -> RedactionDoc [arrowhead=vee label = f2f]
+	Conception -> Developpement [arrowhead=vee label = f2s]
+	Conception -> RedactionTests [arrowhead=vee label = s2s]
+	Developpement -> RedactionTests [arrowhead=vee label = f2f]
+}

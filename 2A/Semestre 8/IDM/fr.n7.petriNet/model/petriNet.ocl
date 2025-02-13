@@ -1,0 +1,19 @@
+import 'petriNet.ecore'
+
+package petriNet
+
+context Reseau
+--
+-- example invariant with a custom error message to verify that
+-- the 'nom' property of all 'petriNet::Reseau' instances is non-null
+--
+
+inv validName('Invalid name: ' + self.nom):
+	self.nom.matches('[A-Z_][A-Za-z0-9_]*')
+	
+	
+context Places
+inv nbToken :
+	self.token -> size() >= 0
+	
+endpackage
