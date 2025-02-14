@@ -1,0 +1,5 @@
+digraph exemple {
+
+	a1 -> a2 [arrowhead=vee label = s2f]
+	a2 -> a1 [arrowhead=vee label = s2f]
+}

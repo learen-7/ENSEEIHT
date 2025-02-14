@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Reseau
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://www.example.org/petriNet"
+    xsi:schemaLocation="http://www.example.org/petriNet petriNet.ecore"
+    nom="Reseau">
+  <cellule xsi:type="petriNet:Places"
+      réseau="/"
+      Nom="test">
+    <token>-1</token>
+  </cellule>
+</petriNet:Reseau>
