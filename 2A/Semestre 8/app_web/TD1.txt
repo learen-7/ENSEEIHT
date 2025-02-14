@@ -1,0 +1,153 @@
+Sujet du TP2.
+! on utilise html lorsque la page est statique et JSP lorsqu'on veut faire un traitement sur la page
+________________________________________________________________________
+index.html
+<body>
+i. 1->< a href = "ajoutPersonne.html"> ajouter personne </a>
+i. 1-><a href = "ajouterAdresse.html"> ajouter Adresse </a>
+i. 1->< ahref = "associer.jsp"> associer </a>
+i. 1->< a href ="lister.jsp"> lister </a>
+</body>
+_______________________________________________________________________
+Public Class Personne {
+i. 1->String nom;
+i. 1->String prenom;
+i. 1->Collection <Adresse> adresses = new ArrayList <Adresse>( );
+i. 1->int id;
+i. 1->
+i. 1->public Collection<Adresse> getAdresses( ){
+i. 2->return adresses;
+i. 1->}
+i. 1->
+i. 1->public void setAdresses(Collection <Adresses> a){
+i. 2->adresses = a;
+i. 1->}
+i. 1->...
+}
+
+Public Class Adresse{
+i. 1->int id;
+i. 1->String rue;
+i. 1->String ville;
+i. 1->/* remember Léa les bdd associatives... pour ne pas ajouter un attribut personnes...*/
+i. 1->//Getter et Setter
+}
+________________________________________________________________________
+ajouterPersonne.html
+<body>
+i. 1-><form method="post" action="Serv"> 
+i. 2->nom: <input type="text" name="nom" required>
+i. 2->prenom: <input type="text" name="prenom" required>
+i. 2-><input type="Submit" value="ok">
+i. 2-><input type="hidden" name="op" value="ajoutPersonne">
+i. 1-></form>
+</body>
+________________________________________________________________________
+ajouterAdresse.html
+<body>
+i. 1-><form method="post" action="Serv">
+i. 2->rue: <input type="text" name="rue" required>
+i. 2->ville: <input type="text" name="ville" required>
+i. 2-><input type="Submit" value="ok">
+i. 2-><input type="hidden" name="op" value="ajoutAdresse">
+i. 1-></form>
+</body>
+________________________________________________________________________
+
+Public class Serv extends HttpServlet{
+i. 1->public void doPost(HttpServlet request, HttpServlet response) throws ServletException, IOException{
+i. 2->String op=request.getParameter("op");
+i. 2->
+i. 2->if (op.equals("ajoutPersonne")){
+i. 3->String nom=request.getParameter("nom");
+i. 3->String prenom = request.getParameter("prenom");
+i. 3->facade.ajouterPersonne(nom, prenom);
+i. 3->
+i. 3->request getRequestDispatcher(index.html") forward(request, response);
+i. 2->}
+i. 2->if (op.equals("ajoutAdresse")){
+i. 3->...
+i. 2->}
+i. 2->if (op.equals("choix")){
+i. 3->request.setAttribute("listePersonnes", facade.getPersonne( ));
+i. 3->request.setAttribute("listeAdresse", facade.getAdresses)( );
+i. 3->request.getRequestDispatcher("choix.jsp") forward(request, response)
+i. 2->}
+i. 2->
+i. 2->if (op.equals("associer")){
+i. 3->int ida = request.getParameter("ida");
+i. 3->int idp = request.getParameter("idp");
+i. 3->facade.associer(idp, ida);
+i. 3->request.getRequestDispatcher("index.html") forward(request, response);
+i. 2->}
+i. 2->
+i. 2->if (op.equals("lister")){
+i. 3->request.setAttribute("listePersonnes",facade.getPersonnes( ));
+i. 1->}
+}
+________________________________________________________________________
+choix.jsp
+<body>
+i. 1-><form method="post" action="Serv">
+i. 2->choisir la personne
+i. 2-><%Collection<Personne> personnes = request.getAttribute("listePersonnes");
+i. 2->for (Personne p:personnes){
+i. 3->int idp = p.getId( );
+i. 3->String np = p.getNom( ) + " " + p.getPrenom();
+i. 2->>
+i. 2-><input type="radio" name="idpersonne" value=<%=idp> <%=np>>
+i. 2-><%}>
+i. 2->
+i. 2-><%Collection<Adresse> adresses = request.getAttribute("listeAdresses");
+i. 2->for (Adresse a:adresses){
+i. 3->int ida = p.getId( );
+i. 3->String  rv= a.getRue( ) + " " + a.getVille();
+i. 2->>
+i. 2-><input type="radio" name="idadresse" value=<%=ida> <%=rv>>
+i. 2-><%}>
+i. 2->
+i. 2-><input type="Submit" value="ok">
+i. 2-><input type="hidden" name="op" value="choix">
+i. 1-></form>
+</body>
+________________________________________________________________________
+lister.jsp
+<body>
+i. 1-><%Collection<Personne personnes = request.getAttribute("ListePersonnes");
+i. 1->for (Personnes p:personnes){
+i. 2->out.println(p.getnNom( ) + " " + p.get.Prenom( ));
+i. 2->for (Adresse a:p.getAdresses( )){
+i. 3->out.println("it" + a.getRue( ) + " " +a.getVille());
+i. 2->}>
+i. 1-><%}>
+</body>
+________________________________________________________________________
+
+Public Class Facade{
+i. 1->int indexP = 0;
+i. 1->int indexA = 0;
+i. 1->Hashmap<Integer, Personne> personnes = new Hashmap<Integer, Personne> ( );
+i. 1->Hashmap<Integer, Adresse> adresses = new Hashmap<Integer, Adresse> ( );
+i. 1->
+i. 1->public void ajouterPersonne(String nom, String prenom){
+i. 2->Personne p=new Personne( );
+i. 2->p.setId(index p);
+i. 2->p.setNom(nom);
+i. 2->p.setPrenom(prenom);
+i. 2->personnes.put(indexP, p);
+i. 2->indexP ++;
+i}
+
+Public Collection<Personne> ListePersonne( ){
+return personnes.values( );
+}
+
+Public Collection<Adresse> ListeAdresse( ){
+return adresses.values( );
+}
+
+Public void associer(int idp, int ida){
+Personne p=personnes get(idp);
+p.adresses.add(adresses.get(ida));
+}
+}
