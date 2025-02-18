@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Reseau
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://www.example.org/petriNet"
+    xsi:schemaLocation="http://www.example.org/petriNet petriNet.ecore"
+    nom="Reseau2">
+  <cellule xsi:type="petriNet:Transitions"
+      réseau="/"
+      Nom="T1">
+    <arcs places="//@cellule.2"
+        transitions="//@cellule.0">
+      <Poids>23</Poids>
+    </arcs>
+    <arcs places="//@cellule.1"
+        sens="true"
+        transitions="//@cellule.0">
+      <Poids>12</Poids>
+    </arcs>
+  </cellule>
+  <cellule xsi:type="petriNet:Places"
+      réseau="/"
+      Nom="X">
+    <token>23</token>
+  </cellule>
+  <cellule xsi:type="petriNet:Places"
+      réseau="/"
+      Nom="Y">
+    <token>10</token>
+  </cellule>
+</petriNet:Reseau>

@@ -1,0 +1,29 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+context Process
+inv warningSeverity: false
+inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+--inv errorSeverity: null
+
+context Process
+inv validName('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]+')
+
+context ProcessElement
+def: process(): Process =
+	Process.allInstances()
+		->select(p | p.processElements->includes(self))
+		->asSequence()->first()
+
+context WorkSequence
+inv notReflexive: self.predecessor <> self.successor
+
+context WorkDefinition
+inv uniqNames: self.process().processElements
+->select(pe | pe.oclIsKindOf(WorkDefinition))
+->collect(pe | pe.oclAsType(WorkDefinition))
+->forAll(w | self = w or self.name <> w.name)
+
+endpackage
