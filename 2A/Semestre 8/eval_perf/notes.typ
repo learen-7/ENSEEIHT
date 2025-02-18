@@ -117,3 +117,9 @@ nécessite le plus d'expertise dans le domaine des rezo
 pour un modèle pour un rezo il peut y a voir plusieurs modèles : on décide en fonction des critères de perf
 
 plusieurs étude de perf en fonction des critères
+
+== Méthode générale
+
+#figure(
+  image("methode_gen.png", width: 70%)
+)
