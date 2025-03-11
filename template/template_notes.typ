@@ -1,7 +1,12 @@
 //remplate pour prise de notes CM à plusieurs
 //ici on utilise les définitions
 
+#let definition = ("testt","testd")
+
+#let ajouter(definition,term, defi) ={
+  definition = definition + (term,defi)
 }
+
 
 #let defcount=counter("def")
 #let propcount=counter("prop")
@@ -42,8 +47,19 @@
     *Théorème #context theocount.display() :* #term]
 }
 
+#let citation(term, name, date)={
+  box(
+    stroke: none,
+    fill: rgb("#fcdefc"),
+    width: 160mm,
+    inset: 1em,
+    radius: 20pt
+  )[*#emoji.sparkles #emoji.ribbon Citation inspirante #emoji.ribbon #emoji.sparkles:  #linebreak() *#emph[#term] #align(right, [#emph[#emoji.flower.tulip #emoji.flower #name #emoji.butterfly #date #emoji.flower #emoji.flower.tulip]])]
+}
+  
+
 #let project(
-  title : "", generalites : (), definition: (), body) = {
+  title : "", generalites : (), body) = {
   //définition des basiques du template
   set page(numbering: "1", number-align: right)
   set document(title: title)
@@ -73,7 +89,7 @@
   }
 
   //table des matières 
-  outline(depth: 3)
+  outline(depth: 2)
   
   linebreak()
   
@@ -88,6 +104,8 @@
     table.header[*_Mot_*][*_Définition_*],
     ..definition
   )
+  
+  box()[#list(..definition)]
 
   pagebreak()
   // main body.
