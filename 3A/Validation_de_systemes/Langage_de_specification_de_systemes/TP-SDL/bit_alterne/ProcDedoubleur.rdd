@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<SdlFSMSymbol identifier="SYM5" type="sdlText" text="SYNTYPE Indice = Integer CONSTANTS 0:2 ENDSYNTYPE;
+DCL Alea Integer;
+DCL MessUser Charstring;" outline_color="-" background_color="-" center_coordinates="1059 64" dimensions="370 64" attached_symbol_id=""/>
+<NonStateTransition top_left_coordinates="313 43">
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="385 58" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM21" type="sdlCnctrIn" text="loop" outline_color="-" background_color="-" center_coordinates="385 105" dimensions="110 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM24" type="sdlTask" text="Alea:=ANY(Indice)" outline_color="-" background_color="-" center_coordinates="385 157" dimensions="144 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM2" type="sdlState" text="wait_info" outline_color="-" background_color="-" center_coordinates="385 209" dimensions="88 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="310 85">
+<SdlFSMSymbolReference identifier="SYM2"/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM3" type="sdlInputSig" text="Ack" outline_color="-" background_color="-" center_coordinates="385 261" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM6" type="sdlDecision" text="Alea=0" outline_color="-" background_color="-" center_coordinates="385 313" dimensions="68 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM7" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="385 365" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM9" type="sdlSendSig" text="Ack" outline_color="-" background_color="-" center_coordinates="385 417" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM11" type="sdlSendSig" text="Ack" outline_color="-" background_color="-" center_coordinates="385 469" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM8" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="455 365" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM12" type="sdlSendSig" text="Ack" outline_color="-" background_color="-" center_coordinates="455 417" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM22" type="sdlCnctrOut" text="loop" outline_color="-" background_color="-" center_coordinates="385 533" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM4" type="sdlInputSig" text="Data(MessUser)" outline_color="-" background_color="-" center_coordinates="567 261" dimensions="124 40" attached_symbol_id=""/>
+<Transition>
+<DecisionBlock>
+<SdlFSMSymbol identifier="SYM14" type="sdlDecision" text="Alea=0" outline_color="-" background_color="-" center_coordinates="567 313" dimensions="68 40" attached_symbol_id=""/>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM15" type="sdlAnswer" text="true" outline_color="-" background_color="-" center_coordinates="567 365" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM17" type="sdlSendSig" text="Data(MessUser)" outline_color="-" background_color="-" center_coordinates="567 417" dimensions="124 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM18" type="sdlSendSig" text="Data(MessUser)" outline_color="-" background_color="-" center_coordinates="567 469" dimensions="124 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+<DecisionBranch>
+<SdlFSMSymbol identifier="SYM16" type="sdlAnswer" text="false" outline_color="-" background_color="-" center_coordinates="701 365" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM19" type="sdlSendSig" text="Data(MessUser)" outline_color="-" background_color="-" center_coordinates="701 417" dimensions="124 40" attached_symbol_id=""/>
+</Transition>
+</DecisionBranch>
+</DecisionBlock>
+<SdlFSMSymbol identifier="SYM23" type="sdlCnctrOut" text="loop" outline_color="-" background_color="-" center_coordinates="567 533" dimensions="60 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>

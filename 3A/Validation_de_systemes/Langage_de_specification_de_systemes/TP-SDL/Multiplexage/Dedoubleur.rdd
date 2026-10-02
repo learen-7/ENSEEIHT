@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="blk" defaultColorsNeedFixing="FALSE" name="Medium" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="2" nbPagesV="1">
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB1" type="sdlBlkDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="407" yCenter="374" fixedDimensions="FALSE" width="110" height="66" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>ProcMedium
+</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK1" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Medium2Rec
+</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="-0.333333333333" endType="midarrow">
+<Text id="1">[Ack]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="-0.061935483871" endType="midarrow">
+<Text id="1">[Data]
+</Text>
+<Text id="2"> Med2Rec
+</Text>
+</Connector>
+<LinkSegment orientation="h" length="744"/>
+
+</Link>
+
+<Link linkId="LINK0" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Medium2em
+</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[Data]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.289703315881" endType="midarrow">
+<Text id="1">[Ack]
+</Text>
+<Text id="2">Em2Med 
+</Text>
+</Connector>
+<LinkSegment orientation="v" length="-374"/>
+
+</Link>
+</DiagramPartition>
+
+</Diagram>

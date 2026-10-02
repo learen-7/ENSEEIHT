@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="none" diagramType="sys">
+<Signal id="SIG1" name="Ack">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,13"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG2" name="Start">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,18"/>
+</DefiningSymbols>
+</Signal>
+<Signal id="SIG3" name="Data">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB2" positions="0,7"/>
+</DefiningSymbols>
+</Signal>
+<Item id="ITEM1" type="system" name="SDL_system" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYMB1"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW4" insideDiagram="TRUE">
+<ConnectorReference linkId="LINK1" isFrom="FALSE"/>
+<Connections>
+<Connection name="U2E"/>
+</Connections>
+<SentSignals>
+<SignalReference id="SIG2"/>
+</SentSignals>
+</SignalWindow>
+<Channel name="U2E" fromSignalWindow="SIGWDW1" toSignalWindow="SIGWDW4"/>
+<Channel name="E2R" fromSignalWindow="SIGWDW2" toSignalWindow="SIGWDW3"/>
+</Item>
+<Item id="ITEM2" type="block" name="Emetteur" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB3"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB3"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW1" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK1" isFrom="TRUE"/>
+<ReceivedSignals>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</SignalWindow>
+<SignalWindow id="SIGWDW2" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK0" isFrom="TRUE"/>
+<SentSignals>
+<SignalReference id="SIG3"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+<Item id="ITEM3" type="block" name="Recepteur" parentId="ITEM1" scope="none" minInstances="1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYMB4"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYMB4"/>
+</UsingSymbols>
+<SignalWindow id="SIGWDW3" insideDiagram="FALSE">
+<ConnectorReference linkId="LINK0" isFrom="FALSE"/>
+<SentSignals>
+<SignalReference id="SIG1"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG3"/>
+</ReceivedSignals>
+</SignalWindow>
+</Item>
+</DictionaryObjects>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="Data">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="Ack">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22" usingKind="output"/>
+<SymbolReference symbolId="SYM19" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="MessageEnvoye">
+<UsingSymbols>
+<SymbolReference symbolId="SYM20" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="ProcRec" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG3"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM10" type="variable" name="bitAttendu" parentId="ITEM1" scope="none" variableTypeName="Boolean" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM7" positions="1,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="MessUser" parentId="ITEM1" scope="none" variableTypeName="Charstring" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM7" positions="0,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM12" type="connector" name="loop" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM9"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM16"/>
+<SymbolReference symbolId="SYM21"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM13" type="state" name="wait_data" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM2"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM2" type="variable" name="bit" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3"/>
+<SymbolReference symbolId="SYM12"/>
+<SymbolReference symbolId="SYM18"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="variable" name="MessUser" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3"/>
+<SymbolReference symbolId="SYM20"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="variable" name="bitAttendu" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22"/>
+<SymbolReference symbolId="SYM19"/>
+<SymbolReference symbolId="SYM12"/>
+<SymbolReference symbolId="SYM11"/>
+<SymbolReference symbolId="SYM18"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="type" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM7"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM13"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="type" name="Charstring" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM7"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM14"/>
+<SymbolReference symbolId="SYM11"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM9" type="variable" name="bit" parentId="ITEM1" scope="none" variableTypeName="Boolean" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM7" positions="1,16"/>
+</DefiningSymbols>
+</Item>
+</DictionaryObjects>

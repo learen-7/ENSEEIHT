@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="Ack">
+<UsingSymbols>
+<SymbolReference symbolId="SYM7" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="Start">
+<UsingSymbols>
+<SymbolReference symbolId="SYM12" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="Data">
+<UsingSymbols>
+<SymbolReference symbolId="SYM13" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="ProcEmetteur" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG3"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM2" type="state" name="wait_ack" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM6"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM14"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="state" name="wait_start" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM11"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM10"/>
+</UsingSymbols>
+</Item>
+</DictionaryObjects>

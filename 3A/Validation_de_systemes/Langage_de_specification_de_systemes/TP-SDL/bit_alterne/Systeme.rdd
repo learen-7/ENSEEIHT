@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="sys" defaultColorsNeedFixing="FALSE" name="Systeme" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="4" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB1" type="sdlSysDgmFrm" xCenter="1190" yCenter="420" fixedDimensions="TRUE" width="2337" height="775" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB10" type="sdlBlk" xCenter="462" yCenter="352" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Medium</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB2" type="sdlText" xCenter="1276" yCenter="88" fixedDimensions="FALSE" width="748" height="66" color="#000000" fillColor="#FFFFFF">
+<Description></Description>
+<Text>SIGNAL Ack(Boolean), MessageUser(Charstring), Data(Charstring, Boolean), MessageEnvoye(Charstring);
+</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB3" type="sdlBlk" xCenter="231" yCenter="275" fixedDimensions="FALSE" width="88" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Emetteur</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB4" type="sdlBlk" xCenter="770" yCenter="275" fixedDimensions="FALSE" width="88" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>Recepteur</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK8" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Med2Rec</Text>
+<Connector attachedSymbolId="SYMB10" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
+<Text id="1">[Ack]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[Data]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="308"/>
+<LinkSegment orientation="v" length="-88"/>
+
+</Link>
+
+<Link linkId="LINK0" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Us2Em</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[MessageUser]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="n" position="-0.80188275567" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-275"/>
+
+</Link>
+
+<Link linkId="LINK7" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Em2Med</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[Ack]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB10" type="chnl" isOutside="TRUE" side="y" position="0.5" endType="midarrow">
+<Text id="1">[Data]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="88"/>
+<LinkSegment orientation="h" length="231"/>
+
+</Link>
+
+<Link linkId="LINK3" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Rec2Us</Text>
+<Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="n" position="-0.340607616602" endType="midarrow">
+<Text id="1">[MessageEnvoye]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="-275"/>
+
+</Link>
+</DiagramPartition>
+
+</Diagram>

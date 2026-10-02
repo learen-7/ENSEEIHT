@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<SdlFSMDiagram language="sdl" type="prcs" is_extract="FALSE" is_temporary="FALSE">
+<SdlFSMPartition name="" needs_cleanup="FALSE">
+<StateTransitionBlock top_left_coordinates="780 90">
+<SdlFSMSymbol identifier="SYM6" type="sdlState" text="wait_ack" outline_color="-" background_color="-" center_coordinates="818 110" dimensions="76 40" attached_symbol_id=""/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM7" type="sdlInputSig" text="Ack" outline_color="-" background_color="-" center_coordinates="818 162" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM8" type="sdlStop" outline_color="-" background_color="-" center_coordinates="818 204" dimensions="20 20" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<NonStateTransition top_left_coordinates="231 75">
+<SdlFSMSymbol identifier="SYM9" type="sdlStart" outline_color="-" background_color="-" center_coordinates="279 90" dimensions="60 30" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM10" type="sdlState" text="wait_start" outline_color="-" background_color="-" center_coordinates="279 137" dimensions="96 40" attached_symbol_id=""/>
+</Transition>
+</NonStateTransition>
+<StateTransitionBlock top_left_coordinates="468 101">
+<SdlFSMSymbol identifier="SYM11" type="sdlState" text="wait_start" outline_color="-" background_color="-" center_coordinates="513 121" dimensions="90 40" attached_symbol_id=""/>
+<NormalStateTransition>
+<SdlFSMSymbol identifier="SYM12" type="sdlInputSig" text="Start" outline_color="-" background_color="-" center_coordinates="513 173" dimensions="60 40" attached_symbol_id=""/>
+<Transition>
+<SdlFSMSymbol identifier="SYM13" type="sdlSendSig" text="Data" outline_color="-" background_color="-" center_coordinates="513 225" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM14" type="sdlState" text="wait_ack" outline_color="-" background_color="-" center_coordinates="513 277" dimensions="76 40" attached_symbol_id=""/>
+</Transition>
+</NormalStateTransition>
+</StateTransitionBlock>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="1.0" bottomMargin="1.0" leftMargin="1.0" rightMargin="1.0" pageFooter="TRUE" scaleFactor="1.0"/>
+</SdlFSMPartition>
+</SdlFSMDiagram>
