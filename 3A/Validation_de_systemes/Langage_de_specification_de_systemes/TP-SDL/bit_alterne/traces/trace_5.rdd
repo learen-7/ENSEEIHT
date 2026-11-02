@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3 LIFELINEID_4"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="-" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="-" text="ProcEm
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="-" text="ProcMed
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="PROCESS_START" color="-" text="ProcRec
+(3)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=a|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=b|})" identifier="MSG2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=c|})" identifier="MSG3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=d|})" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=e|})" identifier="MSG5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND1" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND1" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND2" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND2" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND3" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND3" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM3" identifier="MSG1" text="MessageUser(|{param1|=a|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG6" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND4" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND4" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG2" text="MessageUser(|{param1|=b|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=b|})" identifier="MSG7"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG3" text="MessageUser(|{param1|=c|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=c|})" identifier="MSG8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG4" text="MessageUser(|{param1|=d|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=d|})" identifier="MSG9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG5" text="MessageUser(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=e|})" identifier="MSG10"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG6" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG11" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND5" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND5" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG11" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM19" identifier="MSG12" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM20" identifier="MSG13" text="MessageEnvoye(|{param1|=a|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" text="MessageEnvoye(|{param1|=a|})" identifier="MSG13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND6" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND6" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG12" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND7" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND7" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG14" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND8" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND8" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG14" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG15" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND9" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND9" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG15" text="Data(|{param1|=a|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG16" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND10" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND10" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG16" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM16" identifier="MSG17" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND11" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND11" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG17" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_CANCEL" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM36"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND12" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND12" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM3" identifier="MSG7" text="MessageUser(|{param1|=b|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG18" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND13" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND13" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG8" text="MessageUser(|{param1|=c|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=c|})" identifier="MSG19"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG9" text="MessageUser(|{param1|=d|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=d|})" identifier="MSG20"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG10" text="MessageUser(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=e|})" identifier="MSG21"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG18" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG22" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND14" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND14" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG22" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM19" identifier="MSG23" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM20" identifier="MSG24" text="MessageEnvoye(|{param1|=b|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" text="MessageEnvoye(|{param1|=b|})" identifier="MSG24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND15" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND15" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG23" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND16" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND16" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG25" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND17" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND17" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG25" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM23" identifier="MSG26" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM25" identifier="MSG27" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND18" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND18" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG26" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG28" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND19" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND19" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG27" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG29" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND20" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND20" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG28" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND21" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND21" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG29" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND22" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND22" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG30" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND23" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND23" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG30" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM23" identifier="MSG31" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM25" identifier="MSG32" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND24" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND24" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG31" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG33" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND25" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND25" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG32" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG34" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND26" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND26" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG33" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND27" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND27" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG34" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND28" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="30"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND28" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG35" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND29" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND29" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG35" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND30" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="40"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND30" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG36" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND31" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND31" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG36" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG37" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND32" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND32" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG37" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG38" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND33" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND33" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG38" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND34" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="50"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND34" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG39" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND35" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND35" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG39" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG40" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND36" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND36" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG40" text="Data(|{param1|=b|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG41" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND37" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND37" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG41" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM16" identifier="MSG42" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND38" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND38" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG42" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_CANCEL" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM36"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND39" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND39" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM3" identifier="MSG19" text="MessageUser(|{param1|=c|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG43" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND40" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND40" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG20" text="MessageUser(|{param1|=d|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=d|})" identifier="MSG44"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG21" text="MessageUser(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=e|})" identifier="MSG45"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG43" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND41" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="60"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND41" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG46" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND42" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND42" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG46" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND43" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="70"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND43" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG47" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND44" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND44" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG47" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG48" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND45" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND45" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG48" text="Data(|{param1|=c|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM19" identifier="MSG49" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM20" identifier="MSG50" text="MessageEnvoye(|{param1|=c|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" text="MessageEnvoye(|{param1|=c|})" identifier="MSG50"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND46" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND46" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG49" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM14" identifier="MSG51" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM33" identifier="MSG52" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND47" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND47" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG51" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_CANCEL" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM36"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND48" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND48" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM3" identifier="MSG44" text="MessageUser(|{param1|=d|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG53" text="Data(|{param1|=d|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND49" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND49" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31" identifier="MSG45" text="MessageUser(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SAVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM31"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" text="MessageUser(|{param1|=e|})" identifier="MSG54"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG52" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND50" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND50" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG53" text="Data(|{param1|=d|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG55" text="Data(|{param1|=d|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND51" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND51" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG55" text="Data(|{param1|=d|,param2|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM19" identifier="MSG56" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM20" identifier="MSG57" text="MessageEnvoye(|{param1|=d|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" text="MessageEnvoye(|{param1|=d|})" identifier="MSG57"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND52" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND52" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG56" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM14" identifier="MSG58" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM33" identifier="MSG59" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND53" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND53" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG58" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_CANCEL" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM36"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND54" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND54" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM3" identifier="MSG54" text="MessageUser(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG60" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND55" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND55" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG59" text="Ack(|{param1|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND56" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND56" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG60" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG61" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND57" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND57" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG61" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM19" identifier="MSG62" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM20" identifier="MSG63" text="MessageEnvoye(|{param1|=e|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" text="MessageEnvoye(|{param1|=e|})" identifier="MSG63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND58" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND58" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG62" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND59" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="80"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND59" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM4" identifier="MSG64" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T(10)" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5" identifier="COND60" background="-" text="wait_ack"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_ack" identifier="COND60" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM10" identifier="MSG64" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM26" identifier="MSG65" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND61" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND61" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM3" identifier="MSG65" text="Data(|{param1|=e|,param2|=0|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM22" identifier="MSG66" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2" identifier="COND62" background="-" text="wait_data"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_data" identifier="COND62" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcRec.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM9" identifier="MSG66" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM16" identifier="MSG67" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8" identifier="COND63" background="-" text="wait_info"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="wait_info" identifier="COND63" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcMed.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM7" identifier="MSG67" text="Ack(|{param1|=1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_CANCEL" color="-" text="T" type="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM36"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2" identifier="COND64" background="-" text="Wait_mess"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="90"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait_mess" identifier="COND64" model_id="PragmaDevStudio:symbol*/home/lht1404/Mes Documents/ENSEEIHT/3A/Validation_de_systemes/Langage_de_specification_de_systemes/TP-SDL/bit_alterne/ProcEm.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+</MscDiagram>

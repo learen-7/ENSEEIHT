@@ -1,0 +1,199 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "affichage"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 1,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "std"
+          }
+        ],
+        "CYCLETIME" : 500
+      },
+      "COUNTER" : "SystemCounter2",
+      "NAME" : "affichage_alarm"
+    },    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "pendule"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 1,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "std"
+          }
+        ],
+        "CYCLETIME" : 4
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "pendule_alarm"
+    }
+  ],
+  "event" : [],
+  "isr" : 
+  [
+    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "bt_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "it_bluetooth",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "check_buttons_status",
+      "PRIORITY" : 10,
+      "SOURCE" : "check_buttons_status",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "i2c_timer_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "i2c_timer_isr_C",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 2,
+      "KIND" : "ISR",
+      "NAME" : "isr_button_left",
+      "PRIORITY" : 10,
+      "SOURCE" : "button_left",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 2,
+      "KIND" : "ISR",
+      "NAME" : "isr_button_right",
+      "PRIORITY" : 10,
+      "SOURCE" : "button_right",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 2,
+      "KIND" : "ISR",
+      "NAME" : "isr_button_start",
+      "PRIORITY" : 10,
+      "SOURCE" : "button_start",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 2,
+      "KIND" : "ISR",
+      "NAME" : "isr_button_stop",
+      "PRIORITY" : 10,
+      "SOURCE" : "button_stop",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "nxt_motor_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "nxt_motor_isr_C",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "spi_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "spi_isr_C",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "systick_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "systick_isr_C",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "systick_low_priority_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "systick_low_priority_C",
+      "STACKSIZE" : 500
+    },    
+    {
+      "CATEGORY" : 1,
+      "KIND" : "ISR",
+      "NAME" : "twi_isr_C",
+      "PRIORITY" : 10,
+      "SOURCE" : "twi_isr_C",
+      "STACKSIZE" : 500
+    }
+  ],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "std"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "affichage",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 500,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "std"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "pendule",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 500,
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}

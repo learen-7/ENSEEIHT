@@ -1,0 +1,4 @@
+build/byte_fifo.c.o: \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//byte_fifo.c \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//byte_fifo.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//mytypes.h

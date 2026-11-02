@@ -1,0 +1,2 @@
+build/ecrobot_device_hook.c.o: \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/ecrobot/c/ecrobot_device_hook.c

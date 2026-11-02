@@ -1,0 +1,30 @@
+build/tpl_dispatch_table.c.o: nxtSegway/tpl_dispatch_table.c \
+ /mnt/n7fs/nxt/trampoline//os/tpl_dispatch_table.h \
+ nxtSegway/tpl_service_ids.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_config_def.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_compiler.h nxtSegway/tpl_app_define.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_config_check.h nxtSegway/Compiler.h \
+ nxtSegway/Compiler_Cfg.h /mnt/n7fs/nxt/trampoline//os/tpl_memmap.h \
+ nxtSegway/MemMap.h /mnt/n7fs/nxt/trampoline//os/tpl_os_os_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_internal_types.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/tpl_os_std_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_custom_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_application_def.h \
+ nxtSegway/tpl_app_custom_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_compiler.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/tpl_machine.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/tpl_machine_arm.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/tpl_os_std_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_internal_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_custom_types.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_multicore_macros.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_os.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_interrupt_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_task_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_resource_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_alarm_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_timeobj_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_action.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_os_task_kernel.h \
+ /mnt/n7fs/nxt/trampoline//os/tpl_memmap.h

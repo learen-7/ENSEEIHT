@@ -1,0 +1,9 @@
+nxtSegway.oil: \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/config.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/kernel.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/api.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/api_STM.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/api_ioc.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/arm/config.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/arm/nxt/config.oil \
+ /mnt/n7fs/nxt/trampoline/goil/templates/config/config2.5.oil

@@ -1,0 +1,29 @@
+build/display.c.o: \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//display.c \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//display.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//mytypes.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//nxt_lcd.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt//systick.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/javavm/constants.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/javavm/classes.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/javavm/types.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt/platform_config.h \
+ /mnt/n7fs/nxt/trampoline//machines/arm/nxt/drivers/lejos_nxj/src/nxtvm/platform/nxt/systime.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
+ /mnt/n7fs/applications/2025/nxt/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h
